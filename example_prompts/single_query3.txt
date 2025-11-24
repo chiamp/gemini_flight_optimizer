@@ -1,0 +1,15 @@
+Help me find a set of flights.
+I need to go from London to Toronto, departing between Dec 19-21.
+Then I need to go from Toronto to San francisco departing between Dec 27-28.
+Then I want to go from San francisco to Oahu departing between Dec 29-30.
+Then I want to go from Oahu to Big Island departing between Jan 1-2.
+Then I want to go from Big Island to San francisco departing between Jan 5-6.
+Then I want to go from San francisco to Toronto departing between Jan 7-8.
+Then I want to go from Toronto to London departing between Jan 10.
+
+The flights between London and Toronto must be under 1200 dollars.
+The flights between Toronto and San Francisco must be under 850 dollars.
+The rest of the flights between San Francisco and the Hawaiian islands must be under 500 dollars.
+
+The flights between London and Toronto must be non stop.
+All other flights must be at most one stop, where the layover lasts 5 hours or less.

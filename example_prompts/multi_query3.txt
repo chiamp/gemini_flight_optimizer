@@ -4,5 +4,5 @@ Then I need to go from Toronto to San francisco departing between 27-29.
 Then I want to go from San francisco to Oahu departing between 29-30 (spend minimum one night in San francisco).
 Then I want to go from Oahu to Maui and Big Island. The order doesn't matter but I wanna depart from Oahu a few days later.
 So basically spend a few days on Oahu, Maui and Big Island each.
-Then fly back to San francisco Jan 7-9 and stay in San francisco 1-2 days and then fly back to Toronto for a few days and then fly back to London and arrive by latest Jan 11 (or earlier).
+Then fly back to San francisco Jan 6-8 and stay in San francisco 1-2 days and then fly back to Toronto and stay 2 days and then fly back to London and arrive by latest Jan 11 (or earlier).
 All flights must be non stop.

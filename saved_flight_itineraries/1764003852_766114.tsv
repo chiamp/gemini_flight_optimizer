@@ -1,0 +1,79 @@
+total_price	total_flight_hours	total_layover_hours	total_num_stops	departure_datetime	returning_datetime	start_city	end_city	stopover_cities	formatted_string
+359.0	11.416666666666666	0.0	0	2025-12-03T22:30:00	2025-12-06T21:10:00	Vancouver	Vancouver	['New York, John F. Kennedy']	"2025-12-03 22:30:00 - 2025-12-06 21:10:00 | $359.0 | 11 hr 25 min
+
+Vancouver | START
+
+[FLIGHT 1]: $0.0 | 5 hr 8 min | 0 stops | ROUND_TRIP_DEPARTING
+[LEG 1]: 2025-12-03 22:30:00 - 2025-12-04 06:38:00 | YVR-JFK | 5 hr 8 min | B6 604 | JetBlue
+
+New York, John F. Kennedy | 2 days 11 hr 15 min
+
+[FLIGHT 1]: $359.0 | 6 hr 17 min | 0 stops | ROUND_TRIP_RETURNING
+[LEG 1]: 2025-12-06 17:53:00 - 2025-12-06 21:10:00 | JFK-YVR | 6 hr 17 min | B6 603 | JetBlue
+
+Vancouver | END"
+395.0	10.966666666666667	0.0	0	2025-12-03T22:30:00	2025-12-06T21:15:00	Vancouver	Vancouver	['New York, John F. Kennedy']	"2025-12-03 22:30:00 - 2025-12-06 21:15:00 | $395.0 | 10 hr 58 min
+
+Vancouver | START
+
+[FLIGHT 1]: $194.0 | 5 hr 8 min | 0 stops | ONE_WAY
+[LEG 1]: 2025-12-03 22:30:00 - 2025-12-04 06:38:00 | YVR-JFK | 5 hr 8 min | B6 604 | JetBlue
+
+New York, John F. Kennedy | 2 days 11 hr 47 min
+
+[FLIGHT 2]: $201.0 | 5 hr 50 min | 0 stops | ONE_WAY
+[LEG 1]: 2025-12-06 18:25:00 - 2025-12-06 21:15:00 | EWR-YVR | 5 hr 50 min | AC 549 | Air Canada
+
+Vancouver | END"
+406.0	11.416666666666666	0.0	0	2025-12-03T22:30:00	2025-12-06T21:10:00	Vancouver	Vancouver	['New York, John F. Kennedy']	"2025-12-03 22:30:00 - 2025-12-06 21:10:00 | $406.0 | 11 hr 25 min
+
+Vancouver | START
+
+[FLIGHT 1]: $194.0 | 5 hr 8 min | 0 stops | ONE_WAY
+[LEG 1]: 2025-12-03 22:30:00 - 2025-12-04 06:38:00 | YVR-JFK | 5 hr 8 min | B6 604 | JetBlue
+
+New York, John F. Kennedy | 2 days 11 hr 15 min
+
+[FLIGHT 2]: $212.0 | 6 hr 17 min | 0 stops | ONE_WAY
+[LEG 1]: 2025-12-06 17:53:00 - 2025-12-06 21:10:00 | JFK-YVR | 6 hr 17 min | B6 603 | JetBlue
+
+Vancouver | END"
+421.0	10.966666666666667	0.0	0	2025-12-03T08:45:00	2025-12-06T21:15:00	Vancouver	Vancouver	['New York, Newark']	"2025-12-03 08:45:00 - 2025-12-06 21:15:00 | $421.0 | 10 hr 58 min
+
+Vancouver | START
+
+[FLIGHT 1]: $0.0 | 5 hr 8 min | 0 stops | ROUND_TRIP_DEPARTING
+[LEG 1]: 2025-12-03 08:45:00 - 2025-12-03 16:53:00 | YVR-EWR | 5 hr 8 min | AC 548 | Air Canada
+
+New York, Newark | 3 days 1 hr 32 min
+
+[FLIGHT 1]: $421.0 | 5 hr 50 min | 0 stops | ROUND_TRIP_RETURNING
+[LEG 1]: 2025-12-06 18:25:00 - 2025-12-06 21:15:00 | EWR-YVR | 5 hr 50 min | AC 549 | Air Canada
+
+Vancouver | END"
+446.0	10.966666666666667	0.0	0	2025-12-03T08:45:00	2025-12-06T21:15:00	Vancouver	Vancouver	['New York, Newark']	"2025-12-03 08:45:00 - 2025-12-06 21:15:00 | $446.0 | 10 hr 58 min
+
+Vancouver | START
+
+[FLIGHT 1]: $245.0 | 5 hr 8 min | 0 stops | ONE_WAY
+[LEG 1]: 2025-12-03 08:45:00 - 2025-12-03 16:53:00 | YVR-EWR | 5 hr 8 min | AC 548 | Air Canada
+
+New York, Newark | 3 days 1 hr 32 min
+
+[FLIGHT 2]: $201.0 | 5 hr 50 min | 0 stops | ONE_WAY
+[LEG 1]: 2025-12-06 18:25:00 - 2025-12-06 21:15:00 | EWR-YVR | 5 hr 50 min | AC 549 | Air Canada
+
+Vancouver | END"
+457.0	11.416666666666666	0.0	0	2025-12-03T08:45:00	2025-12-06T21:10:00	Vancouver	Vancouver	['New York, Newark']	"2025-12-03 08:45:00 - 2025-12-06 21:10:00 | $457.0 | 11 hr 25 min
+
+Vancouver | START
+
+[FLIGHT 1]: $245.0 | 5 hr 8 min | 0 stops | ONE_WAY
+[LEG 1]: 2025-12-03 08:45:00 - 2025-12-03 16:53:00 | YVR-EWR | 5 hr 8 min | AC 548 | Air Canada
+
+New York, Newark | 3 days 1 hr
+
+[FLIGHT 2]: $212.0 | 6 hr 17 min | 0 stops | ONE_WAY
+[LEG 1]: 2025-12-06 17:53:00 - 2025-12-06 21:10:00 | JFK-YVR | 6 hr 17 min | B6 603 | JetBlue
+
+Vancouver | END"

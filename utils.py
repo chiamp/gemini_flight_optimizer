@@ -5,10 +5,20 @@ import time
 import enum
 import dataclasses
 
+import heapq
+
 from concurrent import futures
 import traceback
 
-from typing import Any, Sequence
+from typing import Any, Callable, Sequence, TypeVar
+
+from fli.models import Airport
+
+
+AirportKey = tuple[tuple[Airport | int, ...], ...]
+
+
+_T = TypeVar('_T')
 
 
 def get_time_id() -> str:
@@ -34,8 +44,34 @@ def minutes_to_string(total_minutes: int):
   return string.strip()
 
 
+def get_top_n(list_elements: Sequence[_T], *, top_n: int, sort_key: Callable[[_T], Any]) -> list[_T]:
+  '''Given a list of elements, get the top-n highest elements.
+  NOTE: returns a list of top-n elements sorted in DESCENDING order.'''
+  min_heap: list[tuple[Any, int, _T]] = []
+  for i, element in enumerate(list_elements):
+    comparison_value = sort_key(element)
+    if len(min_heap) < top_n:
+      heapq.heappush(min_heap, (comparison_value, -i, element))  # add an int for tie-breakers; prioritize earlier elements
+    elif comparison_value > min_heap[0][0]:
+      heapq.heappop(min_heap)
+      heapq.heappush(min_heap, (comparison_value, -i, element))  # add an int for tie-breakers; prioritize earlier elements
+
+  sorted_elements: list[_T] = []
+  while min_heap:
+    sorted_elements.append(heapq.heappop(min_heap)[-1])
+  return list(reversed(sorted_elements))
+
+
 def convert_list_enum_to_canonical_tuple_str(list_enum: Sequence[enum.Enum]) -> tuple[str, ...]:
   return tuple(sorted(e.name for e in list_enum))
+
+
+def get_airport_key_from_airport_list(airport_list: list[list[Airport | int]]) -> AirportKey:
+  '''Convert the airport fields in `FlightSearchFilters` to a dict key.'''
+  airport_key: tuple[tuple[Airport | int, ...], ...] = tuple(
+    sorted((tuple(airport) for airport in airport_list), key=lambda t: (t[0].name, t[1]))  # type: ignore
+  )
+  return airport_key
 
 
 def extract_python_code_blocks(text: str) -> list[str]:

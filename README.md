@@ -47,7 +47,7 @@ The program:
 * once Gemini understands your intent and parses your prompt successfully, it will return the queries it thinks it should use to search for flights
   * if you want to make modifications to the queries, you can submit another natural language prompt to tell Gemini to modify the queries
 * once you are happy with the queries, the program will call the Google Flights API and aggregate all results
-* the flight itineraries constructed will be sorted by cheapest price and saved in `saved_flight_itineraries/`.
+* the flight itineraries constructed will be sorted by cheapest price and saved in `saved_flight_itineraries/` (NOTE: only the top 1000 cheapest flights will be saved, to make sorting efficient and to save memory).
 
 
 ## Video demos
@@ -111,7 +111,7 @@ See more details on the rate limits [here](https://ai.google.dev/gemini-api/docs
 * `iata_codes.json`: maps airport IATA codes to the corresponding city / location. This is used to figure out the name of the city / location that corresponds to the airport we are traveling to/from; i.e. the city / location name is more user-friendly to print out for them to view than the airport codes. This mapping was derived from `iata_codes.pdf`
 * `iata_codes.pdf`: the original `.pdf` that maps the IATA airport codes to the corresponding city / location.
 * `iata_codes_link.txt`: contains the URL where I downloaded `iata_codes.pdf` from.
-* `saved_flight_itineraries/`: saved flight itineraries in the form of `.tsv` files that are a result of flight query searches
+* `saved_flight_itineraries/`: saved flight itineraries in the form of `.tsv` files that are a result of flight query searches. NOTE: only the top 1000 cheapest flights will be saved, to make sorting efficient and to save memory.
 * `api_call_history/`: keeps track of Gemini API requests and their token count.
 * `logs/`: logs user input into Gemini API as well as Gemini's output, for debugging purposes. To turn on logging, toggle debugging on by executing the `/debug` command in the main menu of the program.
 * `example_prompts/`: example flight query prompts.

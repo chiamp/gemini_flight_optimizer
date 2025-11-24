@@ -1,4 +1,4 @@
-from collections import defaultdict
+from collections import Counter, defaultdict
 import functools
 from typing import Sequence
 
@@ -10,7 +10,10 @@ import datetime
 
 import pandas as pd
 
-from fli.models import FlightSearchFilters
+from fli.models import (
+  FlightSearchFilters,
+  TripType,
+)
 
 from flight_info import (
   FlightInfo,
@@ -24,7 +27,7 @@ from city import (
   CityRange,
   CityRanges,
 )
-from utils import get_time_id, minutes_to_string
+from utils import get_time_id, minutes_to_string, get_airport_key_from_airport_list, AirportKey, get_top_n
 
 
 FlightPath = tuple[tuple[str, ...], tuple[str, ...]]
@@ -49,7 +52,7 @@ class FlightItinerary:
   - f3 could be a flight from New York City (JFK) to San Francisco (SFO)
   '''
 
-  flight_infos: list[FlightInfo]
+  flight_infos: Sequence[FlightInfo]
 
   def __post_init__(self):
     assert len(self.flight_infos) > 0
@@ -345,11 +348,102 @@ def get_queries(city_ranges_list: list[CityRanges]) -> tuple[
   )
 
 
-def generate_flight_itineraries(list_flight_infos: list[list[FlightInfo]], min_stay_hours: list[float | None], max_stay_hours: list[float | None]) -> list[FlightItinerary]:
-  '''Each element in `list_flight_infos` is a list[FlightInfo].
+@functools.cache
+def _generate_flight_itineraries_recurse(
+  tuple_flight_infos,
+  min_stay_hours,
+  max_stay_hours,
+  prev_flight_info: FlightInfo,
+  round_trip_departing_flight_ids_tuple: tuple[str, ...],
+  flight_infos_index: int
+) -> list[list[FlightInfo]]:
+  '''Recursive helper function.
+
+  `flight_infos_index` denotes what current flight in the overall trip we are trying to add to our current itinerary.
+
+  `round_trip_departing_flight_ids` denotes the flight ids of all round-trip departing flights we have added to our current itinerary so far
+  - this is used when we hit the base case of the recursive function where we add the last flight
+    - if there are still any ids remaining, that means we have added round-trip departing flights with no valid returning flight to pair it with, therefore making this itinerary invalid
+  - whenever we find a matching returning flight to pair one of the ids in `round_trip_departing_flight_ids`, we remove that id from `round_trip_departing_flight_ids`
+
+  Returns a list of all possible valid flight itineraries, where each element in this list, is a list[FlightInfo] denoting one possible valid flight itinerary;
+  e.g. list[FlightInfo] contains [flight_a_to_b_1, flight_b_to_c_1, flight_c_to_d_1, ...],
+        and the next list[FlightInfo] contains [flight_a_to_b_2, flight_b_to_c_1, flight_c_to_d_1, ...]
+  '''
+  # Need a sorted tuple so that it can be hashed for memoization, but within the function call, use it as a set.
+  round_trip_departing_flight_ids = set(round_trip_departing_flight_ids_tuple)
+
+  if prev_flight_info.flight_type == FlightType.ROUND_TRIP_DEPARTING:
+    round_trip_departing_flight_ids = round_trip_departing_flight_ids.union([prev_flight_info.id])
+
+  list_flight_itineraries: list[list[FlightInfo]] = []  # each element is an individual itinerary
+  for next_flight_info in tuple_flight_infos[flight_infos_index]:
+    # Make a copy since we may be removing some id's if we find a returning trip that matches with one of the departing flight ids in `round_trip_departing_flight_ids`,
+    # and we don't want to edit `round_trip_departing_flight_ids` since other recursive child calls will use it.
+    child_round_trip_departing_flight_ids = round_trip_departing_flight_ids.copy()
+
+    if next_flight_info.parent_ids:  # must be a round-trip returning flight
+      assert next_flight_info.flight_type == FlightType.ROUND_TRIP_RETURNING
+      found_matching_departing_flight = False
+      for parent_id in next_flight_info.parent_ids:
+        if parent_id in child_round_trip_departing_flight_ids:
+          # Set the parent id to be only this one, since we have selected this parent flight to be our departing flight for this round-trip that connects to this returning flight
+          # This information will be used to link flights together in the `FlightItinerary`.
+          # Make a deep copy of this returning flight so that the changes we make don't carry over for other recursive calls.
+          next_flight_info = next_flight_info.copy()
+          next_flight_info.parent_ids = [parent_id]
+          child_round_trip_departing_flight_ids.difference_update([parent_id])
+          found_matching_departing_flight = True
+          # NOTE: the first matching departing flight will be used.
+          # In practice this should be fine as long as we don't have multiple identical trips within the same itinerary,
+          # (e.g. doing London to Toronto twice in the same itinerary).
+          break
+      if not found_matching_departing_flight:
+        continue
+
+    # Check if the city stay hours constraints are satisfied.
+    stay_hours = (next_flight_info.legs[0].departure_datetime - prev_flight_info.legs[-1].arrival_datetime).total_seconds() / 3600
+    min_stay_hours_city = min_stay_hours[flight_infos_index]
+    max_stay_hours_city = max_stay_hours[flight_infos_index]
+    if (
+      ((min_stay_hours_city is None) or (stay_hours >= min_stay_hours_city))
+      and ((max_stay_hours_city is None) or (stay_hours <= max_stay_hours_city))
+      and (stay_hours > 0)
+    ):
+      if flight_infos_index == (len(tuple_flight_infos)-1):  # base case
+        if child_round_trip_departing_flight_ids:
+          # This means that we have some round-trip departing flights that never had a corresponding returning flight scheduled.
+          # This would mean we'd have to skip the returning flight, which is possible, but probably not good practice (e.g. could get blacklisted by the airline).
+          # So we consider this itinerary invalid since all round-trip departing flights must have a corresponding returning flight scheduled.
+          continue
+        # Otherwise we have a valid itinerary.
+        list_child_flight_itineraries: list[list[FlightInfo]] = [[next_flight_info]]
+      else:  # continue recursing to the next flight in the trip
+        list_child_flight_itineraries: list[list[FlightInfo]] = _generate_flight_itineraries_recurse(
+          tuple_flight_infos,
+          min_stay_hours,
+          max_stay_hours,
+          next_flight_info,
+          tuple(sorted(child_round_trip_departing_flight_ids)),
+          flight_infos_index+1
+        )
+
+      # Aggregate all flight results and generate all possible flight itineraries.
+      for child_flight_itinerary in list_child_flight_itineraries:
+        list_flight_itineraries.append([prev_flight_info] + child_flight_itinerary)
+  return list_flight_itineraries
+
+
+@functools.cache
+def generate_flight_itineraries(
+  tuple_flight_infos: tuple[tuple[FlightInfo, ...], ...],
+  min_stay_hours: tuple[float | None],
+  max_stay_hours: tuple[float | None]
+) -> list[FlightItinerary]:
+  '''Each element in `tuple_flight_infos` is a list[FlightInfo].
   Each individual list[FlightInfo] contains a list of flights that all depart from the same location and all arrive at the same location;
   e.g. list[FlightInfo] contains [possible_flight_a_to_b_1, possible_flight_a_to_b_2, possible_flight_a_to_b_3, ...],
-       and the next list[FlightInfo] in `list_flight_infos` contains [possible_flight_b_to_c_1, possible_flight_b_to_c_2, possible_flight_b_to_c_3, ...]
+       and the next list[FlightInfo] in `tuple_flight_infos` contains [possible_flight_b_to_c_1, possible_flight_b_to_c_2, possible_flight_b_to_c_3, ...]
 
   For a given list of list[FlightInfo]'s (f1, f2, f3, ...), the arrival location of all flights in list[FlightInfo] f1 is assumed to be the departure location for all flights in list[FlightInfo] f2,
   and the arrival location of all flights in list[FlightInfo] f2 is assumed to be the departure location of all flights in list[FlightInfo] f3, etc.
@@ -362,90 +456,18 @@ def generate_flight_itineraries(list_flight_infos: list[list[FlightInfo]], min_s
   provided that the arrival datetime of the current flight precedes the departure datetime of the next flight.
   '''
 
-  assert len(list_flight_infos) > 0
+  assert len(tuple_flight_infos) > 0
 
-  if len(list_flight_infos) == 1:
-    return [FlightItinerary(flight_infos=flight_infos) for flight_infos in list_flight_infos]
-
-  @functools.cache
-  def _recurse(prev_flight_info: FlightInfo, round_trip_departing_flight_ids_tuple: tuple[str, ...], flight_infos_index: int) -> list[list[FlightInfo]]:
-    '''Recursive helper function.
-
-    `flight_infos_index` denotes what current flight in the overall trip we are trying to add to our current itinerary.
-
-    `round_trip_departing_flight_ids` denotes the flight ids of all round-trip departing flights we have added to our current itinerary so far
-    - this is used when we hit the base case of the recursive function where we add the last flight
-      - if there are still any ids remaining, that means we have added round-trip departing flights with no valid returning flight to pair it with, therefore making this itinerary invalid
-    - whenever we find a matching returning flight to pair one of the ids in `round_trip_departing_flight_ids`, we remove that id from `round_trip_departing_flight_ids`
-
-    Returns a list of all possible valid flight itineraries, where each element in this list, is a list[FlightInfo] denoting one possible valid flight itinerary;
-    e.g. list[FlightInfo] contains [flight_a_to_b_1, flight_b_to_c_1, flight_c_to_d_1, ...],
-         and the next list[FlightInfo] contains [flight_a_to_b_2, flight_b_to_c_1, flight_c_to_d_1, ...]
-    '''
-    # Need a sorted tuple so that it can be hashed for memoization, but within the function call, use it as a set.
-    round_trip_departing_flight_ids = set(round_trip_departing_flight_ids_tuple)
-
-    if prev_flight_info.flight_type == FlightType.ROUND_TRIP_DEPARTING:
-      round_trip_departing_flight_ids = round_trip_departing_flight_ids.union([prev_flight_info.id])
-
-    list_flight_itineraries: list[list[FlightInfo]] = []  # each element is an individual itinerary
-    for next_flight_info in list_flight_infos[flight_infos_index]:
-      # Make a copy since we may be removing some id's if we find a returning trip that matches with one of the departing flight ids in `round_trip_departing_flight_ids`,
-      # and we don't want to edit `round_trip_departing_flight_ids` since other recursive child calls will use it.
-      child_round_trip_departing_flight_ids = round_trip_departing_flight_ids.copy()
-
-      if next_flight_info.parent_ids:  # must be a round-trip returning flight
-        assert next_flight_info.flight_type == FlightType.ROUND_TRIP_RETURNING
-        found_matching_departing_flight = False
-        for parent_id in next_flight_info.parent_ids:
-          if parent_id in child_round_trip_departing_flight_ids:
-            # Set the parent id to be only this one, since we have selected this parent flight to be our departing flight for this round-trip that connects to this returning flight
-            # This information will be used to link flights together in the `FlightItinerary`.
-            # Make a deep copy of this returning flight so that the changes we make don't carry over for other recursive calls.
-            next_flight_info = next_flight_info.copy()
-            next_flight_info.parent_ids = [parent_id]
-            child_round_trip_departing_flight_ids.difference_update([parent_id])
-            found_matching_departing_flight = True
-            # NOTE: the first matching departing flight will be used.
-            # In practice this should be fine as long as we don't have multiple identical trips within the same itinerary,
-            # (e.g. doing London to Toronto twice in the same itinerary).
-            break
-        if not found_matching_departing_flight:
-          continue
-
-      # Check if the city stay hours constraints are satisfied.
-      stay_hours = (next_flight_info.legs[0].departure_datetime - prev_flight_info.legs[-1].arrival_datetime).total_seconds() / 3600
-      min_stay_hours_city = min_stay_hours[flight_infos_index]
-      max_stay_hours_city = max_stay_hours[flight_infos_index]
-      if (
-        ((min_stay_hours_city is None) or (stay_hours >= min_stay_hours_city))
-        and ((max_stay_hours_city is None) or (stay_hours <= max_stay_hours_city))
-        and (stay_hours > 0)
-      ):
-        if flight_infos_index == (len(list_flight_infos)-1):  # base case
-          if child_round_trip_departing_flight_ids:
-            # This means that we have some round-trip departing flights that never had a corresponding returning flight scheduled.
-            # This would mean we'd have to skip the returning flight, which is possible, but probably not good practice (e.g. could get blacklisted by the airline).
-            # So we consider this itinerary invalid since all round-trip departing flights must have a corresponding returning flight scheduled.
-            continue
-          # Otherwise we have a valid itinerary.
-          list_child_flight_itineraries: list[list[FlightInfo]] = [[next_flight_info]]
-        else:  # continue recursing to the next flight in the trip
-          list_child_flight_itineraries: list[list[FlightInfo]] = _recurse(
-            next_flight_info,
-            tuple(sorted(child_round_trip_departing_flight_ids)),
-            flight_infos_index+1
-          )
-
-        # Aggregate all flight results and generate all possible flight itineraries.
-        for child_flight_itinerary in list_child_flight_itineraries:
-          list_flight_itineraries.append([prev_flight_info] + child_flight_itinerary)
-    return list_flight_itineraries
+  if len(tuple_flight_infos) == 1:
+    return [FlightItinerary(flight_infos=flight_infos) for flight_infos in tuple_flight_infos]
 
   # Start the recursive calls with the first flight in the trip.
   list_flight_itineraries: list[FlightItinerary] = []
-  for starting_flight_info in list_flight_infos[0]:
-    list_child_flight_itineraries: list[list[FlightInfo]] = _recurse(
+  for starting_flight_info in tuple_flight_infos[0]:
+    list_child_flight_itineraries: list[list[FlightInfo]] = _generate_flight_itineraries_recurse(
+      tuple_flight_infos,
+      min_stay_hours,
+      max_stay_hours,
       starting_flight_info,
       round_trip_departing_flight_ids_tuple=tuple(),
       flight_infos_index=1,
@@ -475,15 +497,39 @@ def search_flight_itineraries(city_ranges_list: list[CityRanges]) -> FlightItine
 
   # Group all flight results to their corresponding `CityHashes`.
   city_hashes_to_flight_infos: defaultdict[CityHashes, list[FlightInfo]] = defaultdict(list)
+  city_flight_count: Counter[tuple[AirportKey, AirportKey]] = Counter()  # count how many flights found for each city
   for query_hash, (departing_flight_info, returning_flight_info) in query_hash_to_flight_infos.items():
-    for departing_city_hashes, returning_city_hashes in query_hash_to_set_city_hashes[query_hash]:
 
-      # Map the query results to the corresponding departure/arrival cities.
+    # Update counter with flight counts
+    query: FlightSearchFilters = query_hash_to_query[query_hash]
+    departure_airport_key: AirportKey = get_airport_key_from_airport_list(query.flight_segments[0].departure_airport)
+    arrival_airport_key: AirportKey = get_airport_key_from_airport_list(query.flight_segments[0].arrival_airport)
+    departing_flight_airport_key: tuple[AirportKey, AirportKey] = (departure_airport_key, arrival_airport_key)
+    city_flight_count[departing_flight_airport_key] += len(departing_flight_info)
+
+    if query.trip_type == TripType.ONE_WAY:
+      assert len(query.flight_segments) == 1
+      assert len(returning_flight_info) == 0
+    else:  # round-trip
+      assert len(query.flight_segments) == 2
+      departure_airport_key: AirportKey = get_airport_key_from_airport_list(query.flight_segments[-1].departure_airport)
+      arrival_airport_key: AirportKey = get_airport_key_from_airport_list(query.flight_segments[-1].arrival_airport)
+      returning_flight_airport_key: tuple[AirportKey, AirportKey] = (departure_airport_key, arrival_airport_key)
+      city_flight_count[returning_flight_airport_key] += len(returning_flight_info)
+
+    # Map the query results to the corresponding departure/arrival cities.
+    for departing_city_hashes, returning_city_hashes in query_hash_to_set_city_hashes[query_hash]:
       city_hashes_to_flight_infos[departing_city_hashes].extend(departing_flight_info)
       if returning_city_hashes is None:
         assert not returning_flight_info
       else:
         city_hashes_to_flight_infos[returning_city_hashes].extend(returning_flight_info)
+  print('[INFO] Found the following number of flights between each city:')
+  for airport_key, num_flights in city_flight_count.items():
+    departure_airports, arrival_airports = airport_key
+    departure_airports = [departure_airport[0].name for departure_airport in departure_airports]  # type: ignore
+    arrival_airports = [arrival_airport[0].name for arrival_airport in arrival_airports]  # type: ignore
+    print(f'[{", ".join(departure_airports)}] -> [{", ".join(arrival_airports)}]: {num_flights}')
 
   # Generate flight itineraries.
   flight_itineraries: list[FlightItinerary] = []
@@ -498,16 +544,16 @@ def search_flight_itineraries(city_ranges_list: list[CityRanges]) -> FlightItine
     desc='Processing city configurations'
   ):
     # Iterate through every trip itinerary and get the corresponding flight results for every departure/arrival city pair.
-    list_flight_infos: list[list[FlightInfo]] = []
+    list_flight_infos: list[tuple[FlightInfo, ...]] = []
     for i in range(len(city_itinerary)-1):
       city_hashes = (city_itinerary[i].hash, city_itinerary[i+1].hash)
-      list_flight_infos.append(city_hashes_to_flight_infos[city_hashes])
+      list_flight_infos.append(tuple(city_hashes_to_flight_infos[city_hashes]))
     # Generate flight itineraries for every possible valid combination of flights between each city.
     flight_itineraries.extend(
       generate_flight_itineraries(
-        list_flight_infos=list_flight_infos,
-        min_stay_hours=min_stay_hours,
-        max_stay_hours=max_stay_hours,
+        tuple_flight_infos=tuple(list_flight_infos),
+        min_stay_hours=tuple(min_stay_hours),
+        max_stay_hours=tuple(max_stay_hours),
       )
     )
   print(f'[INFO] {len(flight_itineraries)} flight itineraries created.')
@@ -515,13 +561,15 @@ def search_flight_itineraries(city_ranges_list: list[CityRanges]) -> FlightItine
   print('[INFO] Sorting flight itineraries based on total price...')
   # Tie-breaking order: total price, total flight duration, total layover duration, total number of stops
   return FlightItineraries(
-    flight_itinerary_list=sorted(
+    flight_itinerary_list=get_top_n(
       flight_itineraries,
-      key=lambda fi: (
-        fi.total_price,
-        fi.total_minutes_durations,
-        fi.total_layover_minutes_duration,
-        fi.total_num_stops,
+      top_n=1000,
+      # We want to get the bottom n (cheapest n flights), so take the negative of these fields.
+      sort_key=lambda fi: (
+        -fi.total_price,
+        -fi.total_minutes_durations,
+        -fi.total_layover_minutes_duration,
+        -fi.total_num_stops,
       )
-    )
+    ),
   )
