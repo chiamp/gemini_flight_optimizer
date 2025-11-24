@@ -1,0 +1,56 @@
+I apologize for the error. `Airport.YTO` is not a valid airport code in the provided `Airport` enum. Toronto is represented by `Airport.YYZ` (Toronto Pearson International Airport) and `Airport.YTZ` (Billy Bishop Toronto City Airport). I will correct the `CityRange` instances to use these valid codes.
+
+<python>
+all_queries: list[CityRanges] = [
+  CityRanges(
+    city_range_list=[
+      CityRange(
+        airports=[Airport.YVR],
+        departure_date_range=DateRange(
+          earliest=datetime.date(2025, 11, 24),
+          latest=datetime.date(2025, 11, 24),
+        ),
+        departure_flight_filter=DepartureFlightFilter(),
+      ),
+      CityRange(
+        airports=[Airport.JFK, Airport.LGA, Airport.EWR],
+        min_stay_hours=2*24,
+        max_stay_hours=2*24,
+        departure_date_range=DateRange(
+          earliest=datetime.date(2025, 11, 26),
+          latest=datetime.date(2025, 11, 26),
+        ),
+        departure_flight_filter=DepartureFlightFilter(),
+      ),
+      CityRange(
+        airports=[Airport.YVR],
+      ),
+    ]
+  ),
+  CityRanges(
+    city_range_list=[
+      CityRange(
+        airports=[Airport.YVR],
+        departure_date_range=DateRange(
+          earliest=datetime.date(2025, 11, 24),
+          latest=datetime.date(2025, 11, 24),
+        ),
+        departure_flight_filter=DepartureFlightFilter(),
+      ),
+      CityRange(
+        airports=[Airport.YTZ, Airport.YYZ], # Corrected from YTO
+        min_stay_hours=2*24,
+        max_stay_hours=2*24,
+        departure_date_range=DateRange(
+          earliest=datetime.date(2025, 11, 26),
+          latest=datetime.date(2025, 11, 26),
+        ),
+        departure_flight_filter=DepartureFlightFilter(),
+      ),
+      CityRange(
+        airports=[Airport.YVR],
+      ),
+    ]
+  ),
+]
+</python>

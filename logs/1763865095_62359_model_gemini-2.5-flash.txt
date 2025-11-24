@@ -1,0 +1,14 @@
+<clarification>
+To help me suggest Asia trips from London, could you please provide more details on:
+
+1.  **Specific destination(s) in Asia** you are interested in (e.g., Tokyo, Bangkok, Singapore, Dubai, etc.) or a region (e.g., Southeast Asia, East Asia).
+2.  **Your preferred departure date range** from London (e.g., specific dates, or if "next few days" from our previous conversation still applies, please confirm).
+3.  **Any other preferences or constraints**, such as:
+    *   Maximum budget.
+    *   Preferred number of stops (e.g., non-stop, one stop).
+    *   Maximum flight duration.
+    *   Preferred airlines.
+    *   Any specific activities or interests for your trip (e.g., beaches, culture, food, city exploration).
+
+Once I have this information, I can try to generate a specific flight query.
+</clarification>

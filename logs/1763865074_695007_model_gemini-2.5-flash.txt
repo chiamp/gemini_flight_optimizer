@@ -1,0 +1,3 @@
+<clarification>
+Please specify your departure and destination cities/airports.
+</clarification>
