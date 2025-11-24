@@ -2,15 +2,23 @@ import enum
 import functools
 import dataclasses
 
+import datetime
 from concurrent import futures
-
-from typing import Sequence
 
 from tqdm import tqdm
 
+from typing import Sequence
+
+from pydantic import (
+    NonNegativeFloat,
+    NonNegativeInt,
+    PositiveInt,
+)
+
 from fli.models import (
   Airport,
-  FlightLeg,
+  Airline,
+  FlightLeg as fli_FlightLeg,
   FlightResult,
   FlightSearchFilters,
   LayoverRestrictions,
@@ -31,8 +39,51 @@ class FlightType(enum.Enum):
   ROUND_TRIP_RETURNING = 'ROUND_TRIP_RETURNING'
 
 
+@dataclasses.dataclass(kw_only=True)
+class FlightLeg:
+  """A single flight leg (segment) with airline and timing details."""
 
-class FlightInfo(FlightResult):
+  airline: Airline
+  flight_number: str
+  departure_airport: Airport
+  arrival_airport: Airport
+  departure_datetime: datetime.datetime
+  arrival_datetime: datetime.datetime
+  duration: PositiveInt  # in minutes
+
+  def to_dict(self) -> dict[str, str | int]:
+    return {
+      'airline': self.airline.value,
+      'flight_number': self.flight_number,
+      'departure_airport': self.departure_airport.value,
+      'arrival_airport': self.arrival_airport.value,
+      'departure_datetime': self.departure_datetime.isoformat(),
+      'arrival_datetime': self.arrival_datetime.isoformat(),
+      'duration': self.duration,
+    }
+
+  @classmethod
+  def from_fli_flight_leg(cls, flight_leg: fli_FlightLeg) -> 'FlightLeg':
+    # Convert fli model version to this serializable, dataclass version
+    return cls(
+      airline=flight_leg.airline,
+      flight_number=flight_leg.flight_number,
+      departure_airport=flight_leg.departure_airport,
+      arrival_airport=flight_leg.arrival_airport,
+      departure_datetime=flight_leg.departure_datetime,
+      arrival_datetime=flight_leg.arrival_datetime,
+      duration=flight_leg.duration,
+    )
+
+
+@dataclasses.dataclass(kw_only=True)
+class FlightInfo:
+
+  # Copied over from `fli.models.FlightResult`, since we want to make this class serializable
+  legs: list[FlightLeg]
+  price: NonNegativeFloat  # in specified currency
+  duration: PositiveInt  # total duration in minutes
+  stops: NonNegativeInt
 
   flight_type: FlightType
 
@@ -81,6 +132,16 @@ class FlightInfo(FlightResult):
     assert self.id == flight_info_copy.id
     return flight_info_copy
 
+  def to_dict(self):
+    return {
+      'legs': self.legs,
+      'price': self.price,
+      'duration': self.duration,
+      'stops': self.stops,
+      'flight_type': self.flight_type.value,
+      'parent_ids': self.parent_ids,
+    }
+
   @classmethod
   def from_flight_result(
     cls,
@@ -89,7 +150,7 @@ class FlightInfo(FlightResult):
     parent_ids: list[str] = []
   ) -> 'FlightInfo':
     return cls(
-      legs=flight_result.legs,
+      legs=[FlightLeg.from_fli_flight_leg(fl) for fl in flight_result.legs],
       price=flight_result.price,
       duration=flight_result.duration,
       stops=flight_result.stops,
