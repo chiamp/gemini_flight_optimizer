@@ -1,0 +1,2 @@
+remove the min and max time spent in the stopover cities.
+just specifying that i want to leave on the 19th should be sufficient

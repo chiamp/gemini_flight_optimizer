@@ -30,6 +30,7 @@ from datetime_range import (
 )
 from flight_hash import hash_layover_restrictions
 from utils import (
+  AirportKey,
   convert_list_enum_to_canonical_tuple_str,
   minutes_to_string
 )
@@ -288,6 +289,10 @@ class CityRange:
 
     return '\n'.join(string_components)
 
+  @functools.cached_property
+  def airport_key(self) -> AirportKey:
+    return tuple(sorted(airport.name for airport in self.airports))
+
   def get_all_possible_city_configurations(self) -> list[City]:
     # Get every possible combination of arrival and departure dates for this City.
     if self.arrival_date_range and self.arrival_date_range.earliest and self.arrival_date_range.latest:
@@ -387,6 +392,22 @@ class CityRanges:
       else:
         city_range_strings.append(f'----- CITY {i+1} -----\n{str(city_range)}')
     return '\n\n'.join(city_range_strings)
+
+  @classmethod
+  def get_ordered_airport_keys(cls, city_ranges_list: list['CityRanges']) -> list[tuple[AirportKey, AirportKey]]:
+    """Gets the list of airport keys from the list[CityRanges] and attempts to sort them based on the order they are visited in on the trip.
+    It's impossible to get a sorted order (unless you do some sort of topological sort) in the case of multiple flight queries that go to different cities.
+    This method will just iterate through all itineraries and append any new airport keys seen to the end of the list."""
+
+    ordered_airport_keys: list[tuple[AirportKey, AirportKey]] = []
+    for city_ranges in city_ranges_list:
+      for i in range(len(city_ranges.city_range_list)-1):
+        departure_airport_key: AirportKey = city_ranges.city_range_list[i].airport_key
+        arrival_airport_key: AirportKey = city_ranges.city_range_list[i+1].airport_key
+        airport_key: tuple[AirportKey, AirportKey] = (departure_airport_key, arrival_airport_key)
+        if airport_key not in ordered_airport_keys:
+          ordered_airport_keys.append(airport_key)
+    return ordered_airport_keys
 
   @classmethod
   def print_proposed_flight_queries(cls, city_ranges_list: list['CityRanges']) -> None:

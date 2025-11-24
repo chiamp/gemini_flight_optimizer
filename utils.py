@@ -15,7 +15,7 @@ from typing import Any, Callable, Sequence, TypeVar
 from fli.models import Airport
 
 
-AirportKey = tuple[tuple[Airport | int, ...], ...]
+AirportKey = tuple[str, ...]
 
 
 _T = TypeVar('_T')
@@ -68,8 +68,8 @@ def convert_list_enum_to_canonical_tuple_str(list_enum: Sequence[enum.Enum]) -> 
 
 def get_airport_key_from_airport_list(airport_list: list[list[Airport | int]]) -> AirportKey:
   '''Convert the airport fields in `FlightSearchFilters` to a dict key.'''
-  airport_key: tuple[tuple[Airport | int, ...], ...] = tuple(
-    sorted((tuple(airport) for airport in airport_list), key=lambda t: (t[0].name, t[1]))  # type: ignore
+  airport_key: tuple[str, ...] = tuple(
+    sorted(airport[0].name for airport in airport_list)  # type: ignore
   )
   return airport_key
 

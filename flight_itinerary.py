@@ -350,14 +350,16 @@ def get_queries(city_ranges_list: list[CityRanges]) -> tuple[
 
 @functools.cache
 def _generate_flight_itineraries_recurse(
-  tuple_flight_infos,
-  min_stay_hours,
-  max_stay_hours,
+  tuple_flight_infos: tuple[tuple[FlightInfo, ...], ...],
+  min_stay_hours: tuple[float | None],
+  max_stay_hours: tuple[float | None],
   prev_flight_info: FlightInfo,
   round_trip_departing_flight_ids_tuple: tuple[str, ...],
   flight_infos_index: int
 ) -> list[list[FlightInfo]]:
   '''Recursive helper function.
+
+  See the `generate_flight_itineraries` function for details on `tuple_flight_infos`, `min_stay_hours` and `max_stay_hours`.
 
   `flight_infos_index` denotes what current flight in the overall trip we are trying to add to our current itinerary.
 
@@ -438,12 +440,14 @@ def _generate_flight_itineraries_recurse(
 def generate_flight_itineraries(
   tuple_flight_infos: tuple[tuple[FlightInfo, ...], ...],
   min_stay_hours: tuple[float | None],
-  max_stay_hours: tuple[float | None]
+  max_stay_hours: tuple[float | None],
 ) -> list[FlightItinerary]:
   '''Each element in `tuple_flight_infos` is a list[FlightInfo].
   Each individual list[FlightInfo] contains a list of flights that all depart from the same location and all arrive at the same location;
   e.g. list[FlightInfo] contains [possible_flight_a_to_b_1, possible_flight_a_to_b_2, possible_flight_a_to_b_3, ...],
        and the next list[FlightInfo] in `tuple_flight_infos` contains [possible_flight_b_to_c_1, possible_flight_b_to_c_2, possible_flight_b_to_c_3, ...]
+  `min_stay_hours` is the minimum amount of hours to stay in the corresponding departing city in `tuple_flight_infos`
+  `max_stay_hours` is the maximum amount of hours to stay in the corresponding departing city in `tuple_flight_infos`
 
   For a given list of list[FlightInfo]'s (f1, f2, f3, ...), the arrival location of all flights in list[FlightInfo] f1 is assumed to be the departure location for all flights in list[FlightInfo] f2,
   and the arrival location of all flights in list[FlightInfo] f2 is assumed to be the departure location of all flights in list[FlightInfo] f3, etc.
@@ -524,12 +528,18 @@ def search_flight_itineraries(city_ranges_list: list[CityRanges]) -> FlightItine
         assert not returning_flight_info
       else:
         city_hashes_to_flight_infos[returning_city_hashes].extend(returning_flight_info)
+
+  # Print number of flights found
   print('[INFO] Found the following number of flights between each city:')
-  for airport_key, num_flights in city_flight_count.items():
+  all_ordered_airport_keys: list[tuple[AirportKey, AirportKey]] = CityRanges.get_ordered_airport_keys(city_ranges_list)
+  ordered_airport_keys: list[tuple[AirportKey, AirportKey]] = sorted(city_flight_count.keys(), key=lambda ak: all_ordered_airport_keys.index(ak))
+  total_num_flights = 0
+  for airport_key in ordered_airport_keys:
+    num_flights = city_flight_count[airport_key]
     departure_airports, arrival_airports = airport_key
-    departure_airports = [departure_airport[0].name for departure_airport in departure_airports]  # type: ignore
-    arrival_airports = [arrival_airport[0].name for arrival_airport in arrival_airports]  # type: ignore
     print(f'[{", ".join(departure_airports)}] -> [{", ".join(arrival_airports)}]: {num_flights}')
+    total_num_flights += num_flights
+  print(f'Total number of flights: {total_num_flights}')
 
   # Generate flight itineraries.
   flight_itineraries: list[FlightItinerary] = []

@@ -1,0 +1,3 @@
+<clarification>
+The requested departure date, February 17, 2025, is in the past relative to today's date (November 24, 2025). Would you like to search for flights departing on February 17, 2026, or a different date?
+</clarification>

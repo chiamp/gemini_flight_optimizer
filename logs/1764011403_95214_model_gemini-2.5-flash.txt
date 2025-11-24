@@ -1,0 +1,50 @@
+<python>
+all_queries: list[CityRanges] = [
+  CityRanges(
+    city_range_list=[
+      CityRange(
+        airports=[Airport.YVR],
+        departure_date_range=DateRange(
+          earliest=datetime.date(2026, 2, 17),
+          latest=datetime.date(2026, 2, 17),
+        ),
+      ),
+      CityRange(
+        airports=[Airport.JFK, Airport.LGA, Airport.EWR],
+        min_stay_hours=2 * 24, # 2 nights
+        max_stay_hours=2 * 24, # 2 nights
+        departure_date_range=DateRange(
+          earliest=datetime.date(2026, 2, 19),
+          latest=datetime.date(2026, 2, 19),
+        ),
+      ),
+      CityRange(
+        airports=[Airport.YVR],
+      ),
+    ]
+  ),
+  CityRanges(
+    city_range_list=[
+      CityRange(
+        airports=[Airport.YVR],
+        departure_date_range=DateRange(
+          earliest=datetime.date(2026, 2, 17),
+          latest=datetime.date(2026, 2, 17),
+        ),
+      ),
+      CityRange(
+        airports=[Airport.YYZ, Airport.YTZ],
+        min_stay_hours=2 * 24, # 2 nights
+        max_stay_hours=2 * 24, # 2 nights
+        departure_date_range=DateRange(
+          earliest=datetime.date(2026, 2, 19),
+          latest=datetime.date(2026, 2, 19),
+        ),
+      ),
+      CityRange(
+        airports=[Airport.YVR],
+      ),
+    ]
+  ),
+]
+</python>

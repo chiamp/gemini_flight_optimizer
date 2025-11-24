@@ -1,0 +1,14 @@
+total_price	total_flight_hours	total_layover_hours	total_num_stops	departure_datetime	returning_datetime	start_city	end_city	stopover_cities	formatted_string
+219.0	9.7	0.0	0	2026-02-17T10:20:00	2026-02-19T20:02:00	Vancouver	Vancouver	['Toronto']	"2026-02-17 10:20:00 - 2026-02-19 20:02:00 | $219.0 | 9 hr 42 min
+
+Vancouver | START
+
+[FLIGHT 1]: $149.0 | 4 hr 35 min | 0 stops | ONE_WAY
+[LEG 1]: 2026-02-17 10:20:00 - 2026-02-17 17:55:00 | YVR-YYZ | 4 hr 35 min | AC 108 | Air Canada
+
+Toronto | 2 days
+
+[FLIGHT 2]: $70.0 | 5 hr 7 min | 0 stops | ONE_WAY
+[LEG 1]: 2026-02-19 17:55:00 - 2026-02-19 20:02:00 | YYZ-YVR | 5 hr 7 min | AC 119 | Air Canada
+
+Vancouver | END"

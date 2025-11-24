@@ -1,0 +1,88 @@
+<python>
+all_queries: list[CityRanges] = [
+  CityRanges(
+    city_range_list=[
+      CityRange(
+        airports=[Airport.LHR, Airport.LGW, Airport.STN, Airport.LTN, Airport.LCY],
+        departure_date_range=DateRange(
+          earliest=datetime.date(2025, 12, 19),
+          latest=datetime.date(2025, 12, 21),
+        ),
+        departure_flight_filter=DepartureFlightFilter(
+          stops=MaxStops.NON_STOP,
+          price_limit=PriceLimit(max_price=1200),
+        ),
+      ),
+      CityRange(
+        airports=[Airport.YTZ, Airport.YYZ],
+        departure_date_range=DateRange(
+          earliest=datetime.date(2025, 12, 27),
+          latest=datetime.date(2025, 12, 28),
+        ),
+        departure_flight_filter=DepartureFlightFilter(
+          stops=MaxStops.NON_STOP,
+          price_limit=PriceLimit(max_price=850),
+        ),
+      ),
+      CityRange(
+        airports=[Airport.SFO, Airport.OAK],
+        departure_date_range=DateRange(
+          earliest=datetime.date(2025, 12, 29),
+          latest=datetime.date(2025, 12, 30),
+        ),
+        departure_flight_filter=DepartureFlightFilter(
+          stops=MaxStops.NON_STOP,
+          price_limit=PriceLimit(max_price=500),
+        ),
+      ),
+      CityRange(
+        airports=[Airport.HNL],
+        departure_date_range=DateRange(
+          earliest=datetime.date(2026, 1, 1),
+          latest=datetime.date(2026, 1, 2),
+        ),
+        departure_flight_filter=DepartureFlightFilter(
+          stops=MaxStops.NON_STOP,
+          price_limit=PriceLimit(max_price=500),
+        ),
+      ),
+      CityRange(
+        airports=[Airport.KOA, Airport.ITO],
+        departure_date_range=DateRange(
+          earliest=datetime.date(2026, 1, 5),
+          latest=datetime.date(2026, 1, 6),
+        ),
+        departure_flight_filter=DepartureFlightFilter(
+          stops=MaxStops.NON_STOP,
+          price_limit=PriceLimit(max_price=500),
+        ),
+      ),
+      CityRange(
+        airports=[Airport.SFO, Airport.OAK],
+        departure_date_range=DateRange(
+          earliest=datetime.date(2026, 1, 7),
+          latest=datetime.date(2026, 1, 8),
+        ),
+        departure_flight_filter=DepartureFlightFilter(
+          stops=MaxStops.NON_STOP,
+          price_limit=PriceLimit(max_price=850),
+        ),
+      ),
+      CityRange(
+        airports=[Airport.YTZ, Airport.YYZ],
+        departure_date_range=DateRange(
+          earliest=datetime.date(2026, 1, 10),
+          latest=datetime.date(2026, 1, 10),
+        ),
+        departure_flight_filter=DepartureFlightFilter(
+          stops=MaxStops.NON_STOP,
+          price_limit=PriceLimit(max_price=1200),
+        ),
+      ),
+      CityRange(
+        airports=[Airport.LHR, Airport.LGW, Airport.STN, Airport.LTN, Airport.LCY],
+      ),
+    ]
+  ),
+]
+</python>
