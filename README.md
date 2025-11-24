@@ -7,13 +7,12 @@ See the example prompts in `example_prompts/` for inspiration.
 
 ## Table of Contents
 * [Main features](#main-features)
-* [How it works (at a high level)](##how-it-works-at-a-high-level)
+* [How it works (at a high level)](#how-it-works-at-a-high-level)
 * [Video demos](#video-demos)
   * [Single query](#single-query)
   * [Single query with clarification](#single-query-with-clarification)
   * [Multi query with modification](#multi-query-with-modification)
 * [Setup instructions](#setup-instructions)
-  * [Examples](#examples)
 * [Main menu commands](#main-menu-commands)
 * [Token limit](#token-limit)
 * [File structure](#file-structure)
