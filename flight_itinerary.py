@@ -367,8 +367,8 @@ def generate_flight_itineraries(list_flight_infos: list[list[FlightInfo]], min_s
   if len(list_flight_infos) == 1:
     return [FlightItinerary(flight_infos=flight_infos) for flight_infos in list_flight_infos]
 
-  # TODO: find a way to memoize this (probably will have to change the FlightInfo dataclass so that it doesn't inherit from `FlightResult` so that it can be hashed).
-  def _recurse(prev_flight_info: FlightInfo, round_trip_departing_flight_ids: set[str], flight_infos_index: int) -> list[list[FlightInfo]]:
+  @functools.cache
+  def _recurse(prev_flight_info: FlightInfo, round_trip_departing_flight_ids_tuple: tuple[str, ...], flight_infos_index: int) -> list[list[FlightInfo]]:
     '''Recursive helper function.
 
     `flight_infos_index` denotes what current flight in the overall trip we are trying to add to our current itinerary.
@@ -382,6 +382,8 @@ def generate_flight_itineraries(list_flight_infos: list[list[FlightInfo]], min_s
     e.g. list[FlightInfo] contains [flight_a_to_b_1, flight_b_to_c_1, flight_c_to_d_1, ...],
          and the next list[FlightInfo] contains [flight_a_to_b_2, flight_b_to_c_1, flight_c_to_d_1, ...]
     '''
+    # Need a sorted tuple so that it can be hashed for memoization, but within the function call, use it as a set.
+    round_trip_departing_flight_ids = set(round_trip_departing_flight_ids_tuple)
 
     if prev_flight_info.flight_type == FlightType.ROUND_TRIP_DEPARTING:
       round_trip_departing_flight_ids = round_trip_departing_flight_ids.union([prev_flight_info.id])
@@ -429,7 +431,11 @@ def generate_flight_itineraries(list_flight_infos: list[list[FlightInfo]], min_s
           # Otherwise we have a valid itinerary.
           list_child_flight_itineraries: list[list[FlightInfo]] = [[next_flight_info]]
         else:  # continue recursing to the next flight in the trip
-          list_child_flight_itineraries: list[list[FlightInfo]] = _recurse(next_flight_info, child_round_trip_departing_flight_ids, flight_infos_index+1)
+          list_child_flight_itineraries: list[list[FlightInfo]] = _recurse(
+            next_flight_info,
+            tuple(sorted(child_round_trip_departing_flight_ids)),
+            flight_infos_index+1
+          )
 
         # Aggregate all flight results and generate all possible flight itineraries.
         for child_flight_itinerary in list_child_flight_itineraries:
@@ -441,7 +447,7 @@ def generate_flight_itineraries(list_flight_infos: list[list[FlightInfo]], min_s
   for starting_flight_info in list_flight_infos[0]:
     list_child_flight_itineraries: list[list[FlightInfo]] = _recurse(
       starting_flight_info,
-      round_trip_departing_flight_ids=set(),
+      round_trip_departing_flight_ids_tuple=tuple(),
       flight_infos_index=1,
     )
     for child_flight_itinerary in list_child_flight_itineraries:

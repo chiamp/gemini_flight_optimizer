@@ -51,6 +51,19 @@ class FlightLeg:
   arrival_datetime: datetime.datetime
   duration: PositiveInt  # in minutes
 
+  def __hash__(self) -> int:
+    return hash(
+      (
+        self.airline,
+        self.flight_number,
+        self.departure_airport,
+        self.arrival_airport,
+        self.departure_datetime,
+        self.arrival_datetime,
+        self.duration,
+      )
+    )
+
   def to_dict(self) -> dict[str, str | int]:
     return {
       'airline': self.airline.value,
@@ -96,6 +109,18 @@ class FlightInfo:
       assert self.parent_ids
     else:
       assert not self.parent_ids
+
+  def __hash__(self) -> int:
+    return hash(
+      (
+        tuple(hash(leg) for leg in self.legs),
+        self.price,
+        self.duration,
+        self.stops,
+        self.flight_type,
+        tuple(sorted(self.parent_ids)),  # canonical representation
+      )
+    )
 
   @functools.cached_property
   def id(self) -> str:
@@ -287,24 +312,29 @@ def search_flights(flight_query: FlightSearchFilters) -> tuple[tuple[list[Flight
 
     if isinstance(flight_result, tuple):  # round-trip query
       departing_flight_result, returning_flight_result = flight_result
+      max_price = max(departing_flight_result.price, returning_flight_result.price)
+
       departing_flight = FlightInfo.from_flight_result(
         flight_result=departing_flight_result,
         flight_type=FlightType.ROUND_TRIP_DEPARTING,
       )
+      # Reset prices for round-trips before using their ids and caching them (which is dependent on price).
+      departing_flight.price = 0.0
+
       returning_flight = FlightInfo.from_flight_result(
         flight_result=returning_flight_result,
         flight_type=FlightType.ROUND_TRIP_RETURNING,
+        parent_ids=[departing_flight.id],
       )
-
       # Reset prices for round-trips before using their ids and caching them (which is dependent on price).
-      returning_flight.price = max(departing_flight.price, returning_flight.price)
-      departing_flight.price = 0.0
+      returning_flight.price = max_price
 
+      # No point in adding duplicate flights
+      # (which can happen for round-trip queries since it will give you every combination of returning flight for the same departing flight).
       if departing_flight.id not in departing_flights:
         departing_flights[departing_flight.id] = departing_flight
       if returning_flight.id not in returning_flights:
         returning_flights[returning_flight.id] = returning_flight
-      returning_flights[returning_flight.id].parent_ids.append(departing_flight.id)
 
     else:  # one-way query
       flight = FlightInfo.from_flight_result(

@@ -186,6 +186,55 @@ class CityRange:
 
   departure_flight_filter: DepartureFlightFilter = dataclasses.field(default_factory=DepartureFlightFilter)
 
+  def __post_init__(self):
+    if (
+      (self.arrival_date_range is not None)
+      and (self.arrival_date_range.latest is not None)
+      and (self.departure_date_range is not None)
+      and (self.departure_date_range.earliest is not None)
+    ):
+      if (
+        (self.arrival_time_range is not None)
+        and (self.arrival_time_range.latest is not None)
+        and (self.departure_time_range is not None)
+        and (self.departure_time_range.earliest is not None)
+      ):
+        shortest_stay_hours = (
+          datetime.datetime.combine(self.departure_date_range.earliest, self.departure_time_range.earliest)
+          - datetime.datetime.combine(self.arrival_date_range.latest, self.arrival_time_range.latest)
+        ).total_seconds() / 3600
+      else:
+        shortest_stay_hours = (self.departure_date_range.earliest - self.arrival_date_range.latest).total_seconds() / 3600
+    else:
+      shortest_stay_hours = None
+
+    if (shortest_stay_hours is not None) and (self.max_stay_hours is not None) and (shortest_stay_hours > self.max_stay_hours):
+      raise ValueError(f'`max_stay_hours` is set to {self.max_stay_hours} hours but the shortest possible stay is {shortest_stay_hours} hours given the datetime constraints.')
+
+    if (
+      (self.arrival_date_range is not None)
+      and (self.arrival_date_range.earliest is not None)
+      and (self.departure_date_range is not None)
+      and (self.departure_date_range.latest is not None)
+    ):
+      if (
+        (self.arrival_time_range is not None)
+        and (self.arrival_time_range.earliest is not None)
+        and (self.departure_time_range is not None)
+        and (self.departure_time_range.latest is not None)
+      ):
+        longest_stay_hours = (
+          datetime.datetime.combine(self.departure_date_range.latest, self.departure_time_range.latest)
+          - datetime.datetime.combine(self.arrival_date_range.earliest, self.arrival_time_range.earliest)
+        ).total_seconds() / 3600
+      else:
+        longest_stay_hours = (self.departure_date_range.latest - self.arrival_date_range.earliest).total_seconds() / 3600
+    else:
+      longest_stay_hours = None
+
+    if (longest_stay_hours is not None) and (self.min_stay_hours is not None) and (longest_stay_hours < self.min_stay_hours):
+      raise ValueError(f'`min_stay_hours` is set to {self.min_stay_hours} hours but the longest possible stay is {longest_stay_hours} hours given the datetime constraints.')
+
   def __str__(self) -> str:
     airports_component = '[' + ', '.join(convert_list_enum_to_canonical_tuple_str(self.airports)) + ']'
 

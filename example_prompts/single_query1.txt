@@ -1,0 +1,2 @@
+Find me flights from Vancouver to NYC, departing December 3rd and returning December 6th back to Vancouver.
+These must be non-stop flights.

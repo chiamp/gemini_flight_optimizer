@@ -26,7 +26,14 @@ If you want to ask for clarification, state your clarification questions within 
 
 If you are ready to generate the flight travel queries, then you should instantiate a `list[CityRanges]` variable called `all_queries` and put all queries in that list.
 IMPORTANT: Every `CityRange` (except the last `CityRange` denoting the end city) must have a non-null `departure_date_range` value, since we need to know which departure dates to search flights for that are departing from this city.
-Put this Python code within the tags <python> and </python>.
+IMPORTANT: Pay special attention to the constraints to see if there's any contradictions or whether the constraints are too tight;
+For example:
+- does the minimum amount of time spent in a city mean it's impossible to reach the next city within a certain date of arrival?
+- do the `min_stay_hours` and/or `max_stay_hours` contradict the `arrival_date_range`, `arrival_time_range` `departure_date_range` and/or `departure_time_range` constraints?
+Another thing to note is if there are too many constraints or the constraints are too restrictive, no valid flights may be found.
+So do keep that in mind, and if you feel like the query the user is asking may lead to 0 valid flights found, you can ask for clarification (remember to put it in the <clarification> and </clarification> tags) to see if they'd be willing to loosen the constraints.
+
+Once you have thought hard enough and are confident in your answer, generate the `all_queries` `list[CityRanges]` variable as Python code, and put it within the tags <python> and </python>.
 
 {get_examples()}'''
 
