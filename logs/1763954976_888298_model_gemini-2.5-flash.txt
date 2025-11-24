@@ -1,0 +1,55 @@
+<python>
+all_queries: list[CityRanges] = [
+  CityRanges(
+    city_range_list=[
+      # Leg 1: London to Japan
+      CityRange(
+        airports=[Airport.LHR, Airport.LGW, Airport.STN, Airport.LTN, Airport.LCY],
+        departure_date_range=DateRange(
+          earliest=datetime.date(2025, 12, 13),
+          latest=datetime.date(2025, 12, 14),
+        ),
+        departure_flight_filter=DepartureFlightFilter(
+          stops=MaxStops.NON_STOP,
+        ),
+      ),
+      # Leg 2: Japan to Dubai
+      CityRange(
+        airports=[Airport.NRT, Airport.HND, Airport.KIX, Airport.FUK, Airport.CTS], # Major international airports in Japan
+        min_stay_hours=7 * 24, # User states "i'll be in japan for a week."
+        max_stay_hours=7 * 24, # Assuming "a week" implies a fixed duration
+        departure_date_range=DateRange(
+          # If departing London Dec 13, arrive Japan Dec 13 (non-stop), stay 7 days -> depart Japan Dec 20.
+          # If departing London Dec 14, arrive Japan Dec 14 (non-stop), stay 7 days -> depart Japan Dec 21.
+          earliest=datetime.date(2025, 12, 20),
+          latest=datetime.date(2025, 12, 21),
+        ),
+        departure_flight_filter=DepartureFlightFilter(
+          stops=MaxStops.NON_STOP,
+        ),
+      ),
+      # Leg 3: Dubai to London
+      CityRange(
+        airports=[Airport.DXB, Airport.DWC],
+        # Minimum stay in Dubai: Arrive latest (Dec 21), depart earliest (Jan 2).
+        # Dec 21 to Dec 31 (inclusive) = 11 days. Jan 1 to Jan 2 (inclusive) = 2 days. Total = 13 days = 312 hours.
+        min_stay_hours=312,
+        # Maximum stay in Dubai: Arrive earliest (Dec 20), depart latest (Jan 6).
+        # Dec 20 to Dec 31 (inclusive) = 12 days. Jan 1 to Jan 6 (inclusive) = 6 days. Total = 18 days = 432 hours.
+        max_stay_hours=432,
+        departure_date_range=DateRange(
+          earliest=datetime.date(2026, 1, 2), # Interpreting "a few days after new years" as Jan 2nd onwards
+          latest=datetime.date(2026, 1, 6),   # Setting an arbitrary end to "a few days" (Jan 2, 3, 4, 5, 6)
+        ),
+        departure_flight_filter=DepartureFlightFilter(
+          stops=MaxStops.NON_STOP,
+        ),
+      ),
+      # Final Destination: London
+      CityRange(
+        airports=[Airport.LHR, Airport.LGW, Airport.STN, Airport.LTN, Airport.LCY],
+      ),
+    ]
+  ),
+]
+</python>

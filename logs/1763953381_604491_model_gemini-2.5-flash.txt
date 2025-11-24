@@ -1,0 +1,169 @@
+```python
+all_queries: list[CityRanges] = [
+  # Query 1: London -> Toronto -> San Francisco -> Oahu -> Maui -> Big Island -> San Francisco -> Toronto -> London
+  CityRanges(
+    city_range_list=[
+      CityRange(
+        airports=[Airport.LHR, Airport.LGW, Airport.STN, Airport.LTN, Airport.LCY],
+        departure_date_range=DateRange(
+          earliest=datetime.date(2025, 12, 19),
+          latest=datetime.date(2025, 12, 21),
+        ),
+        departure_flight_filter=DepartureFlightFilter(stops=MaxStops.NON_STOP),
+      ),
+      CityRange(
+        airports=[Airport.YTZ, Airport.YYZ],
+        # Min stay in Toronto is implicitly handled by the date ranges (arrival from London between Dec 19-21, departure for SF between Dec 27-29).
+        departure_date_range=DateRange(
+          earliest=datetime.date(2025, 12, 27),
+          latest=datetime.date(2025, 12, 29),
+        ),
+        departure_flight_filter=DepartureFlightFilter(stops=MaxStops.NON_STOP),
+      ),
+      CityRange(
+        airports=[Airport.SFO, Airport.OAK],
+        min_stay_hours=24,  # "spend minimum one night in San Francisco"
+        departure_date_range=DateRange(
+          earliest=datetime.date(2025, 12, 29),
+          latest=datetime.date(2025, 12, 30),
+        ),
+        departure_flight_filter=DepartureFlightFilter(stops=MaxStops.NON_STOP),
+      ),
+      CityRange(
+        airports=[Airport.HNL],  # Oahu
+        min_stay_hours=48,  # "spend a few days on Oahu" and "depart from Oahu a few days later" implies at least 2 full days.
+        departure_date_range=DateRange(
+          earliest=datetime.date(2026, 1, 1),  # If SFO-Oahu is Dec 29, arrive Dec 29, depart Jan 1 (2 full days)
+          latest=datetime.date(2026, 1, 2),  # If SFO-Oahu is Dec 30, arrive Dec 30, depart Jan 2 (2 full days)
+        ),
+        departure_flight_filter=DepartureFlightFilter(stops=MaxStops.NON_STOP),
+      ),
+      CityRange(
+        airports=[Airport.OGG, Airport.JHM],  # Maui
+        min_stay_hours=48,  # "spend a few days on Maui" (min 2 days to distribute stay evenly)
+        departure_date_range=DateRange(
+          earliest=datetime.date(2026, 1, 3),  # If Oahu-Maui is Jan 1, arrive Jan 1, depart Jan 3 (2 full days)
+          latest=datetime.date(2026, 1, 4),  # If Oahu-Maui is Jan 2, arrive Jan 2, depart Jan 4 (2 full days)
+        ),
+        departure_flight_filter=DepartureFlightFilter(stops=MaxStops.NON_STOP),
+      ),
+      CityRange(
+        airports=[Airport.KOA, Airport.ITO],  # Big Island
+        min_stay_hours=24,  # "spend a few days on Big Island" (reduced to 1 day as per clarification to fit timeline)
+        departure_date_range=DateRange(
+          earliest=datetime.date(2026, 1, 4),  # If Maui-BI is Jan 3, arrive Jan 3, depart Jan 4 (1 full day)
+          latest=datetime.date(2026, 1, 8),  # Latest departure for HI->SF to ensure SFO arrival by Jan 8 (for SF stay and SFO->Toronto by Jan 9)
+        ),
+        departure_flight_filter=DepartureFlightFilter(stops=MaxStops.NON_STOP),
+      ),
+      CityRange(
+        airports=[Airport.SFO, Airport.OAK],
+        min_stay_hours=24,  # "stay in San francisco 1-2 days"
+        max_stay_hours=48,
+        departure_date_range=DateRange(
+          earliest=datetime.date(2026, 1, 7), # Earliest departure from last Hawaiian island is Jan 4. Earliest SFO arrival from Hawaii is Jan 4. With 1 day stay, earliest SF departure is Jan 5. However, user specified SF-Toronto departure between Jan 7-9.
+          latest=datetime.date(2026, 1, 9),  # Latest depart from SFO is Jan 9 to arrive Toronto Jan 9, allow 2 days Toronto stay, and depart Jan 11 for London
+        ),
+        departure_flight_filter=DepartureFlightFilter(stops=MaxStops.NON_STOP),
+      ),
+      CityRange(
+        airports=[Airport.YTZ, Airport.YYZ],
+        min_stay_hours=48,  # "spend two days in Toronto"
+        departure_date_range=DateRange(
+          earliest=datetime.date(2026, 1, 9),  # If SFO-Toronto is Jan 7, arrive Jan 7, depart Jan 9.
+          latest=datetime.date(2026, 1, 11),  # If SFO-Toronto is Jan 9, arrive Jan 9, depart Jan 11.
+        ),
+        departure_flight_filter=DepartureFlightFilter(stops=MaxStops.NON_STOP),
+      ),
+      CityRange(
+        airports=[Airport.LHR, Airport.LGW, Airport.STN, Airport.LTN, Airport.LCY],
+        arrival_date_range=DateRange(
+          latest=datetime.date(2026, 1, 11),  # "arrive by latest Jan 11"
+        ),
+      ),
+    ]
+  ),
+  # Query 2: London -> Toronto -> San Francisco -> Oahu -> Big Island -> Maui -> San Francisco -> Toronto -> London
+  CityRanges(
+    city_range_list=[
+      CityRange(
+        airports=[Airport.LHR, Airport.LGW, Airport.STN, Airport.LTN, Airport.LCY],
+        departure_date_range=DateRange(
+          earliest=datetime.date(2025, 12, 19),
+          latest=datetime.date(2025, 12, 21),
+        ),
+        departure_flight_filter=DepartureFlightFilter(stops=MaxStops.NON_STOP),
+      ),
+      CityRange(
+        airports=[Airport.YTZ, Airport.YYZ],
+        departure_date_range=DateRange(
+          earliest=datetime.date(2025, 12, 27),
+          latest=datetime.date(2025, 12, 29),
+        ),
+        departure_flight_filter=DepartureFlightFilter(stops=MaxStops.NON_STOP),
+      ),
+      CityRange(
+        airports=[Airport.SFO, Airport.OAK],
+        min_stay_hours=24,  # "spend minimum one night in San Francisco"
+        departure_date_range=DateRange(
+          earliest=datetime.date(2025, 12, 29),
+          latest=datetime.date(2025, 12, 30),
+        ),
+        departure_flight_filter=DepartureFlightFilter(stops=MaxStops.NON_STOP),
+      ),
+      CityRange(
+        airports=[Airport.HNL],  # Oahu
+        min_stay_hours=48,  # "spend a few days on Oahu" and "depart from Oahu a few days later" implies at least 2 full days.
+        departure_date_range=DateRange(
+          earliest=datetime.date(2026, 1, 1),  # If SFO-Oahu is Dec 29, arrive Dec 29, depart Jan 1 (2 full days)
+          latest=datetime.date(2026, 1, 2),  # If SFO-Oahu is Dec 30, arrive Dec 30, depart Jan 2 (2 full days)
+        ),
+        departure_flight_filter=DepartureFlightFilter(stops=MaxStops.NON_STOP),
+      ),
+      CityRange(
+        airports=[Airport.KOA, Airport.ITO],  # Big Island
+        min_stay_hours=48,  # "spend a few days on Big Island" (min 2 days to distribute stay evenly)
+        departure_date_range=DateRange(
+          earliest=datetime.date(2026, 1, 3),  # If Oahu-BI is Jan 1, arrive Jan 1, depart Jan 3 (2 full days)
+          latest=datetime.date(2026, 1, 4),  # If Oahu-BI is Jan 2, arrive Jan 2, depart Jan 4 (2 full days)
+        ),
+        departure_flight_filter=DepartureFlightFilter(stops=MaxStops.NON_STOP),
+      ),
+      CityRange(
+        airports=[Airport.OGG, Airport.JHM],  # Maui
+        min_stay_hours=24,  # "spend a few days on Maui" (reduced to 1 day as per clarification to fit timeline)
+        departure_date_range=DateRange(
+          earliest=datetime.date(2026, 1, 4),  # If BI-Maui is Jan 3, arrive Jan 3, depart Jan 4 (1 full day)
+          latest=datetime.date(2026, 1, 8),  # Latest departure for HI->SF to ensure SFO arrival by Jan 8 (for SF stay and SFO->Toronto by Jan 9)
+        ),
+        departure_flight_filter=DepartureFlightFilter(stops=MaxStops.NON_STOP),
+      ),
+      CityRange(
+        airports=[Airport.SFO, Airport.OAK],
+        min_stay_hours=24,  # "stay in San francisco 1-2 days"
+        max_stay_hours=48,
+        departure_date_range=DateRange(
+          earliest=datetime.date(2026, 1, 7),
+          latest=datetime.date(2026, 1, 9),  # Latest depart from SFO is Jan 9 to arrive Toronto Jan 9, allow 2 days Toronto stay, and depart Jan 11 for London
+        ),
+        departure_flight_filter=DepartureFlightFilter(stops=MaxStops.NON_STOP),
+      ),
+      CityRange(
+        airports=[Airport.YTZ, Airport.YYZ],
+        min_stay_hours=48,  # "spend two days in Toronto"
+        departure_date_range=DateRange(
+          earliest=datetime.date(2026, 1, 9),  # If SFO-Toronto is Jan 7, arrive Jan 7, depart Jan 9.
+          latest=datetime.date(2026, 1, 11),  # If SFO-Toronto is Jan 9, arrive Jan 9, depart Jan 11.
+        ),
+        departure_flight_filter=DepartureFlightFilter(stops=MaxStops.NON_STOP),
+      ),
+      CityRange(
+        airports=[Airport.LHR, Airport.LGW, Airport.STN, Airport.LTN, Airport.LCY],
+        arrival_date_range=DateRange(
+          latest=datetime.date(2026, 1, 11),  # "arrive by latest Jan 11"
+        ),
+      ),
+    ]
+  ),
+]
+```

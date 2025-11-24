@@ -1,0 +1,190 @@
+```python
+all_queries: list[CityRanges] = [
+  CityRanges(
+    city_range_list=[
+      CityRange(
+        airports=[Airport.LHR, Airport.LGW, Airport.STN, Airport.LTN, Airport.LCY],
+        departure_date_range=DateRange(
+          earliest=datetime.date(2025, 12, 19),
+          latest=datetime.date(2025, 12, 21),
+        ),
+        departure_flight_filter=DepartureFlightFilter(stops=MaxStops.NON_STOP),
+      ),
+      CityRange(
+        airports=[Airport.YTZ, Airport.YYZ],
+        departure_date_range=DateRange(
+          earliest=datetime.date(2025, 12, 27),
+          latest=datetime.date(2025, 12, 29),
+        ),
+        departure_flight_filter=DepartureFlightFilter(stops=MaxStops.NON_STOP),
+      ),
+      CityRange(
+        airports=[Airport.SFO, Airport.OAK],
+        min_stay_hours=24, # "spend minimum one night in San Francisco"
+        # To meet the "arrive London by latest Jan 11" constraint, the flight from SF to Oahu must depart on Dec 29.
+        departure_date_range=DateRange(
+          earliest=datetime.date(2025, 12, 29),
+          latest=datetime.date(2025, 12, 29),
+        ),
+        departure_flight_filter=DepartureFlightFilter(stops=MaxStops.NON_STOP),
+      ),
+      CityRange(
+        airports=[Airport.HNL], # Oahu
+        # User wants to depart Oahu "a few days later". Given the overall trip duration, 3 nights (72 hours) for Oahu works best.
+        min_stay_hours=72,
+        # With arrival on Oahu on Dec 29, and a minimum of 3 nights, earliest departure is Jan 1.
+        # This allows 3 nights on Oahu, plus 5 nights for the other two Hawaiian islands (total 8 nights in Hawaii, departing Jan 7).
+        departure_date_range=DateRange(
+          earliest=datetime.date(2026, 1, 1),
+          latest=datetime.date(2026, 1, 1),
+        ),
+        departure_flight_filter=DepartureFlightFilter(stops=MaxStops.NON_STOP),
+      ),
+      CityRange(
+        airports=[Airport.OGG], # Maui (assuming Oahu -> Maui -> Big Island route)
+        # User wants to "spend a few days on Oahu, Maui and Big Island each", adjusted for total duration.
+        # This implies min 2 nights (48 hours) for Maui in this path (with 3 nights for Oahu and Big Island getting 2/3 nights).
+        min_stay_hours=48,
+        # Based on Oahu departure on Jan 1, and 2-3 nights on Maui, departure could be Jan 3-4.
+        departure_date_range=DateRange(
+          earliest=datetime.date(2026, 1, 3),
+          latest=datetime.date(2026, 1, 4),
+        ),
+        departure_flight_filter=DepartureFlightFilter(stops=MaxStops.NON_STOP),
+      ),
+      CityRange(
+        airports=[Airport.KOA, Airport.ITO], # Big Island (final Hawaiian island in this route)
+        # Min 2 nights (48 hours) on Big Island.
+        min_stay_hours=48,
+        # To meet the "arrive London by latest Jan 11" constraint, the flight from Hawaii to San Francisco must depart on Jan 7.
+        departure_date_range=DateRange(
+          earliest=datetime.date(2026, 1, 7),
+          latest=datetime.date(2026, 1, 7),
+        ),
+        departure_flight_filter=DepartureFlightFilter(stops=MaxStops.NON_STOP),
+      ),
+      CityRange(
+        airports=[Airport.SFO, Airport.OAK],
+        min_stay_hours=24,  # "stay in San Francisco 1-2 days"
+        max_stay_hours=48,
+        # To meet the "arrive London by latest Jan 11" constraint, the flight from San Francisco to Toronto must depart on Jan 8.
+        departure_date_range=DateRange(
+          earliest=datetime.date(2026, 1, 8),
+          latest=datetime.date(2026, 1, 8),
+        ),
+        departure_flight_filter=DepartureFlightFilter(stops=MaxStops.NON_STOP),
+      ),
+      CityRange(
+        airports=[Airport.YTZ, Airport.YYZ],
+        min_stay_hours=48,  # User adjusted to "spend two days in Toronto"
+        # To meet the "arrive London by latest Jan 11" constraint, the flight from Toronto to London must depart on Jan 10.
+        departure_date_range=DateRange(
+          earliest=datetime.date(2026, 1, 10),
+          latest=datetime.date(2026, 1, 10),
+        ),
+        departure_flight_filter=DepartureFlightFilter(stops=MaxStops.NON_STOP),
+      ),
+      CityRange(
+        airports=[Airport.LHR, Airport.LGW, Airport.STN, Airport.LTN, Airport.LCY],
+        arrival_date_range=DateRange(
+          earliest=None,
+          latest=datetime.date(2026, 1, 11), # "arrive by latest Jan 11"
+        ),
+      ),
+    ]
+  ),
+  CityRanges(
+    city_range_list=[
+      CityRange(
+        airports=[Airport.LHR, Airport.LGW, Airport.STN, Airport.LTN, Airport.LCY],
+        departure_date_range=DateRange(
+          earliest=datetime.date(2025, 12, 19),
+          latest=datetime.date(2025, 12, 21),
+        ),
+        departure_flight_filter=DepartureFlightFilter(stops=MaxStops.NON_STOP),
+      ),
+      CityRange(
+        airports=[Airport.YTZ, Airport.YYZ],
+        departure_date_range=DateRange(
+          earliest=datetime.date(2025, 12, 27),
+          latest=datetime.date(2025, 12, 29),
+        ),
+        departure_flight_filter=DepartureFlightFilter(stops=MaxStops.NON_STOP),
+      ),
+      CityRange(
+        airports=[Airport.SFO, Airport.OAK],
+        min_stay_hours=24, # "spend minimum one night in San Francisco"
+        # To meet the "arrive London by latest Jan 11" constraint, the flight from SF to Oahu must depart on Dec 29.
+        departure_date_range=DateRange(
+          earliest=datetime.date(2025, 12, 29),
+          latest=datetime.date(2025, 12, 29),
+        ),
+        departure_flight_filter=DepartureFlightFilter(stops=MaxStops.NON_STOP),
+      ),
+      CityRange(
+        airports=[Airport.HNL], # Oahu
+        # User wants to depart Oahu "a few days later". Given the overall trip duration, 3 nights (72 hours) for Oahu works best.
+        min_stay_hours=72,
+        # With arrival on Oahu on Dec 29, and a minimum of 3 nights, earliest departure is Jan 1.
+        # This allows 3 nights on Oahu, plus 5 nights for the other two Hawaiian islands (total 8 nights in Hawaii, departing Jan 7).
+        departure_date_range=DateRange(
+          earliest=datetime.date(2026, 1, 1),
+          latest=datetime.date(2026, 1, 1),
+        ),
+        departure_flight_filter=DepartureFlightFilter(stops=MaxStops.NON_STOP),
+      ),
+      CityRange(
+        airports=[Airport.KOA, Airport.ITO], # Big Island (assuming Oahu -> Big Island -> Maui route)
+        # User wants to "spend a few days on Oahu, Maui and Big Island each", adjusted for total duration.
+        # This implies min 2 nights (48 hours) for Big Island in this path (with 3 nights for Oahu and Maui getting 2/3 nights).
+        min_stay_hours=48,
+        # Based on Oahu departure on Jan 1, and 2-3 nights on Big Island, departure could be Jan 3-4.
+        departure_date_range=DateRange(
+          earliest=datetime.date(2026, 1, 3),
+          latest=datetime.date(2026, 1, 4),
+        ),
+        departure_flight_filter=DepartureFlightFilter(stops=MaxStops.NON_STOP),
+      ),
+      CityRange(
+        airports=[Airport.OGG], # Maui (final Hawaiian island in this route)
+        # Min 2 nights (48 hours) on Maui.
+        min_stay_hours=48,
+        # To meet the "arrive London by latest Jan 11" constraint, the flight from Hawaii to San Francisco must depart on Jan 7.
+        departure_date_range=DateRange(
+          earliest=datetime.date(2026, 1, 7),
+          latest=datetime.date(2026, 1, 7),
+        ),
+        departure_flight_filter=DepartureFlightFilter(stops=MaxStops.NON_STOP),
+      ),
+      CityRange(
+        airports=[Airport.SFO, Airport.OAK],
+        min_stay_hours=24,  # "stay in San Francisco 1-2 days"
+        max_stay_hours=48,
+        # To meet the "arrive London by latest Jan 11" constraint, the flight from San Francisco to Toronto must depart on Jan 8.
+        departure_date_range=DateRange(
+          earliest=datetime.date(2026, 1, 8),
+          latest=datetime.date(2026, 1, 8),
+        ),
+        departure_flight_filter=DepartureFlightFilter(stops=MaxStops.NON_STOP),
+      ),
+      CityRange(
+        airports=[Airport.YTZ, Airport.YYZ],
+        min_stay_hours=48,  # User adjusted to "spend two days in Toronto"
+        # To meet the "arrive London by latest Jan 11" constraint, the flight from Toronto to London must depart on Jan 10.
+        departure_date_range=DateRange(
+          earliest=datetime.date(2026, 1, 10),
+          latest=datetime.date(2026, 1, 10),
+        ),
+        departure_flight_filter=DepartureFlightFilter(stops=MaxStops.NON_STOP),
+      ),
+      CityRange(
+        airports=[Airport.LHR, Airport.LGW, Airport.STN, Airport.LTN, Airport.LCY],
+        arrival_date_range=DateRange(
+          earliest=None,
+          latest=datetime.date(2026, 1, 11), # "arrive by latest Jan 11"
+        ),
+      ),
+    ]
+  ),
+]
+```

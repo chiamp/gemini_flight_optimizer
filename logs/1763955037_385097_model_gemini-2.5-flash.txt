@@ -1,0 +1,3 @@
+<clarification>
+You previously mentioned "i'll be in japan for a week". If I remove the min and max stay hours for Japan, this means your stay there could be shorter or longer than a week, which would also change your potential departure dates from Japan. Do you wish to completely remove the "a week" constraint for Japan, making your stay duration there flexible, or did you mean something else?
+</clarification>

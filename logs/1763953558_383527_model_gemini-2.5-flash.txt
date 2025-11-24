@@ -1,0 +1,168 @@
+```python
+all_queries: list[CityRanges] = [
+  # Query 1: London -> Toronto -> San Francisco -> Oahu -> Maui -> Big Island -> San Francisco -> Toronto -> London
+  CityRanges(
+    city_range_list=[
+      CityRange(
+        airports=[Airport.LHR, Airport.LGW, Airport.STN, Airport.LTN, Airport.LCY],
+        departure_date_range=DateRange(
+          earliest=datetime.date(2025, 12, 19),
+          latest=datetime.date(2025, 12, 21),
+        ),
+        departure_flight_filter=DepartureFlightFilter(stops=MaxStops.NON_STOP),
+      ),
+      CityRange(
+        airports=[Airport.YTZ, Airport.YYZ],
+        departure_date_range=DateRange(
+          earliest=datetime.date(2025, 12, 27),
+          latest=datetime.date(2025, 12, 29),
+        ),
+        departure_flight_filter=DepartureFlightFilter(stops=MaxStops.NON_STOP),
+      ),
+      CityRange(
+        airports=[Airport.SFO, Airport.OAK],
+        min_stay_hours=24,  # "spend minimum one night in San francisco"
+        departure_date_range=DateRange(
+          earliest=datetime.date(2025, 12, 29),
+          latest=datetime.date(2025, 12, 30),
+        ),
+        departure_flight_filter=DepartureFlightFilter(stops=MaxStops.NON_STOP),
+      ),
+      CityRange(
+        airports=[Airport.HNL],  # Oahu
+        min_stay_hours=48,  # "spend a few days on Oahu" (interpreted as 2 full days to fit timeline)
+        departure_date_range=DateRange(
+          earliest=datetime.date(2026, 1, 1),
+          latest=datetime.date(2026, 1, 2),
+        ),
+        departure_flight_filter=DepartureFlightFilter(stops=MaxStops.NON_STOP),
+      ),
+      CityRange(
+        airports=[Airport.OGG, Airport.JHM],  # Maui
+        min_stay_hours=48,  # "spend a few days on Maui" (interpreted as 2 full days to fit timeline)
+        departure_date_range=DateRange(
+          earliest=datetime.date(2026, 1, 4),
+          latest=datetime.date(2026, 1, 5),
+        ),
+        departure_flight_filter=DepartureFlightFilter(stops=MaxStops.NON_STOP),
+      ),
+      CityRange(
+        airports=[Airport.KOA, Airport.ITO],  # Big Island
+        min_stay_hours=48,  # "spend a few days on Big Island" (interpreted as 2 full days to fit timeline)
+        departure_date_range=DateRange(
+          earliest=datetime.date(2026, 1, 7),  # To ensure SFO arrival by Jan 8 for subsequent flights
+          latest=datetime.date(2026, 1, 8),  # To ensure SFO arrival by Jan 8 for subsequent flights
+        ),
+        departure_flight_filter=DepartureFlightFilter(stops=MaxStops.NON_STOP),
+      ),
+      CityRange(
+        airports=[Airport.SFO, Airport.OAK],
+        min_stay_hours=24,  # "stay in San francisco 1-2 days"
+        max_stay_hours=48,
+        departure_date_range=DateRange(
+          earliest=datetime.date(2026, 1, 9),  # Fixed to Jan 9 to allow 2 days in Toronto and London arrival by Jan 11
+          latest=datetime.date(2026, 1, 9),  # Fixed to Jan 9 to allow 2 days in Toronto and London arrival by Jan 11
+        ),
+        departure_flight_filter=DepartureFlightFilter(stops=MaxStops.NON_STOP),
+      ),
+      CityRange(
+        airports=[Airport.YTZ, Airport.YYZ],
+        min_stay_hours=48,  # "spend two days in Toronto"
+        departure_date_range=DateRange(
+          earliest=datetime.date(2026, 1, 11),  # Fixed to Jan 11 to allow London arrival by Jan 11
+          latest=datetime.date(2026, 1, 11),  # Fixed to Jan 11 to allow London arrival by Jan 11
+        ),
+        departure_flight_filter=DepartureFlightFilter(stops=MaxStops.NON_STOP),
+      ),
+      CityRange(
+        airports=[Airport.LHR, Airport.LGW, Airport.STN, Airport.LTN, Airport.LCY],
+        arrival_date_range=DateRange(
+          latest=datetime.date(2026, 1, 11),  # "arrive by latest Jan 11 (or earlier)"
+        ),
+      ),
+    ]
+  ),
+  # Query 2: London -> Toronto -> San Francisco -> Oahu -> Big Island -> Maui -> San Francisco -> Toronto -> London
+  CityRanges(
+    city_range_list=[
+      CityRange(
+        airports=[Airport.LHR, Airport.LGW, Airport.STN, Airport.LTN, Airport.LCY],
+        departure_date_range=DateRange(
+          earliest=datetime.date(2025, 12, 19),
+          latest=datetime.date(2025, 12, 21),
+        ),
+        departure_flight_filter=DepartureFlightFilter(stops=MaxStops.NON_STOP),
+      ),
+      CityRange(
+        airports=[Airport.YTZ, Airport.YYZ],
+        departure_date_range=DateRange(
+          earliest=datetime.date(2025, 12, 27),
+          latest=datetime.date(2025, 12, 29),
+        ),
+        departure_flight_filter=DepartureFlightFilter(stops=MaxStops.NON_STOP),
+      ),
+      CityRange(
+        airports=[Airport.SFO, Airport.OAK],
+        min_stay_hours=24,  # "spend minimum one night in San francisco"
+        departure_date_range=DateRange(
+          earliest=datetime.date(2025, 12, 29),
+          latest=datetime.date(2025, 12, 30),
+        ),
+        departure_flight_filter=DepartureFlightFilter(stops=MaxStops.NON_STOP),
+      ),
+      CityRange(
+        airports=[Airport.HNL],  # Oahu
+        min_stay_hours=48,  # "spend a few days on Oahu" (interpreted as 2 full days to fit timeline)
+        departure_date_range=DateRange(
+          earliest=datetime.date(2026, 1, 1),
+          latest=datetime.date(2026, 1, 2),
+        ),
+        departure_flight_filter=DepartureFlightFilter(stops=MaxStops.NON_STOP),
+      ),
+      CityRange(
+        airports=[Airport.KOA, Airport.ITO],  # Big Island
+        min_stay_hours=48,  # "spend a few days on Big Island" (interpreted as 2 full days to fit timeline)
+        departure_date_range=DateRange(
+          earliest=datetime.date(2026, 1, 4),
+          latest=datetime.date(2026, 1, 5),
+        ),
+        departure_flight_filter=DepartureFlightFilter(stops=MaxStops.NON_STOP),
+      ),
+      CityRange(
+        airports=[Airport.OGG, Airport.JHM],  # Maui
+        min_stay_hours=48,  # "spend a few days on Maui" (interpreted as 2 full days to fit timeline)
+        departure_date_range=DateRange(
+          earliest=datetime.date(2026, 1, 7),  # To ensure SFO arrival by Jan 8 for subsequent flights
+          latest=datetime.date(2026, 1, 8),  # To ensure SFO arrival by Jan 8 for subsequent flights
+        ),
+        departure_flight_filter=DepartureFlightFilter(stops=MaxStops.NON_STOP),
+      ),
+      CityRange(
+        airports=[Airport.SFO, Airport.OAK],
+        min_stay_hours=24,  # "stay in San francisco 1-2 days"
+        max_stay_hours=48,
+        departure_date_range=DateRange(
+          earliest=datetime.date(2026, 1, 9),  # Fixed to Jan 9 to allow 2 days in Toronto and London arrival by Jan 11
+          latest=datetime.date(2026, 1, 9),  # Fixed to Jan 9 to allow 2 days in Toronto and London arrival by Jan 11
+        ),
+        departure_flight_filter=DepartureFlightFilter(stops=MaxStops.NON_STOP),
+      ),
+      CityRange(
+        airports=[Airport.YTZ, Airport.YYZ],
+        min_stay_hours=48,  # "spend two days in Toronto"
+        departure_date_range=DateRange(
+          earliest=datetime.date(2026, 1, 11),  # Fixed to Jan 11 to allow London arrival by Jan 11
+          latest=datetime.date(2026, 1, 11),  # Fixed to Jan 11 to allow London arrival by Jan 11
+        ),
+        departure_flight_filter=DepartureFlightFilter(stops=MaxStops.NON_STOP),
+      ),
+      CityRange(
+        airports=[Airport.LHR, Airport.LGW, Airport.STN, Airport.LTN, Airport.LCY],
+        arrival_date_range=DateRange(
+          latest=datetime.date(2026, 1, 11),  # "arrive by latest Jan 11 (or earlier)"
+        ),
+      ),
+    ]
+  ),
+]
+```

@@ -1,0 +1,410 @@
+```python
+all_queries: list[CityRanges] = [
+  # Original Query 1: London -> Toronto -> San Francisco -> Oahu -> Maui -> Big Island -> San Francisco -> Toronto -> London
+  CityRanges(
+    city_range_list=[
+      CityRange(
+        airports=[Airport.LHR, Airport.LGW, Airport.STN, Airport.LTN, Airport.LCY],
+        departure_date_range=DateRange(
+          earliest=datetime.date(2025, 12, 19),
+          latest=datetime.date(2025, 12, 21),
+        ),
+        departure_flight_filter=DepartureFlightFilter(stops=MaxStops.NON_STOP),
+      ),
+      CityRange(
+        airports=[Airport.YTZ, Airport.YYZ],
+        departure_date_range=DateRange(
+          earliest=datetime.date(2025, 12, 27),
+          latest=datetime.date(2025, 12, 29),
+        ),
+        departure_flight_filter=DepartureFlightFilter(stops=MaxStops.NON_STOP),
+      ),
+      CityRange(
+        airports=[Airport.SFO, Airport.OAK],
+        min_stay_hours=24,  # "spend minimum one night in San francisco" before Hawaii
+        # To meet the "arrive London by latest Jan 11" constraint, the flight from SF to Hawaii must depart on Dec 29.
+        # This allows 9 nights across Oahu, Maui, Big Island.
+        departure_date_range=DateRange(
+          earliest=datetime.date(2025, 12, 29),
+          latest=datetime.date(2025, 12, 29),
+        ),
+        departure_flight_filter=DepartureFlightFilter(stops=MaxStops.NON_STOP),
+      ),
+      CityRange(
+        airports=[Airport.HNL],  # Oahu
+        min_stay_hours=3 * 24,  # "spend a few days on Oahu" (3 nights = Dec 29, 30, 31)
+        # Departing Oahu on Jan 1 means 3 nights in Oahu, allowing for New Year's on Oahu.
+        departure_date_range=DateRange(
+          earliest=datetime.date(2026, 1, 1),
+          latest=datetime.date(2026, 1, 1),
+        ),
+        departure_flight_filter=DepartureFlightFilter(stops=MaxStops.NON_STOP),
+      ),
+      CityRange(
+        airports=[Airport.OGG],  # Maui
+        min_stay_hours=2 * 24,  # "spend a few days on Maui" (2 nights = Jan 1, 2)
+        departure_date_range=DateRange(
+          earliest=datetime.date(2026, 1, 3),
+          latest=datetime.date(2026, 1, 3),
+        ),
+        departure_flight_filter=DepartureFlightFilter(stops=MaxStops.NON_STOP),
+      ),
+      CityRange(
+        airports=[Airport.KOA, Airport.ITO],  # Big Island
+        min_stay_hours=4 * 24,  # "spend a few days on Big Island" (4 nights = Jan 3, 4, 5, 6)
+        # To meet the "arrive London by latest Jan 11" constraint, the flight from Hawaii to San Francisco must depart on Jan 7.
+        departure_date_range=DateRange(
+          earliest=datetime.date(2026, 1, 7),
+          latest=datetime.date(2026, 1, 7),
+        ),
+        departure_flight_filter=DepartureFlightFilter(stops=MaxStops.NON_STOP),
+      ),
+      CityRange(
+        airports=[Airport.SFO, Airport.OAK],
+        min_stay_hours=24,  # "stay in San Francisco 1-2 days"
+        max_stay_hours=48,
+        # To meet the "arrive London by latest Jan 11" constraint, the flight from San Francisco to Toronto must depart on Jan 8.
+        departure_date_range=DateRange(
+          earliest=datetime.date(2026, 1, 8),
+          latest=datetime.date(2026, 1, 8),
+        ),
+        departure_flight_filter=DepartureFlightFilter(stops=MaxStops.NON_STOP),
+      ),
+      CityRange(
+        airports=[Airport.YTZ, Airport.YYZ],
+        min_stay_hours=48,  # User adjusted to "spend two days in Toronto"
+        # To meet the "arrive London by latest Jan 11" constraint, the flight from Toronto to London must depart on Jan 10.
+        departure_date_range=DateRange(
+          earliest=datetime.date(2026, 1, 10),
+          latest=datetime.date(2026, 1, 10),
+        ),
+        departure_flight_filter=DepartureFlightFilter(stops=MaxStops.NON_STOP),
+      ),
+      CityRange(
+        airports=[Airport.LHR, Airport.LGW, Airport.STN, Airport.LTN, Airport.LCY],
+        arrival_date_range=DateRange(
+          earliest=None,
+          latest=datetime.date(2026, 1, 11),  # "arrive by latest Jan 11"
+        ),
+      ),
+    ]
+  ),
+  # Original Query 2: London -> Toronto -> San Francisco -> Oahu -> Big Island -> Maui -> San Francisco -> Toronto -> London
+  CityRanges(
+    city_range_list=[
+      CityRange(
+        airports=[Airport.LHR, Airport.LGW, Airport.STN, Airport.LTN, Airport.LCY],
+        departure_date_range=DateRange(
+          earliest=datetime.date(2025, 12, 19),
+          latest=datetime.date(2025, 12, 21),
+        ),
+        departure_flight_filter=DepartureFlightFilter(stops=MaxStops.NON_STOP),
+      ),
+      CityRange(
+        airports=[Airport.YTZ, Airport.YYZ],
+        departure_date_range=DateRange(
+          earliest=datetime.date(2025, 12, 27),
+          latest=datetime.date(2025, 12, 29),
+        ),
+        departure_flight_filter=DepartureFlightFilter(stops=MaxStops.NON_STOP),
+      ),
+      CityRange(
+        airports=[Airport.SFO, Airport.OAK],
+        min_stay_hours=24,  # "spend minimum one night in San francisco" before Hawaii
+        # To meet the "arrive London by latest Jan 11" constraint, the flight from SF to Hawaii must depart on Dec 29.
+        # This allows 9 nights across Oahu, Maui, Big Island.
+        departure_date_range=DateRange(
+          earliest=datetime.date(2025, 12, 29),
+          latest=datetime.date(2025, 12, 29),
+        ),
+        departure_flight_filter=DepartureFlightFilter(stops=MaxStops.NON_STOP),
+      ),
+      CityRange(
+        airports=[Airport.HNL],  # Oahu
+        min_stay_hours=3 * 24,  # "spend a few days on Oahu" (3 nights = Dec 29, 30, 31)
+        # Departing Oahu on Jan 1 means 3 nights in Oahu, allowing for New Year's on Oahu.
+        departure_date_range=DateRange(
+          earliest=datetime.date(2026, 1, 1),
+          latest=datetime.date(2026, 1, 1),
+        ),
+        departure_flight_filter=DepartureFlightFilter(stops=MaxStops.NON_STOP),
+      ),
+      CityRange(
+        airports=[Airport.KOA, Airport.ITO],  # Big Island
+        min_stay_hours=2 * 24,  # "spend a few days on Big Island" (2 nights = Jan 1, 2)
+        departure_date_range=DateRange(
+          earliest=datetime.date(2026, 1, 3),
+          latest=datetime.date(2026, 1, 3),
+        ),
+        departure_flight_filter=DepartureFlightFilter(stops=MaxStops.NON_STOP),
+      ),
+      CityRange(
+        airports=[Airport.OGG],  # Maui
+        min_stay_hours=4 * 24,  # "spend a few days on Maui" (4 nights = Jan 3, 4, 5, 6)
+        # To meet the "arrive London by latest Jan 11" constraint, the flight from Hawaii to San Francisco must depart on Jan 7.
+        departure_date_range=DateRange(
+          earliest=datetime.date(2026, 1, 7),
+          latest=datetime.date(2026, 1, 7),
+        ),
+        departure_flight_filter=DepartureFlightFilter(stops=MaxStops.NON_STOP),
+      ),
+      CityRange(
+        airports=[Airport.SFO, Airport.OAK],
+        min_stay_hours=24,  # "stay in San Francisco 1-2 days"
+        max_stay_hours=48,
+        # To meet the "arrive London by latest Jan 11" constraint, the flight from San Francisco to Toronto must depart on Jan 8.
+        departure_date_range=DateRange(
+          earliest=datetime.date(2026, 1, 8),
+          latest=datetime.date(2026, 1, 8),
+        ),
+        departure_flight_filter=DepartureFlightFilter(stops=MaxStops.NON_STOP),
+      ),
+      CityRange(
+        airports=[Airport.YTZ, Airport.YYZ],
+        min_stay_hours=48,  # User adjusted to "spend two days in Toronto"
+        # To meet the "arrive London by latest Jan 11" constraint, the flight from Toronto to London must depart on Jan 10.
+        departure_date_range=DateRange(
+          earliest=datetime.date(2026, 1, 10),
+          latest=datetime.date(2026, 1, 10),
+        ),
+        departure_flight_filter=DepartureFlightFilter(stops=MaxStops.NON_STOP),
+      ),
+      CityRange(
+        airports=[Airport.LHR, Airport.LGW, Airport.STN, Airport.LTN, Airport.LCY],
+        arrival_date_range=DateRange(
+          earliest=None,
+          latest=datetime.date(2026, 1, 11),  # "arrive by latest Jan 11"
+        ),
+      ),
+    ]
+  ),
+  # New Query 3: London -> Toronto -> San Francisco (depart Dec 29) -> Oahu (5 nights) -> Big Island (4 nights) -> San Francisco (Jan 7) -> Toronto -> London
+  CityRanges(
+    city_range_list=[
+      CityRange(
+        airports=[Airport.LHR, Airport.LGW, Airport.STN, Airport.LTN, Airport.LCY],
+        departure_date_range=DateRange(
+          earliest=datetime.date(2025, 12, 19),
+          latest=datetime.date(2025, 12, 21),
+        ),
+        departure_flight_filter=DepartureFlightFilter(stops=MaxStops.NON_STOP),
+      ),
+      CityRange(
+        airports=[Airport.YTZ, Airport.YYZ],
+        departure_date_range=DateRange(
+          earliest=datetime.date(2025, 12, 27),
+          latest=datetime.date(2025, 12, 29),
+        ),
+        departure_flight_filter=DepartureFlightFilter(stops=MaxStops.NON_STOP),
+      ),
+      CityRange(
+        airports=[Airport.SFO, Airport.OAK],
+        min_stay_hours=24,  # "spend minimum one night in San francisco" before Hawaii
+        # To allow for 9 nights in Hawaii (Oahu 5, Big Island 4), SF to Oahu must depart on Dec 29.
+        departure_date_range=DateRange(
+          earliest=datetime.date(2025, 12, 29),
+          latest=datetime.date(2025, 12, 29),
+        ),
+        departure_flight_filter=DepartureFlightFilter(stops=MaxStops.NON_STOP),
+      ),
+      CityRange(
+        airports=[Airport.HNL],  # Oahu
+        min_stay_hours=5 * 24,  # 5 nights (Dec 29, 30, 31, Jan 1, Jan 2) to cover New Year's and balance time.
+        departure_date_range=DateRange(
+          earliest=datetime.date(2026, 1, 3),  # Depart Jan 3
+          latest=datetime.date(2026, 1, 3),
+        ),
+        departure_flight_filter=DepartureFlightFilter(stops=MaxStops.NON_STOP),
+      ),
+      CityRange(
+        airports=[Airport.KOA, Airport.ITO],  # Big Island
+        min_stay_hours=4 * 24,  # 4 nights (Jan 3, 4, 5, 6)
+        # To meet the "arrive London by latest Jan 11" constraint, the flight from Hawaii to San Francisco must depart on Jan 7.
+        departure_date_range=DateRange(
+          earliest=datetime.date(2026, 1, 7),
+          latest=datetime.date(2026, 1, 7),
+        ),
+        departure_flight_filter=DepartureFlightFilter(stops=MaxStops.NON_STOP),
+      ),
+      CityRange(
+        airports=[Airport.SFO, Airport.OAK],
+        min_stay_hours=24,  # "stay in San Francisco 1-2 days"
+        max_stay_hours=48,
+        departure_date_range=DateRange(
+          earliest=datetime.date(2026, 1, 8),  # Fixed to Jan 8 to meet London arrival by Jan 11.
+          latest=datetime.date(2026, 1, 8),
+        ),
+        departure_flight_filter=DepartureFlightFilter(stops=MaxStops.NON_STOP),
+      ),
+      CityRange(
+        airports=[Airport.YTZ, Airport.YYZ],
+        min_stay_hours=48,  # "spend two days in Toronto"
+        departure_date_range=DateRange(
+          earliest=datetime.date(2026, 1, 10),  # Fixed to Jan 10 to meet London arrival by Jan 11.
+          latest=datetime.date(2026, 1, 10),
+        ),
+        departure_flight_filter=DepartureFlightFilter(stops=MaxStops.NON_STOP),
+      ),
+      CityRange(
+        airports=[Airport.LHR, Airport.LGW, Airport.STN, Airport.LTN, Airport.LCY],
+        arrival_date_range=DateRange(
+          earliest=None,
+          latest=datetime.date(2026, 1, 11),  # "arrive by latest Jan 11"
+        ),
+      ),
+    ]
+  ),
+  # New Query 4: London -> Toronto -> San Francisco (depart Dec 29) -> Oahu (4 nights) -> Big Island (5 nights) -> San Francisco (Jan 7) -> Toronto -> London
+  CityRanges(
+    city_range_list=[
+      CityRange(
+        airports=[Airport.LHR, Airport.LGW, Airport.STN, Airport.LTN, Airport.LCY],
+        departure_date_range=DateRange(
+          earliest=datetime.date(2025, 12, 19),
+          latest=datetime.date(2025, 12, 21),
+        ),
+        departure_flight_filter=DepartureFlightFilter(stops=MaxStops.NON_STOP),
+      ),
+      CityRange(
+        airports=[Airport.YTZ, Airport.YYZ],
+        departure_date_range=DateRange(
+          earliest=datetime.date(2025, 12, 27),
+          latest=datetime.date(2025, 12, 29),
+        ),
+        departure_flight_filter=DepartureFlightFilter(stops=MaxStops.NON_STOP),
+      ),
+      CityRange(
+        airports=[Airport.SFO, Airport.OAK],
+        min_stay_hours=24,  # "spend minimum one night in San francisco" before Hawaii
+        # To allow for 9 nights in Hawaii (Oahu 4, Big Island 5), SF to Oahu must depart on Dec 29.
+        departure_date_range=DateRange(
+          earliest=datetime.date(2025, 12, 29),
+          latest=datetime.date(2025, 12, 29),
+        ),
+        departure_flight_filter=DepartureFlightFilter(stops=MaxStops.NON_STOP),
+      ),
+      CityRange(
+        airports=[Airport.HNL],  # Oahu
+        min_stay_hours=4 * 24,  # 4 nights (Dec 29, 30, 31, Jan 1) to cover New Year's and balance time.
+        departure_date_range=DateRange(
+          earliest=datetime.date(2026, 1, 2),  # Depart Jan 2
+          latest=datetime.date(2026, 1, 2),
+        ),
+        departure_flight_filter=DepartureFlightFilter(stops=MaxStops.NON_STOP),
+      ),
+      CityRange(
+        airports=[Airport.KOA, Airport.ITO],  # Big Island
+        min_stay_hours=5 * 24,  # 5 nights (Jan 2, 3, 4, 5, 6)
+        # To meet the "arrive London by latest Jan 11" constraint, the flight from Hawaii to San Francisco must depart on Jan 7.
+        departure_date_range=DateRange(
+          earliest=datetime.date(2026, 1, 7),
+          latest=datetime.date(2026, 1, 7),
+        ),
+        departure_flight_filter=DepartureFlightFilter(stops=MaxStops.NON_STOP),
+      ),
+      CityRange(
+        airports=[Airport.SFO, Airport.OAK],
+        min_stay_hours=24,  # "stay in San Francisco 1-2 days"
+        max_stay_hours=48,
+        departure_date_range=DateRange(
+          earliest=datetime.date(2026, 1, 8),  # Fixed to Jan 8 to meet London arrival by Jan 11.
+          latest=datetime.date(2026, 1, 8),
+        ),
+        departure_flight_filter=DepartureFlightFilter(stops=MaxStops.NON_STOP),
+      ),
+      CityRange(
+        airports=[Airport.YTZ, Airport.YYZ],
+        min_stay_hours=48,  # "spend two days in Toronto"
+        departure_date_range=DateRange(
+          earliest=datetime.date(2026, 1, 10),  # Fixed to Jan 10 to meet London arrival by Jan 11.
+          latest=datetime.date(2026, 1, 10),
+        ),
+        departure_flight_filter=DepartureFlightFilter(stops=MaxStops.NON_STOP),
+      ),
+      CityRange(
+        airports=[Airport.LHR, Airport.LGW, Airport.STN, Airport.LTN, Airport.LCY],
+        arrival_date_range=DateRange(
+          earliest=None,
+          latest=datetime.date(2026, 1, 11),  # "arrive by latest Jan 11"
+        ),
+      ),
+    ]
+  ),
+  # New Query 5: London -> Toronto -> San Francisco (depart Dec 30) -> Oahu (4 nights) -> Big Island (4 nights) -> San Francisco (Jan 7) -> Toronto -> London
+  CityRanges(
+    city_range_list=[
+      CityRange(
+        airports=[Airport.LHR, Airport.LGW, Airport.STN, Airport.LTN, Airport.LCY],
+        departure_date_range=DateRange(
+          earliest=datetime.date(2025, 12, 19),
+          latest=datetime.date(2025, 12, 21),
+        ),
+        departure_flight_filter=DepartureFlightFilter(stops=MaxStops.NON_STOP),
+      ),
+      CityRange(
+        airports=[Airport.YTZ, Airport.YYZ],
+        departure_date_range=DateRange(
+          earliest=datetime.date(2025, 12, 27),
+          latest=datetime.date(2025, 12, 29),
+        ),
+        departure_flight_filter=DepartureFlightFilter(stops=MaxStops.NON_STOP),
+      ),
+      CityRange(
+        airports=[Airport.SFO, Airport.OAK],
+        min_stay_hours=24,  # "spend minimum one night in San francisco" before Hawaii
+        # User specified departure for Oahu between Dec 29-30. If departing Dec 30, this allows 8 nights for Hawaii.
+        departure_date_range=DateRange(
+          earliest=datetime.date(2025, 12, 30),
+          latest=datetime.date(2025, 12, 30),
+        ),
+        departure_flight_filter=DepartureFlightFilter(stops=MaxStops.NON_STOP),
+      ),
+      CityRange(
+        airports=[Airport.HNL],  # Oahu
+        min_stay_hours=4 * 24,  # 4 nights (Dec 30, 31, Jan 1, Jan 2) to cover New Year's and balance time.
+        departure_date_range=DateRange(
+          earliest=datetime.date(2026, 1, 3),  # Depart Jan 3
+          latest=datetime.date(2026, 1, 3),
+        ),
+        departure_flight_filter=DepartureFlightFilter(stops=MaxStops.NON_STOP),
+      ),
+      CityRange(
+        airports=[Airport.KOA, Airport.ITO],  # Big Island
+        min_stay_hours=4 * 24,  # 4 nights (Jan 3, 4, 5, 6) for equal distribution.
+        # To meet the "arrive London by latest Jan 11" constraint, the flight from Hawaii to San Francisco must depart on Jan 7.
+        departure_date_range=DateRange(
+          earliest=datetime.date(2026, 1, 7),
+          latest=datetime.date(2026, 1, 7),
+        ),
+        departure_flight_filter=DepartureFlightFilter(stops=MaxStops.NON_STOP),
+      ),
+      CityRange(
+        airports=[Airport.SFO, Airport.OAK],
+        min_stay_hours=24,  # "stay in San Francisco 1-2 days"
+        max_stay_hours=48,
+        departure_date_range=DateRange(
+          earliest=datetime.date(2026, 1, 8),  # Fixed to Jan 8 to meet London arrival by Jan 11.
+          latest=datetime.date(2026, 1, 8),
+        ),
+        departure_flight_filter=DepartureFlightFilter(stops=MaxStops.NON_STOP),
+      ),
+      CityRange(
+        airports=[Airport.YTZ, Airport.YYZ],
+        min_stay_hours=48,  # "spend two days in Toronto"
+        departure_date_range=DateRange(
+          earliest=datetime.date(2026, 1, 10),  # Fixed to Jan 10 to meet London arrival by Jan 11.
+          latest=datetime.date(2026, 1, 10),
+        ),
+        departure_flight_filter=DepartureFlightFilter(stops=MaxStops.NON_STOP),
+      ),
+      CityRange(
+        airports=[Airport.LHR, Airport.LGW, Airport.STN, Airport.LTN, Airport.LCY],
+        arrival_date_range=DateRange(
+          earliest=None,
+          latest=datetime.date(2026, 1, 11),  # "arrive by latest Jan 11"
+        ),
+      ),
+    ]
+  ),
+]
+```

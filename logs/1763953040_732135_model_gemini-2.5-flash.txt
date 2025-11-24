@@ -1,0 +1,11 @@
+<clarification>
+I've outlined a detailed itinerary based on your request. There is one very tight constraint regarding your return journey:
+
+You mentioned you want to "fly back to Toronto for a few days and then fly back to London and arrive by latest Jan 11 (or earlier)".
+A non-stop flight from Toronto to London typically takes around 7-8 hours. This means to arrive in London by Jan 11, your flight from Toronto must depart no later than Jan 11.
+However, you also stated you want to "stay in Toronto for a few days" after flying back from San Francisco. If "a few days" means 2 or more full days, it would be impossible to arrive in Toronto from San Francisco by Jan 9 (given the SFO departure window of Jan 8-11), stay for 2 days, and then depart for London by Jan 11.
+
+To reconcile these, I have assumed that "a few days" in Toronto implies a very short stay or even an immediate connection, to prioritize your firm "arrive by latest Jan 11" constraint. If you strongly prefer a longer stay in Toronto (e.g., 2 full days), we would need to extend your latest arrival date back in London.
+
+Could you please clarify your preference for the Toronto stay vs. the London arrival date?
+</clarification>

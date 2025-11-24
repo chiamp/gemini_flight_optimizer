@@ -1,0 +1,1 @@
+remove the min and max time spent in japan constraints

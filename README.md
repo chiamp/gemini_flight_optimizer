@@ -13,6 +13,7 @@ See the example prompts in `example_prompts/` for inspiration.
   * [Single query with clarification](#single-query-with-clarification)
   * [Multi query with modification](#multi-query-with-modification)
 * [Setup instructions](#setup-instructions)
+* [Searching for flights](#searching-for-flights)
 * [Main menu commands](#main-menu-commands)
 * [Token limit](#token-limit)
 * [File structure](#file-structure)
@@ -80,8 +81,14 @@ These are the commands you can run in the main menu of the program:
 * `/exit`: to exit the program
 
 
+## Searching for flights
+From the main menu, type `/prompt` and press `Enter`. Then type your flight query (multi-line input is accepted). When you're done entering your query, enter `/submit` in a newline and press `Enter`.
+
+**NOTE**: Pay special attention to the constraints added to your flight query that were parsed from your prompt by Gemini. If there are too many constraints or they are too restrictive, you may not find any valid flights. I would err on the side of relaxing the constraints a bit more, or at least don't put too many for each individual city you are traveling to and individual flight you're taking.
+
+
 ## Token limit
-As of November 23rd, 2025, the free Gemini API key has a maximum tokens-per-minute (TPM) of 125000 for Gemini 2.5 Pro and 250000 for Gemini 2.5 Flash and Gemini 2.5 Flash-Lite. Since the prompt used in this program is around 120000 tokens, this will allow the user to send a prompt to Gemini once per minute for Gemini 2.5 Pro and twice a minute for Gemini 2.5 Flash and Gemini 2.5 Flash-Lite. If you get a rate limit error, simply wait a minute and retry via the `/retry` command.
+As of November 23rd, 2025, the free Gemini API key has a maximum tokens-per-minute (TPM) of 125000 for Gemini 2.5 Pro and 250000 for Gemini 2.5 Flash and Gemini 2.5 Flash-Lite. Since the prompt used in this program is around 120000 tokens, this will allow the user to send a prompt to Gemini once per minute for Gemini 2.5 Pro and twice a minute for Gemini 2.5 Flash and Gemini 2.5 Flash-Lite. Keep in mind that the longer a conversation continues with Gemini, the higher your token usage will be. If you get a rate limit error, simply wait a minute and retry via the `/retry` command.
 
 You could also try Gemini 2.0 which has a 1 million TPM limit, but Gemini 2.0 models do not have thinking (although perhaps not a lot of thinking is needed to just parse the user intent into flight query constraints). If you find yourself being rate limited too often, you can switch the model by executing the `/model` command in the main menu of the program.
 

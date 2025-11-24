@@ -1,0 +1,7 @@
+can you also add additional search queries where i don't go to maui at all. So i would just go to big island and oahu.
+The extra days gained from not going to maui should go to big island and oahu.
+in terms of which one to go first, the main thing is, I want to be in oahu to celebrate new years.
+ideally i spent an equal amount of time at both islands.
+but yeah, i want to be in oahu for new years, and then big island either before or after that.
+see if you can fit that into some new queries given the constraints i gave you previously.
+then return the new queries along with these ones you've already generated.

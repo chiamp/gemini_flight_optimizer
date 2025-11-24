@@ -117,9 +117,9 @@ class Orchestrator:
     python_blocks = extract_python_code_blocks(response.text)
 
     if len(python_blocks) == 0:
-      return [], 'Expected 1 clarification block or 1 python code block but got none for either.'
+      return [], 'Expected 1 clarification block (placed within the tags <clarification> and </clarification>) or 1 python code block (placed within the tags <python> and </python>) but got none for either.'
     if len(python_blocks) >= 2:
-      return [], f'Expected 1 python code block, but got {len(python_blocks)}.'
+      return [], f'Expected 1 python code block (placed within the tags <python> and </python>), but got {len(python_blocks)}.'
 
     python_block = python_blocks[0]
     code_executor = CodeExecutor(code=python_block)

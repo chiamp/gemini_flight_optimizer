@@ -39,10 +39,18 @@ def convert_list_enum_to_canonical_tuple_str(list_enum: Sequence[enum.Enum]) -> 
 
 
 def extract_python_code_blocks(text: str) -> list[str]:
-  return re.findall(r"<python>(.*?)</python>", text, flags=re.DOTALL)
+  matches = re.findall(r"<python>\s*(.*?)\s*</python>", text, flags=re.DOTALL)
+  if not matches:
+    # Sometimes Gemini will use ```python...``` for code blocks even if you specify to use <python>...</python>
+    matches = re.findall(r'```python\s*(.+?)\s*```', text, flags=re.DOTALL)
+  return matches
 
 def extract_clarification_blocks(text: str) -> list[str]:
-  return re.findall(r"<clarification>(.*?)</clarification>", text, flags=re.DOTALL)
+  matches = re.findall(r"<clarification>\s*(.*?)\s*</clarification>", text, flags=re.DOTALL)
+  if not matches:
+    # Sometimes Gemini will use ```clarification...``` for clarification blocks even if you specify to use <clarification>...</clarification>
+    matches = re.findall(r'```clarification\s*(.+?)\s*```', text, flags=re.DOTALL)
+  return matches
 
 
 @dataclasses.dataclass(kw_only=True, frozen=True)
