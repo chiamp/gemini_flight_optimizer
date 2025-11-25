@@ -463,7 +463,7 @@ def generate_flight_itineraries(
   assert len(tuple_flight_infos) > 0
 
   if len(tuple_flight_infos) == 1:
-    return [FlightItinerary(flight_infos=flight_infos) for flight_infos in tuple_flight_infos]
+    return [FlightItinerary(flight_infos=[flight_infos]) for flight_infos in tuple_flight_infos[0]]
 
   # Start the recursive calls with the first flight in the trip.
   list_flight_itineraries: list[FlightItinerary] = []
@@ -558,6 +558,7 @@ def search_flight_itineraries(city_ranges_list: list[CityRanges]) -> FlightItine
     for i in range(len(city_itinerary)-1):
       city_hashes = (city_itinerary[i].hash, city_itinerary[i+1].hash)
       list_flight_infos.append(tuple(city_hashes_to_flight_infos[city_hashes]))
+
     # Generate flight itineraries for every possible valid combination of flights between each city.
     flight_itineraries.extend(
       generate_flight_itineraries(

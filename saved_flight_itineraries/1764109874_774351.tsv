@@ -1,0 +1,189 @@
+total_price	total_flight_hours	total_layover_hours	total_num_stops	departure_datetime	returning_datetime	start_city	end_city	stopover_cities	formatted_string
+7208.0	65.55	0.0	0	2025-11-29T14:28:00	2025-11-29T18:35:00	New York, La Guardia	Toronto	['Toronto', 'Toronto', 'Toronto', 'Toronto', 'Toronto', 'Toronto', 'Toronto', 'Toronto', 'Toronto', 'Toronto', 'Toronto', 'Toronto', 'Toronto', 'Toronto', 'Toronto', 'Toronto', 'Toronto', 'Toronto', 'Toronto', 'Toronto', 'Toronto', 'Toronto', 'Toronto', 'Toronto', 'Toronto Island', 'Toronto Island', 'Toronto Island', 'Toronto', 'Toronto', 'Toronto Island', 'Toronto', 'Toronto Island', 'Toronto', 'Toronto', 'Toronto', 'Toronto']	"2025-11-29 14:28:00 - 2025-11-29 18:35:00 | $7208.0 | 2 days 17 hr 33 min
+
+New York, La Guardia | START
+
+[FLIGHT 1]: $164.0 | 1 hr 48 min | 0 stops | ONE_WAY
+[LEG 1]: 2025-11-29 14:28:00 - 2025-11-29 16:16:00 | LGA-YYZ | 1 hr 48 min | DL 5233 | Delta Air Lines
+
+Toronto | 55 min
+
+[FLIGHT 2]: $164.0 | 1 hr 53 min | 0 stops | ONE_WAY
+[LEG 1]: 2025-11-29 17:11:00 - 2025-11-29 19:04:00 | LGA-YYZ | 1 hr 53 min | AA 4438 | American Airlines
+
+Toronto | 22 hr 51 min
+
+[FLIGHT 3]: $164.0 | 1 hr 40 min | 0 stops | ONE_WAY
+[LEG 1]: 2025-11-29 17:55:00 - 2025-11-29 19:35:00 | LGA-YYZ | 1 hr 40 min | PD 606 | Porter Airlines
+
+Toronto | 10 hr 40 min
+
+[FLIGHT 4]: $164.0 | 1 hr 40 min | 0 stops | ONE_WAY
+[LEG 1]: 2025-11-29 06:15:00 - 2025-11-29 07:55:00 | LGA-YYZ | 1 hr 40 min | PD 602 | Porter Airlines
+
+Toronto | 22 hr 20 min
+
+[FLIGHT 5]: $164.0 | 1 hr 43 min | 0 stops | ONE_WAY
+[LEG 1]: 2025-11-29 06:15:00 - 2025-11-29 07:58:00 | LGA-YYZ | 1 hr 43 min | AC 701 | Air Canada
+
+Toronto | 2 min
+
+[FLIGHT 6]: $164.0 | 1 hr 50 min | 0 stops | ONE_WAY
+[LEG 1]: 2025-11-29 08:00:00 - 2025-11-29 09:50:00 | JFK-YYZ | 1 hr 50 min | AA 4552 | American Airlines
+
+Toronto | 5 min
+
+[FLIGHT 7]: $164.0 | 1 hr 40 min | 0 stops | ONE_WAY
+[LEG 1]: 2025-11-29 09:55:00 - 2025-11-29 11:35:00 | LGA-YYZ | 1 hr 40 min | PD 604 | Porter Airlines
+
+Toronto | 23 hr 55 min
+
+[FLIGHT 8]: $164.0 | 1 hr 43 min | 0 stops | ONE_WAY
+[LEG 1]: 2025-11-29 11:30:00 - 2025-11-29 13:13:00 | LGA-YYZ | 1 hr 43 min | AC 705 | Air Canada
+
+Toronto | 22 hr 17 min
+
+[FLIGHT 9]: $164.0 | 1 hr 50 min | 0 stops | ONE_WAY
+[LEG 1]: 2025-11-29 11:30:00 - 2025-11-29 13:20:00 | LGA-YYZ | 1 hr 50 min | DL 5094 | Delta Air Lines
+
+Toronto | 
+
+[FLIGHT 10]: $164.0 | 1 hr 49 min | 0 stops | ONE_WAY
+[LEG 1]: 2025-11-29 13:20:00 - 2025-11-29 15:09:00 | LGA-YYZ | 1 hr 49 min | AA 4556 | American Airlines
+
+Toronto | 1 min
+
+[FLIGHT 11]: $164.0 | 1 hr 54 min | 0 stops | ONE_WAY
+[LEG 1]: 2025-11-29 15:10:00 - 2025-11-29 17:04:00 | JFK-YYZ | 1 hr 54 min | DL 5106 | Delta Air Lines
+
+Toronto | 1 hr 34 min
+
+[FLIGHT 12]: $164.0 | 1 hr 51 min | 0 stops | ONE_WAY
+[LEG 1]: 2025-11-29 18:38:00 - 2025-11-29 20:29:00 | LGA-YYZ | 1 hr 51 min | DL 5019 | Delta Air Lines
+
+Toronto | 23 hr 21 min
+
+[FLIGHT 13]: $164.0 | 1 hr 43 min | 0 stops | ONE_WAY
+[LEG 1]: 2025-11-29 19:50:00 - 2025-11-29 21:33:00 | LGA-YYZ | 1 hr 43 min | AC 725 | Air Canada
+
+Toronto | 22 hr 17 min
+
+[FLIGHT 14]: $164.0 | 1 hr 54 min | 0 stops | ONE_WAY
+[LEG 1]: 2025-11-29 19:50:00 - 2025-11-29 21:44:00 | LGA-YYZ | 1 hr 54 min | AA 4369 | American Airlines
+
+Toronto | 22 hr 19 min
+
+[FLIGHT 15]: $164.0 | 1 hr 55 min | 0 stops | ONE_WAY
+[LEG 1]: 2025-11-29 20:03:00 - 2025-11-29 21:58:00 | JFK-YYZ | 1 hr 55 min | AA 4558 | American Airlines
+
+Toronto | 22 hr 57 min
+
+[FLIGHT 16]: $164.0 | 1 hr 55 min | 0 stops | ONE_WAY
+[LEG 1]: 2025-11-29 20:55:00 - 2025-11-29 22:50:00 | JFK-YYZ | 1 hr 55 min | DL 5170 | Delta Air Lines
+
+Toronto | 20 hr 5 min
+
+[FLIGHT 17]: $171.0 | 1 hr 47 min | 0 stops | ONE_WAY
+[LEG 1]: 2025-11-29 18:55:00 - 2025-11-29 20:42:00 | EWR-YYZ | 1 hr 47 min | AC 1377 | Air Canada
+
+Toronto | 18 hr 48 min
+
+[FLIGHT 18]: $175.0 | 1 hr 43 min | 0 stops | ONE_WAY
+[LEG 1]: 2025-11-29 15:30:00 - 2025-11-29 17:13:00 | LGA-YYZ | 1 hr 43 min | AC 715 | Air Canada
+
+Toronto | 14 hr 47 min
+
+[FLIGHT 19]: $188.0 | 1 hr 45 min | 0 stops | ONE_WAY
+[LEG 1]: 2025-11-29 08:00:00 - 2025-11-29 09:45:00 | EWR-YYZ | 1 hr 45 min | AC 8873 | Air Canada
+
+Toronto | 4 hr 35 min
+
+[FLIGHT 20]: $188.0 | 1 hr 44 min | 0 stops | ONE_WAY
+[LEG 1]: 2025-11-29 14:20:00 - 2025-11-29 16:04:00 | EWR-YYZ | 1 hr 44 min | AC 8879 | Air Canada
+
+Toronto | 18 hr 6 min
+
+[FLIGHT 21]: $196.0 | 1 hr 43 min | 0 stops | ONE_WAY
+[LEG 1]: 2025-11-29 10:10:00 - 2025-11-29 11:53:00 | LGA-YYZ | 1 hr 43 min | AC 8987 | Air Canada
+
+Toronto | 52 min
+
+[FLIGHT 22]: $196.0 | 1 hr 43 min | 0 stops | ONE_WAY
+[LEG 1]: 2025-11-29 12:45:00 - 2025-11-29 14:28:00 | LGA-YYZ | 1 hr 43 min | AC 8989 | Air Canada
+
+Toronto | 1 hr 52 min
+
+[FLIGHT 23]: $196.0 | 1 hr 47 min | 0 stops | ONE_WAY
+[LEG 1]: 2025-11-29 16:20:00 - 2025-11-29 18:07:00 | LGA-YYZ | 1 hr 47 min | AC 8545 | Air Canada
+
+Toronto | 13 hr 38 min
+
+[FLIGHT 24]: $224.0 | 1 hr 51 min | 0 stops | ONE_WAY
+[LEG 1]: 2025-11-29 07:45:00 - 2025-11-29 09:36:00 | EWR-YYZ | 1 hr 51 min | UA 3553 | United Airlines
+
+Toronto | 23 hr 19 min
+
+[FLIGHT 25]: $224.0 | 1 hr 40 min | 0 stops | ONE_WAY
+[LEG 1]: 2025-11-29 08:55:00 - 2025-11-29 10:35:00 | EWR-YTZ | 1 hr 40 min | PD 2122 | Porter Airlines
+
+Toronto Island | 23 hr 25 min
+
+[FLIGHT 26]: $224.0 | 1 hr 40 min | 0 stops | ONE_WAY
+[LEG 1]: 2025-11-29 10:00:00 - 2025-11-29 11:40:00 | EWR-YTZ | 1 hr 40 min | PD 2124 | Porter Airlines
+
+Toronto Island | 
+
+[FLIGHT 27]: $224.0 | 1 hr 40 min | 0 stops | ONE_WAY
+[LEG 1]: 2025-11-29 11:40:00 - 2025-11-29 13:20:00 | EWR-YTZ | 1 hr 40 min | PD 2128 | Porter Airlines
+
+Toronto Island | 22 hr 38 min
+
+[FLIGHT 28]: $224.0 | 1 hr 45 min | 0 stops | ONE_WAY
+[LEG 1]: 2025-11-29 11:58:00 - 2025-11-29 13:43:00 | EWR-YYZ | 1 hr 45 min | UA 3400 | United Airlines
+
+Toronto | 2 hr 17 min
+
+[FLIGHT 29]: $224.0 | 1 hr 49 min | 0 stops | ONE_WAY
+[LEG 1]: 2025-11-29 16:00:00 - 2025-11-29 17:49:00 | EWR-YYZ | 1 hr 49 min | UA 3622 | United Airlines
+
+Toronto | 21 min
+
+[FLIGHT 30]: $224.0 | 1 hr 40 min | 0 stops | ONE_WAY
+[LEG 1]: 2025-11-29 18:10:00 - 2025-11-29 19:50:00 | EWR-YTZ | 1 hr 40 min | PD 2138 | Porter Airlines
+
+Toronto Island | 23 hr 39 min
+
+[FLIGHT 31]: $224.0 | 1 hr 55 min | 0 stops | ONE_WAY
+[LEG 1]: 2025-11-29 19:29:00 - 2025-11-29 21:24:00 | EWR-YYZ | 1 hr 55 min | UA 3434 | United Airlines
+
+Toronto | 22 hr 11 min
+
+[FLIGHT 32]: $224.0 | 1 hr 40 min | 0 stops | ONE_WAY
+[LEG 1]: 2025-11-29 19:35:00 - 2025-11-29 21:15:00 | EWR-YTZ | 1 hr 40 min | PD 2140 | Porter Airlines
+
+Toronto Island | 14 min
+
+[FLIGHT 33]: $224.0 | 1 hr 51 min | 0 stops | ONE_WAY
+[LEG 1]: 2025-11-29 21:29:00 - 2025-11-29 23:20:00 | EWR-YYZ | 1 hr 51 min | UA 3419 | United Airlines
+
+Toronto | 10 hr 10 min
+
+[FLIGHT 34]: $228.0 | 1 hr 48 min | 0 stops | ONE_WAY
+[LEG 1]: 2025-11-29 09:30:00 - 2025-11-29 11:18:00 | JFK-YYZ | 1 hr 48 min | DL 5007 | Delta Air Lines
+
+Toronto | 23 hr 47 min
+
+[FLIGHT 35]: $240.0 | 1 hr 44 min | 0 stops | ONE_WAY
+[LEG 1]: 2025-11-29 11:05:00 - 2025-11-29 12:49:00 | EWR-YYZ | 1 hr 44 min | AC 8877 | Air Canada
+
+Toronto | 20 hr 56 min
+
+[FLIGHT 36]: $283.0 | 1 hr 45 min | 0 stops | ONE_WAY
+[LEG 1]: 2025-11-29 09:45:00 - 2025-11-29 11:30:00 | JFK-YYZ | 1 hr 45 min | AC 8553 | Air Canada
+
+Toronto | 5 hr 20 min
+
+[FLIGHT 37]: $283.0 | 1 hr 45 min | 0 stops | ONE_WAY
+[LEG 1]: 2025-11-29 16:50:00 - 2025-11-29 18:35:00 | JFK-YYZ | 1 hr 45 min | AC 8555 | Air Canada
+
+Toronto | END"

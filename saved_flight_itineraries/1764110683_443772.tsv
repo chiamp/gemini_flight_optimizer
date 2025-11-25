@@ -1,0 +1,25 @@
+total_price	total_flight_hours	total_layover_hours	total_num_stops	departure_datetime	returning_datetime	start_city	end_city	stopover_cities	formatted_string
+598.0	6.583333333333333	0.0	0	2025-11-29T17:00:00	2025-11-30T02:35:00	London, Gatwick	Jeddah	[]	"2025-11-29 17:00:00 - 2025-11-30 02:35:00 | $598.0 | 6 hr 35 min
+
+London, Gatwick | START
+
+[FLIGHT 1]: $598.0 | 6 hr 35 min | 0 stops | ONE_WAY
+[LEG 1]: 2025-11-29 17:00:00 - 2025-11-30 02:35:00 | LGW-JED | 6 hr 35 min | W6 5605 | Wizz Air
+
+Jeddah | END"
+1769.0	6.25	0.0	0	2025-11-29T20:20:00	2025-11-30T05:35:00	London, Heathrow	Jeddah	[]	"2025-11-29 20:20:00 - 2025-11-30 05:35:00 | $1769.0 | 6 hr 15 min
+
+London, Heathrow | START
+
+[FLIGHT 1]: $1769.0 | 6 hr 15 min | 0 stops | ONE_WAY
+[LEG 1]: 2025-11-29 20:20:00 - 2025-11-30 05:35:00 | LHR-JED | 6 hr 15 min | BA 133 | British Airways
+
+Jeddah | END"
+1794.0	6.083333333333333	0.0	0	2025-11-29T22:05:00	2025-11-30T07:10:00	London, Heathrow	Jeddah	[]	"2025-11-29 22:05:00 - 2025-11-30 07:10:00 | $1794.0 | 6 hr 5 min
+
+London, Heathrow | START
+
+[FLIGHT 1]: $1794.0 | 6 hr 5 min | 0 stops | ONE_WAY
+[LEG 1]: 2025-11-29 22:05:00 - 2025-11-30 07:10:00 | LHR-JED | 6 hr 5 min | SV 118 | Saudia
+
+Jeddah | END"
