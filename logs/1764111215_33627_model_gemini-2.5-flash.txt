@@ -1,0 +1,3 @@
+<clarification>
+You mentioned "leaving Jeddah between 3-4 days later" and then "set min/max time in city to 2-5 days". Which duration would you like to apply for your stay in Jeddah? (3-4 days or 2-5 days)
+</clarification>

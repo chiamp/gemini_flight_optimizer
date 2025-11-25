@@ -16,7 +16,7 @@ def increment_hour(hour: int) -> int:
   return (hour + 1) % 24
 
 
-@dataclasses.dataclass
+@dataclasses.dataclass(frozen=True)
 class Range:
   # Range is inclusive between `earliest` and `latest`.
   earliest: Any
@@ -37,12 +37,12 @@ class Range:
       )
     )
 
-@dataclasses.dataclass
+@dataclasses.dataclass(frozen=True)
 class DateTimeRange(Range):
   earliest: datetime.datetime | None
   latest: datetime.datetime | None
 
-@dataclasses.dataclass
+@dataclasses.dataclass(frozen=True)
 class DateRange(Range):
   earliest: datetime.date | None = None
   latest: datetime.date | None = None
@@ -56,7 +56,7 @@ class DateRange(Range):
       yield curr_date
       curr_date += datetime.timedelta(days=1)
 
-@dataclasses.dataclass
+@dataclasses.dataclass(frozen=True)
 class TimeRange(Range):
   earliest: datetime.time | None = None
   latest: datetime.time | None = None
