@@ -1,0 +1,17 @@
+Python code block execution failed. Error traceback:
+Traceback (most recent call last):
+  File "/Users/marcuschiam/gemini_flight_finder/utils.py", line 124, in __getattr__
+    result = executor.submit(self.execute_code_and_get_variable, name).result(timeout=self.timeout_seconds)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/concurrent/futures/_base.py", line 451, in result
+    return self.__get_result()
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/concurrent/futures/_base.py", line 403, in __get_result
+    raise self._exception
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/Users/marcuschiam/gemini_flight_finder/utils.py", line 115, in execute_code_and_get_variable
+    exec(f'{self.import_statements()}\n\n{self.code}', namespace)
+  File "<string>", line 15, in <module>
+  File "<string>", line 5, in __init__
+  File "/Users/marcuschiam/gemini_flight_finder/datetime_range.py", line 27, in __post_init__
+    assert self.earliest <= self.latest, f'{self.earliest} is not less or equal to {self.latest}'
+AssertionError: 18:00:00 is not less or equal to 06:00:00

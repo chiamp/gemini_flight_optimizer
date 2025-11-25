@@ -1,0 +1,62 @@
+Error traceback:
+
+Traceback (most recent call last):
+  File "/Users/marcuschiam/gemini_flight_finder/model.py", line 163, in generate_response
+    response = Response(self.chats.send_message(prompt_str))
+  File "/Users/marcuschiam/env/fli/lib/python3.10/site-packages/google/genai/chats.py", line 254, in send_message
+    response = self._modules.generate_content(
+  File "/Users/marcuschiam/env/fli/lib/python3.10/site-packages/google/genai/models.py", line 5218, in generate_content
+    response = self._generate_content(
+  File "/Users/marcuschiam/env/fli/lib/python3.10/site-packages/google/genai/models.py", line 4000, in _generate_content
+    response = self._api_client.request(
+  File "/Users/marcuschiam/env/fli/lib/python3.10/site-packages/google/genai/_api_client.py", line 1388, in request
+    response = self._request(http_request, http_options, stream=False)
+  File "/Users/marcuschiam/env/fli/lib/python3.10/site-packages/google/genai/_api_client.py", line 1224, in _request
+    return self._retry(self._request_once, http_request, stream)  # type: ignore[no-any-return]
+  File "/Users/marcuschiam/env/fli/lib/python3.10/site-packages/tenacity/__init__.py", line 477, in __call__
+    do = self.iter(retry_state=retry_state)
+  File "/Users/marcuschiam/env/fli/lib/python3.10/site-packages/tenacity/__init__.py", line 378, in iter
+    result = action(retry_state)
+  File "/Users/marcuschiam/env/fli/lib/python3.10/site-packages/tenacity/__init__.py", line 400, in <lambda>
+    self._add_action_func(lambda rs: rs.outcome.result())
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/concurrent/futures/_base.py", line 451, in result
+    return self.__get_result()
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/concurrent/futures/_base.py", line 403, in __get_result
+    raise self._exception
+  File "/Users/marcuschiam/env/fli/lib/python3.10/site-packages/tenacity/__init__.py", line 480, in __call__
+    result = fn(*args, **kwargs)
+  File "/Users/marcuschiam/env/fli/lib/python3.10/site-packages/google/genai/_api_client.py", line 1194, in _request_once
+    response = self._httpx_client.request(
+  File "/Users/marcuschiam/env/fli/lib/python3.10/site-packages/httpx/_client.py", line 825, in request
+    return self.send(request, auth=auth, follow_redirects=follow_redirects)
+  File "/Users/marcuschiam/env/fli/lib/python3.10/site-packages/httpx/_client.py", line 914, in send
+    response = self._send_handling_auth(
+  File "/Users/marcuschiam/env/fli/lib/python3.10/site-packages/httpx/_client.py", line 942, in _send_handling_auth
+    response = self._send_handling_redirects(
+  File "/Users/marcuschiam/env/fli/lib/python3.10/site-packages/httpx/_client.py", line 979, in _send_handling_redirects
+    response = self._send_single_request(request)
+  File "/Users/marcuschiam/env/fli/lib/python3.10/site-packages/httpx/_client.py", line 1014, in _send_single_request
+    response = transport.handle_request(request)
+  File "/Users/marcuschiam/env/fli/lib/python3.10/site-packages/httpx/_transports/default.py", line 250, in handle_request
+    resp = self._pool.handle_request(req)
+  File "/Users/marcuschiam/env/fli/lib/python3.10/site-packages/httpcore/_sync/connection_pool.py", line 256, in handle_request
+    raise exc from None
+  File "/Users/marcuschiam/env/fli/lib/python3.10/site-packages/httpcore/_sync/connection_pool.py", line 236, in handle_request
+    response = connection.handle_request(
+  File "/Users/marcuschiam/env/fli/lib/python3.10/site-packages/httpcore/_sync/connection.py", line 103, in handle_request
+    return self._connection.handle_request(request)
+  File "/Users/marcuschiam/env/fli/lib/python3.10/site-packages/httpcore/_sync/http11.py", line 136, in handle_request
+    raise exc
+  File "/Users/marcuschiam/env/fli/lib/python3.10/site-packages/httpcore/_sync/http11.py", line 106, in handle_request
+    ) = self._receive_response_headers(**kwargs)
+  File "/Users/marcuschiam/env/fli/lib/python3.10/site-packages/httpcore/_sync/http11.py", line 177, in _receive_response_headers
+    event = self._receive_event(timeout=timeout)
+  File "/Users/marcuschiam/env/fli/lib/python3.10/site-packages/httpcore/_sync/http11.py", line 217, in _receive_event
+    data = self._network_stream.read(
+  File "/Users/marcuschiam/env/fli/lib/python3.10/site-packages/httpcore/_backends/sync.py", line 128, in read
+    return self._sock.recv(max_bytes)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/ssl.py", line 1259, in recv
+    return self.read(buflen)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/ssl.py", line 1132, in read
+    return self._sslobj.read(len)
+KeyboardInterrupt

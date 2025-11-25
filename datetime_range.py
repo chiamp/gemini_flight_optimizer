@@ -29,6 +29,14 @@ class Range:
   def __contains__(self, item: Any) -> bool:
     return self.earliest <= item <= self.latest
 
+  def __hash__(self) -> int:
+    return hash(
+      (
+        self.earliest,
+        self.latest
+      )
+    )
+
 @dataclasses.dataclass
 class DateTimeRange(Range):
   earliest: datetime.datetime | None

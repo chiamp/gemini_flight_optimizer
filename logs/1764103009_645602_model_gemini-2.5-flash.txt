@@ -1,0 +1,18 @@
+<python>
+all_queries: list[CityRanges] = [
+  CityRanges(
+    city_range_list=[
+      CityRange(
+        airports=[Airport.LHR, Airport.LGW, Airport.STN, Airport.LTN, Airport.LCY],
+        departure_date_range=DateRange(
+          earliest=datetime.date(2025, 11, 29),
+          latest=datetime.date(2025, 11, 29),
+        ),
+      ),
+      CityRange(
+        airports=[Airport.JED],
+      ),
+    ]
+  ),
+]
+</python>

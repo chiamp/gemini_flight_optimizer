@@ -1,0 +1,41 @@
+<python>
+all_queries: list[CityRanges] = [
+  CityRanges(
+    city_range_list=[
+      CityRange(
+        airports=[Airport.LHR, Airport.LGW, Airport.STN, Airport.LTN, Airport.LCY],
+        departure_date_range=DateRange(
+          earliest=datetime.date(2025, 11, 29),
+          latest=datetime.date(2025, 11, 29),
+        ),
+        departure_time_range=TimeRange(
+          earliest=datetime.time(18, 0),
+          latest=datetime.time(6, 0),
+        ),
+        departure_flight_filter=DepartureFlightFilter(
+          stops=MaxStops.NON_STOP,
+        ),
+      ),
+      CityRange(
+        airports=[Airport.JED, Airport.RUH, Airport.DMM, Airport.MED],
+        min_stay_hours=48.0, # "a few days after" interpreted as min 2 days (48 hours)
+        max_stay_hours=96.0, # "a few days after" interpreted as max 4 days (96 hours)
+        departure_date_range=DateRange(
+          earliest=datetime.date(2025, 12, 1), # Earliest possible departure assuming minimum 2-day stay
+          latest=datetime.date(2025, 12, 4),   # Latest possible departure assuming maximum 4-day stay
+        ),
+        departure_time_range=TimeRange(
+          earliest=datetime.time(18, 0),
+          latest=datetime.time(6, 0),
+        ),
+        departure_flight_filter=DepartureFlightFilter(
+          stops=MaxStops.NON_STOP,
+        ),
+      ),
+      CityRange(
+        airports=[Airport.SIN],
+      ),
+    ]
+  ),
+]
+</python>
