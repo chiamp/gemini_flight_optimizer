@@ -1,0 +1,8 @@
+<clarification>
+You previously specified "all flights must be non-stop". Now you're adding a layover restriction: "I only want to layover at JFK".
+
+These two statements are contradictory because non-stop flights do not have layovers.
+Please clarify:
+1. Do you want to remove the "non-stop" constraint for flights where a layover at JFK is possible, effectively allowing flights with one stop (at JFK)?
+2. Or do you still want all flights to be non-stop, in which case the layover restriction would not apply to any flights?
+</clarification>

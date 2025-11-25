@@ -1,0 +1,61 @@
+total_price	total_flight_hours	total_layover_hours	total_num_stops	departure_datetime	returning_datetime	start_city	end_city	stopover_cities	formatted_string
+586.0	8.333333333333334	0.0	0	2025-11-29T11:40:00	2025-11-29T15:00:00	London, Gatwick	Toronto	[]	"2025-11-29 11:40:00 - 2025-11-29 15:00:00 | $586.0 | 8 hr 20 min
+
+London, Gatwick | START
+
+[FLIGHT 1]: $586.0 | 8 hr 20 min | 0 stops | ONE_WAY
+[LEG 1]: 2025-11-29 11:40:00 - 2025-11-29 15:00:00 | LGW-YYZ | 8 hr 20 min | TS 123 | Air Transat
+
+Toronto | END"
+1066.0	11.083333333333334	1.75	1	2025-11-29T09:50:00	2025-11-29T15:55:00	London, Heathrow	Toronto	[]	"2025-11-29 09:50:00 - 2025-11-29 15:55:00 | $1066.0 | 11 hr 5 min
+
+London, Heathrow | START
+
+[FLIGHT 1]: $1066.0 | 11 hr 5 min | 1 stop | ONE_WAY
+[LEG 1]: 2025-11-29 09:50:00 - 2025-11-29 11:15:00 | LHR-DUB | 1 hr 25 min | EI 155 | Aer Lingus
+[LAYOVER]: 1 hr 45 min
+[LEG 2]: 2025-11-29 13:00:00 - 2025-11-29 15:55:00 | DUB-YYZ | 7 hr 55 min | EI 127 | Aer Lingus
+
+Toronto | END"
+1103.0	8.166666666666666	0.0	0	2025-11-29T17:05:00	2025-11-29T20:15:00	London, Heathrow	Toronto	[]	"2025-11-29 17:05:00 - 2025-11-29 20:15:00 | $1103.0 | 8 hr 10 min
+
+London, Heathrow | START
+
+[FLIGHT 1]: $1103.0 | 8 hr 10 min | 0 stops | ONE_WAY
+[LEG 1]: 2025-11-29 17:05:00 - 2025-11-29 20:15:00 | LHR-YYZ | 8 hr 10 min | BA 99 | British Airways
+
+Toronto | END"
+1348.0	8.0	0.0	0	2025-11-29T13:00:00	2025-11-29T16:00:00	London, Heathrow	Toronto	[]	"2025-11-29 13:00:00 - 2025-11-29 16:00:00 | $1348.0 | 8 hr
+
+London, Heathrow | START
+
+[FLIGHT 1]: $1348.0 | 8 hr | 0 stops | ONE_WAY
+[LEG 1]: 2025-11-29 13:00:00 - 2025-11-29 16:00:00 | LHR-YYZ | 8 hr | AC 857 | Air Canada
+
+Toronto | END"
+1348.0	8.166666666666666	0.0	0	2025-11-29T11:10:00	2025-11-29T14:20:00	London, Heathrow	Toronto	[]	"2025-11-29 11:10:00 - 2025-11-29 14:20:00 | $1348.0 | 8 hr 10 min
+
+London, Heathrow | START
+
+[FLIGHT 1]: $1348.0 | 8 hr 10 min | 0 stops | ONE_WAY
+[LEG 1]: 2025-11-29 11:10:00 - 2025-11-29 14:20:00 | LHR-YYZ | 8 hr 10 min | AC 855 | Air Canada
+
+Toronto | END"
+1348.0	8.166666666666666	0.0	0	2025-11-29T18:00:00	2025-11-29T21:10:00	London, Heathrow	Toronto	[]	"2025-11-29 18:00:00 - 2025-11-29 21:10:00 | $1348.0 | 8 hr 10 min
+
+London, Heathrow | START
+
+[FLIGHT 1]: $1348.0 | 8 hr 10 min | 0 stops | ONE_WAY
+[LEG 1]: 2025-11-29 18:00:00 - 2025-11-29 21:10:00 | LHR-YYZ | 8 hr 10 min | AC 859 | Air Canada
+
+Toronto | END"
+2775.0	9.75	1.0833333333333333	1	2025-11-29T06:30:00	2025-11-29T11:15:00	London, Heathrow	Toronto	[]	"2025-11-29 06:30:00 - 2025-11-29 11:15:00 | $2775.0 | 9 hr 45 min
+
+London, Heathrow | START
+
+[FLIGHT 1]: $2775.0 | 9 hr 45 min | 1 stop | ONE_WAY
+[LEG 1]: 2025-11-29 06:30:00 - 2025-11-29 07:55:00 | LHR-DUB | 1 hr 25 min | BA 824 | British Airways
+[LAYOVER]: 1 hr 5 min
+[LEG 2]: 2025-11-29 09:00:00 - 2025-11-29 11:15:00 | DUB-YYZ | 7 hr 15 min | AC 801 | Air Canada
+
+Toronto | END"

@@ -1,0 +1,25 @@
+<python>
+all_queries: list[CityRanges] = [
+  CityRanges(
+    city_range_list=[
+      CityRange(
+        airports=[Airport.LHR, Airport.LGW, Airport.STN, Airport.LTN, Airport.LCY],
+        departure_date_range=DateRange(
+          earliest=datetime.date(2025, 11, 29),
+          latest=datetime.date(2025, 11, 29),
+        ),
+        departure_flight_filter=DepartureFlightFilter(
+          stops=MaxStops.ONE_STOP_OR_FEWER,
+          layover_restrictions=LayoverRestrictions(
+            airports=[Airport.DUB],
+            max_duration=120,
+          ),
+        ),
+      ),
+      CityRange(
+        airports=[Airport.YTZ, Airport.YYZ],
+      ),
+    ]
+  ),
+]
+</python>

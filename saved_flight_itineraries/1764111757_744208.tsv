@@ -1,0 +1,111 @@
+total_price	total_flight_hours	total_layover_hours	total_num_stops	departure_datetime	returning_datetime	start_city	end_city	stopover_cities	formatted_string
+802.0	13.0	0.0	0	2025-11-29T09:10:00	2025-11-30T06:10:00	London, Heathrow	Singapore	[]	"2025-11-29 09:10:00 - 2025-11-30 06:10:00 | $802.0 | 13 hr
+
+London, Heathrow | START
+
+[FLIGHT 1]: $802.0 | 13 hr | 0 stops | ONE_WAY
+[LEG 1]: 2025-11-29 09:10:00 - 2025-11-30 06:10:00 | LHR-SIN | 13 hr | SQ 305 | Singapore Airlines
+
+Singapore | END"
+802.0	13.083333333333334	0.0	0	2025-11-29T20:35:00	2025-11-30T17:40:00	London, Heathrow	Singapore	[]	"2025-11-29 20:35:00 - 2025-11-30 17:40:00 | $802.0 | 13 hr 5 min
+
+London, Heathrow | START
+
+[FLIGHT 1]: $802.0 | 13 hr 5 min | 0 stops | ONE_WAY
+[LEG 1]: 2025-11-29 20:35:00 - 2025-11-30 17:40:00 | LHR-SIN | 13 hr 5 min | SQ 319 | Singapore Airlines
+
+Singapore | END"
+802.0	13.166666666666666	0.0	0	2025-11-29T10:40:00	2025-11-30T07:50:00	London, Heathrow	Singapore	[]	"2025-11-29 10:40:00 - 2025-11-30 07:50:00 | $802.0 | 13 hr 10 min
+
+London, Heathrow | START
+
+[FLIGHT 1]: $802.0 | 13 hr 10 min | 0 stops | ONE_WAY
+[LEG 1]: 2025-11-29 10:40:00 - 2025-11-30 07:50:00 | LHR-SIN | 13 hr 10 min | SQ 317 | Singapore Airlines
+
+Singapore | END"
+802.0	13.25	0.0	0	2025-11-29T21:45:00	2025-11-30T19:00:00	London, Heathrow	Singapore	[]	"2025-11-29 21:45:00 - 2025-11-30 19:00:00 | $802.0 | 13 hr 15 min
+
+London, Heathrow | START
+
+[FLIGHT 1]: $802.0 | 13 hr 15 min | 0 stops | ONE_WAY
+[LEG 1]: 2025-11-29 21:45:00 - 2025-11-30 19:00:00 | LHR-SIN | 13 hr 15 min | SQ 321 | Singapore Airlines
+
+Singapore | END"
+802.0	15.75	0.0	0	2025-11-29T17:00:00	2025-12-03T12:55:00	London, Gatwick	Singapore	['Jeddah']	"2025-11-29 17:00:00 - 2025-12-03 12:55:00 | $802.0 | 15 hr 45 min
+
+London, Gatwick | START
+
+[FLIGHT 1]: $598.0 | 6 hr 35 min | 0 stops | ONE_WAY
+[LEG 1]: 2025-11-29 17:00:00 - 2025-11-30 02:35:00 | LGW-JED | 6 hr 35 min | W6 5605 | Wizz Air
+
+Jeddah | 2 days 20 hr 10 min
+
+[FLIGHT 2]: $204.0 | 9 hr 10 min | 0 stops | ONE_WAY
+[LEG 1]: 2025-12-02 22:45:00 - 2025-12-03 12:55:00 | JED-SIN | 9 hr 10 min | TR 597 | Scoot
+
+Singapore | END"
+802.0	15.75	0.0	0	2025-11-29T17:00:00	2025-12-05T12:55:00	London, Gatwick	Singapore	['Jeddah']	"2025-11-29 17:00:00 - 2025-12-05 12:55:00 | $802.0 | 15 hr 45 min
+
+London, Gatwick | START
+
+[FLIGHT 1]: $598.0 | 6 hr 35 min | 0 stops | ONE_WAY
+[LEG 1]: 2025-11-29 17:00:00 - 2025-11-30 02:35:00 | LGW-JED | 6 hr 35 min | W6 5605 | Wizz Air
+
+Jeddah | 4 days 20 hr 10 min
+
+[FLIGHT 2]: $204.0 | 9 hr 10 min | 0 stops | ONE_WAY
+[LEG 1]: 2025-12-04 22:45:00 - 2025-12-05 12:55:00 | JED-SIN | 9 hr 10 min | TR 597 | Scoot
+
+Singapore | END"
+1973.0	15.416666666666666	0.0	0	2025-11-29T20:20:00	2025-12-03T12:55:00	London, Heathrow	Singapore	['Jeddah']	"2025-11-29 20:20:00 - 2025-12-03 12:55:00 | $1973.0 | 15 hr 25 min
+
+London, Heathrow | START
+
+[FLIGHT 1]: $1769.0 | 6 hr 15 min | 0 stops | ONE_WAY
+[LEG 1]: 2025-11-29 20:20:00 - 2025-11-30 05:35:00 | LHR-JED | 6 hr 15 min | BA 133 | British Airways
+
+Jeddah | 2 days 17 hr 10 min
+
+[FLIGHT 2]: $204.0 | 9 hr 10 min | 0 stops | ONE_WAY
+[LEG 1]: 2025-12-02 22:45:00 - 2025-12-03 12:55:00 | JED-SIN | 9 hr 10 min | TR 597 | Scoot
+
+Singapore | END"
+1973.0	15.416666666666666	0.0	0	2025-11-29T20:20:00	2025-12-05T12:55:00	London, Heathrow	Singapore	['Jeddah']	"2025-11-29 20:20:00 - 2025-12-05 12:55:00 | $1973.0 | 15 hr 25 min
+
+London, Heathrow | START
+
+[FLIGHT 1]: $1769.0 | 6 hr 15 min | 0 stops | ONE_WAY
+[LEG 1]: 2025-11-29 20:20:00 - 2025-11-30 05:35:00 | LHR-JED | 6 hr 15 min | BA 133 | British Airways
+
+Jeddah | 4 days 17 hr 10 min
+
+[FLIGHT 2]: $204.0 | 9 hr 10 min | 0 stops | ONE_WAY
+[LEG 1]: 2025-12-04 22:45:00 - 2025-12-05 12:55:00 | JED-SIN | 9 hr 10 min | TR 597 | Scoot
+
+Singapore | END"
+1998.0	15.25	0.0	0	2025-11-29T22:05:00	2025-12-03T12:55:00	London, Heathrow	Singapore	['Jeddah']	"2025-11-29 22:05:00 - 2025-12-03 12:55:00 | $1998.0 | 15 hr 15 min
+
+London, Heathrow | START
+
+[FLIGHT 1]: $1794.0 | 6 hr 5 min | 0 stops | ONE_WAY
+[LEG 1]: 2025-11-29 22:05:00 - 2025-11-30 07:10:00 | LHR-JED | 6 hr 5 min | SV 118 | Saudia
+
+Jeddah | 2 days 15 hr 35 min
+
+[FLIGHT 2]: $204.0 | 9 hr 10 min | 0 stops | ONE_WAY
+[LEG 1]: 2025-12-02 22:45:00 - 2025-12-03 12:55:00 | JED-SIN | 9 hr 10 min | TR 597 | Scoot
+
+Singapore | END"
+1998.0	15.25	0.0	0	2025-11-29T22:05:00	2025-12-05T12:55:00	London, Heathrow	Singapore	['Jeddah']	"2025-11-29 22:05:00 - 2025-12-05 12:55:00 | $1998.0 | 15 hr 15 min
+
+London, Heathrow | START
+
+[FLIGHT 1]: $1794.0 | 6 hr 5 min | 0 stops | ONE_WAY
+[LEG 1]: 2025-11-29 22:05:00 - 2025-11-30 07:10:00 | LHR-JED | 6 hr 5 min | SV 118 | Saudia
+
+Jeddah | 4 days 15 hr 35 min
+
+[FLIGHT 2]: $204.0 | 9 hr 10 min | 0 stops | ONE_WAY
+[LEG 1]: 2025-12-04 22:45:00 - 2025-12-05 12:55:00 | JED-SIN | 9 hr 10 min | TR 597 | Scoot
+
+Singapore | END"

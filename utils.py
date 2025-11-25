@@ -62,8 +62,8 @@ def get_top_n(list_elements: Sequence[_T], *, top_n: int, sort_key: Callable[[_T
   return list(reversed(sorted_elements))
 
 
-def convert_list_enum_to_canonical_tuple_str(list_enum: Sequence[enum.Enum]) -> tuple[str, ...]:
-  return tuple(sorted(e.name for e in list_enum))
+def convert_list_enum_to_canonical_tuple_str(list_enum: Sequence[enum.Enum], *, attr_name: str = 'name') -> tuple[str, ...]:
+  return tuple(sorted(getattr(e, attr_name) for e in list_enum))
 
 
 def get_airport_key_from_airport_list(airport_list: list[list[Airport | int]]) -> AirportKey:

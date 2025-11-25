@@ -67,14 +67,14 @@ class DepartureFlightFilter:
     if self.price_limit:
       string_components.append(f'Departing flight - maximum price: ${self.price_limit.max_price}')
     if self.airlines:
-      airlines_component = '[' + ', '.join(convert_list_enum_to_canonical_tuple_str(self.airlines)) + ']'
+      airlines_component = '[' + ', '.join(convert_list_enum_to_canonical_tuple_str(self.airlines, attr_name='value')) + ']'
       string_components.append(f'Departing flight - airlines constrained to: {airlines_component}')
     if self.max_duration:
       string_components.append(f'Departing flight - maximum duration of flight: {minutes_to_string(self.max_duration)}')
     if self.layover_restrictions:
       if self.layover_restrictions.airports:
         airports_component = '[' + ', '.join(convert_list_enum_to_canonical_tuple_str(self.layover_restrictions.airports)) + ']'
-        string_components.append(f'Departing flight - airports constrained to: {airports_component}')
+        string_components.append(f'Departing flight - layover airports constrained to: {airports_component}')
       if self.layover_restrictions.max_duration:
         string_components.append(f'Departing flight - maximum duration of layover: {minutes_to_string(self.layover_restrictions.max_duration)}')
 
