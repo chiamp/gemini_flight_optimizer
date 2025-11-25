@@ -14,6 +14,7 @@ See the example prompts in `example_prompts/` for inspiration.
   * [Multi query with modification](#multi-query-with-modification)
 * [Setup instructions](#setup-instructions)
 * [Searching for flights](#searching-for-flights)
+  * [Flight filters](#flight-filters)
 * [Main menu commands](#main-menu-commands)
 * [Token limit](#token-limit)
 * [File structure](#file-structure)
@@ -84,7 +85,26 @@ These are the commands you can run in the main menu of the program:
 ## Searching for flights
 From the main menu, type `/prompt` and press `Enter`. Then type your flight query (multi-line input is accepted). When you're done entering your query, enter `/submit` in a newline and press `Enter`.
 
-**NOTE**: Pay special attention to the constraints added to your flight query that were parsed from your prompt by Gemini. If there are too many constraints or they are too restrictive, you may not find any valid flights. I would err on the side of relaxing the constraints a bit more, or at least don't put too many for each individual city you are traveling to and individual flight you're taking.
+**NOTE**: Pay special attention to the constraints added to your flight query that were parsed from your prompt by Gemini. If there are too many constraints or they are too restrictive, you may not find any valid flights. I would err on the side of relaxing the constraints a bit more (especially for the min/max time spent in the city; e.g. you may intend to stay for 2 nights at a city but that may not amount to a full 48 hours if you arrive at night and leave in the morning, so better to set the min time spent in the city to 1 day instead of 2 days), or at least don't put too many constraints for each individual city you are traveling to and individual flight you're taking.
+
+### Flight filters
+Some things you can specify in the flight query prompt to filter for:
+* which cities you want to visit and in what order
+  * you can specify separate related/unrelated flight queries (e.g. London -> Toronto, London -> NYC, London -> NYC -> Toronto, Singapore -> Hong Kong -> Taiwan) within the same prompt
+* for each individual city:
+  * minimum and maximum time spent in a city (hours, days, weeks, months, etc.)
+  * what dates you want to arrive in / depart from the city by
+  * what time of the day you want to arrive in / depart from the city by
+  * flight constraints for your flight departing from this city:
+    * the maximum number of stops in the flight (i.e. non-stop, at most 1 stop, at most 2 stops, any number of stops)
+      * if unspecified, this defaults to **any number of stops**
+    * seat type (e.g. economy, business)
+      * if unspecified, this defaults to **economy**
+    * maximum price of the flight
+    * airlines whitelist; i.e. the set of airlines that you want to fly, and no other airlines would be valid
+    * maximum duration of the flight
+    * maximum layover duration
+    * layover airport whitelist; i.e. the set of airports you want to layover at, and no other airports would be valid
 
 
 ## Token limit
