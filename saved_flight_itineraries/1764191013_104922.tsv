@@ -1,0 +1,53 @@
+total_price	total_flight_hours	total_layover_hours	total_num_stops	departure_datetime	returning_datetime	start_city	end_city	stopover_cities	formatted_string
+526.0	15.333333333333334	0.0	0	2026-01-13T12:35:00	2026-01-21T06:25:00	London, Heathrow	London, Heathrow	['Dubai']	"2026-01-13 12:35:00 - 2026-01-21 06:25:00 | $526.0 | 15 hr 20 min
+
+London, Heathrow | START
+
+[FLIGHT 1]: $0.0 | 7 hr 10 min | 0 stops | ROUND_TRIP_DEPARTING
+[LEG 1]: 2026-01-13 12:35:00 - 2026-01-13 23:45:00 | LHR-DXB | 7 hr 10 min | BA 107 | British Airways
+
+Dubai | 7 days 2 hr 30 min
+
+[FLIGHT 1]: $526.0 | 8 hr 10 min | 0 stops | ROUND_TRIP_RETURNING
+[LEG 1]: 2026-01-21 02:15:00 - 2026-01-21 06:25:00 | DXB-LHR | 8 hr 10 min | BA 106 | British Airways
+
+London, Heathrow | END"
+556.0	14.916666666666666	0.0	0	2026-01-13T13:35:00	2026-01-21T06:40:00	London, Gatwick	London, Gatwick	['Dubai']	"2026-01-13 13:35:00 - 2026-01-21 06:40:00 | $556.0 | 14 hr 55 min
+
+London, Gatwick | START
+
+[FLIGHT 1]: $0.0 | 7 hr 5 min | 0 stops | ROUND_TRIP_DEPARTING
+[LEG 1]: 2026-01-13 13:35:00 - 2026-01-14 00:40:00 | LGW-DXB | 7 hr 5 min | EK 16 | Emirates
+
+Dubai | 7 days 2 hr 10 min
+
+[FLIGHT 1]: $556.0 | 7 hr 50 min | 0 stops | ROUND_TRIP_RETURNING
+[LEG 1]: 2026-01-21 02:50:00 - 2026-01-21 06:40:00 | DXB-LGW | 7 hr 50 min | EK 11 | Emirates
+
+London, Gatwick | END"
+568.0	14.666666666666666	0.0	0	2026-01-13T15:50:00	2026-01-21T06:40:00	London, Heathrow	London, Gatwick	['Dubai']	"2026-01-13 15:50:00 - 2026-01-21 06:40:00 | $568.0 | 14 hr 40 min
+
+London, Heathrow | START
+
+[FLIGHT 1]: $0.0 | 6 hr 50 min | 0 stops | ROUND_TRIP_DEPARTING
+[LEG 1]: 2026-01-13 15:50:00 - 2026-01-14 02:40:00 | LHR-DXB | 6 hr 50 min | EK 30 | Emirates
+
+Dubai | 7 days 10 min
+
+[FLIGHT 1]: $568.0 | 7 hr 50 min | 0 stops | ROUND_TRIP_RETURNING
+[LEG 1]: 2026-01-21 02:50:00 - 2026-01-21 06:40:00 | DXB-LGW | 7 hr 50 min | EK 11 | Emirates
+
+London, Gatwick | END"
+584.0	14.833333333333334	0.0	0	2026-01-13T13:40:00	2026-01-21T06:40:00	London, Heathrow	London, Gatwick	['Dubai']	"2026-01-13 13:40:00 - 2026-01-21 06:40:00 | $584.0 | 14 hr 50 min
+
+London, Heathrow | START
+
+[FLIGHT 1]: $0.0 | 7 hr | 0 stops | ROUND_TRIP_DEPARTING
+[LEG 1]: 2026-01-13 13:40:00 - 2026-01-14 00:40:00 | LHR-DXB | 7 hr | EK 2 | Emirates
+
+Dubai | 7 days 2 hr 10 min
+
+[FLIGHT 1]: $584.0 | 7 hr 50 min | 0 stops | ROUND_TRIP_RETURNING
+[LEG 1]: 2026-01-21 02:50:00 - 2026-01-21 06:40:00 | DXB-LGW | 7 hr 50 min | EK 11 | Emirates
+
+London, Gatwick | END"

@@ -1,0 +1,41 @@
+<python>
+all_queries: list[CityRanges] = [
+  CityRanges(
+    city_range_list=[
+      CityRange(
+        airports=[Airport.LHR, Airport.LGW, Airport.STN, Airport.LTN, Airport.LCY],
+        departure_date_range=DateRange(
+          earliest=datetime.date(2026, 1, 13), # "mid january, within a few days range" interpreted as Jan 13-17
+          latest=datetime.date(2026, 1, 17),
+        ),
+        departure_time_range=TimeRange(
+          earliest=datetime.time(12, 0), # From previous prompt: "depart after 12 pm"
+          latest=None,
+        ),
+        departure_flight_filter=DepartureFlightFilter(stops=MaxStops.NON_STOP), # From previous prompt: "non-stop" for outbound
+      ),
+      CityRange(
+        airports=[Airport.DXB, Airport.DWC],
+        min_stay_hours=24, # Assuming a minimum 24-hour stay for a round-trip
+        max_stay_hours=None,
+        arrival_date_range=None,
+        arrival_time_range=None,
+        departure_date_range=DateRange(
+          earliest=datetime.date(2026, 1, 15), # Earliest departure from London (Jan 13) + 1 day for travel/arrival + 1 day min stay
+          latest=datetime.date(2026, 1, 26), # To allow return to London by Jan 26, departure from Dubai can be on Jan 26 (assuming a same-day arrival flight for a ~8hr flight).
+        ),
+        departure_time_range=None,
+        departure_flight_filter=DepartureFlightFilter(stops=MaxStops.ANY), # Non-stop constraint was only for outbound, so flexibility for return leg
+      ),
+      CityRange(
+        airports=[Airport.LHR, Airport.LGW, Airport.STN, Airport.LTN, Airport.LCY],
+        arrival_date_range=DateRange(
+          earliest=None,
+          latest=datetime.date(2026, 1, 26), # "return by the 26th of january"
+        ),
+        arrival_time_range=None,
+      ),
+    ]
+  ),
+]
+</python>
