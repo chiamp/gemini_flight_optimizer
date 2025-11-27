@@ -1,0 +1,2 @@
+use the same query but put a price restriction of under 800 dollars. 
+then i want a separate query that's the same, except no price restriction, and the stopover city is nyc instead of toronto

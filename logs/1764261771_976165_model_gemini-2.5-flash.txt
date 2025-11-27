@@ -1,0 +1,14 @@
+<clarification>
+I apologize for any confusion.
+
+Looking at my previous response, the first query explicitly sets `stops=MaxStops.NON_STOP` for both the London to Toronto and Toronto to London legs, and does not include any `layover_restrictions`. This query maintains the original "direct flights" requirement.
+
+The second query sets `stops=MaxStops.ONE_STOP_OR_FEWER` and `layover_restrictions=LayoverRestrictions(airports=[Airport.JFK, Airport.LGA, Airport.EWR])` for both the London to Toronto and Toronto to London legs. This means both the outbound and return journeys would have a layover in one of the New York City airports.
+
+Could you please clarify what you meant by "you set both queries to layover in toronto"? My code specified NYC airports for layovers in the second query, and no layovers in the first query.
+
+Also, for the new query involving NYC layovers, should:
+1. Both the London -> Toronto flight AND the Toronto -> London flight have a layover in NYC? (This is how I interpreted it.)
+2. Only the London -> Toronto flight have a layover in NYC, with the Toronto -> London flight remaining non-stop?
+3. Only the Toronto -> London flight have a layover in NYC, with the London -> Toronto flight remaining non-stop?
+</clarification>

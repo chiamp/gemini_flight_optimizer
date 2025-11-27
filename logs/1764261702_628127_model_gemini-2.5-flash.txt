@@ -1,0 +1,72 @@
+<python>
+all_queries: list[CityRanges] = [
+  # Query 1: Direct flights London-Toronto-London, departing Dec 5-7 / Dec 17-19, non-stop, under $780 per leg.
+  CityRanges(
+    city_range_list=[
+      CityRange(
+        airports=[Airport.LHR, Airport.LGW, Airport.STN, Airport.LTN, Airport.LCY], # London airports
+        departure_date_range=DateRange(
+          earliest=datetime.date(2025, 12, 5),
+          latest=datetime.date(2025, 12, 7),
+        ),
+        departure_flight_filter=DepartureFlightFilter(
+          stops=MaxStops.NON_STOP,
+          price_limit=PriceLimit(max_price=779), # "under 780 dollars" means a maximum price of 779.
+        ),
+      ),
+      CityRange(
+        airports=[Airport.YTZ, Airport.YYZ], # Toronto airports
+        departure_date_range=DateRange(
+          earliest=datetime.date(2025, 12, 17),
+          latest=datetime.date(2025, 12, 19),
+        ),
+        departure_flight_filter=DepartureFlightFilter(
+          stops=MaxStops.NON_STOP,
+          price_limit=PriceLimit(max_price=779),
+        ),
+      ),
+      CityRange(
+        airports=[Airport.LHR, Airport.LGW, Airport.STN, Airport.LTN, Airport.LCY], # London airports for arrival
+      ),
+    ]
+  ),
+  # Query 2: Same as Query 1, but with layovers in NYC instead (and same price limit).
+  # This is interpreted as a 1-stop flight for each leg, with the stop occurring in NYC.
+  # The price limit is applied per flight leg (one-way).
+  CityRanges(
+    city_range_list=[
+      CityRange(
+        airports=[Airport.LHR, Airport.LGW, Airport.STN, Airport.LTN, Airport.LCY], # London airports
+        departure_date_range=DateRange(
+          earliest=datetime.date(2025, 12, 5),
+          latest=datetime.date(2025, 12, 7),
+        ),
+        departure_flight_filter=DepartureFlightFilter(
+          stops=MaxStops.ONE_STOP_OR_FEWER, # Allows for up to one stop. "Layovers in nyc" implies at least one stop.
+          price_limit=PriceLimit(max_price=779),
+          layover_restrictions=LayoverRestrictions(
+            airports=[Airport.JFK, Airport.LGA, Airport.EWR], # Main NYC airports
+          ),
+        ),
+      ),
+      CityRange(
+        airports=[Airport.YTZ, Airport.YYZ], # Toronto airports
+        departure_date_range=DateRange(
+          earliest=datetime.date(2025, 12, 17),
+          latest=datetime.date(2025, 12, 19),
+        ),
+        departure_flight_filter=DepartureFlightFilter(
+          stops=MaxStops.ONE_STOP_OR_FEWER,
+          price_limit=PriceLimit(max_price=779),
+          layover_restrictions=LayoverRestrictions(
+            airports=[Airport.JFK, Airport.LGA, Airport.EWR],
+          ),
+        ),
+      ),
+      CityRange(
+        airports=[Airport.LHR, Airport.LGW, Airport.STN, Airport.LTN, Airport.LCY], # London airports for arrival
+      ),
+    ]
+  ),
+]
+</python>

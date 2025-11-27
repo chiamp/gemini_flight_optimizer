@@ -1,0 +1,62 @@
+<python>
+all_queries: list[CityRanges] = [
+  # Query 1: Same as previous query, with price restriction under $800, but no min/max stay hours
+  CityRanges(
+    city_range_list=[
+      CityRange(
+        airports=[Airport.LHR, Airport.LGW, Airport.STN, Airport.LTN, Airport.LCY],
+        departure_date_range=DateRange(
+          earliest=datetime.date(2025, 12, 13),
+          latest=datetime.date(2025, 12, 14),
+        ),
+        departure_flight_filter=DepartureFlightFilter(
+          stops=MaxStops.NON_STOP,
+          price_limit=PriceLimit(max_price=799),
+        ),
+      ),
+      CityRange(
+        airports=[Airport.YTZ, Airport.YYZ],
+        min_stay_hours=None, # Removed min_stay_hours
+        max_stay_hours=None, # Removed max_stay_hours
+        departure_date_range=DateRange(
+          earliest=datetime.date(2025, 12, 21),
+          latest=datetime.date(2025, 12, 22),
+        ),
+        departure_flight_filter=DepartureFlightFilter(
+          stops=MaxStops.NON_STOP,
+          price_limit=PriceLimit(max_price=799),
+        ),
+      ),
+      CityRange(
+        airports=[Airport.LHR, Airport.LGW, Airport.STN, Airport.LTN, Airport.LCY],
+      ),
+    ]
+  ),
+  # Query 2: Same as previous query, except no price restriction and stopover city is NYC, but no min/max stay hours
+  CityRanges(
+    city_range_list=[
+      CityRange(
+        airports=[Airport.LHR, Airport.LGW, Airport.STN, Airport.LTN, Airport.LCY],
+        departure_date_range=DateRange(
+          earliest=datetime.date(2025, 12, 13),
+          latest=datetime.date(2025, 12, 14),
+        ),
+        departure_flight_filter=DepartureFlightFilter(stops=MaxStops.NON_STOP),
+      ),
+      CityRange(
+        airports=[Airport.JFK, Airport.LGA, Airport.EWR], # New York City airports
+        min_stay_hours=None, # Removed min_stay_hours
+        max_stay_hours=None, # Removed max_stay_hours
+        departure_date_range=DateRange(
+          earliest=datetime.date(2025, 12, 21),
+          latest=datetime.date(2025, 12, 22),
+        ),
+        departure_flight_filter=DepartureFlightFilter(stops=MaxStops.NON_STOP),
+      ),
+      CityRange(
+        airports=[Airport.LHR, Airport.LGW, Airport.STN, Airport.LTN, Airport.LCY],
+      ),
+    ]
+  ),
+]
+</python>

@@ -1,0 +1,2 @@
+change the initial query to be departing from toronto instead.
+then add a separate query for a round-trip, non-stop flight departing from toronto and going to san francisco. Date of departure will be jan 4-5, and date of departure from sfo will be jan 10-11

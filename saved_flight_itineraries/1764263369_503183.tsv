@@ -1,0 +1,1327 @@
+total_price	total_flight_hours	total_layover_hours	total_num_stops	departure_datetime	returning_datetime	start_city	end_city	stopover_cities	formatted_string
+774.0	15.5	0.0	0	2025-12-03T11:10:00	2025-12-18T06:30:00	London, Heathrow	London, Heathrow	['Toronto']	"2025-12-03 11:10:00 - 2025-12-18 06:30:00 | $774.0 | 15 hr 30 min
+
+London, Heathrow | START
+
+[FLIGHT 1]: $0.0 | 8 hr 10 min | 0 stops | ROUND_TRIP_DEPARTING
+[LEG 1]: 2025-12-03 11:10:00 - 2025-12-03 14:20:00 | LHR-YYZ | 8 hr 10 min | AC 855 | Air Canada
+
+Toronto | 14 days 3 hr 50 min
+
+[FLIGHT 1]: $774.0 | 7 hr 20 min | 0 stops | ROUND_TRIP_RETURNING
+[LEG 1]: 2025-12-17 18:10:00 - 2025-12-18 06:30:00 | YYZ-LHR | 7 hr 20 min | AC 854 | Air Canada
+
+London, Heathrow | END"
+785.0	15.333333333333334	0.0	0	2025-12-03T13:00:00	2025-12-18T06:30:00	London, Heathrow	London, Heathrow	['Toronto']	"2025-12-03 13:00:00 - 2025-12-18 06:30:00 | $785.0 | 15 hr 20 min
+
+London, Heathrow | START
+
+[FLIGHT 1]: $0.0 | 8 hr | 0 stops | ROUND_TRIP_DEPARTING
+[LEG 1]: 2025-12-03 13:00:00 - 2025-12-03 16:00:00 | LHR-YYZ | 8 hr | AC 857 | Air Canada
+
+Toronto | 14 days 2 hr 10 min
+
+[FLIGHT 1]: $785.0 | 7 hr 20 min | 0 stops | ROUND_TRIP_RETURNING
+[LEG 1]: 2025-12-17 18:10:00 - 2025-12-18 06:30:00 | YYZ-LHR | 7 hr 20 min | AC 854 | Air Canada
+
+London, Heathrow | END"
+793.0	15.5	0.0	0	2025-12-03T11:40:00	2025-12-18T09:45:00	London, Gatwick	London, Gatwick	['Toronto']	"2025-12-03 11:40:00 - 2025-12-18 09:45:00 | $793.0 | 15 hr 30 min
+
+London, Gatwick | START
+
+[FLIGHT 1]: $0.0 | 8 hr 20 min | 0 stops | ROUND_TRIP_DEPARTING
+[LEG 1]: 2025-12-03 11:40:00 - 2025-12-03 15:00:00 | LGW-YYZ | 8 hr 20 min | TS 123 | Air Transat
+
+Toronto | 14 days 6 hr 35 min
+
+[FLIGHT 1]: $793.0 | 7 hr 10 min | 0 stops | ROUND_TRIP_RETURNING
+[LEG 1]: 2025-12-17 21:35:00 - 2025-12-18 09:45:00 | YYZ-LGW | 7 hr 10 min | TS 122 | Air Transat
+
+London, Gatwick | END"
+882.0	15.833333333333334	0.0	0	2025-12-03T14:30:00	2025-12-18T09:35:00	London, Heathrow	London, Heathrow	['Toronto']	"2025-12-03 14:30:00 - 2025-12-18 09:35:00 | $882.0 | 15 hr 50 min
+
+London, Heathrow | START
+
+[FLIGHT 1]: $0.0 | 8 hr 30 min | 0 stops | ROUND_TRIP_DEPARTING
+[LEG 1]: 2025-12-03 14:30:00 - 2025-12-03 18:00:00 | LHR-YYZ | 8 hr 30 min | VS 147 | Virgin Atlantic
+
+Toronto | 14 days 3 hr 15 min
+
+[FLIGHT 1]: $882.0 | 7 hr 20 min | 0 stops | ROUND_TRIP_RETURNING
+[LEG 1]: 2025-12-17 21:15:00 - 2025-12-18 09:35:00 | YYZ-LHR | 7 hr 20 min | VS 148 | Virgin Atlantic
+
+London, Heathrow | END"
+1049.0	15.666666666666666	0.0	0	2025-12-03T11:40:00	2025-12-18T06:30:00	London, Gatwick	London, Heathrow	['Toronto']	"2025-12-03 11:40:00 - 2025-12-18 06:30:00 | $1049.0 | 15 hr 40 min
+
+London, Gatwick | START
+
+[FLIGHT 1]: $371.0 | 8 hr 20 min | 0 stops | ONE_WAY
+[LEG 1]: 2025-12-03 11:40:00 - 2025-12-03 15:00:00 | LGW-YYZ | 8 hr 20 min | TS 123 | Air Transat
+
+Toronto | 14 days 3 hr 10 min
+
+[FLIGHT 2]: $678.0 | 7 hr 20 min | 0 stops | ONE_WAY
+[LEG 1]: 2025-12-17 18:10:00 - 2025-12-18 06:30:00 | YYZ-LHR | 7 hr 20 min | AC 854 | Air Canada
+
+London, Heathrow | END"
+1079.0	15.5	0.0	0	2025-12-03T11:40:00	2025-12-18T09:45:00	London, Gatwick	London, Gatwick	['Toronto']	"2025-12-03 11:40:00 - 2025-12-18 09:45:00 | $1079.0 | 15 hr 30 min
+
+London, Gatwick | START
+
+[FLIGHT 1]: $371.0 | 8 hr 20 min | 0 stops | ONE_WAY
+[LEG 1]: 2025-12-03 11:40:00 - 2025-12-03 15:00:00 | LGW-YYZ | 8 hr 20 min | TS 123 | Air Transat
+
+Toronto | 14 days 6 hr 35 min
+
+[FLIGHT 2]: $708.0 | 7 hr 10 min | 0 stops | ONE_WAY
+[LEG 1]: 2025-12-17 21:35:00 - 2025-12-18 09:45:00 | YYZ-LGW | 7 hr 10 min | TS 122 | Air Transat
+
+London, Gatwick | END"
+1085.0	15.666666666666666	0.0	0	2025-12-03T11:40:00	2025-12-18T11:20:00	London, Gatwick	London, Heathrow	['Toronto']	"2025-12-03 11:40:00 - 2025-12-18 11:20:00 | $1085.0 | 15 hr 40 min
+
+London, Gatwick | START
+
+[FLIGHT 1]: $371.0 | 8 hr 20 min | 0 stops | ONE_WAY
+[LEG 1]: 2025-12-03 11:40:00 - 2025-12-03 15:00:00 | LGW-YYZ | 8 hr 20 min | TS 123 | Air Transat
+
+Toronto | 14 days 8 hr
+
+[FLIGHT 2]: $714.0 | 7 hr 20 min | 0 stops | ONE_WAY
+[LEG 1]: 2025-12-17 23:00:00 - 2025-12-18 11:20:00 | YYZ-LHR | 7 hr 20 min | AC 858 | Air Canada
+
+London, Heathrow | END"
+1094.0	15.416666666666666	0.0	0	2025-12-03T11:40:00	2025-12-18T08:30:00	London, Gatwick	London, Heathrow	['Toronto']	"2025-12-03 11:40:00 - 2025-12-18 08:30:00 | $1094.0 | 15 hr 25 min
+
+London, Gatwick | START
+
+[FLIGHT 1]: $371.0 | 8 hr 20 min | 0 stops | ONE_WAY
+[LEG 1]: 2025-12-03 11:40:00 - 2025-12-03 15:00:00 | LGW-YYZ | 8 hr 20 min | TS 123 | Air Transat
+
+Toronto | 14 days 5 hr 25 min
+
+[FLIGHT 2]: $723.0 | 7 hr 5 min | 0 stops | ONE_WAY
+[LEG 1]: 2025-12-17 20:25:00 - 2025-12-18 08:30:00 | YYZ-LHR | 7 hr 5 min | AC 856 | Air Canada
+
+London, Heathrow | END"
+1095.0	15.666666666666666	0.0	0	2025-12-03T11:40:00	2025-12-18T09:35:00	London, Gatwick	London, Heathrow	['Toronto']	"2025-12-03 11:40:00 - 2025-12-18 09:35:00 | $1095.0 | 15 hr 40 min
+
+London, Gatwick | START
+
+[FLIGHT 1]: $371.0 | 8 hr 20 min | 0 stops | ONE_WAY
+[LEG 1]: 2025-12-03 11:40:00 - 2025-12-03 15:00:00 | LGW-YYZ | 8 hr 20 min | TS 123 | Air Transat
+
+Toronto | 14 days 6 hr 15 min
+
+[FLIGHT 2]: $724.0 | 7 hr 20 min | 0 stops | ONE_WAY
+[LEG 1]: 2025-12-17 21:15:00 - 2025-12-18 09:35:00 | YYZ-LHR | 7 hr 20 min | VS 148 | Virgin Atlantic
+
+London, Heathrow | END"
+1100.0	15.25	0.0	0	2025-12-03T11:10:00	2025-12-18T08:30:00	London, Heathrow	London, Heathrow	['Toronto']	"2025-12-03 11:10:00 - 2025-12-18 08:30:00 | $1100.0 | 15 hr 15 min
+
+London, Heathrow | START
+
+[FLIGHT 1]: $0.0 | 8 hr 10 min | 0 stops | ROUND_TRIP_DEPARTING
+[LEG 1]: 2025-12-03 11:10:00 - 2025-12-03 14:20:00 | LHR-YYZ | 8 hr 10 min | AC 855 | Air Canada
+
+Toronto | 14 days 6 hr 5 min
+
+[FLIGHT 1]: $1100.0 | 7 hr 5 min | 0 stops | ROUND_TRIP_RETURNING
+[LEG 1]: 2025-12-17 20:25:00 - 2025-12-18 08:30:00 | YYZ-LHR | 7 hr 5 min | AC 856 | Air Canada
+
+London, Heathrow | END"
+1100.0	15.5	0.0	0	2025-12-03T11:10:00	2025-12-18T11:20:00	London, Heathrow	London, Heathrow	['Toronto']	"2025-12-03 11:10:00 - 2025-12-18 11:20:00 | $1100.0 | 15 hr 30 min
+
+London, Heathrow | START
+
+[FLIGHT 1]: $0.0 | 8 hr 10 min | 0 stops | ROUND_TRIP_DEPARTING
+[LEG 1]: 2025-12-03 11:10:00 - 2025-12-03 14:20:00 | LHR-YYZ | 8 hr 10 min | AC 855 | Air Canada
+
+Toronto | 14 days 8 hr 40 min
+
+[FLIGHT 1]: $1100.0 | 7 hr 20 min | 0 stops | ROUND_TRIP_RETURNING
+[LEG 1]: 2025-12-17 23:00:00 - 2025-12-18 11:20:00 | YYZ-LHR | 7 hr 20 min | AC 858 | Air Canada
+
+London, Heathrow | END"
+1111.0	15.083333333333334	0.0	0	2025-12-03T13:00:00	2025-12-18T08:30:00	London, Heathrow	London, Heathrow	['Toronto']	"2025-12-03 13:00:00 - 2025-12-18 08:30:00 | $1111.0 | 15 hr 5 min
+
+London, Heathrow | START
+
+[FLIGHT 1]: $0.0 | 8 hr | 0 stops | ROUND_TRIP_DEPARTING
+[LEG 1]: 2025-12-03 13:00:00 - 2025-12-03 16:00:00 | LHR-YYZ | 8 hr | AC 857 | Air Canada
+
+Toronto | 14 days 4 hr 25 min
+
+[FLIGHT 1]: $1111.0 | 7 hr 5 min | 0 stops | ROUND_TRIP_RETURNING
+[LEG 1]: 2025-12-17 20:25:00 - 2025-12-18 08:30:00 | YYZ-LHR | 7 hr 5 min | AC 856 | Air Canada
+
+London, Heathrow | END"
+1111.0	15.333333333333334	0.0	0	2025-12-03T13:00:00	2025-12-18T11:20:00	London, Heathrow	London, Heathrow	['Toronto']	"2025-12-03 13:00:00 - 2025-12-18 11:20:00 | $1111.0 | 15 hr 20 min
+
+London, Heathrow | START
+
+[FLIGHT 1]: $0.0 | 8 hr | 0 stops | ROUND_TRIP_DEPARTING
+[LEG 1]: 2025-12-03 13:00:00 - 2025-12-03 16:00:00 | LHR-YYZ | 8 hr | AC 857 | Air Canada
+
+Toronto | 14 days 7 hr
+
+[FLIGHT 1]: $1111.0 | 7 hr 20 min | 0 stops | ROUND_TRIP_RETURNING
+[LEG 1]: 2025-12-17 23:00:00 - 2025-12-18 11:20:00 | YYZ-LHR | 7 hr 20 min | AC 858 | Air Canada
+
+London, Heathrow | END"
+1140.0	15.416666666666666	0.0	0	2025-12-03T11:40:00	2025-12-19T08:30:00	London, Gatwick	London, Heathrow	['Toronto']	"2025-12-03 11:40:00 - 2025-12-19 08:30:00 | $1140.0 | 15 hr 25 min
+
+London, Gatwick | START
+
+[FLIGHT 1]: $371.0 | 8 hr 20 min | 0 stops | ONE_WAY
+[LEG 1]: 2025-12-03 11:40:00 - 2025-12-03 15:00:00 | LGW-YYZ | 8 hr 20 min | TS 123 | Air Transat
+
+Toronto | 15 days 5 hr 25 min
+
+[FLIGHT 2]: $769.0 | 7 hr 5 min | 0 stops | ONE_WAY
+[LEG 1]: 2025-12-18 20:25:00 - 2025-12-19 08:30:00 | YYZ-LHR | 7 hr 5 min | AC 856 | Air Canada
+
+London, Heathrow | END"
+1140.0	15.666666666666666	0.0	0	2025-12-03T11:40:00	2025-12-19T06:30:00	London, Gatwick	London, Heathrow	['Toronto']	"2025-12-03 11:40:00 - 2025-12-19 06:30:00 | $1140.0 | 15 hr 40 min
+
+London, Gatwick | START
+
+[FLIGHT 1]: $371.0 | 8 hr 20 min | 0 stops | ONE_WAY
+[LEG 1]: 2025-12-03 11:40:00 - 2025-12-03 15:00:00 | LGW-YYZ | 8 hr 20 min | TS 123 | Air Transat
+
+Toronto | 15 days 3 hr 10 min
+
+[FLIGHT 2]: $769.0 | 7 hr 20 min | 0 stops | ONE_WAY
+[LEG 1]: 2025-12-18 18:10:00 - 2025-12-19 06:30:00 | YYZ-LHR | 7 hr 20 min | AC 854 | Air Canada
+
+London, Heathrow | END"
+1188.0	15.666666666666666	0.0	0	2025-12-03T11:40:00	2025-12-19T11:20:00	London, Gatwick	London, Heathrow	['Toronto']	"2025-12-03 11:40:00 - 2025-12-19 11:20:00 | $1188.0 | 15 hr 40 min
+
+London, Gatwick | START
+
+[FLIGHT 1]: $371.0 | 8 hr 20 min | 0 stops | ONE_WAY
+[LEG 1]: 2025-12-03 11:40:00 - 2025-12-03 15:00:00 | LGW-YYZ | 8 hr 20 min | TS 123 | Air Transat
+
+Toronto | 15 days 8 hr
+
+[FLIGHT 2]: $817.0 | 7 hr 20 min | 0 stops | ONE_WAY
+[LEG 1]: 2025-12-18 23:00:00 - 2025-12-19 11:20:00 | YYZ-LHR | 7 hr 20 min | AC 858 | Air Canada
+
+London, Heathrow | END"
+1252.0	15.5	0.0	0	2025-12-03T11:40:00	2025-12-19T09:45:00	London, Gatwick	London, Gatwick	['Toronto']	"2025-12-03 11:40:00 - 2025-12-19 09:45:00 | $1252.0 | 15 hr 30 min
+
+London, Gatwick | START
+
+[FLIGHT 1]: $371.0 | 8 hr 20 min | 0 stops | ONE_WAY
+[LEG 1]: 2025-12-03 11:40:00 - 2025-12-03 15:00:00 | LGW-YYZ | 8 hr 20 min | TS 123 | Air Transat
+
+Toronto | 15 days 6 hr 35 min
+
+[FLIGHT 2]: $881.0 | 7 hr 10 min | 0 stops | ONE_WAY
+[LEG 1]: 2025-12-18 21:35:00 - 2025-12-19 09:45:00 | YYZ-LGW | 7 hr 10 min | TS 122 | Air Transat
+
+London, Gatwick | END"
+1373.0	15.333333333333334	0.0	0	2025-12-03T13:00:00	2025-12-18T06:30:00	London, Heathrow	London, Heathrow	['Toronto']	"2025-12-03 13:00:00 - 2025-12-18 06:30:00 | $1373.0 | 15 hr 20 min
+
+London, Heathrow | START
+
+[FLIGHT 1]: $695.0 | 8 hr | 0 stops | ONE_WAY
+[LEG 1]: 2025-12-03 13:00:00 - 2025-12-03 16:00:00 | LHR-YYZ | 8 hr | AC 857 | Air Canada
+
+Toronto | 14 days 2 hr 10 min
+
+[FLIGHT 2]: $678.0 | 7 hr 20 min | 0 stops | ONE_WAY
+[LEG 1]: 2025-12-17 18:10:00 - 2025-12-18 06:30:00 | YYZ-LHR | 7 hr 20 min | AC 854 | Air Canada
+
+London, Heathrow | END"
+1373.0	15.5	0.0	0	2025-12-03T11:10:00	2025-12-18T06:30:00	London, Heathrow	London, Heathrow	['Toronto']	"2025-12-03 11:10:00 - 2025-12-18 06:30:00 | $1373.0 | 15 hr 30 min
+
+London, Heathrow | START
+
+[FLIGHT 1]: $695.0 | 8 hr 10 min | 0 stops | ONE_WAY
+[LEG 1]: 2025-12-03 11:10:00 - 2025-12-03 14:20:00 | LHR-YYZ | 8 hr 10 min | AC 855 | Air Canada
+
+Toronto | 14 days 3 hr 50 min
+
+[FLIGHT 2]: $678.0 | 7 hr 20 min | 0 stops | ONE_WAY
+[LEG 1]: 2025-12-17 18:10:00 - 2025-12-18 06:30:00 | YYZ-LHR | 7 hr 20 min | AC 854 | Air Canada
+
+London, Heathrow | END"
+1373.0	15.5	0.0	0	2025-12-03T18:00:00	2025-12-18T06:30:00	London, Heathrow	London, Heathrow	['Toronto']	"2025-12-03 18:00:00 - 2025-12-18 06:30:00 | $1373.0 | 15 hr 30 min
+
+London, Heathrow | START
+
+[FLIGHT 1]: $695.0 | 8 hr 10 min | 0 stops | ONE_WAY
+[LEG 1]: 2025-12-03 18:00:00 - 2025-12-03 21:10:00 | LHR-YYZ | 8 hr 10 min | AC 859 | Air Canada
+
+Toronto | 13 days 21 hr
+
+[FLIGHT 2]: $678.0 | 7 hr 20 min | 0 stops | ONE_WAY
+[LEG 1]: 2025-12-17 18:10:00 - 2025-12-18 06:30:00 | YYZ-LHR | 7 hr 20 min | AC 854 | Air Canada
+
+London, Heathrow | END"
+1403.0	15.166666666666666	0.0	0	2025-12-03T13:00:00	2025-12-18T09:45:00	London, Heathrow	London, Gatwick	['Toronto']	"2025-12-03 13:00:00 - 2025-12-18 09:45:00 | $1403.0 | 15 hr 10 min
+
+London, Heathrow | START
+
+[FLIGHT 1]: $695.0 | 8 hr | 0 stops | ONE_WAY
+[LEG 1]: 2025-12-03 13:00:00 - 2025-12-03 16:00:00 | LHR-YYZ | 8 hr | AC 857 | Air Canada
+
+Toronto | 14 days 5 hr 35 min
+
+[FLIGHT 2]: $708.0 | 7 hr 10 min | 0 stops | ONE_WAY
+[LEG 1]: 2025-12-17 21:35:00 - 2025-12-18 09:45:00 | YYZ-LGW | 7 hr 10 min | TS 122 | Air Transat
+
+London, Gatwick | END"
+1403.0	15.333333333333334	0.0	0	2025-12-03T11:10:00	2025-12-18T09:45:00	London, Heathrow	London, Gatwick	['Toronto']	"2025-12-03 11:10:00 - 2025-12-18 09:45:00 | $1403.0 | 15 hr 20 min
+
+London, Heathrow | START
+
+[FLIGHT 1]: $695.0 | 8 hr 10 min | 0 stops | ONE_WAY
+[LEG 1]: 2025-12-03 11:10:00 - 2025-12-03 14:20:00 | LHR-YYZ | 8 hr 10 min | AC 855 | Air Canada
+
+Toronto | 14 days 7 hr 15 min
+
+[FLIGHT 2]: $708.0 | 7 hr 10 min | 0 stops | ONE_WAY
+[LEG 1]: 2025-12-17 21:35:00 - 2025-12-18 09:45:00 | YYZ-LGW | 7 hr 10 min | TS 122 | Air Transat
+
+London, Gatwick | END"
+1403.0	15.333333333333334	0.0	0	2025-12-03T18:00:00	2025-12-18T09:45:00	London, Heathrow	London, Gatwick	['Toronto']	"2025-12-03 18:00:00 - 2025-12-18 09:45:00 | $1403.0 | 15 hr 20 min
+
+London, Heathrow | START
+
+[FLIGHT 1]: $695.0 | 8 hr 10 min | 0 stops | ONE_WAY
+[LEG 1]: 2025-12-03 18:00:00 - 2025-12-03 21:10:00 | LHR-YYZ | 8 hr 10 min | AC 859 | Air Canada
+
+Toronto | 14 days 25 min
+
+[FLIGHT 2]: $708.0 | 7 hr 10 min | 0 stops | ONE_WAY
+[LEG 1]: 2025-12-17 21:35:00 - 2025-12-18 09:45:00 | YYZ-LGW | 7 hr 10 min | TS 122 | Air Transat
+
+London, Gatwick | END"
+1409.0	15.333333333333334	0.0	0	2025-12-03T13:00:00	2025-12-18T11:20:00	London, Heathrow	London, Heathrow	['Toronto']	"2025-12-03 13:00:00 - 2025-12-18 11:20:00 | $1409.0 | 15 hr 20 min
+
+London, Heathrow | START
+
+[FLIGHT 1]: $695.0 | 8 hr | 0 stops | ONE_WAY
+[LEG 1]: 2025-12-03 13:00:00 - 2025-12-03 16:00:00 | LHR-YYZ | 8 hr | AC 857 | Air Canada
+
+Toronto | 14 days 7 hr
+
+[FLIGHT 2]: $714.0 | 7 hr 20 min | 0 stops | ONE_WAY
+[LEG 1]: 2025-12-17 23:00:00 - 2025-12-18 11:20:00 | YYZ-LHR | 7 hr 20 min | AC 858 | Air Canada
+
+London, Heathrow | END"
+1409.0	15.5	0.0	0	2025-12-03T11:10:00	2025-12-18T11:20:00	London, Heathrow	London, Heathrow	['Toronto']	"2025-12-03 11:10:00 - 2025-12-18 11:20:00 | $1409.0 | 15 hr 30 min
+
+London, Heathrow | START
+
+[FLIGHT 1]: $695.0 | 8 hr 10 min | 0 stops | ONE_WAY
+[LEG 1]: 2025-12-03 11:10:00 - 2025-12-03 14:20:00 | LHR-YYZ | 8 hr 10 min | AC 855 | Air Canada
+
+Toronto | 14 days 8 hr 40 min
+
+[FLIGHT 2]: $714.0 | 7 hr 20 min | 0 stops | ONE_WAY
+[LEG 1]: 2025-12-17 23:00:00 - 2025-12-18 11:20:00 | YYZ-LHR | 7 hr 20 min | AC 858 | Air Canada
+
+London, Heathrow | END"
+1409.0	15.5	0.0	0	2025-12-03T18:00:00	2025-12-18T11:20:00	London, Heathrow	London, Heathrow	['Toronto']	"2025-12-03 18:00:00 - 2025-12-18 11:20:00 | $1409.0 | 15 hr 30 min
+
+London, Heathrow | START
+
+[FLIGHT 1]: $695.0 | 8 hr 10 min | 0 stops | ONE_WAY
+[LEG 1]: 2025-12-03 18:00:00 - 2025-12-03 21:10:00 | LHR-YYZ | 8 hr 10 min | AC 859 | Air Canada
+
+Toronto | 14 days 1 hr 50 min
+
+[FLIGHT 2]: $714.0 | 7 hr 20 min | 0 stops | ONE_WAY
+[LEG 1]: 2025-12-17 23:00:00 - 2025-12-18 11:20:00 | YYZ-LHR | 7 hr 20 min | AC 858 | Air Canada
+
+London, Heathrow | END"
+1418.0	15.083333333333334	0.0	0	2025-12-03T13:00:00	2025-12-18T08:30:00	London, Heathrow	London, Heathrow	['Toronto']	"2025-12-03 13:00:00 - 2025-12-18 08:30:00 | $1418.0 | 15 hr 5 min
+
+London, Heathrow | START
+
+[FLIGHT 1]: $695.0 | 8 hr | 0 stops | ONE_WAY
+[LEG 1]: 2025-12-03 13:00:00 - 2025-12-03 16:00:00 | LHR-YYZ | 8 hr | AC 857 | Air Canada
+
+Toronto | 14 days 4 hr 25 min
+
+[FLIGHT 2]: $723.0 | 7 hr 5 min | 0 stops | ONE_WAY
+[LEG 1]: 2025-12-17 20:25:00 - 2025-12-18 08:30:00 | YYZ-LHR | 7 hr 5 min | AC 856 | Air Canada
+
+London, Heathrow | END"
+1418.0	15.25	0.0	0	2025-12-03T11:10:00	2025-12-18T08:30:00	London, Heathrow	London, Heathrow	['Toronto']	"2025-12-03 11:10:00 - 2025-12-18 08:30:00 | $1418.0 | 15 hr 15 min
+
+London, Heathrow | START
+
+[FLIGHT 1]: $695.0 | 8 hr 10 min | 0 stops | ONE_WAY
+[LEG 1]: 2025-12-03 11:10:00 - 2025-12-03 14:20:00 | LHR-YYZ | 8 hr 10 min | AC 855 | Air Canada
+
+Toronto | 14 days 6 hr 5 min
+
+[FLIGHT 2]: $723.0 | 7 hr 5 min | 0 stops | ONE_WAY
+[LEG 1]: 2025-12-17 20:25:00 - 2025-12-18 08:30:00 | YYZ-LHR | 7 hr 5 min | AC 856 | Air Canada
+
+London, Heathrow | END"
+1418.0	15.25	0.0	0	2025-12-03T18:00:00	2025-12-18T08:30:00	London, Heathrow	London, Heathrow	['Toronto']	"2025-12-03 18:00:00 - 2025-12-18 08:30:00 | $1418.0 | 15 hr 15 min
+
+London, Heathrow | START
+
+[FLIGHT 1]: $695.0 | 8 hr 10 min | 0 stops | ONE_WAY
+[LEG 1]: 2025-12-03 18:00:00 - 2025-12-03 21:10:00 | LHR-YYZ | 8 hr 10 min | AC 859 | Air Canada
+
+Toronto | 13 days 23 hr 15 min
+
+[FLIGHT 2]: $723.0 | 7 hr 5 min | 0 stops | ONE_WAY
+[LEG 1]: 2025-12-17 20:25:00 - 2025-12-18 08:30:00 | YYZ-LHR | 7 hr 5 min | AC 856 | Air Canada
+
+London, Heathrow | END"
+1419.0	15.333333333333334	0.0	0	2025-12-03T13:00:00	2025-12-18T09:35:00	London, Heathrow	London, Heathrow	['Toronto']	"2025-12-03 13:00:00 - 2025-12-18 09:35:00 | $1419.0 | 15 hr 20 min
+
+London, Heathrow | START
+
+[FLIGHT 1]: $695.0 | 8 hr | 0 stops | ONE_WAY
+[LEG 1]: 2025-12-03 13:00:00 - 2025-12-03 16:00:00 | LHR-YYZ | 8 hr | AC 857 | Air Canada
+
+Toronto | 14 days 5 hr 15 min
+
+[FLIGHT 2]: $724.0 | 7 hr 20 min | 0 stops | ONE_WAY
+[LEG 1]: 2025-12-17 21:15:00 - 2025-12-18 09:35:00 | YYZ-LHR | 7 hr 20 min | VS 148 | Virgin Atlantic
+
+London, Heathrow | END"
+1419.0	15.5	0.0	0	2025-12-03T11:10:00	2025-12-18T09:35:00	London, Heathrow	London, Heathrow	['Toronto']	"2025-12-03 11:10:00 - 2025-12-18 09:35:00 | $1419.0 | 15 hr 30 min
+
+London, Heathrow | START
+
+[FLIGHT 1]: $695.0 | 8 hr 10 min | 0 stops | ONE_WAY
+[LEG 1]: 2025-12-03 11:10:00 - 2025-12-03 14:20:00 | LHR-YYZ | 8 hr 10 min | AC 855 | Air Canada
+
+Toronto | 14 days 6 hr 55 min
+
+[FLIGHT 2]: $724.0 | 7 hr 20 min | 0 stops | ONE_WAY
+[LEG 1]: 2025-12-17 21:15:00 - 2025-12-18 09:35:00 | YYZ-LHR | 7 hr 20 min | VS 148 | Virgin Atlantic
+
+London, Heathrow | END"
+1419.0	15.5	0.0	0	2025-12-03T18:00:00	2025-12-18T09:35:00	London, Heathrow	London, Heathrow	['Toronto']	"2025-12-03 18:00:00 - 2025-12-18 09:35:00 | $1419.0 | 15 hr 30 min
+
+London, Heathrow | START
+
+[FLIGHT 1]: $695.0 | 8 hr 10 min | 0 stops | ONE_WAY
+[LEG 1]: 2025-12-03 18:00:00 - 2025-12-03 21:10:00 | LHR-YYZ | 8 hr 10 min | AC 859 | Air Canada
+
+Toronto | 14 days 5 min
+
+[FLIGHT 2]: $724.0 | 7 hr 20 min | 0 stops | ONE_WAY
+[LEG 1]: 2025-12-17 21:15:00 - 2025-12-18 09:35:00 | YYZ-LHR | 7 hr 20 min | VS 148 | Virgin Atlantic
+
+London, Heathrow | END"
+1431.0	15.5	0.0	0	2025-12-03T11:40:00	2025-12-18T06:30:00	London, Heathrow	London, Heathrow	['Toronto']	"2025-12-03 11:40:00 - 2025-12-18 06:30:00 | $1431.0 | 15 hr 30 min
+
+London, Heathrow | START
+
+[FLIGHT 1]: $753.0 | 8 hr 10 min | 0 stops | ONE_WAY
+[LEG 1]: 2025-12-03 11:40:00 - 2025-12-03 14:50:00 | LHR-YYZ | 8 hr 10 min | BA 93 | British Airways
+
+Toronto | 14 days 3 hr 20 min
+
+[FLIGHT 2]: $678.0 | 7 hr 20 min | 0 stops | ONE_WAY
+[LEG 1]: 2025-12-17 18:10:00 - 2025-12-18 06:30:00 | YYZ-LHR | 7 hr 20 min | AC 854 | Air Canada
+
+London, Heathrow | END"
+1461.0	15.333333333333334	0.0	0	2025-12-03T11:40:00	2025-12-18T09:45:00	London, Heathrow	London, Gatwick	['Toronto']	"2025-12-03 11:40:00 - 2025-12-18 09:45:00 | $1461.0 | 15 hr 20 min
+
+London, Heathrow | START
+
+[FLIGHT 1]: $753.0 | 8 hr 10 min | 0 stops | ONE_WAY
+[LEG 1]: 2025-12-03 11:40:00 - 2025-12-03 14:50:00 | LHR-YYZ | 8 hr 10 min | BA 93 | British Airways
+
+Toronto | 14 days 6 hr 45 min
+
+[FLIGHT 2]: $708.0 | 7 hr 10 min | 0 stops | ONE_WAY
+[LEG 1]: 2025-12-17 21:35:00 - 2025-12-18 09:45:00 | YYZ-LGW | 7 hr 10 min | TS 122 | Air Transat
+
+London, Gatwick | END"
+1464.0	15.083333333333334	0.0	0	2025-12-03T13:00:00	2025-12-19T08:30:00	London, Heathrow	London, Heathrow	['Toronto']	"2025-12-03 13:00:00 - 2025-12-19 08:30:00 | $1464.0 | 15 hr 5 min
+
+London, Heathrow | START
+
+[FLIGHT 1]: $695.0 | 8 hr | 0 stops | ONE_WAY
+[LEG 1]: 2025-12-03 13:00:00 - 2025-12-03 16:00:00 | LHR-YYZ | 8 hr | AC 857 | Air Canada
+
+Toronto | 15 days 4 hr 25 min
+
+[FLIGHT 2]: $769.0 | 7 hr 5 min | 0 stops | ONE_WAY
+[LEG 1]: 2025-12-18 20:25:00 - 2025-12-19 08:30:00 | YYZ-LHR | 7 hr 5 min | AC 856 | Air Canada
+
+London, Heathrow | END"
+1464.0	15.25	0.0	0	2025-12-03T11:10:00	2025-12-19T08:30:00	London, Heathrow	London, Heathrow	['Toronto']	"2025-12-03 11:10:00 - 2025-12-19 08:30:00 | $1464.0 | 15 hr 15 min
+
+London, Heathrow | START
+
+[FLIGHT 1]: $695.0 | 8 hr 10 min | 0 stops | ONE_WAY
+[LEG 1]: 2025-12-03 11:10:00 - 2025-12-03 14:20:00 | LHR-YYZ | 8 hr 10 min | AC 855 | Air Canada
+
+Toronto | 15 days 6 hr 5 min
+
+[FLIGHT 2]: $769.0 | 7 hr 5 min | 0 stops | ONE_WAY
+[LEG 1]: 2025-12-18 20:25:00 - 2025-12-19 08:30:00 | YYZ-LHR | 7 hr 5 min | AC 856 | Air Canada
+
+London, Heathrow | END"
+1464.0	15.25	0.0	0	2025-12-03T18:00:00	2025-12-19T08:30:00	London, Heathrow	London, Heathrow	['Toronto']	"2025-12-03 18:00:00 - 2025-12-19 08:30:00 | $1464.0 | 15 hr 15 min
+
+London, Heathrow | START
+
+[FLIGHT 1]: $695.0 | 8 hr 10 min | 0 stops | ONE_WAY
+[LEG 1]: 2025-12-03 18:00:00 - 2025-12-03 21:10:00 | LHR-YYZ | 8 hr 10 min | AC 859 | Air Canada
+
+Toronto | 14 days 23 hr 15 min
+
+[FLIGHT 2]: $769.0 | 7 hr 5 min | 0 stops | ONE_WAY
+[LEG 1]: 2025-12-18 20:25:00 - 2025-12-19 08:30:00 | YYZ-LHR | 7 hr 5 min | AC 856 | Air Canada
+
+London, Heathrow | END"
+1464.0	15.333333333333334	0.0	0	2025-12-03T13:00:00	2025-12-19T06:30:00	London, Heathrow	London, Heathrow	['Toronto']	"2025-12-03 13:00:00 - 2025-12-19 06:30:00 | $1464.0 | 15 hr 20 min
+
+London, Heathrow | START
+
+[FLIGHT 1]: $695.0 | 8 hr | 0 stops | ONE_WAY
+[LEG 1]: 2025-12-03 13:00:00 - 2025-12-03 16:00:00 | LHR-YYZ | 8 hr | AC 857 | Air Canada
+
+Toronto | 15 days 2 hr 10 min
+
+[FLIGHT 2]: $769.0 | 7 hr 20 min | 0 stops | ONE_WAY
+[LEG 1]: 2025-12-18 18:10:00 - 2025-12-19 06:30:00 | YYZ-LHR | 7 hr 20 min | AC 854 | Air Canada
+
+London, Heathrow | END"
+1464.0	15.5	0.0	0	2025-12-03T11:10:00	2025-12-19T06:30:00	London, Heathrow	London, Heathrow	['Toronto']	"2025-12-03 11:10:00 - 2025-12-19 06:30:00 | $1464.0 | 15 hr 30 min
+
+London, Heathrow | START
+
+[FLIGHT 1]: $695.0 | 8 hr 10 min | 0 stops | ONE_WAY
+[LEG 1]: 2025-12-03 11:10:00 - 2025-12-03 14:20:00 | LHR-YYZ | 8 hr 10 min | AC 855 | Air Canada
+
+Toronto | 15 days 3 hr 50 min
+
+[FLIGHT 2]: $769.0 | 7 hr 20 min | 0 stops | ONE_WAY
+[LEG 1]: 2025-12-18 18:10:00 - 2025-12-19 06:30:00 | YYZ-LHR | 7 hr 20 min | AC 854 | Air Canada
+
+London, Heathrow | END"
+1464.0	15.5	0.0	0	2025-12-03T18:00:00	2025-12-19T06:30:00	London, Heathrow	London, Heathrow	['Toronto']	"2025-12-03 18:00:00 - 2025-12-19 06:30:00 | $1464.0 | 15 hr 30 min
+
+London, Heathrow | START
+
+[FLIGHT 1]: $695.0 | 8 hr 10 min | 0 stops | ONE_WAY
+[LEG 1]: 2025-12-03 18:00:00 - 2025-12-03 21:10:00 | LHR-YYZ | 8 hr 10 min | AC 859 | Air Canada
+
+Toronto | 14 days 21 hr
+
+[FLIGHT 2]: $769.0 | 7 hr 20 min | 0 stops | ONE_WAY
+[LEG 1]: 2025-12-18 18:10:00 - 2025-12-19 06:30:00 | YYZ-LHR | 7 hr 20 min | AC 854 | Air Canada
+
+London, Heathrow | END"
+1467.0	15.5	0.0	0	2025-12-03T11:40:00	2025-12-18T11:20:00	London, Heathrow	London, Heathrow	['Toronto']	"2025-12-03 11:40:00 - 2025-12-18 11:20:00 | $1467.0 | 15 hr 30 min
+
+London, Heathrow | START
+
+[FLIGHT 1]: $753.0 | 8 hr 10 min | 0 stops | ONE_WAY
+[LEG 1]: 2025-12-03 11:40:00 - 2025-12-03 14:50:00 | LHR-YYZ | 8 hr 10 min | BA 93 | British Airways
+
+Toronto | 14 days 8 hr 10 min
+
+[FLIGHT 2]: $714.0 | 7 hr 20 min | 0 stops | ONE_WAY
+[LEG 1]: 2025-12-17 23:00:00 - 2025-12-18 11:20:00 | YYZ-LHR | 7 hr 20 min | AC 858 | Air Canada
+
+London, Heathrow | END"
+1467.0	15.833333333333334	0.0	0	2025-12-03T14:30:00	2025-12-18T06:30:00	London, Heathrow	London, Heathrow	['Toronto']	"2025-12-03 14:30:00 - 2025-12-18 06:30:00 | $1467.0 | 15 hr 50 min
+
+London, Heathrow | START
+
+[FLIGHT 1]: $789.0 | 8 hr 30 min | 0 stops | ONE_WAY
+[LEG 1]: 2025-12-03 14:30:00 - 2025-12-03 18:00:00 | LHR-YYZ | 8 hr 30 min | VS 147 | Virgin Atlantic
+
+Toronto | 14 days 10 min
+
+[FLIGHT 2]: $678.0 | 7 hr 20 min | 0 stops | ONE_WAY
+[LEG 1]: 2025-12-17 18:10:00 - 2025-12-18 06:30:00 | YYZ-LHR | 7 hr 20 min | AC 854 | Air Canada
+
+London, Heathrow | END"
+1476.0	15.25	0.0	0	2025-12-03T11:40:00	2025-12-18T08:30:00	London, Heathrow	London, Heathrow	['Toronto']	"2025-12-03 11:40:00 - 2025-12-18 08:30:00 | $1476.0 | 15 hr 15 min
+
+London, Heathrow | START
+
+[FLIGHT 1]: $753.0 | 8 hr 10 min | 0 stops | ONE_WAY
+[LEG 1]: 2025-12-03 11:40:00 - 2025-12-03 14:50:00 | LHR-YYZ | 8 hr 10 min | BA 93 | British Airways
+
+Toronto | 14 days 5 hr 35 min
+
+[FLIGHT 2]: $723.0 | 7 hr 5 min | 0 stops | ONE_WAY
+[LEG 1]: 2025-12-17 20:25:00 - 2025-12-18 08:30:00 | YYZ-LHR | 7 hr 5 min | AC 856 | Air Canada
+
+London, Heathrow | END"
+1477.0	15.5	0.0	0	2025-12-03T11:40:00	2025-12-18T09:35:00	London, Heathrow	London, Heathrow	['Toronto']	"2025-12-03 11:40:00 - 2025-12-18 09:35:00 | $1477.0 | 15 hr 30 min
+
+London, Heathrow | START
+
+[FLIGHT 1]: $753.0 | 8 hr 10 min | 0 stops | ONE_WAY
+[LEG 1]: 2025-12-03 11:40:00 - 2025-12-03 14:50:00 | LHR-YYZ | 8 hr 10 min | BA 93 | British Airways
+
+Toronto | 14 days 6 hr 25 min
+
+[FLIGHT 2]: $724.0 | 7 hr 20 min | 0 stops | ONE_WAY
+[LEG 1]: 2025-12-17 21:15:00 - 2025-12-18 09:35:00 | YYZ-LHR | 7 hr 20 min | VS 148 | Virgin Atlantic
+
+London, Heathrow | END"
+1481.0	15.5	0.0	0	2025-12-03T17:05:00	2025-12-18T06:30:00	London, Heathrow	London, Heathrow	['Toronto']	"2025-12-03 17:05:00 - 2025-12-18 06:30:00 | $1481.0 | 15 hr 30 min
+
+London, Heathrow | START
+
+[FLIGHT 1]: $803.0 | 8 hr 10 min | 0 stops | ONE_WAY
+[LEG 1]: 2025-12-03 17:05:00 - 2025-12-03 20:15:00 | LHR-YYZ | 8 hr 10 min | BA 99 | British Airways
+
+Toronto | 13 days 21 hr 55 min
+
+[FLIGHT 2]: $678.0 | 7 hr 20 min | 0 stops | ONE_WAY
+[LEG 1]: 2025-12-17 18:10:00 - 2025-12-18 06:30:00 | YYZ-LHR | 7 hr 20 min | AC 854 | Air Canada
+
+London, Heathrow | END"
+1497.0	15.666666666666666	0.0	0	2025-12-03T14:30:00	2025-12-18T09:45:00	London, Heathrow	London, Gatwick	['Toronto']	"2025-12-03 14:30:00 - 2025-12-18 09:45:00 | $1497.0 | 15 hr 40 min
+
+London, Heathrow | START
+
+[FLIGHT 1]: $789.0 | 8 hr 30 min | 0 stops | ONE_WAY
+[LEG 1]: 2025-12-03 14:30:00 - 2025-12-03 18:00:00 | LHR-YYZ | 8 hr 30 min | VS 147 | Virgin Atlantic
+
+Toronto | 14 days 3 hr 35 min
+
+[FLIGHT 2]: $708.0 | 7 hr 10 min | 0 stops | ONE_WAY
+[LEG 1]: 2025-12-17 21:35:00 - 2025-12-18 09:45:00 | YYZ-LGW | 7 hr 10 min | TS 122 | Air Transat
+
+London, Gatwick | END"
+1503.0	15.833333333333334	0.0	0	2025-12-03T14:30:00	2025-12-18T11:20:00	London, Heathrow	London, Heathrow	['Toronto']	"2025-12-03 14:30:00 - 2025-12-18 11:20:00 | $1503.0 | 15 hr 50 min
+
+London, Heathrow | START
+
+[FLIGHT 1]: $789.0 | 8 hr 30 min | 0 stops | ONE_WAY
+[LEG 1]: 2025-12-03 14:30:00 - 2025-12-03 18:00:00 | LHR-YYZ | 8 hr 30 min | VS 147 | Virgin Atlantic
+
+Toronto | 14 days 5 hr
+
+[FLIGHT 2]: $714.0 | 7 hr 20 min | 0 stops | ONE_WAY
+[LEG 1]: 2025-12-17 23:00:00 - 2025-12-18 11:20:00 | YYZ-LHR | 7 hr 20 min | AC 858 | Air Canada
+
+London, Heathrow | END"
+1511.0	15.333333333333334	0.0	0	2025-12-03T17:05:00	2025-12-18T09:45:00	London, Heathrow	London, Gatwick	['Toronto']	"2025-12-03 17:05:00 - 2025-12-18 09:45:00 | $1511.0 | 15 hr 20 min
+
+London, Heathrow | START
+
+[FLIGHT 1]: $803.0 | 8 hr 10 min | 0 stops | ONE_WAY
+[LEG 1]: 2025-12-03 17:05:00 - 2025-12-03 20:15:00 | LHR-YYZ | 8 hr 10 min | BA 99 | British Airways
+
+Toronto | 14 days 1 hr 20 min
+
+[FLIGHT 2]: $708.0 | 7 hr 10 min | 0 stops | ONE_WAY
+[LEG 1]: 2025-12-17 21:35:00 - 2025-12-18 09:45:00 | YYZ-LGW | 7 hr 10 min | TS 122 | Air Transat
+
+London, Gatwick | END"
+1512.0	15.333333333333334	0.0	0	2025-12-03T13:00:00	2025-12-19T11:20:00	London, Heathrow	London, Heathrow	['Toronto']	"2025-12-03 13:00:00 - 2025-12-19 11:20:00 | $1512.0 | 15 hr 20 min
+
+London, Heathrow | START
+
+[FLIGHT 1]: $695.0 | 8 hr | 0 stops | ONE_WAY
+[LEG 1]: 2025-12-03 13:00:00 - 2025-12-03 16:00:00 | LHR-YYZ | 8 hr | AC 857 | Air Canada
+
+Toronto | 15 days 7 hr
+
+[FLIGHT 2]: $817.0 | 7 hr 20 min | 0 stops | ONE_WAY
+[LEG 1]: 2025-12-18 23:00:00 - 2025-12-19 11:20:00 | YYZ-LHR | 7 hr 20 min | AC 858 | Air Canada
+
+London, Heathrow | END"
+1512.0	15.5	0.0	0	2025-12-03T11:10:00	2025-12-19T11:20:00	London, Heathrow	London, Heathrow	['Toronto']	"2025-12-03 11:10:00 - 2025-12-19 11:20:00 | $1512.0 | 15 hr 30 min
+
+London, Heathrow | START
+
+[FLIGHT 1]: $695.0 | 8 hr 10 min | 0 stops | ONE_WAY
+[LEG 1]: 2025-12-03 11:10:00 - 2025-12-03 14:20:00 | LHR-YYZ | 8 hr 10 min | AC 855 | Air Canada
+
+Toronto | 15 days 8 hr 40 min
+
+[FLIGHT 2]: $817.0 | 7 hr 20 min | 0 stops | ONE_WAY
+[LEG 1]: 2025-12-18 23:00:00 - 2025-12-19 11:20:00 | YYZ-LHR | 7 hr 20 min | AC 858 | Air Canada
+
+London, Heathrow | END"
+1512.0	15.5	0.0	0	2025-12-03T18:00:00	2025-12-19T11:20:00	London, Heathrow	London, Heathrow	['Toronto']	"2025-12-03 18:00:00 - 2025-12-19 11:20:00 | $1512.0 | 15 hr 30 min
+
+London, Heathrow | START
+
+[FLIGHT 1]: $695.0 | 8 hr 10 min | 0 stops | ONE_WAY
+[LEG 1]: 2025-12-03 18:00:00 - 2025-12-03 21:10:00 | LHR-YYZ | 8 hr 10 min | AC 859 | Air Canada
+
+Toronto | 15 days 1 hr 50 min
+
+[FLIGHT 2]: $817.0 | 7 hr 20 min | 0 stops | ONE_WAY
+[LEG 1]: 2025-12-18 23:00:00 - 2025-12-19 11:20:00 | YYZ-LHR | 7 hr 20 min | AC 858 | Air Canada
+
+London, Heathrow | END"
+1512.0	15.583333333333334	0.0	0	2025-12-03T14:30:00	2025-12-18T08:30:00	London, Heathrow	London, Heathrow	['Toronto']	"2025-12-03 14:30:00 - 2025-12-18 08:30:00 | $1512.0 | 15 hr 35 min
+
+London, Heathrow | START
+
+[FLIGHT 1]: $789.0 | 8 hr 30 min | 0 stops | ONE_WAY
+[LEG 1]: 2025-12-03 14:30:00 - 2025-12-03 18:00:00 | LHR-YYZ | 8 hr 30 min | VS 147 | Virgin Atlantic
+
+Toronto | 14 days 2 hr 25 min
+
+[FLIGHT 2]: $723.0 | 7 hr 5 min | 0 stops | ONE_WAY
+[LEG 1]: 2025-12-17 20:25:00 - 2025-12-18 08:30:00 | YYZ-LHR | 7 hr 5 min | AC 856 | Air Canada
+
+London, Heathrow | END"
+1513.0	15.833333333333334	0.0	0	2025-12-03T14:30:00	2025-12-18T09:35:00	London, Heathrow	London, Heathrow	['Toronto']	"2025-12-03 14:30:00 - 2025-12-18 09:35:00 | $1513.0 | 15 hr 50 min
+
+London, Heathrow | START
+
+[FLIGHT 1]: $789.0 | 8 hr 30 min | 0 stops | ONE_WAY
+[LEG 1]: 2025-12-03 14:30:00 - 2025-12-03 18:00:00 | LHR-YYZ | 8 hr 30 min | VS 147 | Virgin Atlantic
+
+Toronto | 14 days 3 hr 15 min
+
+[FLIGHT 2]: $724.0 | 7 hr 20 min | 0 stops | ONE_WAY
+[LEG 1]: 2025-12-17 21:15:00 - 2025-12-18 09:35:00 | YYZ-LHR | 7 hr 20 min | VS 148 | Virgin Atlantic
+
+London, Heathrow | END"
+1517.0	15.5	0.0	0	2025-12-03T17:05:00	2025-12-18T11:20:00	London, Heathrow	London, Heathrow	['Toronto']	"2025-12-03 17:05:00 - 2025-12-18 11:20:00 | $1517.0 | 15 hr 30 min
+
+London, Heathrow | START
+
+[FLIGHT 1]: $803.0 | 8 hr 10 min | 0 stops | ONE_WAY
+[LEG 1]: 2025-12-03 17:05:00 - 2025-12-03 20:15:00 | LHR-YYZ | 8 hr 10 min | BA 99 | British Airways
+
+Toronto | 14 days 2 hr 45 min
+
+[FLIGHT 2]: $714.0 | 7 hr 20 min | 0 stops | ONE_WAY
+[LEG 1]: 2025-12-17 23:00:00 - 2025-12-18 11:20:00 | YYZ-LHR | 7 hr 20 min | AC 858 | Air Canada
+
+London, Heathrow | END"
+1522.0	15.25	0.0	0	2025-12-03T11:40:00	2025-12-19T08:30:00	London, Heathrow	London, Heathrow	['Toronto']	"2025-12-03 11:40:00 - 2025-12-19 08:30:00 | $1522.0 | 15 hr 15 min
+
+London, Heathrow | START
+
+[FLIGHT 1]: $753.0 | 8 hr 10 min | 0 stops | ONE_WAY
+[LEG 1]: 2025-12-03 11:40:00 - 2025-12-03 14:50:00 | LHR-YYZ | 8 hr 10 min | BA 93 | British Airways
+
+Toronto | 15 days 5 hr 35 min
+
+[FLIGHT 2]: $769.0 | 7 hr 5 min | 0 stops | ONE_WAY
+[LEG 1]: 2025-12-18 20:25:00 - 2025-12-19 08:30:00 | YYZ-LHR | 7 hr 5 min | AC 856 | Air Canada
+
+London, Heathrow | END"
+1522.0	15.5	0.0	0	2025-12-03T11:40:00	2025-12-19T06:30:00	London, Heathrow	London, Heathrow	['Toronto']	"2025-12-03 11:40:00 - 2025-12-19 06:30:00 | $1522.0 | 15 hr 30 min
+
+London, Heathrow | START
+
+[FLIGHT 1]: $753.0 | 8 hr 10 min | 0 stops | ONE_WAY
+[LEG 1]: 2025-12-03 11:40:00 - 2025-12-03 14:50:00 | LHR-YYZ | 8 hr 10 min | BA 93 | British Airways
+
+Toronto | 15 days 3 hr 20 min
+
+[FLIGHT 2]: $769.0 | 7 hr 20 min | 0 stops | ONE_WAY
+[LEG 1]: 2025-12-18 18:10:00 - 2025-12-19 06:30:00 | YYZ-LHR | 7 hr 20 min | AC 854 | Air Canada
+
+London, Heathrow | END"
+1526.0	15.25	0.0	0	2025-12-03T17:05:00	2025-12-18T08:30:00	London, Heathrow	London, Heathrow	['Toronto']	"2025-12-03 17:05:00 - 2025-12-18 08:30:00 | $1526.0 | 15 hr 15 min
+
+London, Heathrow | START
+
+[FLIGHT 1]: $803.0 | 8 hr 10 min | 0 stops | ONE_WAY
+[LEG 1]: 2025-12-03 17:05:00 - 2025-12-03 20:15:00 | LHR-YYZ | 8 hr 10 min | BA 99 | British Airways
+
+Toronto | 14 days 10 min
+
+[FLIGHT 2]: $723.0 | 7 hr 5 min | 0 stops | ONE_WAY
+[LEG 1]: 2025-12-17 20:25:00 - 2025-12-18 08:30:00 | YYZ-LHR | 7 hr 5 min | AC 856 | Air Canada
+
+London, Heathrow | END"
+1527.0	15.5	0.0	0	2025-12-03T17:05:00	2025-12-18T09:35:00	London, Heathrow	London, Heathrow	['Toronto']	"2025-12-03 17:05:00 - 2025-12-18 09:35:00 | $1527.0 | 15 hr 30 min
+
+London, Heathrow | START
+
+[FLIGHT 1]: $803.0 | 8 hr 10 min | 0 stops | ONE_WAY
+[LEG 1]: 2025-12-03 17:05:00 - 2025-12-03 20:15:00 | LHR-YYZ | 8 hr 10 min | BA 99 | British Airways
+
+Toronto | 14 days 1 hr
+
+[FLIGHT 2]: $724.0 | 7 hr 20 min | 0 stops | ONE_WAY
+[LEG 1]: 2025-12-17 21:15:00 - 2025-12-18 09:35:00 | YYZ-LHR | 7 hr 20 min | VS 148 | Virgin Atlantic
+
+London, Heathrow | END"
+1558.0	15.583333333333334	0.0	0	2025-12-03T14:30:00	2025-12-19T08:30:00	London, Heathrow	London, Heathrow	['Toronto']	"2025-12-03 14:30:00 - 2025-12-19 08:30:00 | $1558.0 | 15 hr 35 min
+
+London, Heathrow | START
+
+[FLIGHT 1]: $789.0 | 8 hr 30 min | 0 stops | ONE_WAY
+[LEG 1]: 2025-12-03 14:30:00 - 2025-12-03 18:00:00 | LHR-YYZ | 8 hr 30 min | VS 147 | Virgin Atlantic
+
+Toronto | 15 days 2 hr 25 min
+
+[FLIGHT 2]: $769.0 | 7 hr 5 min | 0 stops | ONE_WAY
+[LEG 1]: 2025-12-18 20:25:00 - 2025-12-19 08:30:00 | YYZ-LHR | 7 hr 5 min | AC 856 | Air Canada
+
+London, Heathrow | END"
+1558.0	15.833333333333334	0.0	0	2025-12-03T14:30:00	2025-12-19T06:30:00	London, Heathrow	London, Heathrow	['Toronto']	"2025-12-03 14:30:00 - 2025-12-19 06:30:00 | $1558.0 | 15 hr 50 min
+
+London, Heathrow | START
+
+[FLIGHT 1]: $789.0 | 8 hr 30 min | 0 stops | ONE_WAY
+[LEG 1]: 2025-12-03 14:30:00 - 2025-12-03 18:00:00 | LHR-YYZ | 8 hr 30 min | VS 147 | Virgin Atlantic
+
+Toronto | 15 days 10 min
+
+[FLIGHT 2]: $769.0 | 7 hr 20 min | 0 stops | ONE_WAY
+[LEG 1]: 2025-12-18 18:10:00 - 2025-12-19 06:30:00 | YYZ-LHR | 7 hr 20 min | AC 854 | Air Canada
+
+London, Heathrow | END"
+1570.0	15.5	0.0	0	2025-12-03T11:40:00	2025-12-19T11:20:00	London, Heathrow	London, Heathrow	['Toronto']	"2025-12-03 11:40:00 - 2025-12-19 11:20:00 | $1570.0 | 15 hr 30 min
+
+London, Heathrow | START
+
+[FLIGHT 1]: $753.0 | 8 hr 10 min | 0 stops | ONE_WAY
+[LEG 1]: 2025-12-03 11:40:00 - 2025-12-03 14:50:00 | LHR-YYZ | 8 hr 10 min | BA 93 | British Airways
+
+Toronto | 15 days 8 hr 10 min
+
+[FLIGHT 2]: $817.0 | 7 hr 20 min | 0 stops | ONE_WAY
+[LEG 1]: 2025-12-18 23:00:00 - 2025-12-19 11:20:00 | YYZ-LHR | 7 hr 20 min | AC 858 | Air Canada
+
+London, Heathrow | END"
+1572.0	15.25	0.0	0	2025-12-03T17:05:00	2025-12-19T08:30:00	London, Heathrow	London, Heathrow	['Toronto']	"2025-12-03 17:05:00 - 2025-12-19 08:30:00 | $1572.0 | 15 hr 15 min
+
+London, Heathrow | START
+
+[FLIGHT 1]: $803.0 | 8 hr 10 min | 0 stops | ONE_WAY
+[LEG 1]: 2025-12-03 17:05:00 - 2025-12-03 20:15:00 | LHR-YYZ | 8 hr 10 min | BA 99 | British Airways
+
+Toronto | 15 days 10 min
+
+[FLIGHT 2]: $769.0 | 7 hr 5 min | 0 stops | ONE_WAY
+[LEG 1]: 2025-12-18 20:25:00 - 2025-12-19 08:30:00 | YYZ-LHR | 7 hr 5 min | AC 856 | Air Canada
+
+London, Heathrow | END"
+1572.0	15.5	0.0	0	2025-12-03T17:05:00	2025-12-19T06:30:00	London, Heathrow	London, Heathrow	['Toronto']	"2025-12-03 17:05:00 - 2025-12-19 06:30:00 | $1572.0 | 15 hr 30 min
+
+London, Heathrow | START
+
+[FLIGHT 1]: $803.0 | 8 hr 10 min | 0 stops | ONE_WAY
+[LEG 1]: 2025-12-03 17:05:00 - 2025-12-03 20:15:00 | LHR-YYZ | 8 hr 10 min | BA 99 | British Airways
+
+Toronto | 14 days 21 hr 55 min
+
+[FLIGHT 2]: $769.0 | 7 hr 20 min | 0 stops | ONE_WAY
+[LEG 1]: 2025-12-18 18:10:00 - 2025-12-19 06:30:00 | YYZ-LHR | 7 hr 20 min | AC 854 | Air Canada
+
+London, Heathrow | END"
+1576.0	15.166666666666666	0.0	0	2025-12-03T13:00:00	2025-12-19T09:45:00	London, Heathrow	London, Gatwick	['Toronto']	"2025-12-03 13:00:00 - 2025-12-19 09:45:00 | $1576.0 | 15 hr 10 min
+
+London, Heathrow | START
+
+[FLIGHT 1]: $695.0 | 8 hr | 0 stops | ONE_WAY
+[LEG 1]: 2025-12-03 13:00:00 - 2025-12-03 16:00:00 | LHR-YYZ | 8 hr | AC 857 | Air Canada
+
+Toronto | 15 days 5 hr 35 min
+
+[FLIGHT 2]: $881.0 | 7 hr 10 min | 0 stops | ONE_WAY
+[LEG 1]: 2025-12-18 21:35:00 - 2025-12-19 09:45:00 | YYZ-LGW | 7 hr 10 min | TS 122 | Air Transat
+
+London, Gatwick | END"
+1576.0	15.333333333333334	0.0	0	2025-12-03T11:10:00	2025-12-19T09:45:00	London, Heathrow	London, Gatwick	['Toronto']	"2025-12-03 11:10:00 - 2025-12-19 09:45:00 | $1576.0 | 15 hr 20 min
+
+London, Heathrow | START
+
+[FLIGHT 1]: $695.0 | 8 hr 10 min | 0 stops | ONE_WAY
+[LEG 1]: 2025-12-03 11:10:00 - 2025-12-03 14:20:00 | LHR-YYZ | 8 hr 10 min | AC 855 | Air Canada
+
+Toronto | 15 days 7 hr 15 min
+
+[FLIGHT 2]: $881.0 | 7 hr 10 min | 0 stops | ONE_WAY
+[LEG 1]: 2025-12-18 21:35:00 - 2025-12-19 09:45:00 | YYZ-LGW | 7 hr 10 min | TS 122 | Air Transat
+
+London, Gatwick | END"
+1576.0	15.333333333333334	0.0	0	2025-12-03T18:00:00	2025-12-19T09:45:00	London, Heathrow	London, Gatwick	['Toronto']	"2025-12-03 18:00:00 - 2025-12-19 09:45:00 | $1576.0 | 15 hr 20 min
+
+London, Heathrow | START
+
+[FLIGHT 1]: $695.0 | 8 hr 10 min | 0 stops | ONE_WAY
+[LEG 1]: 2025-12-03 18:00:00 - 2025-12-03 21:10:00 | LHR-YYZ | 8 hr 10 min | AC 859 | Air Canada
+
+Toronto | 15 days 25 min
+
+[FLIGHT 2]: $881.0 | 7 hr 10 min | 0 stops | ONE_WAY
+[LEG 1]: 2025-12-18 21:35:00 - 2025-12-19 09:45:00 | YYZ-LGW | 7 hr 10 min | TS 122 | Air Transat
+
+London, Gatwick | END"
+1606.0	15.833333333333334	0.0	0	2025-12-03T14:30:00	2025-12-19T11:20:00	London, Heathrow	London, Heathrow	['Toronto']	"2025-12-03 14:30:00 - 2025-12-19 11:20:00 | $1606.0 | 15 hr 50 min
+
+London, Heathrow | START
+
+[FLIGHT 1]: $789.0 | 8 hr 30 min | 0 stops | ONE_WAY
+[LEG 1]: 2025-12-03 14:30:00 - 2025-12-03 18:00:00 | LHR-YYZ | 8 hr 30 min | VS 147 | Virgin Atlantic
+
+Toronto | 15 days 5 hr
+
+[FLIGHT 2]: $817.0 | 7 hr 20 min | 0 stops | ONE_WAY
+[LEG 1]: 2025-12-18 23:00:00 - 2025-12-19 11:20:00 | YYZ-LHR | 7 hr 20 min | AC 858 | Air Canada
+
+London, Heathrow | END"
+1620.0	15.5	0.0	0	2025-12-03T17:05:00	2025-12-19T11:20:00	London, Heathrow	London, Heathrow	['Toronto']	"2025-12-03 17:05:00 - 2025-12-19 11:20:00 | $1620.0 | 15 hr 30 min
+
+London, Heathrow | START
+
+[FLIGHT 1]: $803.0 | 8 hr 10 min | 0 stops | ONE_WAY
+[LEG 1]: 2025-12-03 17:05:00 - 2025-12-03 20:15:00 | LHR-YYZ | 8 hr 10 min | BA 99 | British Airways
+
+Toronto | 15 days 2 hr 45 min
+
+[FLIGHT 2]: $817.0 | 7 hr 20 min | 0 stops | ONE_WAY
+[LEG 1]: 2025-12-18 23:00:00 - 2025-12-19 11:20:00 | YYZ-LHR | 7 hr 20 min | AC 858 | Air Canada
+
+London, Heathrow | END"
+1634.0	15.333333333333334	0.0	0	2025-12-03T11:40:00	2025-12-19T09:45:00	London, Heathrow	London, Gatwick	['Toronto']	"2025-12-03 11:40:00 - 2025-12-19 09:45:00 | $1634.0 | 15 hr 20 min
+
+London, Heathrow | START
+
+[FLIGHT 1]: $753.0 | 8 hr 10 min | 0 stops | ONE_WAY
+[LEG 1]: 2025-12-03 11:40:00 - 2025-12-03 14:50:00 | LHR-YYZ | 8 hr 10 min | BA 93 | British Airways
+
+Toronto | 15 days 6 hr 45 min
+
+[FLIGHT 2]: $881.0 | 7 hr 10 min | 0 stops | ONE_WAY
+[LEG 1]: 2025-12-18 21:35:00 - 2025-12-19 09:45:00 | YYZ-LGW | 7 hr 10 min | TS 122 | Air Transat
+
+London, Gatwick | END"
+1670.0	15.666666666666666	0.0	0	2025-12-03T14:30:00	2025-12-19T09:45:00	London, Heathrow	London, Gatwick	['Toronto']	"2025-12-03 14:30:00 - 2025-12-19 09:45:00 | $1670.0 | 15 hr 40 min
+
+London, Heathrow | START
+
+[FLIGHT 1]: $789.0 | 8 hr 30 min | 0 stops | ONE_WAY
+[LEG 1]: 2025-12-03 14:30:00 - 2025-12-03 18:00:00 | LHR-YYZ | 8 hr 30 min | VS 147 | Virgin Atlantic
+
+Toronto | 15 days 3 hr 35 min
+
+[FLIGHT 2]: $881.0 | 7 hr 10 min | 0 stops | ONE_WAY
+[LEG 1]: 2025-12-18 21:35:00 - 2025-12-19 09:45:00 | YYZ-LGW | 7 hr 10 min | TS 122 | Air Transat
+
+London, Gatwick | END"
+1684.0	15.333333333333334	0.0	0	2025-12-03T17:05:00	2025-12-19T09:45:00	London, Heathrow	London, Gatwick	['Toronto']	"2025-12-03 17:05:00 - 2025-12-19 09:45:00 | $1684.0 | 15 hr 20 min
+
+London, Heathrow | START
+
+[FLIGHT 1]: $803.0 | 8 hr 10 min | 0 stops | ONE_WAY
+[LEG 1]: 2025-12-03 17:05:00 - 2025-12-03 20:15:00 | LHR-YYZ | 8 hr 10 min | BA 99 | British Airways
+
+Toronto | 15 days 1 hr 20 min
+
+[FLIGHT 2]: $881.0 | 7 hr 10 min | 0 stops | ONE_WAY
+[LEG 1]: 2025-12-18 21:35:00 - 2025-12-19 09:45:00 | YYZ-LGW | 7 hr 10 min | TS 122 | Air Transat
+
+London, Gatwick | END"
+1794.0	15.833333333333334	0.0	0	2025-12-03T14:30:00	2025-12-18T06:30:00	London, Heathrow	London, Heathrow	['Toronto']	"2025-12-03 14:30:00 - 2025-12-18 06:30:00 | $1794.0 | 15 hr 50 min
+
+London, Heathrow | START
+
+[FLIGHT 1]: $0.0 | 8 hr 30 min | 0 stops | ROUND_TRIP_DEPARTING
+[LEG 1]: 2025-12-03 14:30:00 - 2025-12-03 18:00:00 | LHR-YYZ | 8 hr 30 min | VS 147 | Virgin Atlantic
+
+Toronto | 14 days 10 min
+
+[FLIGHT 1]: $1794.0 | 7 hr 20 min | 0 stops | ROUND_TRIP_RETURNING
+[LEG 1]: 2025-12-17 18:10:00 - 2025-12-18 06:30:00 | YYZ-LHR | 7 hr 20 min | AC 854 | Air Canada
+
+London, Heathrow | END"
+1845.0	15.833333333333334	0.0	0	2025-12-03T14:30:00	2025-12-18T11:20:00	London, Heathrow	London, Heathrow	['Toronto']	"2025-12-03 14:30:00 - 2025-12-18 11:20:00 | $1845.0 | 15 hr 50 min
+
+London, Heathrow | START
+
+[FLIGHT 1]: $0.0 | 8 hr 30 min | 0 stops | ROUND_TRIP_DEPARTING
+[LEG 1]: 2025-12-03 14:30:00 - 2025-12-03 18:00:00 | LHR-YYZ | 8 hr 30 min | VS 147 | Virgin Atlantic
+
+Toronto | 14 days 5 hr
+
+[FLIGHT 1]: $1845.0 | 7 hr 20 min | 0 stops | ROUND_TRIP_RETURNING
+[LEG 1]: 2025-12-17 23:00:00 - 2025-12-18 11:20:00 | YYZ-LHR | 7 hr 20 min | AC 858 | Air Canada
+
+London, Heathrow | END"
+1854.0	15.583333333333334	0.0	0	2025-12-03T14:30:00	2025-12-18T08:30:00	London, Heathrow	London, Heathrow	['Toronto']	"2025-12-03 14:30:00 - 2025-12-18 08:30:00 | $1854.0 | 15 hr 35 min
+
+London, Heathrow | START
+
+[FLIGHT 1]: $0.0 | 8 hr 30 min | 0 stops | ROUND_TRIP_DEPARTING
+[LEG 1]: 2025-12-03 14:30:00 - 2025-12-03 18:00:00 | LHR-YYZ | 8 hr 30 min | VS 147 | Virgin Atlantic
+
+Toronto | 14 days 2 hr 25 min
+
+[FLIGHT 1]: $1854.0 | 7 hr 5 min | 0 stops | ROUND_TRIP_RETURNING
+[LEG 1]: 2025-12-17 20:25:00 - 2025-12-18 08:30:00 | YYZ-LHR | 7 hr 5 min | AC 856 | Air Canada
+
+London, Heathrow | END"
+2009.0	15.416666666666666	0.0	0	2025-12-03T11:40:00	2025-12-19T10:10:00	London, Gatwick	London, Heathrow	['Toronto']	"2025-12-03 11:40:00 - 2025-12-19 10:10:00 | $2009.0 | 15 hr 25 min
+
+London, Gatwick | START
+
+[FLIGHT 1]: $371.0 | 8 hr 20 min | 0 stops | ONE_WAY
+[LEG 1]: 2025-12-03 11:40:00 - 2025-12-03 15:00:00 | LGW-YYZ | 8 hr 20 min | TS 123 | Air Transat
+
+Toronto | 15 days 7 hr 5 min
+
+[FLIGHT 2]: $1638.0 | 7 hr 5 min | 0 stops | ONE_WAY
+[LEG 1]: 2025-12-18 22:05:00 - 2025-12-19 10:10:00 | YYZ-LHR | 7 hr 5 min | BA 98 | British Airways
+
+London, Heathrow | END"
+2119.0	15.5	0.0	0	2025-12-03T11:10:00	2025-12-18T09:35:00	London, Heathrow	London, Heathrow	['Toronto']	"2025-12-03 11:10:00 - 2025-12-18 09:35:00 | $2119.0 | 15 hr 30 min
+
+London, Heathrow | START
+
+[FLIGHT 1]: $0.0 | 8 hr 10 min | 0 stops | ROUND_TRIP_DEPARTING
+[LEG 1]: 2025-12-03 11:10:00 - 2025-12-03 14:20:00 | LHR-YYZ | 8 hr 10 min | AC 855 | Air Canada
+
+Toronto | 14 days 6 hr 55 min
+
+[FLIGHT 1]: $2119.0 | 7 hr 20 min | 0 stops | ROUND_TRIP_RETURNING
+[LEG 1]: 2025-12-17 21:15:00 - 2025-12-18 09:35:00 | YYZ-LHR | 7 hr 20 min | VS 148 | Virgin Atlantic
+
+London, Heathrow | END"
+2257.0	15.5	0.0	0	2025-12-03T11:40:00	2025-12-19T05:50:00	London, Gatwick	London, Heathrow	['Toronto']	"2025-12-03 11:40:00 - 2025-12-19 05:50:00 | $2257.0 | 15 hr 30 min
+
+London, Gatwick | START
+
+[FLIGHT 1]: $371.0 | 8 hr 20 min | 0 stops | ONE_WAY
+[LEG 1]: 2025-12-03 11:40:00 - 2025-12-03 15:00:00 | LGW-YYZ | 8 hr 20 min | TS 123 | Air Transat
+
+Toronto | 15 days 2 hr 40 min
+
+[FLIGHT 2]: $1886.0 | 7 hr 10 min | 0 stops | ONE_WAY
+[LEG 1]: 2025-12-18 17:40:00 - 2025-12-19 05:50:00 | YYZ-LHR | 7 hr 10 min | BA 92 | British Airways
+
+London, Heathrow | END"
+2333.0	15.083333333333334	0.0	0	2025-12-03T13:00:00	2025-12-19T10:10:00	London, Heathrow	London, Heathrow	['Toronto']	"2025-12-03 13:00:00 - 2025-12-19 10:10:00 | $2333.0 | 15 hr 5 min
+
+London, Heathrow | START
+
+[FLIGHT 1]: $695.0 | 8 hr | 0 stops | ONE_WAY
+[LEG 1]: 2025-12-03 13:00:00 - 2025-12-03 16:00:00 | LHR-YYZ | 8 hr | AC 857 | Air Canada
+
+Toronto | 15 days 6 hr 5 min
+
+[FLIGHT 2]: $1638.0 | 7 hr 5 min | 0 stops | ONE_WAY
+[LEG 1]: 2025-12-18 22:05:00 - 2025-12-19 10:10:00 | YYZ-LHR | 7 hr 5 min | BA 98 | British Airways
+
+London, Heathrow | END"
+2333.0	15.25	0.0	0	2025-12-03T11:10:00	2025-12-19T10:10:00	London, Heathrow	London, Heathrow	['Toronto']	"2025-12-03 11:10:00 - 2025-12-19 10:10:00 | $2333.0 | 15 hr 15 min
+
+London, Heathrow | START
+
+[FLIGHT 1]: $695.0 | 8 hr 10 min | 0 stops | ONE_WAY
+[LEG 1]: 2025-12-03 11:10:00 - 2025-12-03 14:20:00 | LHR-YYZ | 8 hr 10 min | AC 855 | Air Canada
+
+Toronto | 15 days 7 hr 45 min
+
+[FLIGHT 2]: $1638.0 | 7 hr 5 min | 0 stops | ONE_WAY
+[LEG 1]: 2025-12-18 22:05:00 - 2025-12-19 10:10:00 | YYZ-LHR | 7 hr 5 min | BA 98 | British Airways
+
+London, Heathrow | END"
+2333.0	15.25	0.0	0	2025-12-03T18:00:00	2025-12-19T10:10:00	London, Heathrow	London, Heathrow	['Toronto']	"2025-12-03 18:00:00 - 2025-12-19 10:10:00 | $2333.0 | 15 hr 15 min
+
+London, Heathrow | START
+
+[FLIGHT 1]: $695.0 | 8 hr 10 min | 0 stops | ONE_WAY
+[LEG 1]: 2025-12-03 18:00:00 - 2025-12-03 21:10:00 | LHR-YYZ | 8 hr 10 min | AC 859 | Air Canada
+
+Toronto | 15 days 55 min
+
+[FLIGHT 2]: $1638.0 | 7 hr 5 min | 0 stops | ONE_WAY
+[LEG 1]: 2025-12-18 22:05:00 - 2025-12-19 10:10:00 | YYZ-LHR | 7 hr 5 min | BA 98 | British Airways
+
+London, Heathrow | END"
+2391.0	15.25	0.0	0	2025-12-03T11:40:00	2025-12-19T10:10:00	London, Heathrow	London, Heathrow	['Toronto']	"2025-12-03 11:40:00 - 2025-12-19 10:10:00 | $2391.0 | 15 hr 15 min
+
+London, Heathrow | START
+
+[FLIGHT 1]: $753.0 | 8 hr 10 min | 0 stops | ONE_WAY
+[LEG 1]: 2025-12-03 11:40:00 - 2025-12-03 14:50:00 | LHR-YYZ | 8 hr 10 min | BA 93 | British Airways
+
+Toronto | 15 days 7 hr 15 min
+
+[FLIGHT 2]: $1638.0 | 7 hr 5 min | 0 stops | ONE_WAY
+[LEG 1]: 2025-12-18 22:05:00 - 2025-12-19 10:10:00 | YYZ-LHR | 7 hr 5 min | BA 98 | British Airways
+
+London, Heathrow | END"
+2427.0	15.583333333333334	0.0	0	2025-12-03T14:30:00	2025-12-19T10:10:00	London, Heathrow	London, Heathrow	['Toronto']	"2025-12-03 14:30:00 - 2025-12-19 10:10:00 | $2427.0 | 15 hr 35 min
+
+London, Heathrow | START
+
+[FLIGHT 1]: $789.0 | 8 hr 30 min | 0 stops | ONE_WAY
+[LEG 1]: 2025-12-03 14:30:00 - 2025-12-03 18:00:00 | LHR-YYZ | 8 hr 30 min | VS 147 | Virgin Atlantic
+
+Toronto | 15 days 4 hr 5 min
+
+[FLIGHT 2]: $1638.0 | 7 hr 5 min | 0 stops | ONE_WAY
+[LEG 1]: 2025-12-18 22:05:00 - 2025-12-19 10:10:00 | YYZ-LHR | 7 hr 5 min | BA 98 | British Airways
+
+London, Heathrow | END"
+2441.0	15.25	0.0	0	2025-12-03T17:05:00	2025-12-19T10:10:00	London, Heathrow	London, Heathrow	['Toronto']	"2025-12-03 17:05:00 - 2025-12-19 10:10:00 | $2441.0 | 15 hr 15 min
+
+London, Heathrow | START
+
+[FLIGHT 1]: $803.0 | 8 hr 10 min | 0 stops | ONE_WAY
+[LEG 1]: 2025-12-03 17:05:00 - 2025-12-03 20:15:00 | LHR-YYZ | 8 hr 10 min | BA 99 | British Airways
+
+Toronto | 15 days 1 hr 50 min
+
+[FLIGHT 2]: $1638.0 | 7 hr 5 min | 0 stops | ONE_WAY
+[LEG 1]: 2025-12-18 22:05:00 - 2025-12-19 10:10:00 | YYZ-LHR | 7 hr 5 min | BA 98 | British Airways
+
+London, Heathrow | END"
+2581.0	15.166666666666666	0.0	0	2025-12-03T13:00:00	2025-12-19T05:50:00	London, Heathrow	London, Heathrow	['Toronto']	"2025-12-03 13:00:00 - 2025-12-19 05:50:00 | $2581.0 | 15 hr 10 min
+
+London, Heathrow | START
+
+[FLIGHT 1]: $695.0 | 8 hr | 0 stops | ONE_WAY
+[LEG 1]: 2025-12-03 13:00:00 - 2025-12-03 16:00:00 | LHR-YYZ | 8 hr | AC 857 | Air Canada
+
+Toronto | 15 days 1 hr 40 min
+
+[FLIGHT 2]: $1886.0 | 7 hr 10 min | 0 stops | ONE_WAY
+[LEG 1]: 2025-12-18 17:40:00 - 2025-12-19 05:50:00 | YYZ-LHR | 7 hr 10 min | BA 92 | British Airways
+
+London, Heathrow | END"
+2581.0	15.333333333333334	0.0	0	2025-12-03T11:10:00	2025-12-19T05:50:00	London, Heathrow	London, Heathrow	['Toronto']	"2025-12-03 11:10:00 - 2025-12-19 05:50:00 | $2581.0 | 15 hr 20 min
+
+London, Heathrow | START
+
+[FLIGHT 1]: $695.0 | 8 hr 10 min | 0 stops | ONE_WAY
+[LEG 1]: 2025-12-03 11:10:00 - 2025-12-03 14:20:00 | LHR-YYZ | 8 hr 10 min | AC 855 | Air Canada
+
+Toronto | 15 days 3 hr 20 min
+
+[FLIGHT 2]: $1886.0 | 7 hr 10 min | 0 stops | ONE_WAY
+[LEG 1]: 2025-12-18 17:40:00 - 2025-12-19 05:50:00 | YYZ-LHR | 7 hr 10 min | BA 92 | British Airways
+
+London, Heathrow | END"
+2581.0	15.333333333333334	0.0	0	2025-12-03T18:00:00	2025-12-19T05:50:00	London, Heathrow	London, Heathrow	['Toronto']	"2025-12-03 18:00:00 - 2025-12-19 05:50:00 | $2581.0 | 15 hr 20 min
+
+London, Heathrow | START
+
+[FLIGHT 1]: $695.0 | 8 hr 10 min | 0 stops | ONE_WAY
+[LEG 1]: 2025-12-03 18:00:00 - 2025-12-03 21:10:00 | LHR-YYZ | 8 hr 10 min | AC 859 | Air Canada
+
+Toronto | 14 days 20 hr 30 min
+
+[FLIGHT 2]: $1886.0 | 7 hr 10 min | 0 stops | ONE_WAY
+[LEG 1]: 2025-12-18 17:40:00 - 2025-12-19 05:50:00 | YYZ-LHR | 7 hr 10 min | BA 92 | British Airways
+
+London, Heathrow | END"
+2639.0	15.333333333333334	0.0	0	2025-12-03T11:40:00	2025-12-19T05:50:00	London, Heathrow	London, Heathrow	['Toronto']	"2025-12-03 11:40:00 - 2025-12-19 05:50:00 | $2639.0 | 15 hr 20 min
+
+London, Heathrow | START
+
+[FLIGHT 1]: $753.0 | 8 hr 10 min | 0 stops | ONE_WAY
+[LEG 1]: 2025-12-03 11:40:00 - 2025-12-03 14:50:00 | LHR-YYZ | 8 hr 10 min | BA 93 | British Airways
+
+Toronto | 15 days 2 hr 50 min
+
+[FLIGHT 2]: $1886.0 | 7 hr 10 min | 0 stops | ONE_WAY
+[LEG 1]: 2025-12-18 17:40:00 - 2025-12-19 05:50:00 | YYZ-LHR | 7 hr 10 min | BA 92 | British Airways
+
+London, Heathrow | END"
+2675.0	15.666666666666666	0.0	0	2025-12-03T14:30:00	2025-12-19T05:50:00	London, Heathrow	London, Heathrow	['Toronto']	"2025-12-03 14:30:00 - 2025-12-19 05:50:00 | $2675.0 | 15 hr 40 min
+
+London, Heathrow | START
+
+[FLIGHT 1]: $789.0 | 8 hr 30 min | 0 stops | ONE_WAY
+[LEG 1]: 2025-12-03 14:30:00 - 2025-12-03 18:00:00 | LHR-YYZ | 8 hr 30 min | VS 147 | Virgin Atlantic
+
+Toronto | 14 days 23 hr 40 min
+
+[FLIGHT 2]: $1886.0 | 7 hr 10 min | 0 stops | ONE_WAY
+[LEG 1]: 2025-12-18 17:40:00 - 2025-12-19 05:50:00 | YYZ-LHR | 7 hr 10 min | BA 92 | British Airways
+
+London, Heathrow | END"
+2689.0	15.333333333333334	0.0	0	2025-12-03T17:05:00	2025-12-19T05:50:00	London, Heathrow	London, Heathrow	['Toronto']	"2025-12-03 17:05:00 - 2025-12-19 05:50:00 | $2689.0 | 15 hr 20 min
+
+London, Heathrow | START
+
+[FLIGHT 1]: $803.0 | 8 hr 10 min | 0 stops | ONE_WAY
+[LEG 1]: 2025-12-03 17:05:00 - 2025-12-03 20:15:00 | LHR-YYZ | 8 hr 10 min | BA 99 | British Airways
+
+Toronto | 14 days 21 hr 25 min
+
+[FLIGHT 2]: $1886.0 | 7 hr 10 min | 0 stops | ONE_WAY
+[LEG 1]: 2025-12-18 17:40:00 - 2025-12-19 05:50:00 | YYZ-LHR | 7 hr 10 min | BA 92 | British Airways
+
+London, Heathrow | END"
+4468.0	15.25	0.0	0	2025-12-03T17:05:00	2025-12-18T08:30:00	London, Heathrow	London, Heathrow	['Toronto']	"2025-12-03 17:05:00 - 2025-12-18 08:30:00 | $4468.0 | 15 hr 15 min
+
+London, Heathrow | START
+
+[FLIGHT 1]: $0.0 | 8 hr 10 min | 0 stops | ROUND_TRIP_DEPARTING
+[LEG 1]: 2025-12-03 17:05:00 - 2025-12-03 20:15:00 | LHR-YYZ | 8 hr 10 min | BA 99 | British Airways
+
+Toronto | 14 days 10 min
+
+[FLIGHT 1]: $4468.0 | 7 hr 5 min | 0 stops | ROUND_TRIP_RETURNING
+[LEG 1]: 2025-12-17 20:25:00 - 2025-12-18 08:30:00 | YYZ-LHR | 7 hr 5 min | AC 856 | Air Canada
+
+London, Heathrow | END"
+4468.0	15.5	0.0	0	2025-12-03T17:05:00	2025-12-18T06:30:00	London, Heathrow	London, Heathrow	['Toronto']	"2025-12-03 17:05:00 - 2025-12-18 06:30:00 | $4468.0 | 15 hr 30 min
+
+London, Heathrow | START
+
+[FLIGHT 1]: $0.0 | 8 hr 10 min | 0 stops | ROUND_TRIP_DEPARTING
+[LEG 1]: 2025-12-03 17:05:00 - 2025-12-03 20:15:00 | LHR-YYZ | 8 hr 10 min | BA 99 | British Airways
+
+Toronto | 13 days 21 hr 55 min
+
+[FLIGHT 1]: $4468.0 | 7 hr 20 min | 0 stops | ROUND_TRIP_RETURNING
+[LEG 1]: 2025-12-17 18:10:00 - 2025-12-18 06:30:00 | YYZ-LHR | 7 hr 20 min | AC 854 | Air Canada
+
+London, Heathrow | END"
+4468.0	15.5	0.0	0	2025-12-03T17:05:00	2025-12-18T11:20:00	London, Heathrow	London, Heathrow	['Toronto']	"2025-12-03 17:05:00 - 2025-12-18 11:20:00 | $4468.0 | 15 hr 30 min
+
+London, Heathrow | START
+
+[FLIGHT 1]: $0.0 | 8 hr 10 min | 0 stops | ROUND_TRIP_DEPARTING
+[LEG 1]: 2025-12-03 17:05:00 - 2025-12-03 20:15:00 | LHR-YYZ | 8 hr 10 min | BA 99 | British Airways
+
+Toronto | 14 days 2 hr 45 min
+
+[FLIGHT 1]: $4468.0 | 7 hr 20 min | 0 stops | ROUND_TRIP_RETURNING
+[LEG 1]: 2025-12-17 23:00:00 - 2025-12-18 11:20:00 | YYZ-LHR | 7 hr 20 min | AC 858 | Air Canada
+
+London, Heathrow | END"
+5429.0	15.416666666666666	0.0	0	2025-12-03T11:40:00	2025-12-18T10:10:00	London, Gatwick	London, Heathrow	['Toronto']	"2025-12-03 11:40:00 - 2025-12-18 10:10:00 | $5429.0 | 15 hr 25 min
+
+London, Gatwick | START
+
+[FLIGHT 1]: $371.0 | 8 hr 20 min | 0 stops | ONE_WAY
+[LEG 1]: 2025-12-03 11:40:00 - 2025-12-03 15:00:00 | LGW-YYZ | 8 hr 20 min | TS 123 | Air Transat
+
+Toronto | 14 days 7 hr 5 min
+
+[FLIGHT 2]: $5058.0 | 7 hr 5 min | 0 stops | ONE_WAY
+[LEG 1]: 2025-12-17 22:05:00 - 2025-12-18 10:10:00 | YYZ-LHR | 7 hr 5 min | BA 98 | British Airways
+
+London, Heathrow | END"
+5753.0	15.083333333333334	0.0	0	2025-12-03T13:00:00	2025-12-18T10:10:00	London, Heathrow	London, Heathrow	['Toronto']	"2025-12-03 13:00:00 - 2025-12-18 10:10:00 | $5753.0 | 15 hr 5 min
+
+London, Heathrow | START
+
+[FLIGHT 1]: $695.0 | 8 hr | 0 stops | ONE_WAY
+[LEG 1]: 2025-12-03 13:00:00 - 2025-12-03 16:00:00 | LHR-YYZ | 8 hr | AC 857 | Air Canada
+
+Toronto | 14 days 6 hr 5 min
+
+[FLIGHT 2]: $5058.0 | 7 hr 5 min | 0 stops | ONE_WAY
+[LEG 1]: 2025-12-17 22:05:00 - 2025-12-18 10:10:00 | YYZ-LHR | 7 hr 5 min | BA 98 | British Airways
+
+London, Heathrow | END"
+5753.0	15.25	0.0	0	2025-12-03T11:10:00	2025-12-18T10:10:00	London, Heathrow	London, Heathrow	['Toronto']	"2025-12-03 11:10:00 - 2025-12-18 10:10:00 | $5753.0 | 15 hr 15 min
+
+London, Heathrow | START
+
+[FLIGHT 1]: $695.0 | 8 hr 10 min | 0 stops | ONE_WAY
+[LEG 1]: 2025-12-03 11:10:00 - 2025-12-03 14:20:00 | LHR-YYZ | 8 hr 10 min | AC 855 | Air Canada
+
+Toronto | 14 days 7 hr 45 min
+
+[FLIGHT 2]: $5058.0 | 7 hr 5 min | 0 stops | ONE_WAY
+[LEG 1]: 2025-12-17 22:05:00 - 2025-12-18 10:10:00 | YYZ-LHR | 7 hr 5 min | BA 98 | British Airways
+
+London, Heathrow | END"
+5753.0	15.25	0.0	0	2025-12-03T18:00:00	2025-12-18T10:10:00	London, Heathrow	London, Heathrow	['Toronto']	"2025-12-03 18:00:00 - 2025-12-18 10:10:00 | $5753.0 | 15 hr 15 min
+
+London, Heathrow | START
+
+[FLIGHT 1]: $695.0 | 8 hr 10 min | 0 stops | ONE_WAY
+[LEG 1]: 2025-12-03 18:00:00 - 2025-12-03 21:10:00 | LHR-YYZ | 8 hr 10 min | AC 859 | Air Canada
+
+Toronto | 14 days 55 min
+
+[FLIGHT 2]: $5058.0 | 7 hr 5 min | 0 stops | ONE_WAY
+[LEG 1]: 2025-12-17 22:05:00 - 2025-12-18 10:10:00 | YYZ-LHR | 7 hr 5 min | BA 98 | British Airways
+
+London, Heathrow | END"
+5811.0	15.25	0.0	0	2025-12-03T11:40:00	2025-12-18T10:10:00	London, Heathrow	London, Heathrow	['Toronto']	"2025-12-03 11:40:00 - 2025-12-18 10:10:00 | $5811.0 | 15 hr 15 min
+
+London, Heathrow | START
+
+[FLIGHT 1]: $753.0 | 8 hr 10 min | 0 stops | ONE_WAY
+[LEG 1]: 2025-12-03 11:40:00 - 2025-12-03 14:50:00 | LHR-YYZ | 8 hr 10 min | BA 93 | British Airways
+
+Toronto | 14 days 7 hr 15 min
+
+[FLIGHT 2]: $5058.0 | 7 hr 5 min | 0 stops | ONE_WAY
+[LEG 1]: 2025-12-17 22:05:00 - 2025-12-18 10:10:00 | YYZ-LHR | 7 hr 5 min | BA 98 | British Airways
+
+London, Heathrow | END"
+5847.0	15.583333333333334	0.0	0	2025-12-03T14:30:00	2025-12-18T10:10:00	London, Heathrow	London, Heathrow	['Toronto']	"2025-12-03 14:30:00 - 2025-12-18 10:10:00 | $5847.0 | 15 hr 35 min
+
+London, Heathrow | START
+
+[FLIGHT 1]: $789.0 | 8 hr 30 min | 0 stops | ONE_WAY
+[LEG 1]: 2025-12-03 14:30:00 - 2025-12-03 18:00:00 | LHR-YYZ | 8 hr 30 min | VS 147 | Virgin Atlantic
+
+Toronto | 14 days 4 hr 5 min
+
+[FLIGHT 2]: $5058.0 | 7 hr 5 min | 0 stops | ONE_WAY
+[LEG 1]: 2025-12-17 22:05:00 - 2025-12-18 10:10:00 | YYZ-LHR | 7 hr 5 min | BA 98 | British Airways
+
+London, Heathrow | END"
+5861.0	15.25	0.0	0	2025-12-03T17:05:00	2025-12-18T10:10:00	London, Heathrow	London, Heathrow	['Toronto']	"2025-12-03 17:05:00 - 2025-12-18 10:10:00 | $5861.0 | 15 hr 15 min
+
+London, Heathrow | START
+
+[FLIGHT 1]: $803.0 | 8 hr 10 min | 0 stops | ONE_WAY
+[LEG 1]: 2025-12-03 17:05:00 - 2025-12-03 20:15:00 | LHR-YYZ | 8 hr 10 min | BA 99 | British Airways
+
+Toronto | 14 days 1 hr 50 min
+
+[FLIGHT 2]: $5058.0 | 7 hr 5 min | 0 stops | ONE_WAY
+[LEG 1]: 2025-12-17 22:05:00 - 2025-12-18 10:10:00 | YYZ-LHR | 7 hr 5 min | BA 98 | British Airways
+
+London, Heathrow | END"
+6244.0	15.25	0.0	0	2025-12-03T11:40:00	2025-12-18T10:10:00	London, Heathrow	London, Heathrow	['Toronto']	"2025-12-03 11:40:00 - 2025-12-18 10:10:00 | $6244.0 | 15 hr 15 min
+
+London, Heathrow | START
+
+[FLIGHT 1]: $0.0 | 8 hr 10 min | 0 stops | ROUND_TRIP_DEPARTING
+[LEG 1]: 2025-12-03 11:40:00 - 2025-12-03 14:50:00 | LHR-YYZ | 8 hr 10 min | BA 93 | British Airways
+
+Toronto | 14 days 7 hr 15 min
+
+[FLIGHT 1]: $6244.0 | 7 hr 5 min | 0 stops | ROUND_TRIP_RETURNING
+[LEG 1]: 2025-12-17 22:05:00 - 2025-12-18 10:10:00 | YYZ-LHR | 7 hr 5 min | BA 98 | British Airways
+
+London, Heathrow | END"
+6293.0	15.25	0.0	0	2025-12-03T17:05:00	2025-12-18T10:10:00	London, Heathrow	London, Heathrow	['Toronto']	"2025-12-03 17:05:00 - 2025-12-18 10:10:00 | $6293.0 | 15 hr 15 min
+
+London, Heathrow | START
+
+[FLIGHT 1]: $0.0 | 8 hr 10 min | 0 stops | ROUND_TRIP_DEPARTING
+[LEG 1]: 2025-12-03 17:05:00 - 2025-12-03 20:15:00 | LHR-YYZ | 8 hr 10 min | BA 99 | British Airways
+
+Toronto | 14 days 1 hr 50 min
+
+[FLIGHT 1]: $6293.0 | 7 hr 5 min | 0 stops | ROUND_TRIP_RETURNING
+[LEG 1]: 2025-12-17 22:05:00 - 2025-12-18 10:10:00 | YYZ-LHR | 7 hr 5 min | BA 98 | British Airways
+
+London, Heathrow | END"
+10058.0	15.25	0.0	0	2025-12-03T18:00:00	2025-12-18T10:10:00	London, Heathrow	London, Heathrow	['Toronto']	"2025-12-03 18:00:00 - 2025-12-18 10:10:00 | $10058.0 | 15 hr 15 min
+
+London, Heathrow | START
+
+[FLIGHT 1]: $0.0 | 8 hr 10 min | 0 stops | ROUND_TRIP_DEPARTING
+[LEG 1]: 2025-12-03 18:00:00 - 2025-12-03 21:10:00 | LHR-YYZ | 8 hr 10 min | AC 859 | Air Canada
+
+Toronto | 14 days 55 min
+
+[FLIGHT 1]: $10058.0 | 7 hr 5 min | 0 stops | ROUND_TRIP_RETURNING
+[LEG 1]: 2025-12-17 22:05:00 - 2025-12-18 10:10:00 | YYZ-LHR | 7 hr 5 min | BA 98 | British Airways
+
+London, Heathrow | END"

@@ -1,0 +1,33 @@
+<python>
+all_queries: list[CityRanges] = [
+  CityRanges(
+    city_range_list=[
+      CityRange(
+        airports=[Airport.LHR, Airport.LGW, Airport.STN, Airport.LTN, Airport.LCY],
+        departure_date_range=DateRange(
+          earliest=datetime.date(2025, 12, 13),
+          latest=datetime.date(2025, 12, 15),
+        ),
+        departure_flight_filter=DepartureFlightFilter(stops=MaxStops.NON_STOP),
+      ),
+      CityRange(
+        airports=[Airport.YTZ, Airport.YYZ],
+        min_stay_hours=144.0, # (2025-12-21 - 2025-12-15) = 6 days = 144 hours
+        max_stay_hours=240.0, # (2025-12-23 - 2025-12-13) = 10 days = 240 hours
+        departure_date_range=DateRange(
+          earliest=datetime.date(2025, 12, 21),
+          latest=datetime.date(2025, 12, 23),
+        ),
+        departure_flight_filter=DepartureFlightFilter(stops=MaxStops.NON_STOP),
+      ),
+      CityRange(
+        airports=[Airport.LHR, Airport.LGW, Airport.STN, Airport.LTN, Airport.LCY],
+        arrival_date_range=DateRange(
+          earliest=datetime.date(2025, 12, 21), # Earliest departure from Toronto (Dec 21) + 7-8 hours flight (with time zone shift, can still arrive Dec 21)
+          latest=datetime.date(2025, 12, 24), # Latest departure from Toronto (Dec 23) + ~7 hours flight (can arrive Dec 24 due to late departure)
+        ),
+      ),
+    ]
+  ),
+]
+</python>

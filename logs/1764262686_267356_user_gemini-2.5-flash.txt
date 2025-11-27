@@ -1,0 +1,1 @@
+remove the arrival date constraint. also subtract the latest date of departure by one day for all flights

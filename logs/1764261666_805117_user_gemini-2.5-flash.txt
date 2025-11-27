@@ -1,0 +1,2 @@
+can you keep the same query but restrict it to flights under 780 dollars.
+then add a new query that's the same except it layovers in nyc instead

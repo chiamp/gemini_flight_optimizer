@@ -1,0 +1,72 @@
+Thank you for the clarification. It sounds like you'd like two separate round-trip queries, both restricted to flights under $780 (meaning a maximum price of $779 per leg), but with different primary destinations:
+
+1.  **Query 1:** A direct round trip from London to Toronto and back to London, with the specified departure dates.
+2.  **Query 2:** A direct round trip from London to New York City and back to London, with the same departure dates as the first query, and the new destination of NYC is referred to as the "stopover in nyc".
+
+Here are the two queries:
+
+<python>
+all_queries: list[CityRanges] = [
+  # Query 1: Direct flights from London to Toronto, departing Dec 5-7, returning from Toronto Dec 17-19, under $780 per flight leg.
+  CityRanges(
+    city_range_list=[
+      CityRange(
+        airports=[Airport.LHR, Airport.LGW, Airport.STN, Airport.LTN, Airport.LCY], # London airports for departure
+        departure_date_range=DateRange(
+          earliest=datetime.date(2025, 12, 5),
+          latest=datetime.date(2025, 12, 7),
+        ),
+        departure_flight_filter=DepartureFlightFilter(
+          stops=MaxStops.NON_STOP, # All flights must be non-stop
+          price_limit=PriceLimit(max_price=779), # Flights under $780
+        ),
+      ),
+      CityRange(
+        airports=[Airport.YTZ, Airport.YYZ], # Toronto airports (primary destination/stopover)
+        departure_date_range=DateRange(
+          earliest=datetime.date(2025, 12, 17),
+          latest=datetime.date(2025, 12, 19),
+        ),
+        departure_flight_filter=DepartureFlightFilter(
+          stops=MaxStops.NON_STOP, # All flights must be non-stop
+          price_limit=PriceLimit(max_price=779), # Flights under $780
+        ),
+      ),
+      CityRange(
+        airports=[Airport.LHR, Airport.LGW, Airport.STN, Airport.LTN, Airport.LCY], # London airports for final arrival
+      ),
+    ]
+  ),
+  # Query 2: Direct flights from London to New York City, departing Dec 5-7, returning from New York City Dec 17-19, under $780 per flight leg.
+  # This query treats NYC as the primary destination/stopover for the round trip.
+  CityRanges(
+    city_range_list=[
+      CityRange(
+        airports=[Airport.LHR, Airport.LGW, Airport.STN, Airport.LTN, Airport.LCY], # London airports for departure
+        departure_date_range=DateRange(
+          earliest=datetime.date(2025, 12, 5),
+          latest=datetime.date(2025, 12, 7),
+        ),
+        departure_flight_filter=DepartureFlightFilter(
+          stops=MaxStops.NON_STOP, # All flights must be non-stop
+          price_limit=PriceLimit(max_price=779), # Flights under $780
+        ),
+      ),
+      CityRange(
+        airports=[Airport.JFK, Airport.LGA, Airport.EWR], # New York City airports (primary destination/stopover)
+        departure_date_range=DateRange(
+          earliest=datetime.date(2025, 12, 17),
+          latest=datetime.date(2025, 12, 19),
+        ),
+        departure_flight_filter=DepartureFlightFilter(
+          stops=MaxStops.NON_STOP, # All flights must be non-stop
+          price_limit=PriceLimit(max_price=779), # Flights under $780
+        ),
+      ),
+      CityRange(
+        airports=[Airport.LHR, Airport.LGW, Airport.STN, Airport.LTN, Airport.LCY], # London airports for final arrival
+      ),
+    ]
+  ),
+]
+</python>

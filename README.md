@@ -16,7 +16,7 @@ See the example prompts in `example_prompts/` for inspiration.
 * [Searching for flights](#searching-for-flights)
   * [Flight filters](#flight-filters)
 * [Main menu commands](#main-menu-commands)
-* [Token limit](#token-limit)
+* [Token and limits](#token-and-rate-limits)
 * [File structure](#file-structure)
 
 
@@ -85,7 +85,9 @@ These are the commands you can run in the main menu of the program:
 ## Searching for flights
 From the main menu, type `/prompt` and press `Enter`. Then type your flight query (multi-line input is accepted). When you're done entering your query, enter `/submit` in a newline and press `Enter`.
 
-**NOTE**: Pay special attention to the constraints added to your flight query that were parsed from your prompt by Gemini. If there are too many constraints or they are too restrictive, you may not find any valid flights. I would err on the side of relaxing the constraints a bit more (especially for the min/max time spent in the city; e.g. you may intend to stay for 2 nights at a city but that may not amount to a full 48 hours if you arrive at night and leave in the morning, so better to set the min time spent in the city to 1 day instead of 2 days), or at least don't put too many constraints for each individual city you are traveling to and individual flight you're taking.
+**NOTE**: Pay special attention to the constraints added to your flight query that were parsed from your prompt by Gemini. If there are too many constraints or they are too restrictive, you may not find any valid flights. I would err on the side of relaxing the constraints a bit more (especially for the min/max time spent in the city; e.g. you may intend to stay for 2 nights at a city but that may not amount to a full 48 hours if you arrive at night and leave in the morning, so better to set the min time spent in the city to 1 day instead of 2 days), or at least don't put too many constraints for each individual city you are traveling to and individual flight you're taking. Empirically, I find that setting the min/max time spent in a city is too restrictive and I usually would just set a departure date range for each city instead.
+
+**NOTE**: Sometimes the Google flight API is flaky and may return 0 results when in reality, there are valid results. In this case, it won't hurt to retry the query again. Once you're back in the main menu, you can simply type `/prompt` and type something like "I want to retry the flight query again" and Gemini should return the same query where you can type `/search` to try using the same query to search for flights.
 
 ### Flight filters
 Some things you can specify in the flight query prompt to filter for:
@@ -107,8 +109,8 @@ Some things you can specify in the flight query prompt to filter for:
     * layover airport whitelist; i.e. the set of airports you want to layover at, and no other airports would be valid
 
 
-## Token limit
-As of November 23rd, 2025, the free Gemini API key has a maximum tokens-per-minute (TPM) of 125000 for Gemini 2.5 Pro and 250000 for Gemini 2.5 Flash and Gemini 2.5 Flash-Lite. Since the prompt used in this program is around 120000 tokens, this will allow the user to send a prompt to Gemini once per minute for Gemini 2.5 Pro and twice a minute for Gemini 2.5 Flash and Gemini 2.5 Flash-Lite. Keep in mind that the longer a conversation continues with Gemini, the higher your token usage will be. If you get a rate limit error, simply wait a minute and retry via the `/retry` command.
+## Token and rate limits
+As of November 23rd, 2025, the free Gemini API key has a maximum tokens-per-minute (TPM) of 125000 for Gemini 2.5 Pro and 250000 for Gemini 2.5 Flash and Gemini 2.5 Flash-Lite. Since the prompt used in this program is around 120000 tokens, this will allow the user to send a prompt to Gemini **once per minute for Gemini 2.5 Pro** and **twice a minute for Gemini 2.5 Flash and Gemini 2.5 Flash-Lite**. Keep in mind that the longer a conversation continues with Gemini, the higher your token usage will be. If you get a rate limit error, simply wait a minute and retry via the `/retry` command.
 
 You could also try Gemini 2.0 which has a 1 million TPM limit, but Gemini 2.0 models do not have thinking (although perhaps not a lot of thinking is needed to just parse the user intent into flight query constraints). If you find yourself being rate limited too often, you can switch the model by executing the `/model` command in the main menu of the program.
 

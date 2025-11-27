@@ -1,0 +1,2 @@
+constrain the flights to be under 800 dollars.
+then make a separate identical query without the price constraint, and also change the stopover city to nyc

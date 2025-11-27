@@ -1,0 +1,64 @@
+<python>
+all_queries: list[CityRanges] = [
+  # Query 1: London to Toronto, non-stop, departing Dec 3-4, returning Dec 17-18, under 800 dollars
+  CityRanges(
+    city_range_list=[
+      CityRange(
+        airports=[Airport.LHR, Airport.LGW, Airport.STN, Airport.LTN, Airport.LCY],
+        departure_date_range=DateRange(
+          earliest=datetime.date(2025, 12, 3),
+          latest=datetime.date(2025, 12, 4),
+        ),
+        departure_flight_filter=DepartureFlightFilter(
+          stops=MaxStops.NON_STOP,
+          price_limit=PriceLimit(max_price=799), # Constrained to be under 800 dollars
+        ),
+      ),
+      CityRange(
+        airports=[Airport.YTZ, Airport.YYZ],
+        departure_date_range=DateRange(
+          earliest=datetime.date(2025, 12, 17),
+          latest=datetime.date(2025, 12, 18),
+        ),
+        departure_flight_filter=DepartureFlightFilter(
+          stops=MaxStops.NON_STOP,
+          price_limit=PriceLimit(max_price=799), # Constrained to be under 800 dollars
+        ),
+      ),
+      CityRange(
+        airports=[Airport.LHR, Airport.LGW, Airport.STN, Airport.LTN, Airport.LCY],
+      ),
+    ]
+  ),
+  # Query 2: London to NYC, non-stop, departing Dec 3-4, returning Dec 17-18, without price constraint
+  CityRanges(
+    city_range_list=[
+      CityRange(
+        airports=[Airport.LHR, Airport.LGW, Airport.STN, Airport.LTN, Airport.LCY],
+        departure_date_range=DateRange(
+          earliest=datetime.date(2025, 12, 3),
+          latest=datetime.date(2025, 12, 4),
+        ),
+        departure_flight_filter=DepartureFlightFilter(
+          stops=MaxStops.NON_STOP,
+          # Price constraint removed
+        ),
+      ),
+      CityRange(
+        airports=[Airport.JFK, Airport.LGA, Airport.EWR], # Destination changed to NYC airports
+        departure_date_range=DateRange(
+          earliest=datetime.date(2025, 12, 17),
+          latest=datetime.date(2025, 12, 18),
+        ),
+        departure_flight_filter=DepartureFlightFilter(
+          stops=MaxStops.NON_STOP,
+          # Price constraint removed
+        ),
+      ),
+      CityRange(
+        airports=[Airport.LHR, Airport.LGW, Airport.STN, Airport.LTN, Airport.LCY],
+      ),
+    ]
+  ),
+]
+</python>

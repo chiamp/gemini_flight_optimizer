@@ -1,0 +1,2219 @@
+total_price	total_flight_hours	total_layover_hours	total_num_stops	departure_datetime	returning_datetime	start_city	end_city	stopover_cities	formatted_string
+151.0	1.7333333333333334	0.0	0	2025-12-03T20:55:00	2025-12-03T22:39:00	Toronto	New York, John F. Kennedy	[]	"2025-12-03 20:55:00 - 2025-12-03 22:39:00 | $151.0 | 1 hr 44 min
+
+Toronto | START
+
+[FLIGHT 1]: $151.0 | 1 hr 44 min | 0 stops | ONE_WAY
+[LEG 1]: 2025-12-03 20:55:00 - 2025-12-03 22:39:00 | YYZ-JFK | 1 hr 44 min | AC 8556 | Air Canada
+
+New York, John F. Kennedy | END"
+159.0	1.75	0.0	0	2025-12-04T10:30:00	2025-12-04T12:15:00	Toronto	New York, John F. Kennedy	[]	"2025-12-04 10:30:00 - 2025-12-04 12:15:00 | $159.0 | 1 hr 45 min
+
+Toronto | START
+
+[FLIGHT 1]: $159.0 | 1 hr 45 min | 0 stops | ONE_WAY
+[LEG 1]: 2025-12-04 10:30:00 - 2025-12-04 12:15:00 | YYZ-JFK | 1 hr 45 min | AA 4552 | American Airlines
+
+New York, John F. Kennedy | END"
+159.0	2.0	0.0	0	2025-12-04T07:05:00	2025-12-04T09:05:00	Toronto	New York, John F. Kennedy	[]	"2025-12-04 07:05:00 - 2025-12-04 09:05:00 | $159.0 | 2 hr
+
+Toronto | START
+
+[FLIGHT 1]: $159.0 | 2 hr | 0 stops | ONE_WAY
+[LEG 1]: 2025-12-04 07:05:00 - 2025-12-04 09:05:00 | YYZ-JFK | 2 hr | AA 4559 | American Airlines
+
+New York, John F. Kennedy | END"
+159.0	2.05	0.0	0	2025-12-04T18:00:00	2025-12-04T20:03:00	Toronto	New York, John F. Kennedy	[]	"2025-12-04 18:00:00 - 2025-12-04 20:03:00 | $159.0 | 2 hr 3 min
+
+Toronto | START
+
+[FLIGHT 1]: $159.0 | 2 hr 3 min | 0 stops | ONE_WAY
+[LEG 1]: 2025-12-04 18:00:00 - 2025-12-04 20:03:00 | YYZ-JFK | 2 hr 3 min | DL 5081 | Delta Air Lines
+
+New York, John F. Kennedy | END"
+159.0	2.066666666666667	0.0	0	2025-12-04T06:00:00	2025-12-04T08:04:00	Toronto	New York, John F. Kennedy	[]	"2025-12-04 06:00:00 - 2025-12-04 08:04:00 | $159.0 | 2 hr 4 min
+
+Toronto | START
+
+[FLIGHT 1]: $159.0 | 2 hr 4 min | 0 stops | ONE_WAY
+[LEG 1]: 2025-12-04 06:00:00 - 2025-12-04 08:04:00 | YYZ-JFK | 2 hr 4 min | DL 5066 | Delta Air Lines
+
+New York, John F. Kennedy | END"
+168.0	1.75	0.0	0	2025-12-03T10:30:00	2025-12-03T12:15:00	Toronto	New York, John F. Kennedy	[]	"2025-12-03 10:30:00 - 2025-12-03 12:15:00 | $168.0 | 1 hr 45 min
+
+Toronto | START
+
+[FLIGHT 1]: $168.0 | 1 hr 45 min | 0 stops | ONE_WAY
+[LEG 1]: 2025-12-03 10:30:00 - 2025-12-03 12:15:00 | YYZ-JFK | 1 hr 45 min | AA 4552 | American Airlines
+
+New York, John F. Kennedy | END"
+168.0	2.0	0.0	0	2025-12-03T07:05:00	2025-12-03T09:05:00	Toronto	New York, John F. Kennedy	[]	"2025-12-03 07:05:00 - 2025-12-03 09:05:00 | $168.0 | 2 hr
+
+Toronto | START
+
+[FLIGHT 1]: $168.0 | 2 hr | 0 stops | ONE_WAY
+[LEG 1]: 2025-12-03 07:05:00 - 2025-12-03 09:05:00 | YYZ-JFK | 2 hr | AA 4559 | American Airlines
+
+New York, John F. Kennedy | END"
+214.0	1.7333333333333334	0.0	0	2025-12-04T20:55:00	2025-12-04T22:39:00	Toronto	New York, John F. Kennedy	[]	"2025-12-04 20:55:00 - 2025-12-04 22:39:00 | $214.0 | 1 hr 44 min
+
+Toronto | START
+
+[FLIGHT 1]: $214.0 | 1 hr 44 min | 0 stops | ONE_WAY
+[LEG 1]: 2025-12-04 20:55:00 - 2025-12-04 22:39:00 | YYZ-JFK | 1 hr 44 min | AC 8556 | Air Canada
+
+New York, John F. Kennedy | END"
+223.0	2.05	0.0	0	2025-12-03T18:00:00	2025-12-03T20:03:00	Toronto	New York, John F. Kennedy	[]	"2025-12-03 18:00:00 - 2025-12-03 20:03:00 | $223.0 | 2 hr 3 min
+
+Toronto | START
+
+[FLIGHT 1]: $223.0 | 2 hr 3 min | 0 stops | ONE_WAY
+[LEG 1]: 2025-12-03 18:00:00 - 2025-12-03 20:03:00 | YYZ-JFK | 2 hr 3 min | DL 5081 | Delta Air Lines
+
+New York, John F. Kennedy | END"
+227.0	2.066666666666667	0.0	0	2025-12-03T06:00:00	2025-12-03T08:04:00	Toronto	New York, John F. Kennedy	[]	"2025-12-03 06:00:00 - 2025-12-03 08:04:00 | $227.0 | 2 hr 4 min
+
+Toronto | START
+
+[FLIGHT 1]: $227.0 | 2 hr 4 min | 0 stops | ONE_WAY
+[LEG 1]: 2025-12-03 06:00:00 - 2025-12-03 08:04:00 | YYZ-JFK | 2 hr 4 min | DL 5066 | Delta Air Lines
+
+New York, John F. Kennedy | END"
+228.0	1.65	0.0	0	2025-12-03T14:30:00	2025-12-03T16:09:00	Toronto	New York, John F. Kennedy	[]	"2025-12-03 14:30:00 - 2025-12-03 16:09:00 | $228.0 | 1 hr 39 min
+
+Toronto | START
+
+[FLIGHT 1]: $228.0 | 1 hr 39 min | 0 stops | ONE_WAY
+[LEG 1]: 2025-12-03 14:30:00 - 2025-12-03 16:09:00 | YYZ-JFK | 1 hr 39 min | AC 8554 | Air Canada
+
+New York, John F. Kennedy | END"
+232.0	1.8166666666666667	0.0	0	2025-12-04T12:15:00	2025-12-04T14:04:00	Toronto	New York, John F. Kennedy	[]	"2025-12-04 12:15:00 - 2025-12-04 14:04:00 | $232.0 | 1 hr 49 min
+
+Toronto | START
+
+[FLIGHT 1]: $232.0 | 1 hr 49 min | 0 stops | ONE_WAY
+[LEG 1]: 2025-12-04 12:15:00 - 2025-12-04 14:04:00 | YYZ-JFK | 1 hr 49 min | DL 5098 | Delta Air Lines
+
+New York, John F. Kennedy | END"
+234.0	1.65	0.0	0	2025-12-04T14:30:00	2025-12-04T16:09:00	Toronto	New York, John F. Kennedy	[]	"2025-12-04 14:30:00 - 2025-12-04 16:09:00 | $234.0 | 1 hr 39 min
+
+Toronto | START
+
+[FLIGHT 1]: $234.0 | 1 hr 39 min | 0 stops | ONE_WAY
+[LEG 1]: 2025-12-04 14:30:00 - 2025-12-04 16:09:00 | YYZ-JFK | 1 hr 39 min | AC 8554 | Air Canada
+
+New York, John F. Kennedy | END"
+382.0	1.8166666666666667	0.0	0	2025-12-03T12:15:00	2025-12-03T14:04:00	Toronto	New York, John F. Kennedy	[]	"2025-12-03 12:15:00 - 2025-12-03 14:04:00 | $382.0 | 1 hr 49 min
+
+Toronto | START
+
+[FLIGHT 1]: $382.0 | 1 hr 49 min | 0 stops | ONE_WAY
+[LEG 1]: 2025-12-03 12:15:00 - 2025-12-03 14:04:00 | YYZ-JFK | 1 hr 49 min | DL 5098 | Delta Air Lines
+
+New York, John F. Kennedy | END"
+467.0	10.833333333333334	0.0	0	2026-01-05T09:45:00	2026-01-10T21:37:00	Toronto	Toronto	['San Francisco']	"2026-01-05 09:45:00 - 2026-01-10 21:37:00 | $467.0 | 10 hr 50 min
+
+Toronto | START
+
+[FLIGHT 1]: $0.0 | 5 hr 53 min | 0 stops | ROUND_TRIP_DEPARTING
+[LEG 1]: 2026-01-05 09:45:00 - 2026-01-05 12:38:00 | YYZ-SFO | 5 hr 53 min | PD 671 | Porter Airlines
+
+San Francisco | 5 days 1 hr 2 min
+
+[FLIGHT 1]: $467.0 | 4 hr 57 min | 0 stops | ROUND_TRIP_RETURNING
+[LEG 1]: 2026-01-10 13:40:00 - 2026-01-10 21:37:00 | SFO-YYZ | 4 hr 57 min | PD 672 | Porter Airlines
+
+Toronto | END"
+467.0	10.833333333333334	0.0	0	2026-01-05T09:45:00	2026-01-11T21:37:00	Toronto	Toronto	['San Francisco']	"2026-01-05 09:45:00 - 2026-01-11 21:37:00 | $467.0 | 10 hr 50 min
+
+Toronto | START
+
+[FLIGHT 1]: $0.0 | 5 hr 53 min | 0 stops | ROUND_TRIP_DEPARTING
+[LEG 1]: 2026-01-05 09:45:00 - 2026-01-05 12:38:00 | YYZ-SFO | 5 hr 53 min | PD 671 | Porter Airlines
+
+San Francisco | 6 days 1 hr 2 min
+
+[FLIGHT 1]: $467.0 | 4 hr 57 min | 0 stops | ROUND_TRIP_RETURNING
+[LEG 1]: 2026-01-11 13:40:00 - 2026-01-11 21:37:00 | SFO-YYZ | 4 hr 57 min | PD 672 | Porter Airlines
+
+Toronto | END"
+471.0	10.833333333333334	0.0	0	2026-01-05T09:45:00	2026-01-10T21:37:00	Toronto	Toronto	['San Francisco']	"2026-01-05 09:45:00 - 2026-01-10 21:37:00 | $471.0 | 10 hr 50 min
+
+Toronto | START
+
+[FLIGHT 1]: $395.0 | 5 hr 53 min | 0 stops | ONE_WAY
+[LEG 1]: 2026-01-05 09:45:00 - 2026-01-05 12:38:00 | YYZ-SFO | 5 hr 53 min | PD 671 | Porter Airlines
+
+San Francisco | 5 days 1 hr 2 min
+
+[FLIGHT 2]: $76.0 | 4 hr 57 min | 0 stops | ONE_WAY
+[LEG 1]: 2026-01-10 13:40:00 - 2026-01-10 21:37:00 | SFO-YYZ | 4 hr 57 min | PD 672 | Porter Airlines
+
+Toronto | END"
+476.0	10.833333333333334	0.0	0	2026-01-05T09:45:00	2026-01-11T21:37:00	Toronto	Toronto	['San Francisco']	"2026-01-05 09:45:00 - 2026-01-11 21:37:00 | $476.0 | 10 hr 50 min
+
+Toronto | START
+
+[FLIGHT 1]: $395.0 | 5 hr 53 min | 0 stops | ONE_WAY
+[LEG 1]: 2026-01-05 09:45:00 - 2026-01-05 12:38:00 | YYZ-SFO | 5 hr 53 min | PD 671 | Porter Airlines
+
+San Francisco | 6 days 1 hr 2 min
+
+[FLIGHT 2]: $81.0 | 4 hr 57 min | 0 stops | ONE_WAY
+[LEG 1]: 2026-01-11 13:40:00 - 2026-01-11 21:37:00 | SFO-YYZ | 4 hr 57 min | PD 672 | Porter Airlines
+
+Toronto | END"
+500.0	10.85	0.0	0	2026-01-05T09:45:00	2026-01-10T16:28:00	Toronto	Toronto	['San Francisco']	"2026-01-05 09:45:00 - 2026-01-10 16:28:00 | $500.0 | 10 hr 51 min
+
+Toronto | START
+
+[FLIGHT 1]: $0.0 | 5 hr 53 min | 0 stops | ROUND_TRIP_DEPARTING
+[LEG 1]: 2026-01-05 09:45:00 - 2026-01-05 12:38:00 | YYZ-SFO | 5 hr 53 min | PD 671 | Porter Airlines
+
+San Francisco | 4 days 19 hr 52 min
+
+[FLIGHT 1]: $500.0 | 4 hr 58 min | 0 stops | ROUND_TRIP_RETURNING
+[LEG 1]: 2026-01-10 08:30:00 - 2026-01-10 16:28:00 | SFO-YYZ | 4 hr 58 min | AC 738 | Air Canada
+
+Toronto | END"
+500.0	10.85	0.0	0	2026-01-05T09:45:00	2026-01-11T16:28:00	Toronto	Toronto	['San Francisco']	"2026-01-05 09:45:00 - 2026-01-11 16:28:00 | $500.0 | 10 hr 51 min
+
+Toronto | START
+
+[FLIGHT 1]: $0.0 | 5 hr 53 min | 0 stops | ROUND_TRIP_DEPARTING
+[LEG 1]: 2026-01-05 09:45:00 - 2026-01-05 12:38:00 | YYZ-SFO | 5 hr 53 min | PD 671 | Porter Airlines
+
+San Francisco | 5 days 19 hr 52 min
+
+[FLIGHT 1]: $500.0 | 4 hr 58 min | 0 stops | ROUND_TRIP_RETURNING
+[LEG 1]: 2026-01-11 08:30:00 - 2026-01-11 16:28:00 | SFO-YYZ | 4 hr 58 min | AC 738 | Air Canada
+
+Toronto | END"
+503.0	10.85	0.0	0	2026-01-05T09:45:00	2026-01-10T16:28:00	Toronto	Toronto	['San Francisco']	"2026-01-05 09:45:00 - 2026-01-10 16:28:00 | $503.0 | 10 hr 51 min
+
+Toronto | START
+
+[FLIGHT 1]: $395.0 | 5 hr 53 min | 0 stops | ONE_WAY
+[LEG 1]: 2026-01-05 09:45:00 - 2026-01-05 12:38:00 | YYZ-SFO | 5 hr 53 min | PD 671 | Porter Airlines
+
+San Francisco | 4 days 19 hr 52 min
+
+[FLIGHT 2]: $108.0 | 4 hr 58 min | 0 stops | ONE_WAY
+[LEG 1]: 2026-01-10 08:30:00 - 2026-01-10 16:28:00 | SFO-YYZ | 4 hr 58 min | AC 738 | Air Canada
+
+Toronto | END"
+503.0	10.85	0.0	0	2026-01-05T09:45:00	2026-01-11T16:28:00	Toronto	Toronto	['San Francisco']	"2026-01-05 09:45:00 - 2026-01-11 16:28:00 | $503.0 | 10 hr 51 min
+
+Toronto | START
+
+[FLIGHT 1]: $395.0 | 5 hr 53 min | 0 stops | ONE_WAY
+[LEG 1]: 2026-01-05 09:45:00 - 2026-01-05 12:38:00 | YYZ-SFO | 5 hr 53 min | PD 671 | Porter Airlines
+
+San Francisco | 5 days 19 hr 52 min
+
+[FLIGHT 2]: $108.0 | 4 hr 58 min | 0 stops | ONE_WAY
+[LEG 1]: 2026-01-11 08:30:00 - 2026-01-11 16:28:00 | SFO-YYZ | 4 hr 58 min | AC 738 | Air Canada
+
+Toronto | END"
+504.0	10.8	0.0	0	2026-01-05T09:45:00	2026-01-10T19:55:00	Toronto	Toronto	['San Francisco']	"2026-01-05 09:45:00 - 2026-01-10 19:55:00 | $504.0 | 10 hr 48 min
+
+Toronto | START
+
+[FLIGHT 1]: $395.0 | 5 hr 53 min | 0 stops | ONE_WAY
+[LEG 1]: 2026-01-05 09:45:00 - 2026-01-05 12:38:00 | YYZ-SFO | 5 hr 53 min | PD 671 | Porter Airlines
+
+San Francisco | 4 days 23 hr 22 min
+
+[FLIGHT 2]: $109.0 | 4 hr 55 min | 0 stops | ONE_WAY
+[LEG 1]: 2026-01-10 12:00:00 - 2026-01-10 19:55:00 | SFO-YYZ | 4 hr 55 min | AC 740 | Air Canada
+
+Toronto | END"
+504.0	10.85	0.0	0	2026-01-05T09:45:00	2026-01-11T22:28:00	Toronto	Toronto	['San Francisco']	"2026-01-05 09:45:00 - 2026-01-11 22:28:00 | $504.0 | 10 hr 51 min
+
+Toronto | START
+
+[FLIGHT 1]: $395.0 | 5 hr 53 min | 0 stops | ONE_WAY
+[LEG 1]: 2026-01-05 09:45:00 - 2026-01-05 12:38:00 | YYZ-SFO | 5 hr 53 min | PD 671 | Porter Airlines
+
+San Francisco | 6 days 1 hr 52 min
+
+[FLIGHT 2]: $109.0 | 4 hr 58 min | 0 stops | ONE_WAY
+[LEG 1]: 2026-01-11 14:30:00 - 2026-01-11 22:28:00 | SFO-YYZ | 4 hr 58 min | AC 742 | Air Canada
+
+Toronto | END"
+521.0	10.85	0.0	0	2026-01-05T09:45:00	2026-01-11T22:28:00	Toronto	Toronto	['San Francisco']	"2026-01-05 09:45:00 - 2026-01-11 22:28:00 | $521.0 | 10 hr 51 min
+
+Toronto | START
+
+[FLIGHT 1]: $0.0 | 5 hr 53 min | 0 stops | ROUND_TRIP_DEPARTING
+[LEG 1]: 2026-01-05 09:45:00 - 2026-01-05 12:38:00 | YYZ-SFO | 5 hr 53 min | PD 671 | Porter Airlines
+
+San Francisco | 6 days 1 hr 52 min
+
+[FLIGHT 1]: $521.0 | 4 hr 58 min | 0 stops | ROUND_TRIP_RETURNING
+[LEG 1]: 2026-01-11 14:30:00 - 2026-01-11 22:28:00 | SFO-YYZ | 4 hr 58 min | AC 742 | Air Canada
+
+Toronto | END"
+522.0	10.8	0.0	0	2026-01-05T09:45:00	2026-01-10T19:55:00	Toronto	Toronto	['San Francisco']	"2026-01-05 09:45:00 - 2026-01-10 19:55:00 | $522.0 | 10 hr 48 min
+
+Toronto | START
+
+[FLIGHT 1]: $0.0 | 5 hr 53 min | 0 stops | ROUND_TRIP_DEPARTING
+[LEG 1]: 2026-01-05 09:45:00 - 2026-01-05 12:38:00 | YYZ-SFO | 5 hr 53 min | PD 671 | Porter Airlines
+
+San Francisco | 4 days 23 hr 22 min
+
+[FLIGHT 1]: $522.0 | 4 hr 55 min | 0 stops | ROUND_TRIP_RETURNING
+[LEG 1]: 2026-01-10 12:00:00 - 2026-01-10 19:55:00 | SFO-YYZ | 4 hr 55 min | AC 740 | Air Canada
+
+Toronto | END"
+537.0	10.766666666666667	0.0	0	2026-01-05T08:05:00	2026-01-10T21:37:00	Toronto	Toronto	['San Francisco']	"2026-01-05 08:05:00 - 2026-01-10 21:37:00 | $537.0 | 10 hr 46 min
+
+Toronto | START
+
+[FLIGHT 1]: $461.0 | 5 hr 49 min | 0 stops | ONE_WAY
+[LEG 1]: 2026-01-05 08:05:00 - 2026-01-05 10:54:00 | YYZ-SFO | 5 hr 49 min | AC 739 | Air Canada
+
+San Francisco | 5 days 2 hr 46 min
+
+[FLIGHT 2]: $76.0 | 4 hr 57 min | 0 stops | ONE_WAY
+[LEG 1]: 2026-01-10 13:40:00 - 2026-01-10 21:37:00 | SFO-YYZ | 4 hr 57 min | PD 672 | Porter Airlines
+
+Toronto | END"
+539.0	10.933333333333334	0.0	0	2026-01-05T09:45:00	2026-01-10T16:52:00	Toronto	Toronto	['San Francisco']	"2026-01-05 09:45:00 - 2026-01-10 16:52:00 | $539.0 | 10 hr 56 min
+
+Toronto | START
+
+[FLIGHT 1]: $395.0 | 5 hr 53 min | 0 stops | ONE_WAY
+[LEG 1]: 2026-01-05 09:45:00 - 2026-01-05 12:38:00 | YYZ-SFO | 5 hr 53 min | PD 671 | Porter Airlines
+
+San Francisco | 4 days 20 hr 11 min
+
+[FLIGHT 2]: $144.0 | 5 hr 3 min | 0 stops | ONE_WAY
+[LEG 1]: 2026-01-10 08:49:00 - 2026-01-10 16:52:00 | SFO-YYZ | 5 hr 3 min | UA 608 | United Airlines
+
+Toronto | END"
+539.0	10.933333333333334	0.0	0	2026-01-05T09:45:00	2026-01-11T16:52:00	Toronto	Toronto	['San Francisco']	"2026-01-05 09:45:00 - 2026-01-11 16:52:00 | $539.0 | 10 hr 56 min
+
+Toronto | START
+
+[FLIGHT 1]: $395.0 | 5 hr 53 min | 0 stops | ONE_WAY
+[LEG 1]: 2026-01-05 09:45:00 - 2026-01-05 12:38:00 | YYZ-SFO | 5 hr 53 min | PD 671 | Porter Airlines
+
+San Francisco | 5 days 20 hr 11 min
+
+[FLIGHT 2]: $144.0 | 5 hr 3 min | 0 stops | ONE_WAY
+[LEG 1]: 2026-01-11 08:49:00 - 2026-01-11 16:52:00 | SFO-YYZ | 5 hr 3 min | UA 608 | United Airlines
+
+Toronto | END"
+542.0	10.766666666666667	0.0	0	2026-01-05T08:05:00	2026-01-11T21:37:00	Toronto	Toronto	['San Francisco']	"2026-01-05 08:05:00 - 2026-01-11 21:37:00 | $542.0 | 10 hr 46 min
+
+Toronto | START
+
+[FLIGHT 1]: $461.0 | 5 hr 49 min | 0 stops | ONE_WAY
+[LEG 1]: 2026-01-05 08:05:00 - 2026-01-05 10:54:00 | YYZ-SFO | 5 hr 49 min | AC 739 | Air Canada
+
+San Francisco | 6 days 2 hr 46 min
+
+[FLIGHT 2]: $81.0 | 4 hr 57 min | 0 stops | ONE_WAY
+[LEG 1]: 2026-01-11 13:40:00 - 2026-01-11 21:37:00 | SFO-YYZ | 4 hr 57 min | PD 672 | Porter Airlines
+
+Toronto | END"
+553.0	10.766666666666667	0.0	0	2026-01-05T08:05:00	2026-01-10T21:37:00	Toronto	Toronto	['San Francisco']	"2026-01-05 08:05:00 - 2026-01-10 21:37:00 | $553.0 | 10 hr 46 min
+
+Toronto | START
+
+[FLIGHT 1]: $0.0 | 5 hr 49 min | 0 stops | ROUND_TRIP_DEPARTING
+[LEG 1]: 2026-01-05 08:05:00 - 2026-01-05 10:54:00 | YYZ-SFO | 5 hr 49 min | AC 739 | Air Canada
+
+San Francisco | 5 days 2 hr 46 min
+
+[FLIGHT 1]: $553.0 | 4 hr 57 min | 0 stops | ROUND_TRIP_RETURNING
+[LEG 1]: 2026-01-10 13:40:00 - 2026-01-10 21:37:00 | SFO-YYZ | 4 hr 57 min | PD 672 | Porter Airlines
+
+Toronto | END"
+562.0	10.766666666666667	0.0	0	2026-01-05T08:05:00	2026-01-11T21:37:00	Toronto	Toronto	['San Francisco']	"2026-01-05 08:05:00 - 2026-01-11 21:37:00 | $562.0 | 10 hr 46 min
+
+Toronto | START
+
+[FLIGHT 1]: $0.0 | 5 hr 49 min | 0 stops | ROUND_TRIP_DEPARTING
+[LEG 1]: 2026-01-05 08:05:00 - 2026-01-05 10:54:00 | YYZ-SFO | 5 hr 49 min | AC 739 | Air Canada
+
+San Francisco | 6 days 2 hr 46 min
+
+[FLIGHT 1]: $562.0 | 4 hr 57 min | 0 stops | ROUND_TRIP_RETURNING
+[LEG 1]: 2026-01-11 13:40:00 - 2026-01-11 21:37:00 | SFO-YYZ | 4 hr 57 min | PD 672 | Porter Airlines
+
+Toronto | END"
+569.0	10.783333333333333	0.0	0	2026-01-05T08:05:00	2026-01-10T16:28:00	Toronto	Toronto	['San Francisco']	"2026-01-05 08:05:00 - 2026-01-10 16:28:00 | $569.0 | 10 hr 47 min
+
+Toronto | START
+
+[FLIGHT 1]: $461.0 | 5 hr 49 min | 0 stops | ONE_WAY
+[LEG 1]: 2026-01-05 08:05:00 - 2026-01-05 10:54:00 | YYZ-SFO | 5 hr 49 min | AC 739 | Air Canada
+
+San Francisco | 4 days 21 hr 36 min
+
+[FLIGHT 2]: $108.0 | 4 hr 58 min | 0 stops | ONE_WAY
+[LEG 1]: 2026-01-10 08:30:00 - 2026-01-10 16:28:00 | SFO-YYZ | 4 hr 58 min | AC 738 | Air Canada
+
+Toronto | END"
+569.0	10.783333333333333	0.0	0	2026-01-05T08:05:00	2026-01-11T16:28:00	Toronto	Toronto	['San Francisco']	"2026-01-05 08:05:00 - 2026-01-11 16:28:00 | $569.0 | 10 hr 47 min
+
+Toronto | START
+
+[FLIGHT 1]: $461.0 | 5 hr 49 min | 0 stops | ONE_WAY
+[LEG 1]: 2026-01-05 08:05:00 - 2026-01-05 10:54:00 | YYZ-SFO | 5 hr 49 min | AC 739 | Air Canada
+
+San Francisco | 5 days 21 hr 36 min
+
+[FLIGHT 2]: $108.0 | 4 hr 58 min | 0 stops | ONE_WAY
+[LEG 1]: 2026-01-11 08:30:00 - 2026-01-11 16:28:00 | SFO-YYZ | 4 hr 58 min | AC 738 | Air Canada
+
+Toronto | END"
+570.0	10.733333333333333	0.0	0	2026-01-05T08:05:00	2026-01-10T19:55:00	Toronto	Toronto	['San Francisco']	"2026-01-05 08:05:00 - 2026-01-10 19:55:00 | $570.0 | 10 hr 44 min
+
+Toronto | START
+
+[FLIGHT 1]: $461.0 | 5 hr 49 min | 0 stops | ONE_WAY
+[LEG 1]: 2026-01-05 08:05:00 - 2026-01-05 10:54:00 | YYZ-SFO | 5 hr 49 min | AC 739 | Air Canada
+
+San Francisco | 5 days 1 hr 6 min
+
+[FLIGHT 2]: $109.0 | 4 hr 55 min | 0 stops | ONE_WAY
+[LEG 1]: 2026-01-10 12:00:00 - 2026-01-10 19:55:00 | SFO-YYZ | 4 hr 55 min | AC 740 | Air Canada
+
+Toronto | END"
+570.0	10.783333333333333	0.0	0	2026-01-05T08:05:00	2026-01-11T22:28:00	Toronto	Toronto	['San Francisco']	"2026-01-05 08:05:00 - 2026-01-11 22:28:00 | $570.0 | 10 hr 47 min
+
+Toronto | START
+
+[FLIGHT 1]: $461.0 | 5 hr 49 min | 0 stops | ONE_WAY
+[LEG 1]: 2026-01-05 08:05:00 - 2026-01-05 10:54:00 | YYZ-SFO | 5 hr 49 min | AC 739 | Air Canada
+
+San Francisco | 6 days 3 hr 36 min
+
+[FLIGHT 2]: $109.0 | 4 hr 58 min | 0 stops | ONE_WAY
+[LEG 1]: 2026-01-11 14:30:00 - 2026-01-11 22:28:00 | SFO-YYZ | 4 hr 58 min | AC 742 | Air Canada
+
+Toronto | END"
+574.0	10.733333333333333	0.0	0	2026-01-05T08:05:00	2026-01-10T19:55:00	Toronto	Toronto	['San Francisco']	"2026-01-05 08:05:00 - 2026-01-10 19:55:00 | $574.0 | 10 hr 44 min
+
+Toronto | START
+
+[FLIGHT 1]: $0.0 | 5 hr 49 min | 0 stops | ROUND_TRIP_DEPARTING
+[LEG 1]: 2026-01-05 08:05:00 - 2026-01-05 10:54:00 | YYZ-SFO | 5 hr 49 min | AC 739 | Air Canada
+
+San Francisco | 5 days 1 hr 6 min
+
+[FLIGHT 1]: $574.0 | 4 hr 55 min | 0 stops | ROUND_TRIP_RETURNING
+[LEG 1]: 2026-01-10 12:00:00 - 2026-01-10 19:55:00 | SFO-YYZ | 4 hr 55 min | AC 740 | Air Canada
+
+Toronto | END"
+574.0	10.783333333333333	0.0	0	2026-01-05T08:05:00	2026-01-11T22:28:00	Toronto	Toronto	['San Francisco']	"2026-01-05 08:05:00 - 2026-01-11 22:28:00 | $574.0 | 10 hr 47 min
+
+Toronto | START
+
+[FLIGHT 1]: $0.0 | 5 hr 49 min | 0 stops | ROUND_TRIP_DEPARTING
+[LEG 1]: 2026-01-05 08:05:00 - 2026-01-05 10:54:00 | YYZ-SFO | 5 hr 49 min | AC 739 | Air Canada
+
+San Francisco | 6 days 3 hr 36 min
+
+[FLIGHT 1]: $574.0 | 4 hr 58 min | 0 stops | ROUND_TRIP_RETURNING
+[LEG 1]: 2026-01-11 14:30:00 - 2026-01-11 22:28:00 | SFO-YYZ | 4 hr 58 min | AC 742 | Air Canada
+
+Toronto | END"
+580.0	10.783333333333333	0.0	0	2026-01-05T08:05:00	2026-01-10T16:28:00	Toronto	Toronto	['San Francisco']	"2026-01-05 08:05:00 - 2026-01-10 16:28:00 | $580.0 | 10 hr 47 min
+
+Toronto | START
+
+[FLIGHT 1]: $0.0 | 5 hr 49 min | 0 stops | ROUND_TRIP_DEPARTING
+[LEG 1]: 2026-01-05 08:05:00 - 2026-01-05 10:54:00 | YYZ-SFO | 5 hr 49 min | AC 739 | Air Canada
+
+San Francisco | 4 days 21 hr 36 min
+
+[FLIGHT 1]: $580.0 | 4 hr 58 min | 0 stops | ROUND_TRIP_RETURNING
+[LEG 1]: 2026-01-10 08:30:00 - 2026-01-10 16:28:00 | SFO-YYZ | 4 hr 58 min | AC 738 | Air Canada
+
+Toronto | END"
+580.0	10.783333333333333	0.0	0	2026-01-05T08:05:00	2026-01-11T16:28:00	Toronto	Toronto	['San Francisco']	"2026-01-05 08:05:00 - 2026-01-11 16:28:00 | $580.0 | 10 hr 47 min
+
+Toronto | START
+
+[FLIGHT 1]: $0.0 | 5 hr 49 min | 0 stops | ROUND_TRIP_DEPARTING
+[LEG 1]: 2026-01-05 08:05:00 - 2026-01-05 10:54:00 | YYZ-SFO | 5 hr 49 min | AC 739 | Air Canada
+
+San Francisco | 5 days 21 hr 36 min
+
+[FLIGHT 1]: $580.0 | 4 hr 58 min | 0 stops | ROUND_TRIP_RETURNING
+[LEG 1]: 2026-01-11 08:30:00 - 2026-01-11 16:28:00 | SFO-YYZ | 4 hr 58 min | AC 738 | Air Canada
+
+Toronto | END"
+589.0	10.933333333333334	0.0	0	2026-01-05T09:45:00	2026-01-10T16:52:00	Toronto	Toronto	['San Francisco']	"2026-01-05 09:45:00 - 2026-01-10 16:52:00 | $589.0 | 10 hr 56 min
+
+Toronto | START
+
+[FLIGHT 1]: $0.0 | 5 hr 53 min | 0 stops | ROUND_TRIP_DEPARTING
+[LEG 1]: 2026-01-05 09:45:00 - 2026-01-05 12:38:00 | YYZ-SFO | 5 hr 53 min | PD 671 | Porter Airlines
+
+San Francisco | 4 days 20 hr 11 min
+
+[FLIGHT 1]: $589.0 | 5 hr 3 min | 0 stops | ROUND_TRIP_RETURNING
+[LEG 1]: 2026-01-10 08:49:00 - 2026-01-10 16:52:00 | SFO-YYZ | 5 hr 3 min | UA 608 | United Airlines
+
+Toronto | END"
+589.0	10.933333333333334	0.0	0	2026-01-05T09:45:00	2026-01-11T16:52:00	Toronto	Toronto	['San Francisco']	"2026-01-05 09:45:00 - 2026-01-11 16:52:00 | $589.0 | 10 hr 56 min
+
+Toronto | START
+
+[FLIGHT 1]: $0.0 | 5 hr 53 min | 0 stops | ROUND_TRIP_DEPARTING
+[LEG 1]: 2026-01-05 09:45:00 - 2026-01-05 12:38:00 | YYZ-SFO | 5 hr 53 min | PD 671 | Porter Airlines
+
+San Francisco | 5 days 20 hr 11 min
+
+[FLIGHT 1]: $589.0 | 5 hr 3 min | 0 stops | ROUND_TRIP_RETURNING
+[LEG 1]: 2026-01-11 08:49:00 - 2026-01-11 16:52:00 | SFO-YYZ | 5 hr 3 min | UA 608 | United Airlines
+
+Toronto | END"
+592.0	10.7	0.0	0	2026-01-05T10:45:00	2026-01-10T21:37:00	Toronto	Toronto	['San Francisco']	"2026-01-05 10:45:00 - 2026-01-10 21:37:00 | $592.0 | 10 hr 42 min
+
+Toronto | START
+
+[FLIGHT 1]: $516.0 | 5 hr 45 min | 0 stops | ONE_WAY
+[LEG 1]: 2026-01-05 10:45:00 - 2026-01-05 13:30:00 | YYZ-SFO | 5 hr 45 min | AC 741 | Air Canada
+
+San Francisco | 5 days 10 min
+
+[FLIGHT 2]: $76.0 | 4 hr 57 min | 0 stops | ONE_WAY
+[LEG 1]: 2026-01-10 13:40:00 - 2026-01-10 21:37:00 | SFO-YYZ | 4 hr 57 min | PD 672 | Porter Airlines
+
+Toronto | END"
+595.0	10.866666666666667	0.0	0	2026-01-05T08:05:00	2026-01-10T16:52:00	Toronto	Toronto	['San Francisco']	"2026-01-05 08:05:00 - 2026-01-10 16:52:00 | $595.0 | 10 hr 52 min
+
+Toronto | START
+
+[FLIGHT 1]: $0.0 | 5 hr 49 min | 0 stops | ROUND_TRIP_DEPARTING
+[LEG 1]: 2026-01-05 08:05:00 - 2026-01-05 10:54:00 | YYZ-SFO | 5 hr 49 min | AC 739 | Air Canada
+
+San Francisco | 4 days 21 hr 55 min
+
+[FLIGHT 1]: $595.0 | 5 hr 3 min | 0 stops | ROUND_TRIP_RETURNING
+[LEG 1]: 2026-01-10 08:49:00 - 2026-01-10 16:52:00 | SFO-YYZ | 5 hr 3 min | UA 608 | United Airlines
+
+Toronto | END"
+595.0	10.866666666666667	0.0	0	2026-01-05T08:05:00	2026-01-11T16:52:00	Toronto	Toronto	['San Francisco']	"2026-01-05 08:05:00 - 2026-01-11 16:52:00 | $595.0 | 10 hr 52 min
+
+Toronto | START
+
+[FLIGHT 1]: $0.0 | 5 hr 49 min | 0 stops | ROUND_TRIP_DEPARTING
+[LEG 1]: 2026-01-05 08:05:00 - 2026-01-05 10:54:00 | YYZ-SFO | 5 hr 49 min | AC 739 | Air Canada
+
+San Francisco | 5 days 21 hr 55 min
+
+[FLIGHT 1]: $595.0 | 5 hr 3 min | 0 stops | ROUND_TRIP_RETURNING
+[LEG 1]: 2026-01-11 08:49:00 - 2026-01-11 16:52:00 | SFO-YYZ | 5 hr 3 min | UA 608 | United Airlines
+
+Toronto | END"
+597.0	10.7	0.0	0	2026-01-05T10:45:00	2026-01-11T21:37:00	Toronto	Toronto	['San Francisco']	"2026-01-05 10:45:00 - 2026-01-11 21:37:00 | $597.0 | 10 hr 42 min
+
+Toronto | START
+
+[FLIGHT 1]: $516.0 | 5 hr 45 min | 0 stops | ONE_WAY
+[LEG 1]: 2026-01-05 10:45:00 - 2026-01-05 13:30:00 | YYZ-SFO | 5 hr 45 min | AC 741 | Air Canada
+
+San Francisco | 6 days 10 min
+
+[FLIGHT 2]: $81.0 | 4 hr 57 min | 0 stops | ONE_WAY
+[LEG 1]: 2026-01-11 13:40:00 - 2026-01-11 21:37:00 | SFO-YYZ | 4 hr 57 min | PD 672 | Porter Airlines
+
+Toronto | END"
+598.0	10.766666666666667	0.0	0	2026-01-05T18:50:00	2026-01-10T21:37:00	Toronto	Toronto	['San Francisco']	"2026-01-05 18:50:00 - 2026-01-10 21:37:00 | $598.0 | 10 hr 46 min
+
+Toronto | START
+
+[FLIGHT 1]: $522.0 | 5 hr 49 min | 0 stops | ONE_WAY
+[LEG 1]: 2026-01-05 18:50:00 - 2026-01-05 21:39:00 | YYZ-SFO | 5 hr 49 min | AC 745 | Air Canada
+
+San Francisco | 4 days 16 hr 1 min
+
+[FLIGHT 2]: $76.0 | 4 hr 57 min | 0 stops | ONE_WAY
+[LEG 1]: 2026-01-10 13:40:00 - 2026-01-10 21:37:00 | SFO-YYZ | 4 hr 57 min | PD 672 | Porter Airlines
+
+Toronto | END"
+600.0	10.7	0.0	0	2026-01-05T10:45:00	2026-01-10T21:37:00	Toronto	Toronto	['San Francisco']	"2026-01-05 10:45:00 - 2026-01-10 21:37:00 | $600.0 | 10 hr 42 min
+
+Toronto | START
+
+[FLIGHT 1]: $0.0 | 5 hr 45 min | 0 stops | ROUND_TRIP_DEPARTING
+[LEG 1]: 2026-01-05 10:45:00 - 2026-01-05 13:30:00 | YYZ-SFO | 5 hr 45 min | AC 741 | Air Canada
+
+San Francisco | 5 days 10 min
+
+[FLIGHT 1]: $600.0 | 4 hr 57 min | 0 stops | ROUND_TRIP_RETURNING
+[LEG 1]: 2026-01-10 13:40:00 - 2026-01-10 21:37:00 | SFO-YYZ | 4 hr 57 min | PD 672 | Porter Airlines
+
+Toronto | END"
+603.0	10.766666666666667	0.0	0	2026-01-05T18:50:00	2026-01-11T21:37:00	Toronto	Toronto	['San Francisco']	"2026-01-05 18:50:00 - 2026-01-11 21:37:00 | $603.0 | 10 hr 46 min
+
+Toronto | START
+
+[FLIGHT 1]: $522.0 | 5 hr 49 min | 0 stops | ONE_WAY
+[LEG 1]: 2026-01-05 18:50:00 - 2026-01-05 21:39:00 | YYZ-SFO | 5 hr 49 min | AC 745 | Air Canada
+
+San Francisco | 5 days 16 hr 1 min
+
+[FLIGHT 2]: $81.0 | 4 hr 57 min | 0 stops | ONE_WAY
+[LEG 1]: 2026-01-11 13:40:00 - 2026-01-11 21:37:00 | SFO-YYZ | 4 hr 57 min | PD 672 | Porter Airlines
+
+Toronto | END"
+605.0	10.7	0.0	0	2026-01-05T10:45:00	2026-01-11T21:37:00	Toronto	Toronto	['San Francisco']	"2026-01-05 10:45:00 - 2026-01-11 21:37:00 | $605.0 | 10 hr 42 min
+
+Toronto | START
+
+[FLIGHT 1]: $0.0 | 5 hr 45 min | 0 stops | ROUND_TRIP_DEPARTING
+[LEG 1]: 2026-01-05 10:45:00 - 2026-01-05 13:30:00 | YYZ-SFO | 5 hr 45 min | AC 741 | Air Canada
+
+San Francisco | 6 days 10 min
+
+[FLIGHT 1]: $605.0 | 4 hr 57 min | 0 stops | ROUND_TRIP_RETURNING
+[LEG 1]: 2026-01-11 13:40:00 - 2026-01-11 21:37:00 | SFO-YYZ | 4 hr 57 min | PD 672 | Porter Airlines
+
+Toronto | END"
+605.0	10.866666666666667	0.0	0	2026-01-05T08:05:00	2026-01-10T16:52:00	Toronto	Toronto	['San Francisco']	"2026-01-05 08:05:00 - 2026-01-10 16:52:00 | $605.0 | 10 hr 52 min
+
+Toronto | START
+
+[FLIGHT 1]: $461.0 | 5 hr 49 min | 0 stops | ONE_WAY
+[LEG 1]: 2026-01-05 08:05:00 - 2026-01-05 10:54:00 | YYZ-SFO | 5 hr 49 min | AC 739 | Air Canada
+
+San Francisco | 4 days 21 hr 55 min
+
+[FLIGHT 2]: $144.0 | 5 hr 3 min | 0 stops | ONE_WAY
+[LEG 1]: 2026-01-10 08:49:00 - 2026-01-10 16:52:00 | SFO-YYZ | 5 hr 3 min | UA 608 | United Airlines
+
+Toronto | END"
+605.0	10.866666666666667	0.0	0	2026-01-05T08:05:00	2026-01-11T16:52:00	Toronto	Toronto	['San Francisco']	"2026-01-05 08:05:00 - 2026-01-11 16:52:00 | $605.0 | 10 hr 52 min
+
+Toronto | START
+
+[FLIGHT 1]: $461.0 | 5 hr 49 min | 0 stops | ONE_WAY
+[LEG 1]: 2026-01-05 08:05:00 - 2026-01-05 10:54:00 | YYZ-SFO | 5 hr 49 min | AC 739 | Air Canada
+
+San Francisco | 5 days 21 hr 55 min
+
+[FLIGHT 2]: $144.0 | 5 hr 3 min | 0 stops | ONE_WAY
+[LEG 1]: 2026-01-11 08:49:00 - 2026-01-11 16:52:00 | SFO-YYZ | 5 hr 3 min | UA 608 | United Airlines
+
+Toronto | END"
+624.0	10.716666666666667	0.0	0	2026-01-05T10:45:00	2026-01-10T16:28:00	Toronto	Toronto	['San Francisco']	"2026-01-05 10:45:00 - 2026-01-10 16:28:00 | $624.0 | 10 hr 43 min
+
+Toronto | START
+
+[FLIGHT 1]: $516.0 | 5 hr 45 min | 0 stops | ONE_WAY
+[LEG 1]: 2026-01-05 10:45:00 - 2026-01-05 13:30:00 | YYZ-SFO | 5 hr 45 min | AC 741 | Air Canada
+
+San Francisco | 4 days 19 hr
+
+[FLIGHT 2]: $108.0 | 4 hr 58 min | 0 stops | ONE_WAY
+[LEG 1]: 2026-01-10 08:30:00 - 2026-01-10 16:28:00 | SFO-YYZ | 4 hr 58 min | AC 738 | Air Canada
+
+Toronto | END"
+624.0	10.716666666666667	0.0	0	2026-01-05T10:45:00	2026-01-11T16:28:00	Toronto	Toronto	['San Francisco']	"2026-01-05 10:45:00 - 2026-01-11 16:28:00 | $624.0 | 10 hr 43 min
+
+Toronto | START
+
+[FLIGHT 1]: $516.0 | 5 hr 45 min | 0 stops | ONE_WAY
+[LEG 1]: 2026-01-05 10:45:00 - 2026-01-05 13:30:00 | YYZ-SFO | 5 hr 45 min | AC 741 | Air Canada
+
+San Francisco | 5 days 19 hr
+
+[FLIGHT 2]: $108.0 | 4 hr 58 min | 0 stops | ONE_WAY
+[LEG 1]: 2026-01-11 08:30:00 - 2026-01-11 16:28:00 | SFO-YYZ | 4 hr 58 min | AC 738 | Air Canada
+
+Toronto | END"
+625.0	10.666666666666666	0.0	0	2026-01-05T10:45:00	2026-01-10T19:55:00	Toronto	Toronto	['San Francisco']	"2026-01-05 10:45:00 - 2026-01-10 19:55:00 | $625.0 | 10 hr 40 min
+
+Toronto | START
+
+[FLIGHT 1]: $516.0 | 5 hr 45 min | 0 stops | ONE_WAY
+[LEG 1]: 2026-01-05 10:45:00 - 2026-01-05 13:30:00 | YYZ-SFO | 5 hr 45 min | AC 741 | Air Canada
+
+San Francisco | 4 days 22 hr 30 min
+
+[FLIGHT 2]: $109.0 | 4 hr 55 min | 0 stops | ONE_WAY
+[LEG 1]: 2026-01-10 12:00:00 - 2026-01-10 19:55:00 | SFO-YYZ | 4 hr 55 min | AC 740 | Air Canada
+
+Toronto | END"
+625.0	10.716666666666667	0.0	0	2026-01-05T10:45:00	2026-01-11T22:28:00	Toronto	Toronto	['San Francisco']	"2026-01-05 10:45:00 - 2026-01-11 22:28:00 | $625.0 | 10 hr 43 min
+
+Toronto | START
+
+[FLIGHT 1]: $516.0 | 5 hr 45 min | 0 stops | ONE_WAY
+[LEG 1]: 2026-01-05 10:45:00 - 2026-01-05 13:30:00 | YYZ-SFO | 5 hr 45 min | AC 741 | Air Canada
+
+San Francisco | 6 days 1 hr
+
+[FLIGHT 2]: $109.0 | 4 hr 58 min | 0 stops | ONE_WAY
+[LEG 1]: 2026-01-11 14:30:00 - 2026-01-11 22:28:00 | SFO-YYZ | 4 hr 58 min | AC 742 | Air Canada
+
+Toronto | END"
+630.0	10.666666666666666	0.0	0	2026-01-05T10:45:00	2026-01-10T19:55:00	Toronto	Toronto	['San Francisco']	"2026-01-05 10:45:00 - 2026-01-10 19:55:00 | $630.0 | 10 hr 40 min
+
+Toronto | START
+
+[FLIGHT 1]: $0.0 | 5 hr 45 min | 0 stops | ROUND_TRIP_DEPARTING
+[LEG 1]: 2026-01-05 10:45:00 - 2026-01-05 13:30:00 | YYZ-SFO | 5 hr 45 min | AC 741 | Air Canada
+
+San Francisco | 4 days 22 hr 30 min
+
+[FLIGHT 1]: $630.0 | 4 hr 55 min | 0 stops | ROUND_TRIP_RETURNING
+[LEG 1]: 2026-01-10 12:00:00 - 2026-01-10 19:55:00 | SFO-YYZ | 4 hr 55 min | AC 740 | Air Canada
+
+Toronto | END"
+630.0	10.716666666666667	0.0	0	2026-01-05T10:45:00	2026-01-11T22:28:00	Toronto	Toronto	['San Francisco']	"2026-01-05 10:45:00 - 2026-01-11 22:28:00 | $630.0 | 10 hr 43 min
+
+Toronto | START
+
+[FLIGHT 1]: $0.0 | 5 hr 45 min | 0 stops | ROUND_TRIP_DEPARTING
+[LEG 1]: 2026-01-05 10:45:00 - 2026-01-05 13:30:00 | YYZ-SFO | 5 hr 45 min | AC 741 | Air Canada
+
+San Francisco | 6 days 1 hr
+
+[FLIGHT 1]: $630.0 | 4 hr 58 min | 0 stops | ROUND_TRIP_RETURNING
+[LEG 1]: 2026-01-11 14:30:00 - 2026-01-11 22:28:00 | SFO-YYZ | 4 hr 58 min | AC 742 | Air Canada
+
+Toronto | END"
+630.0	10.783333333333333	0.0	0	2026-01-05T18:50:00	2026-01-10T16:28:00	Toronto	Toronto	['San Francisco']	"2026-01-05 18:50:00 - 2026-01-10 16:28:00 | $630.0 | 10 hr 47 min
+
+Toronto | START
+
+[FLIGHT 1]: $522.0 | 5 hr 49 min | 0 stops | ONE_WAY
+[LEG 1]: 2026-01-05 18:50:00 - 2026-01-05 21:39:00 | YYZ-SFO | 5 hr 49 min | AC 745 | Air Canada
+
+San Francisco | 4 days 10 hr 51 min
+
+[FLIGHT 2]: $108.0 | 4 hr 58 min | 0 stops | ONE_WAY
+[LEG 1]: 2026-01-10 08:30:00 - 2026-01-10 16:28:00 | SFO-YYZ | 4 hr 58 min | AC 738 | Air Canada
+
+Toronto | END"
+630.0	10.783333333333333	0.0	0	2026-01-05T18:50:00	2026-01-11T16:28:00	Toronto	Toronto	['San Francisco']	"2026-01-05 18:50:00 - 2026-01-11 16:28:00 | $630.0 | 10 hr 47 min
+
+Toronto | START
+
+[FLIGHT 1]: $522.0 | 5 hr 49 min | 0 stops | ONE_WAY
+[LEG 1]: 2026-01-05 18:50:00 - 2026-01-05 21:39:00 | YYZ-SFO | 5 hr 49 min | AC 745 | Air Canada
+
+San Francisco | 5 days 10 hr 51 min
+
+[FLIGHT 2]: $108.0 | 4 hr 58 min | 0 stops | ONE_WAY
+[LEG 1]: 2026-01-11 08:30:00 - 2026-01-11 16:28:00 | SFO-YYZ | 4 hr 58 min | AC 738 | Air Canada
+
+Toronto | END"
+631.0	10.733333333333333	0.0	0	2026-01-05T18:50:00	2026-01-10T19:55:00	Toronto	Toronto	['San Francisco']	"2026-01-05 18:50:00 - 2026-01-10 19:55:00 | $631.0 | 10 hr 44 min
+
+Toronto | START
+
+[FLIGHT 1]: $522.0 | 5 hr 49 min | 0 stops | ONE_WAY
+[LEG 1]: 2026-01-05 18:50:00 - 2026-01-05 21:39:00 | YYZ-SFO | 5 hr 49 min | AC 745 | Air Canada
+
+San Francisco | 4 days 14 hr 21 min
+
+[FLIGHT 2]: $109.0 | 4 hr 55 min | 0 stops | ONE_WAY
+[LEG 1]: 2026-01-10 12:00:00 - 2026-01-10 19:55:00 | SFO-YYZ | 4 hr 55 min | AC 740 | Air Canada
+
+Toronto | END"
+631.0	10.783333333333333	0.0	0	2026-01-05T18:50:00	2026-01-11T22:28:00	Toronto	Toronto	['San Francisco']	"2026-01-05 18:50:00 - 2026-01-11 22:28:00 | $631.0 | 10 hr 47 min
+
+Toronto | START
+
+[FLIGHT 1]: $522.0 | 5 hr 49 min | 0 stops | ONE_WAY
+[LEG 1]: 2026-01-05 18:50:00 - 2026-01-05 21:39:00 | YYZ-SFO | 5 hr 49 min | AC 745 | Air Canada
+
+San Francisco | 5 days 16 hr 51 min
+
+[FLIGHT 2]: $109.0 | 4 hr 58 min | 0 stops | ONE_WAY
+[LEG 1]: 2026-01-11 14:30:00 - 2026-01-11 22:28:00 | SFO-YYZ | 4 hr 58 min | AC 742 | Air Canada
+
+Toronto | END"
+634.0	10.716666666666667	0.0	0	2026-01-05T10:45:00	2026-01-10T16:28:00	Toronto	Toronto	['San Francisco']	"2026-01-05 10:45:00 - 2026-01-10 16:28:00 | $634.0 | 10 hr 43 min
+
+Toronto | START
+
+[FLIGHT 1]: $0.0 | 5 hr 45 min | 0 stops | ROUND_TRIP_DEPARTING
+[LEG 1]: 2026-01-05 10:45:00 - 2026-01-05 13:30:00 | YYZ-SFO | 5 hr 45 min | AC 741 | Air Canada
+
+San Francisco | 4 days 19 hr
+
+[FLIGHT 1]: $634.0 | 4 hr 58 min | 0 stops | ROUND_TRIP_RETURNING
+[LEG 1]: 2026-01-10 08:30:00 - 2026-01-10 16:28:00 | SFO-YYZ | 4 hr 58 min | AC 738 | Air Canada
+
+Toronto | END"
+634.0	10.716666666666667	0.0	0	2026-01-05T10:45:00	2026-01-11T16:28:00	Toronto	Toronto	['San Francisco']	"2026-01-05 10:45:00 - 2026-01-11 16:28:00 | $634.0 | 10 hr 43 min
+
+Toronto | START
+
+[FLIGHT 1]: $0.0 | 5 hr 45 min | 0 stops | ROUND_TRIP_DEPARTING
+[LEG 1]: 2026-01-05 10:45:00 - 2026-01-05 13:30:00 | YYZ-SFO | 5 hr 45 min | AC 741 | Air Canada
+
+San Francisco | 5 days 19 hr
+
+[FLIGHT 1]: $634.0 | 4 hr 58 min | 0 stops | ROUND_TRIP_RETURNING
+[LEG 1]: 2026-01-11 08:30:00 - 2026-01-11 16:28:00 | SFO-YYZ | 4 hr 58 min | AC 738 | Air Canada
+
+Toronto | END"
+649.0	10.733333333333333	0.0	0	2026-01-05T18:50:00	2026-01-10T19:55:00	Toronto	Toronto	['San Francisco']	"2026-01-05 18:50:00 - 2026-01-10 19:55:00 | $649.0 | 10 hr 44 min
+
+Toronto | START
+
+[FLIGHT 1]: $0.0 | 5 hr 49 min | 0 stops | ROUND_TRIP_DEPARTING
+[LEG 1]: 2026-01-05 18:50:00 - 2026-01-05 21:39:00 | YYZ-SFO | 5 hr 49 min | AC 745 | Air Canada
+
+San Francisco | 4 days 14 hr 21 min
+
+[FLIGHT 1]: $649.0 | 4 hr 55 min | 0 stops | ROUND_TRIP_RETURNING
+[LEG 1]: 2026-01-10 12:00:00 - 2026-01-10 19:55:00 | SFO-YYZ | 4 hr 55 min | AC 740 | Air Canada
+
+Toronto | END"
+649.0	10.783333333333333	0.0	0	2026-01-05T18:50:00	2026-01-11T22:28:00	Toronto	Toronto	['San Francisco']	"2026-01-05 18:50:00 - 2026-01-11 22:28:00 | $649.0 | 10 hr 47 min
+
+Toronto | START
+
+[FLIGHT 1]: $0.0 | 5 hr 49 min | 0 stops | ROUND_TRIP_DEPARTING
+[LEG 1]: 2026-01-05 18:50:00 - 2026-01-05 21:39:00 | YYZ-SFO | 5 hr 49 min | AC 745 | Air Canada
+
+San Francisco | 5 days 16 hr 51 min
+
+[FLIGHT 1]: $649.0 | 4 hr 58 min | 0 stops | ROUND_TRIP_RETURNING
+[LEG 1]: 2026-01-11 14:30:00 - 2026-01-11 22:28:00 | SFO-YYZ | 4 hr 58 min | AC 742 | Air Canada
+
+Toronto | END"
+651.0	10.8	0.0	0	2026-01-05T10:45:00	2026-01-10T16:52:00	Toronto	Toronto	['San Francisco']	"2026-01-05 10:45:00 - 2026-01-10 16:52:00 | $651.0 | 10 hr 48 min
+
+Toronto | START
+
+[FLIGHT 1]: $0.0 | 5 hr 45 min | 0 stops | ROUND_TRIP_DEPARTING
+[LEG 1]: 2026-01-05 10:45:00 - 2026-01-05 13:30:00 | YYZ-SFO | 5 hr 45 min | AC 741 | Air Canada
+
+San Francisco | 4 days 19 hr 19 min
+
+[FLIGHT 1]: $651.0 | 5 hr 3 min | 0 stops | ROUND_TRIP_RETURNING
+[LEG 1]: 2026-01-10 08:49:00 - 2026-01-10 16:52:00 | SFO-YYZ | 5 hr 3 min | UA 608 | United Airlines
+
+Toronto | END"
+651.0	10.8	0.0	0	2026-01-05T10:45:00	2026-01-11T16:52:00	Toronto	Toronto	['San Francisco']	"2026-01-05 10:45:00 - 2026-01-11 16:52:00 | $651.0 | 10 hr 48 min
+
+Toronto | START
+
+[FLIGHT 1]: $0.0 | 5 hr 45 min | 0 stops | ROUND_TRIP_DEPARTING
+[LEG 1]: 2026-01-05 10:45:00 - 2026-01-05 13:30:00 | YYZ-SFO | 5 hr 45 min | AC 741 | Air Canada
+
+San Francisco | 5 days 19 hr 19 min
+
+[FLIGHT 1]: $651.0 | 5 hr 3 min | 0 stops | ROUND_TRIP_RETURNING
+[LEG 1]: 2026-01-11 08:49:00 - 2026-01-11 16:52:00 | SFO-YYZ | 5 hr 3 min | UA 608 | United Airlines
+
+Toronto | END"
+660.0	10.8	0.0	0	2026-01-05T10:45:00	2026-01-10T16:52:00	Toronto	Toronto	['San Francisco']	"2026-01-05 10:45:00 - 2026-01-10 16:52:00 | $660.0 | 10 hr 48 min
+
+Toronto | START
+
+[FLIGHT 1]: $516.0 | 5 hr 45 min | 0 stops | ONE_WAY
+[LEG 1]: 2026-01-05 10:45:00 - 2026-01-05 13:30:00 | YYZ-SFO | 5 hr 45 min | AC 741 | Air Canada
+
+San Francisco | 4 days 19 hr 19 min
+
+[FLIGHT 2]: $144.0 | 5 hr 3 min | 0 stops | ONE_WAY
+[LEG 1]: 2026-01-10 08:49:00 - 2026-01-10 16:52:00 | SFO-YYZ | 5 hr 3 min | UA 608 | United Airlines
+
+Toronto | END"
+660.0	10.8	0.0	0	2026-01-05T10:45:00	2026-01-11T16:52:00	Toronto	Toronto	['San Francisco']	"2026-01-05 10:45:00 - 2026-01-11 16:52:00 | $660.0 | 10 hr 48 min
+
+Toronto | START
+
+[FLIGHT 1]: $516.0 | 5 hr 45 min | 0 stops | ONE_WAY
+[LEG 1]: 2026-01-05 10:45:00 - 2026-01-05 13:30:00 | YYZ-SFO | 5 hr 45 min | AC 741 | Air Canada
+
+San Francisco | 5 days 19 hr 19 min
+
+[FLIGHT 2]: $144.0 | 5 hr 3 min | 0 stops | ONE_WAY
+[LEG 1]: 2026-01-11 08:49:00 - 2026-01-11 16:52:00 | SFO-YYZ | 5 hr 3 min | UA 608 | United Airlines
+
+Toronto | END"
+666.0	10.866666666666667	0.0	0	2026-01-05T18:50:00	2026-01-10T16:52:00	Toronto	Toronto	['San Francisco']	"2026-01-05 18:50:00 - 2026-01-10 16:52:00 | $666.0 | 10 hr 52 min
+
+Toronto | START
+
+[FLIGHT 1]: $522.0 | 5 hr 49 min | 0 stops | ONE_WAY
+[LEG 1]: 2026-01-05 18:50:00 - 2026-01-05 21:39:00 | YYZ-SFO | 5 hr 49 min | AC 745 | Air Canada
+
+San Francisco | 4 days 11 hr 10 min
+
+[FLIGHT 2]: $144.0 | 5 hr 3 min | 0 stops | ONE_WAY
+[LEG 1]: 2026-01-10 08:49:00 - 2026-01-10 16:52:00 | SFO-YYZ | 5 hr 3 min | UA 608 | United Airlines
+
+Toronto | END"
+666.0	10.866666666666667	0.0	0	2026-01-05T18:50:00	2026-01-11T16:52:00	Toronto	Toronto	['San Francisco']	"2026-01-05 18:50:00 - 2026-01-11 16:52:00 | $666.0 | 10 hr 52 min
+
+Toronto | START
+
+[FLIGHT 1]: $522.0 | 5 hr 49 min | 0 stops | ONE_WAY
+[LEG 1]: 2026-01-05 18:50:00 - 2026-01-05 21:39:00 | YYZ-SFO | 5 hr 49 min | AC 745 | Air Canada
+
+San Francisco | 5 days 11 hr 10 min
+
+[FLIGHT 2]: $144.0 | 5 hr 3 min | 0 stops | ONE_WAY
+[LEG 1]: 2026-01-11 08:49:00 - 2026-01-11 16:52:00 | SFO-YYZ | 5 hr 3 min | UA 608 | United Airlines
+
+Toronto | END"
+670.0	10.866666666666667	0.0	0	2026-01-05T18:50:00	2026-01-10T16:52:00	Toronto	Toronto	['San Francisco']	"2026-01-05 18:50:00 - 2026-01-10 16:52:00 | $670.0 | 10 hr 52 min
+
+Toronto | START
+
+[FLIGHT 1]: $0.0 | 5 hr 49 min | 0 stops | ROUND_TRIP_DEPARTING
+[LEG 1]: 2026-01-05 18:50:00 - 2026-01-05 21:39:00 | YYZ-SFO | 5 hr 49 min | AC 745 | Air Canada
+
+San Francisco | 4 days 11 hr 10 min
+
+[FLIGHT 1]: $670.0 | 5 hr 3 min | 0 stops | ROUND_TRIP_RETURNING
+[LEG 1]: 2026-01-10 08:49:00 - 2026-01-10 16:52:00 | SFO-YYZ | 5 hr 3 min | UA 608 | United Airlines
+
+Toronto | END"
+670.0	10.866666666666667	0.0	0	2026-01-05T18:50:00	2026-01-11T16:52:00	Toronto	Toronto	['San Francisco']	"2026-01-05 18:50:00 - 2026-01-11 16:52:00 | $670.0 | 10 hr 52 min
+
+Toronto | START
+
+[FLIGHT 1]: $0.0 | 5 hr 49 min | 0 stops | ROUND_TRIP_DEPARTING
+[LEG 1]: 2026-01-05 18:50:00 - 2026-01-05 21:39:00 | YYZ-SFO | 5 hr 49 min | AC 745 | Air Canada
+
+San Francisco | 5 days 11 hr 10 min
+
+[FLIGHT 1]: $670.0 | 5 hr 3 min | 0 stops | ROUND_TRIP_RETURNING
+[LEG 1]: 2026-01-11 08:49:00 - 2026-01-11 16:52:00 | SFO-YYZ | 5 hr 3 min | UA 608 | United Airlines
+
+Toronto | END"
+678.0	10.833333333333334	0.0	0	2026-01-04T09:45:00	2026-01-10T21:37:00	Toronto	Toronto	['San Francisco']	"2026-01-04 09:45:00 - 2026-01-10 21:37:00 | $678.0 | 10 hr 50 min
+
+Toronto | START
+
+[FLIGHT 1]: $0.0 | 5 hr 53 min | 0 stops | ROUND_TRIP_DEPARTING
+[LEG 1]: 2026-01-04 09:45:00 - 2026-01-04 12:38:00 | YYZ-SFO | 5 hr 53 min | PD 671 | Porter Airlines
+
+San Francisco | 6 days 1 hr 2 min
+
+[FLIGHT 1]: $678.0 | 4 hr 57 min | 0 stops | ROUND_TRIP_RETURNING
+[LEG 1]: 2026-01-10 13:40:00 - 2026-01-10 21:37:00 | SFO-YYZ | 4 hr 57 min | PD 672 | Porter Airlines
+
+Toronto | END"
+680.0	10.833333333333334	0.0	0	2026-01-04T09:45:00	2026-01-10T21:37:00	Toronto	Toronto	['San Francisco']	"2026-01-04 09:45:00 - 2026-01-10 21:37:00 | $680.0 | 10 hr 50 min
+
+Toronto | START
+
+[FLIGHT 1]: $604.0 | 5 hr 53 min | 0 stops | ONE_WAY
+[LEG 1]: 2026-01-04 09:45:00 - 2026-01-04 12:38:00 | YYZ-SFO | 5 hr 53 min | PD 671 | Porter Airlines
+
+San Francisco | 6 days 1 hr 2 min
+
+[FLIGHT 2]: $76.0 | 4 hr 57 min | 0 stops | ONE_WAY
+[LEG 1]: 2026-01-10 13:40:00 - 2026-01-10 21:37:00 | SFO-YYZ | 4 hr 57 min | PD 672 | Porter Airlines
+
+Toronto | END"
+683.0	10.833333333333334	0.0	0	2026-01-04T09:45:00	2026-01-11T21:37:00	Toronto	Toronto	['San Francisco']	"2026-01-04 09:45:00 - 2026-01-11 21:37:00 | $683.0 | 10 hr 50 min
+
+Toronto | START
+
+[FLIGHT 1]: $0.0 | 5 hr 53 min | 0 stops | ROUND_TRIP_DEPARTING
+[LEG 1]: 2026-01-04 09:45:00 - 2026-01-04 12:38:00 | YYZ-SFO | 5 hr 53 min | PD 671 | Porter Airlines
+
+San Francisco | 7 days 1 hr 2 min
+
+[FLIGHT 1]: $683.0 | 4 hr 57 min | 0 stops | ROUND_TRIP_RETURNING
+[LEG 1]: 2026-01-11 13:40:00 - 2026-01-11 21:37:00 | SFO-YYZ | 4 hr 57 min | PD 672 | Porter Airlines
+
+Toronto | END"
+685.0	10.833333333333334	0.0	0	2026-01-04T09:45:00	2026-01-11T21:37:00	Toronto	Toronto	['San Francisco']	"2026-01-04 09:45:00 - 2026-01-11 21:37:00 | $685.0 | 10 hr 50 min
+
+Toronto | START
+
+[FLIGHT 1]: $604.0 | 5 hr 53 min | 0 stops | ONE_WAY
+[LEG 1]: 2026-01-04 09:45:00 - 2026-01-04 12:38:00 | YYZ-SFO | 5 hr 53 min | PD 671 | Porter Airlines
+
+San Francisco | 7 days 1 hr 2 min
+
+[FLIGHT 2]: $81.0 | 4 hr 57 min | 0 stops | ONE_WAY
+[LEG 1]: 2026-01-11 13:40:00 - 2026-01-11 21:37:00 | SFO-YYZ | 4 hr 57 min | PD 672 | Porter Airlines
+
+Toronto | END"
+712.0	10.85	0.0	0	2026-01-04T09:45:00	2026-01-10T16:28:00	Toronto	Toronto	['San Francisco']	"2026-01-04 09:45:00 - 2026-01-10 16:28:00 | $712.0 | 10 hr 51 min
+
+Toronto | START
+
+[FLIGHT 1]: $604.0 | 5 hr 53 min | 0 stops | ONE_WAY
+[LEG 1]: 2026-01-04 09:45:00 - 2026-01-04 12:38:00 | YYZ-SFO | 5 hr 53 min | PD 671 | Porter Airlines
+
+San Francisco | 5 days 19 hr 52 min
+
+[FLIGHT 2]: $108.0 | 4 hr 58 min | 0 stops | ONE_WAY
+[LEG 1]: 2026-01-10 08:30:00 - 2026-01-10 16:28:00 | SFO-YYZ | 4 hr 58 min | AC 738 | Air Canada
+
+Toronto | END"
+712.0	10.85	0.0	0	2026-01-04T09:45:00	2026-01-10T16:28:00	Toronto	Toronto	['San Francisco']	"2026-01-04 09:45:00 - 2026-01-10 16:28:00 | $712.0 | 10 hr 51 min
+
+Toronto | START
+
+[FLIGHT 1]: $0.0 | 5 hr 53 min | 0 stops | ROUND_TRIP_DEPARTING
+[LEG 1]: 2026-01-04 09:45:00 - 2026-01-04 12:38:00 | YYZ-SFO | 5 hr 53 min | PD 671 | Porter Airlines
+
+San Francisco | 5 days 19 hr 52 min
+
+[FLIGHT 1]: $712.0 | 4 hr 58 min | 0 stops | ROUND_TRIP_RETURNING
+[LEG 1]: 2026-01-10 08:30:00 - 2026-01-10 16:28:00 | SFO-YYZ | 4 hr 58 min | AC 738 | Air Canada
+
+Toronto | END"
+712.0	10.85	0.0	0	2026-01-04T09:45:00	2026-01-11T16:28:00	Toronto	Toronto	['San Francisco']	"2026-01-04 09:45:00 - 2026-01-11 16:28:00 | $712.0 | 10 hr 51 min
+
+Toronto | START
+
+[FLIGHT 1]: $604.0 | 5 hr 53 min | 0 stops | ONE_WAY
+[LEG 1]: 2026-01-04 09:45:00 - 2026-01-04 12:38:00 | YYZ-SFO | 5 hr 53 min | PD 671 | Porter Airlines
+
+San Francisco | 6 days 19 hr 52 min
+
+[FLIGHT 2]: $108.0 | 4 hr 58 min | 0 stops | ONE_WAY
+[LEG 1]: 2026-01-11 08:30:00 - 2026-01-11 16:28:00 | SFO-YYZ | 4 hr 58 min | AC 738 | Air Canada
+
+Toronto | END"
+712.0	10.85	0.0	0	2026-01-04T09:45:00	2026-01-11T16:28:00	Toronto	Toronto	['San Francisco']	"2026-01-04 09:45:00 - 2026-01-11 16:28:00 | $712.0 | 10 hr 51 min
+
+Toronto | START
+
+[FLIGHT 1]: $0.0 | 5 hr 53 min | 0 stops | ROUND_TRIP_DEPARTING
+[LEG 1]: 2026-01-04 09:45:00 - 2026-01-04 12:38:00 | YYZ-SFO | 5 hr 53 min | PD 671 | Porter Airlines
+
+San Francisco | 6 days 19 hr 52 min
+
+[FLIGHT 1]: $712.0 | 4 hr 58 min | 0 stops | ROUND_TRIP_RETURNING
+[LEG 1]: 2026-01-11 08:30:00 - 2026-01-11 16:28:00 | SFO-YYZ | 4 hr 58 min | AC 738 | Air Canada
+
+Toronto | END"
+713.0	10.8	0.0	0	2026-01-04T09:45:00	2026-01-10T19:55:00	Toronto	Toronto	['San Francisco']	"2026-01-04 09:45:00 - 2026-01-10 19:55:00 | $713.0 | 10 hr 48 min
+
+Toronto | START
+
+[FLIGHT 1]: $604.0 | 5 hr 53 min | 0 stops | ONE_WAY
+[LEG 1]: 2026-01-04 09:45:00 - 2026-01-04 12:38:00 | YYZ-SFO | 5 hr 53 min | PD 671 | Porter Airlines
+
+San Francisco | 5 days 23 hr 22 min
+
+[FLIGHT 2]: $109.0 | 4 hr 55 min | 0 stops | ONE_WAY
+[LEG 1]: 2026-01-10 12:00:00 - 2026-01-10 19:55:00 | SFO-YYZ | 4 hr 55 min | AC 740 | Air Canada
+
+Toronto | END"
+713.0	10.85	0.0	0	2026-01-04T09:45:00	2026-01-11T22:28:00	Toronto	Toronto	['San Francisco']	"2026-01-04 09:45:00 - 2026-01-11 22:28:00 | $713.0 | 10 hr 51 min
+
+Toronto | START
+
+[FLIGHT 1]: $604.0 | 5 hr 53 min | 0 stops | ONE_WAY
+[LEG 1]: 2026-01-04 09:45:00 - 2026-01-04 12:38:00 | YYZ-SFO | 5 hr 53 min | PD 671 | Porter Airlines
+
+San Francisco | 7 days 1 hr 52 min
+
+[FLIGHT 2]: $109.0 | 4 hr 58 min | 0 stops | ONE_WAY
+[LEG 1]: 2026-01-11 14:30:00 - 2026-01-11 22:28:00 | SFO-YYZ | 4 hr 58 min | AC 742 | Air Canada
+
+Toronto | END"
+714.0	10.7	0.0	0	2026-01-04T12:40:00	2026-01-10T21:37:00	Toronto	Toronto	['San Francisco']	"2026-01-04 12:40:00 - 2026-01-10 21:37:00 | $714.0 | 10 hr 42 min
+
+Toronto | START
+
+[FLIGHT 1]: $638.0 | 5 hr 45 min | 0 stops | ONE_WAY
+[LEG 1]: 2026-01-04 12:40:00 - 2026-01-04 15:25:00 | YYZ-SFO | 5 hr 45 min | AC 743 | Air Canada
+
+San Francisco | 5 days 22 hr 15 min
+
+[FLIGHT 2]: $76.0 | 4 hr 57 min | 0 stops | ONE_WAY
+[LEG 1]: 2026-01-10 13:40:00 - 2026-01-10 21:37:00 | SFO-YYZ | 4 hr 57 min | PD 672 | Porter Airlines
+
+Toronto | END"
+714.0	10.7	0.0	0	2026-01-04T10:45:00	2026-01-10T21:37:00	Toronto	Toronto	['San Francisco']	"2026-01-04 10:45:00 - 2026-01-10 21:37:00 | $714.0 | 10 hr 42 min
+
+Toronto | START
+
+[FLIGHT 1]: $638.0 | 5 hr 45 min | 0 stops | ONE_WAY
+[LEG 1]: 2026-01-04 10:45:00 - 2026-01-04 13:30:00 | YYZ-SFO | 5 hr 45 min | AC 741 | Air Canada
+
+San Francisco | 6 days 10 min
+
+[FLIGHT 2]: $76.0 | 4 hr 57 min | 0 stops | ONE_WAY
+[LEG 1]: 2026-01-10 13:40:00 - 2026-01-10 21:37:00 | SFO-YYZ | 4 hr 57 min | PD 672 | Porter Airlines
+
+Toronto | END"
+714.0	10.766666666666667	0.0	0	2026-01-04T18:50:00	2026-01-10T21:37:00	Toronto	Toronto	['San Francisco']	"2026-01-04 18:50:00 - 2026-01-10 21:37:00 | $714.0 | 10 hr 46 min
+
+Toronto | START
+
+[FLIGHT 1]: $638.0 | 5 hr 49 min | 0 stops | ONE_WAY
+[LEG 1]: 2026-01-04 18:50:00 - 2026-01-04 21:39:00 | YYZ-SFO | 5 hr 49 min | AC 745 | Air Canada
+
+San Francisco | 5 days 16 hr 1 min
+
+[FLIGHT 2]: $76.0 | 4 hr 57 min | 0 stops | ONE_WAY
+[LEG 1]: 2026-01-10 13:40:00 - 2026-01-10 21:37:00 | SFO-YYZ | 4 hr 57 min | PD 672 | Porter Airlines
+
+Toronto | END"
+716.0	10.7	0.0	0	2026-01-04T10:45:00	2026-01-10T21:37:00	Toronto	Toronto	['San Francisco']	"2026-01-04 10:45:00 - 2026-01-10 21:37:00 | $716.0 | 10 hr 42 min
+
+Toronto | START
+
+[FLIGHT 1]: $0.0 | 5 hr 45 min | 0 stops | ROUND_TRIP_DEPARTING
+[LEG 1]: 2026-01-04 10:45:00 - 2026-01-04 13:30:00 | YYZ-SFO | 5 hr 45 min | AC 741 | Air Canada
+
+San Francisco | 6 days 10 min
+
+[FLIGHT 1]: $716.0 | 4 hr 57 min | 0 stops | ROUND_TRIP_RETURNING
+[LEG 1]: 2026-01-10 13:40:00 - 2026-01-10 21:37:00 | SFO-YYZ | 4 hr 57 min | PD 672 | Porter Airlines
+
+Toronto | END"
+719.0	10.7	0.0	0	2026-01-04T12:40:00	2026-01-11T21:37:00	Toronto	Toronto	['San Francisco']	"2026-01-04 12:40:00 - 2026-01-11 21:37:00 | $719.0 | 10 hr 42 min
+
+Toronto | START
+
+[FLIGHT 1]: $638.0 | 5 hr 45 min | 0 stops | ONE_WAY
+[LEG 1]: 2026-01-04 12:40:00 - 2026-01-04 15:25:00 | YYZ-SFO | 5 hr 45 min | AC 743 | Air Canada
+
+San Francisco | 6 days 22 hr 15 min
+
+[FLIGHT 2]: $81.0 | 4 hr 57 min | 0 stops | ONE_WAY
+[LEG 1]: 2026-01-11 13:40:00 - 2026-01-11 21:37:00 | SFO-YYZ | 4 hr 57 min | PD 672 | Porter Airlines
+
+Toronto | END"
+719.0	10.7	0.0	0	2026-01-04T10:45:00	2026-01-11T21:37:00	Toronto	Toronto	['San Francisco']	"2026-01-04 10:45:00 - 2026-01-11 21:37:00 | $719.0 | 10 hr 42 min
+
+Toronto | START
+
+[FLIGHT 1]: $638.0 | 5 hr 45 min | 0 stops | ONE_WAY
+[LEG 1]: 2026-01-04 10:45:00 - 2026-01-04 13:30:00 | YYZ-SFO | 5 hr 45 min | AC 741 | Air Canada
+
+San Francisco | 7 days 10 min
+
+[FLIGHT 2]: $81.0 | 4 hr 57 min | 0 stops | ONE_WAY
+[LEG 1]: 2026-01-11 13:40:00 - 2026-01-11 21:37:00 | SFO-YYZ | 4 hr 57 min | PD 672 | Porter Airlines
+
+Toronto | END"
+719.0	10.766666666666667	0.0	0	2026-01-04T18:50:00	2026-01-11T21:37:00	Toronto	Toronto	['San Francisco']	"2026-01-04 18:50:00 - 2026-01-11 21:37:00 | $719.0 | 10 hr 46 min
+
+Toronto | START
+
+[FLIGHT 1]: $638.0 | 5 hr 49 min | 0 stops | ONE_WAY
+[LEG 1]: 2026-01-04 18:50:00 - 2026-01-04 21:39:00 | YYZ-SFO | 5 hr 49 min | AC 745 | Air Canada
+
+San Francisco | 6 days 16 hr 1 min
+
+[FLIGHT 2]: $81.0 | 4 hr 57 min | 0 stops | ONE_WAY
+[LEG 1]: 2026-01-11 13:40:00 - 2026-01-11 21:37:00 | SFO-YYZ | 4 hr 57 min | PD 672 | Porter Airlines
+
+Toronto | END"
+722.0	10.7	0.0	0	2026-01-04T10:45:00	2026-01-11T21:37:00	Toronto	Toronto	['San Francisco']	"2026-01-04 10:45:00 - 2026-01-11 21:37:00 | $722.0 | 10 hr 42 min
+
+Toronto | START
+
+[FLIGHT 1]: $0.0 | 5 hr 45 min | 0 stops | ROUND_TRIP_DEPARTING
+[LEG 1]: 2026-01-04 10:45:00 - 2026-01-04 13:30:00 | YYZ-SFO | 5 hr 45 min | AC 741 | Air Canada
+
+San Francisco | 7 days 10 min
+
+[FLIGHT 1]: $722.0 | 4 hr 57 min | 0 stops | ROUND_TRIP_RETURNING
+[LEG 1]: 2026-01-11 13:40:00 - 2026-01-11 21:37:00 | SFO-YYZ | 4 hr 57 min | PD 672 | Porter Airlines
+
+Toronto | END"
+725.0	10.916666666666666	0.0	0	2026-01-05T17:55:00	2026-01-10T21:37:00	Toronto	Toronto	['San Francisco']	"2026-01-05 17:55:00 - 2026-01-10 21:37:00 | $725.0 | 10 hr 55 min
+
+Toronto | START
+
+[FLIGHT 1]: $649.0 | 5 hr 58 min | 0 stops | ONE_WAY
+[LEG 1]: 2026-01-05 17:55:00 - 2026-01-05 20:53:00 | YYZ-SFO | 5 hr 58 min | UA 2462 | United Airlines
+
+San Francisco | 4 days 16 hr 47 min
+
+[FLIGHT 2]: $76.0 | 4 hr 57 min | 0 stops | ONE_WAY
+[LEG 1]: 2026-01-10 13:40:00 - 2026-01-10 21:37:00 | SFO-YYZ | 4 hr 57 min | PD 672 | Porter Airlines
+
+Toronto | END"
+725.0	11.0	0.0	0	2026-01-04T06:30:00	2026-01-10T21:37:00	Toronto	Toronto	['San Francisco']	"2026-01-04 06:30:00 - 2026-01-10 21:37:00 | $725.0 | 11 hr
+
+Toronto | START
+
+[FLIGHT 1]: $649.0 | 6 hr 3 min | 0 stops | ONE_WAY
+[LEG 1]: 2026-01-04 06:30:00 - 2026-01-04 09:33:00 | YYZ-SFO | 6 hr 3 min | UA 565 | United Airlines
+
+San Francisco | 6 days 4 hr 7 min
+
+[FLIGHT 2]: $76.0 | 4 hr 57 min | 0 stops | ONE_WAY
+[LEG 1]: 2026-01-10 13:40:00 - 2026-01-10 21:37:00 | SFO-YYZ | 4 hr 57 min | PD 672 | Porter Airlines
+
+Toronto | END"
+725.0	11.0	0.0	0	2026-01-05T06:30:00	2026-01-10T21:37:00	Toronto	Toronto	['San Francisco']	"2026-01-05 06:30:00 - 2026-01-10 21:37:00 | $725.0 | 11 hr
+
+Toronto | START
+
+[FLIGHT 1]: $649.0 | 6 hr 3 min | 0 stops | ONE_WAY
+[LEG 1]: 2026-01-05 06:30:00 - 2026-01-05 09:33:00 | YYZ-SFO | 6 hr 3 min | UA 565 | United Airlines
+
+San Francisco | 5 days 4 hr 7 min
+
+[FLIGHT 2]: $76.0 | 4 hr 57 min | 0 stops | ONE_WAY
+[LEG 1]: 2026-01-10 13:40:00 - 2026-01-10 21:37:00 | SFO-YYZ | 4 hr 57 min | PD 672 | Porter Airlines
+
+Toronto | END"
+730.0	10.916666666666666	0.0	0	2026-01-05T17:55:00	2026-01-11T21:37:00	Toronto	Toronto	['San Francisco']	"2026-01-05 17:55:00 - 2026-01-11 21:37:00 | $730.0 | 10 hr 55 min
+
+Toronto | START
+
+[FLIGHT 1]: $649.0 | 5 hr 58 min | 0 stops | ONE_WAY
+[LEG 1]: 2026-01-05 17:55:00 - 2026-01-05 20:53:00 | YYZ-SFO | 5 hr 58 min | UA 2462 | United Airlines
+
+San Francisco | 5 days 16 hr 47 min
+
+[FLIGHT 2]: $81.0 | 4 hr 57 min | 0 stops | ONE_WAY
+[LEG 1]: 2026-01-11 13:40:00 - 2026-01-11 21:37:00 | SFO-YYZ | 4 hr 57 min | PD 672 | Porter Airlines
+
+Toronto | END"
+730.0	11.0	0.0	0	2026-01-04T06:30:00	2026-01-11T21:37:00	Toronto	Toronto	['San Francisco']	"2026-01-04 06:30:00 - 2026-01-11 21:37:00 | $730.0 | 11 hr
+
+Toronto | START
+
+[FLIGHT 1]: $649.0 | 6 hr 3 min | 0 stops | ONE_WAY
+[LEG 1]: 2026-01-04 06:30:00 - 2026-01-04 09:33:00 | YYZ-SFO | 6 hr 3 min | UA 565 | United Airlines
+
+San Francisco | 7 days 4 hr 7 min
+
+[FLIGHT 2]: $81.0 | 4 hr 57 min | 0 stops | ONE_WAY
+[LEG 1]: 2026-01-11 13:40:00 - 2026-01-11 21:37:00 | SFO-YYZ | 4 hr 57 min | PD 672 | Porter Airlines
+
+Toronto | END"
+730.0	11.0	0.0	0	2026-01-05T06:30:00	2026-01-11T21:37:00	Toronto	Toronto	['San Francisco']	"2026-01-05 06:30:00 - 2026-01-11 21:37:00 | $730.0 | 11 hr
+
+Toronto | START
+
+[FLIGHT 1]: $649.0 | 6 hr 3 min | 0 stops | ONE_WAY
+[LEG 1]: 2026-01-05 06:30:00 - 2026-01-05 09:33:00 | YYZ-SFO | 6 hr 3 min | UA 565 | United Airlines
+
+San Francisco | 6 days 4 hr 7 min
+
+[FLIGHT 2]: $81.0 | 4 hr 57 min | 0 stops | ONE_WAY
+[LEG 1]: 2026-01-11 13:40:00 - 2026-01-11 21:37:00 | SFO-YYZ | 4 hr 57 min | PD 672 | Porter Airlines
+
+Toronto | END"
+746.0	10.716666666666667	0.0	0	2026-01-04T12:40:00	2026-01-10T16:28:00	Toronto	Toronto	['San Francisco']	"2026-01-04 12:40:00 - 2026-01-10 16:28:00 | $746.0 | 10 hr 43 min
+
+Toronto | START
+
+[FLIGHT 1]: $638.0 | 5 hr 45 min | 0 stops | ONE_WAY
+[LEG 1]: 2026-01-04 12:40:00 - 2026-01-04 15:25:00 | YYZ-SFO | 5 hr 45 min | AC 743 | Air Canada
+
+San Francisco | 5 days 17 hr 5 min
+
+[FLIGHT 2]: $108.0 | 4 hr 58 min | 0 stops | ONE_WAY
+[LEG 1]: 2026-01-10 08:30:00 - 2026-01-10 16:28:00 | SFO-YYZ | 4 hr 58 min | AC 738 | Air Canada
+
+Toronto | END"
+746.0	10.716666666666667	0.0	0	2026-01-04T10:45:00	2026-01-10T16:28:00	Toronto	Toronto	['San Francisco']	"2026-01-04 10:45:00 - 2026-01-10 16:28:00 | $746.0 | 10 hr 43 min
+
+Toronto | START
+
+[FLIGHT 1]: $638.0 | 5 hr 45 min | 0 stops | ONE_WAY
+[LEG 1]: 2026-01-04 10:45:00 - 2026-01-04 13:30:00 | YYZ-SFO | 5 hr 45 min | AC 741 | Air Canada
+
+San Francisco | 5 days 19 hr
+
+[FLIGHT 2]: $108.0 | 4 hr 58 min | 0 stops | ONE_WAY
+[LEG 1]: 2026-01-10 08:30:00 - 2026-01-10 16:28:00 | SFO-YYZ | 4 hr 58 min | AC 738 | Air Canada
+
+Toronto | END"
+746.0	10.716666666666667	0.0	0	2026-01-04T12:40:00	2026-01-11T16:28:00	Toronto	Toronto	['San Francisco']	"2026-01-04 12:40:00 - 2026-01-11 16:28:00 | $746.0 | 10 hr 43 min
+
+Toronto | START
+
+[FLIGHT 1]: $638.0 | 5 hr 45 min | 0 stops | ONE_WAY
+[LEG 1]: 2026-01-04 12:40:00 - 2026-01-04 15:25:00 | YYZ-SFO | 5 hr 45 min | AC 743 | Air Canada
+
+San Francisco | 6 days 17 hr 5 min
+
+[FLIGHT 2]: $108.0 | 4 hr 58 min | 0 stops | ONE_WAY
+[LEG 1]: 2026-01-11 08:30:00 - 2026-01-11 16:28:00 | SFO-YYZ | 4 hr 58 min | AC 738 | Air Canada
+
+Toronto | END"
+746.0	10.716666666666667	0.0	0	2026-01-04T10:45:00	2026-01-11T16:28:00	Toronto	Toronto	['San Francisco']	"2026-01-04 10:45:00 - 2026-01-11 16:28:00 | $746.0 | 10 hr 43 min
+
+Toronto | START
+
+[FLIGHT 1]: $638.0 | 5 hr 45 min | 0 stops | ONE_WAY
+[LEG 1]: 2026-01-04 10:45:00 - 2026-01-04 13:30:00 | YYZ-SFO | 5 hr 45 min | AC 741 | Air Canada
+
+San Francisco | 6 days 19 hr
+
+[FLIGHT 2]: $108.0 | 4 hr 58 min | 0 stops | ONE_WAY
+[LEG 1]: 2026-01-11 08:30:00 - 2026-01-11 16:28:00 | SFO-YYZ | 4 hr 58 min | AC 738 | Air Canada
+
+Toronto | END"
+746.0	10.783333333333333	0.0	0	2026-01-04T18:50:00	2026-01-10T16:28:00	Toronto	Toronto	['San Francisco']	"2026-01-04 18:50:00 - 2026-01-10 16:28:00 | $746.0 | 10 hr 47 min
+
+Toronto | START
+
+[FLIGHT 1]: $638.0 | 5 hr 49 min | 0 stops | ONE_WAY
+[LEG 1]: 2026-01-04 18:50:00 - 2026-01-04 21:39:00 | YYZ-SFO | 5 hr 49 min | AC 745 | Air Canada
+
+San Francisco | 5 days 10 hr 51 min
+
+[FLIGHT 2]: $108.0 | 4 hr 58 min | 0 stops | ONE_WAY
+[LEG 1]: 2026-01-10 08:30:00 - 2026-01-10 16:28:00 | SFO-YYZ | 4 hr 58 min | AC 738 | Air Canada
+
+Toronto | END"
+746.0	10.783333333333333	0.0	0	2026-01-04T18:50:00	2026-01-11T16:28:00	Toronto	Toronto	['San Francisco']	"2026-01-04 18:50:00 - 2026-01-11 16:28:00 | $746.0 | 10 hr 47 min
+
+Toronto | START
+
+[FLIGHT 1]: $638.0 | 5 hr 49 min | 0 stops | ONE_WAY
+[LEG 1]: 2026-01-04 18:50:00 - 2026-01-04 21:39:00 | YYZ-SFO | 5 hr 49 min | AC 745 | Air Canada
+
+San Francisco | 6 days 10 hr 51 min
+
+[FLIGHT 2]: $108.0 | 4 hr 58 min | 0 stops | ONE_WAY
+[LEG 1]: 2026-01-11 08:30:00 - 2026-01-11 16:28:00 | SFO-YYZ | 4 hr 58 min | AC 738 | Air Canada
+
+Toronto | END"
+747.0	10.666666666666666	0.0	0	2026-01-04T12:40:00	2026-01-10T19:55:00	Toronto	Toronto	['San Francisco']	"2026-01-04 12:40:00 - 2026-01-10 19:55:00 | $747.0 | 10 hr 40 min
+
+Toronto | START
+
+[FLIGHT 1]: $638.0 | 5 hr 45 min | 0 stops | ONE_WAY
+[LEG 1]: 2026-01-04 12:40:00 - 2026-01-04 15:25:00 | YYZ-SFO | 5 hr 45 min | AC 743 | Air Canada
+
+San Francisco | 5 days 20 hr 35 min
+
+[FLIGHT 2]: $109.0 | 4 hr 55 min | 0 stops | ONE_WAY
+[LEG 1]: 2026-01-10 12:00:00 - 2026-01-10 19:55:00 | SFO-YYZ | 4 hr 55 min | AC 740 | Air Canada
+
+Toronto | END"
+747.0	10.666666666666666	0.0	0	2026-01-04T10:45:00	2026-01-10T19:55:00	Toronto	Toronto	['San Francisco']	"2026-01-04 10:45:00 - 2026-01-10 19:55:00 | $747.0 | 10 hr 40 min
+
+Toronto | START
+
+[FLIGHT 1]: $638.0 | 5 hr 45 min | 0 stops | ONE_WAY
+[LEG 1]: 2026-01-04 10:45:00 - 2026-01-04 13:30:00 | YYZ-SFO | 5 hr 45 min | AC 741 | Air Canada
+
+San Francisco | 5 days 22 hr 30 min
+
+[FLIGHT 2]: $109.0 | 4 hr 55 min | 0 stops | ONE_WAY
+[LEG 1]: 2026-01-10 12:00:00 - 2026-01-10 19:55:00 | SFO-YYZ | 4 hr 55 min | AC 740 | Air Canada
+
+Toronto | END"
+747.0	10.716666666666667	0.0	0	2026-01-04T12:40:00	2026-01-11T22:28:00	Toronto	Toronto	['San Francisco']	"2026-01-04 12:40:00 - 2026-01-11 22:28:00 | $747.0 | 10 hr 43 min
+
+Toronto | START
+
+[FLIGHT 1]: $638.0 | 5 hr 45 min | 0 stops | ONE_WAY
+[LEG 1]: 2026-01-04 12:40:00 - 2026-01-04 15:25:00 | YYZ-SFO | 5 hr 45 min | AC 743 | Air Canada
+
+San Francisco | 6 days 23 hr 5 min
+
+[FLIGHT 2]: $109.0 | 4 hr 58 min | 0 stops | ONE_WAY
+[LEG 1]: 2026-01-11 14:30:00 - 2026-01-11 22:28:00 | SFO-YYZ | 4 hr 58 min | AC 742 | Air Canada
+
+Toronto | END"
+747.0	10.716666666666667	0.0	0	2026-01-04T10:45:00	2026-01-11T22:28:00	Toronto	Toronto	['San Francisco']	"2026-01-04 10:45:00 - 2026-01-11 22:28:00 | $747.0 | 10 hr 43 min
+
+Toronto | START
+
+[FLIGHT 1]: $638.0 | 5 hr 45 min | 0 stops | ONE_WAY
+[LEG 1]: 2026-01-04 10:45:00 - 2026-01-04 13:30:00 | YYZ-SFO | 5 hr 45 min | AC 741 | Air Canada
+
+San Francisco | 7 days 1 hr
+
+[FLIGHT 2]: $109.0 | 4 hr 58 min | 0 stops | ONE_WAY
+[LEG 1]: 2026-01-11 14:30:00 - 2026-01-11 22:28:00 | SFO-YYZ | 4 hr 58 min | AC 742 | Air Canada
+
+Toronto | END"
+747.0	10.733333333333333	0.0	0	2026-01-04T18:50:00	2026-01-10T19:55:00	Toronto	Toronto	['San Francisco']	"2026-01-04 18:50:00 - 2026-01-10 19:55:00 | $747.0 | 10 hr 44 min
+
+Toronto | START
+
+[FLIGHT 1]: $638.0 | 5 hr 49 min | 0 stops | ONE_WAY
+[LEG 1]: 2026-01-04 18:50:00 - 2026-01-04 21:39:00 | YYZ-SFO | 5 hr 49 min | AC 745 | Air Canada
+
+San Francisco | 5 days 14 hr 21 min
+
+[FLIGHT 2]: $109.0 | 4 hr 55 min | 0 stops | ONE_WAY
+[LEG 1]: 2026-01-10 12:00:00 - 2026-01-10 19:55:00 | SFO-YYZ | 4 hr 55 min | AC 740 | Air Canada
+
+Toronto | END"
+747.0	10.783333333333333	0.0	0	2026-01-04T18:50:00	2026-01-11T22:28:00	Toronto	Toronto	['San Francisco']	"2026-01-04 18:50:00 - 2026-01-11 22:28:00 | $747.0 | 10 hr 47 min
+
+Toronto | START
+
+[FLIGHT 1]: $638.0 | 5 hr 49 min | 0 stops | ONE_WAY
+[LEG 1]: 2026-01-04 18:50:00 - 2026-01-04 21:39:00 | YYZ-SFO | 5 hr 49 min | AC 745 | Air Canada
+
+San Francisco | 6 days 16 hr 51 min
+
+[FLIGHT 2]: $109.0 | 4 hr 58 min | 0 stops | ONE_WAY
+[LEG 1]: 2026-01-11 14:30:00 - 2026-01-11 22:28:00 | SFO-YYZ | 4 hr 58 min | AC 742 | Air Canada
+
+Toronto | END"
+748.0	10.933333333333334	0.0	0	2026-01-04T09:45:00	2026-01-10T16:52:00	Toronto	Toronto	['San Francisco']	"2026-01-04 09:45:00 - 2026-01-10 16:52:00 | $748.0 | 10 hr 56 min
+
+Toronto | START
+
+[FLIGHT 1]: $604.0 | 5 hr 53 min | 0 stops | ONE_WAY
+[LEG 1]: 2026-01-04 09:45:00 - 2026-01-04 12:38:00 | YYZ-SFO | 5 hr 53 min | PD 671 | Porter Airlines
+
+San Francisco | 5 days 20 hr 11 min
+
+[FLIGHT 2]: $144.0 | 5 hr 3 min | 0 stops | ONE_WAY
+[LEG 1]: 2026-01-10 08:49:00 - 2026-01-10 16:52:00 | SFO-YYZ | 5 hr 3 min | UA 608 | United Airlines
+
+Toronto | END"
+748.0	10.933333333333334	0.0	0	2026-01-04T09:45:00	2026-01-11T16:52:00	Toronto	Toronto	['San Francisco']	"2026-01-04 09:45:00 - 2026-01-11 16:52:00 | $748.0 | 10 hr 56 min
+
+Toronto | START
+
+[FLIGHT 1]: $604.0 | 5 hr 53 min | 0 stops | ONE_WAY
+[LEG 1]: 2026-01-04 09:45:00 - 2026-01-04 12:38:00 | YYZ-SFO | 5 hr 53 min | PD 671 | Porter Airlines
+
+San Francisco | 6 days 20 hr 11 min
+
+[FLIGHT 2]: $144.0 | 5 hr 3 min | 0 stops | ONE_WAY
+[LEG 1]: 2026-01-11 08:49:00 - 2026-01-11 16:52:00 | SFO-YYZ | 5 hr 3 min | UA 608 | United Airlines
+
+Toronto | END"
+750.0	10.716666666666667	0.0	0	2026-01-04T10:45:00	2026-01-10T16:28:00	Toronto	Toronto	['San Francisco']	"2026-01-04 10:45:00 - 2026-01-10 16:28:00 | $750.0 | 10 hr 43 min
+
+Toronto | START
+
+[FLIGHT 1]: $0.0 | 5 hr 45 min | 0 stops | ROUND_TRIP_DEPARTING
+[LEG 1]: 2026-01-04 10:45:00 - 2026-01-04 13:30:00 | YYZ-SFO | 5 hr 45 min | AC 741 | Air Canada
+
+San Francisco | 5 days 19 hr
+
+[FLIGHT 1]: $750.0 | 4 hr 58 min | 0 stops | ROUND_TRIP_RETURNING
+[LEG 1]: 2026-01-10 08:30:00 - 2026-01-10 16:28:00 | SFO-YYZ | 4 hr 58 min | AC 738 | Air Canada
+
+Toronto | END"
+750.0	10.716666666666667	0.0	0	2026-01-04T10:45:00	2026-01-11T16:28:00	Toronto	Toronto	['San Francisco']	"2026-01-04 10:45:00 - 2026-01-11 16:28:00 | $750.0 | 10 hr 43 min
+
+Toronto | START
+
+[FLIGHT 1]: $0.0 | 5 hr 45 min | 0 stops | ROUND_TRIP_DEPARTING
+[LEG 1]: 2026-01-04 10:45:00 - 2026-01-04 13:30:00 | YYZ-SFO | 5 hr 45 min | AC 741 | Air Canada
+
+San Francisco | 6 days 19 hr
+
+[FLIGHT 1]: $750.0 | 4 hr 58 min | 0 stops | ROUND_TRIP_RETURNING
+[LEG 1]: 2026-01-11 08:30:00 - 2026-01-11 16:28:00 | SFO-YYZ | 4 hr 58 min | AC 738 | Air Canada
+
+Toronto | END"
+754.0	10.8	0.0	0	2026-01-04T09:45:00	2026-01-10T19:55:00	Toronto	Toronto	['San Francisco']	"2026-01-04 09:45:00 - 2026-01-10 19:55:00 | $754.0 | 10 hr 48 min
+
+Toronto | START
+
+[FLIGHT 1]: $0.0 | 5 hr 53 min | 0 stops | ROUND_TRIP_DEPARTING
+[LEG 1]: 2026-01-04 09:45:00 - 2026-01-04 12:38:00 | YYZ-SFO | 5 hr 53 min | PD 671 | Porter Airlines
+
+San Francisco | 5 days 23 hr 22 min
+
+[FLIGHT 1]: $754.0 | 4 hr 55 min | 0 stops | ROUND_TRIP_RETURNING
+[LEG 1]: 2026-01-10 12:00:00 - 2026-01-10 19:55:00 | SFO-YYZ | 4 hr 55 min | AC 740 | Air Canada
+
+Toronto | END"
+754.0	10.85	0.0	0	2026-01-04T09:45:00	2026-01-11T22:28:00	Toronto	Toronto	['San Francisco']	"2026-01-04 09:45:00 - 2026-01-11 22:28:00 | $754.0 | 10 hr 51 min
+
+Toronto | START
+
+[FLIGHT 1]: $0.0 | 5 hr 53 min | 0 stops | ROUND_TRIP_DEPARTING
+[LEG 1]: 2026-01-04 09:45:00 - 2026-01-04 12:38:00 | YYZ-SFO | 5 hr 53 min | PD 671 | Porter Airlines
+
+San Francisco | 7 days 1 hr 52 min
+
+[FLIGHT 1]: $754.0 | 4 hr 58 min | 0 stops | ROUND_TRIP_RETURNING
+[LEG 1]: 2026-01-11 14:30:00 - 2026-01-11 22:28:00 | SFO-YYZ | 4 hr 58 min | AC 742 | Air Canada
+
+Toronto | END"
+757.0	10.933333333333334	0.0	0	2026-01-05T17:55:00	2026-01-10T16:28:00	Toronto	Toronto	['San Francisco']	"2026-01-05 17:55:00 - 2026-01-10 16:28:00 | $757.0 | 10 hr 56 min
+
+Toronto | START
+
+[FLIGHT 1]: $649.0 | 5 hr 58 min | 0 stops | ONE_WAY
+[LEG 1]: 2026-01-05 17:55:00 - 2026-01-05 20:53:00 | YYZ-SFO | 5 hr 58 min | UA 2462 | United Airlines
+
+San Francisco | 4 days 11 hr 37 min
+
+[FLIGHT 2]: $108.0 | 4 hr 58 min | 0 stops | ONE_WAY
+[LEG 1]: 2026-01-10 08:30:00 - 2026-01-10 16:28:00 | SFO-YYZ | 4 hr 58 min | AC 738 | Air Canada
+
+Toronto | END"
+757.0	10.933333333333334	0.0	0	2026-01-05T17:55:00	2026-01-11T16:28:00	Toronto	Toronto	['San Francisco']	"2026-01-05 17:55:00 - 2026-01-11 16:28:00 | $757.0 | 10 hr 56 min
+
+Toronto | START
+
+[FLIGHT 1]: $649.0 | 5 hr 58 min | 0 stops | ONE_WAY
+[LEG 1]: 2026-01-05 17:55:00 - 2026-01-05 20:53:00 | YYZ-SFO | 5 hr 58 min | UA 2462 | United Airlines
+
+San Francisco | 5 days 11 hr 37 min
+
+[FLIGHT 2]: $108.0 | 4 hr 58 min | 0 stops | ONE_WAY
+[LEG 1]: 2026-01-11 08:30:00 - 2026-01-11 16:28:00 | SFO-YYZ | 4 hr 58 min | AC 738 | Air Canada
+
+Toronto | END"
+757.0	11.016666666666667	0.0	0	2026-01-04T06:30:00	2026-01-10T16:28:00	Toronto	Toronto	['San Francisco']	"2026-01-04 06:30:00 - 2026-01-10 16:28:00 | $757.0 | 11 hr 1 min
+
+Toronto | START
+
+[FLIGHT 1]: $649.0 | 6 hr 3 min | 0 stops | ONE_WAY
+[LEG 1]: 2026-01-04 06:30:00 - 2026-01-04 09:33:00 | YYZ-SFO | 6 hr 3 min | UA 565 | United Airlines
+
+San Francisco | 5 days 22 hr 57 min
+
+[FLIGHT 2]: $108.0 | 4 hr 58 min | 0 stops | ONE_WAY
+[LEG 1]: 2026-01-10 08:30:00 - 2026-01-10 16:28:00 | SFO-YYZ | 4 hr 58 min | AC 738 | Air Canada
+
+Toronto | END"
+757.0	11.016666666666667	0.0	0	2026-01-04T06:30:00	2026-01-11T16:28:00	Toronto	Toronto	['San Francisco']	"2026-01-04 06:30:00 - 2026-01-11 16:28:00 | $757.0 | 11 hr 1 min
+
+Toronto | START
+
+[FLIGHT 1]: $649.0 | 6 hr 3 min | 0 stops | ONE_WAY
+[LEG 1]: 2026-01-04 06:30:00 - 2026-01-04 09:33:00 | YYZ-SFO | 6 hr 3 min | UA 565 | United Airlines
+
+San Francisco | 6 days 22 hr 57 min
+
+[FLIGHT 2]: $108.0 | 4 hr 58 min | 0 stops | ONE_WAY
+[LEG 1]: 2026-01-11 08:30:00 - 2026-01-11 16:28:00 | SFO-YYZ | 4 hr 58 min | AC 738 | Air Canada
+
+Toronto | END"
+757.0	11.016666666666667	0.0	0	2026-01-05T06:30:00	2026-01-10T16:28:00	Toronto	Toronto	['San Francisco']	"2026-01-05 06:30:00 - 2026-01-10 16:28:00 | $757.0 | 11 hr 1 min
+
+Toronto | START
+
+[FLIGHT 1]: $649.0 | 6 hr 3 min | 0 stops | ONE_WAY
+[LEG 1]: 2026-01-05 06:30:00 - 2026-01-05 09:33:00 | YYZ-SFO | 6 hr 3 min | UA 565 | United Airlines
+
+San Francisco | 4 days 22 hr 57 min
+
+[FLIGHT 2]: $108.0 | 4 hr 58 min | 0 stops | ONE_WAY
+[LEG 1]: 2026-01-10 08:30:00 - 2026-01-10 16:28:00 | SFO-YYZ | 4 hr 58 min | AC 738 | Air Canada
+
+Toronto | END"
+757.0	11.016666666666667	0.0	0	2026-01-05T06:30:00	2026-01-11T16:28:00	Toronto	Toronto	['San Francisco']	"2026-01-05 06:30:00 - 2026-01-11 16:28:00 | $757.0 | 11 hr 1 min
+
+Toronto | START
+
+[FLIGHT 1]: $649.0 | 6 hr 3 min | 0 stops | ONE_WAY
+[LEG 1]: 2026-01-05 06:30:00 - 2026-01-05 09:33:00 | YYZ-SFO | 6 hr 3 min | UA 565 | United Airlines
+
+San Francisco | 5 days 22 hr 57 min
+
+[FLIGHT 2]: $108.0 | 4 hr 58 min | 0 stops | ONE_WAY
+[LEG 1]: 2026-01-11 08:30:00 - 2026-01-11 16:28:00 | SFO-YYZ | 4 hr 58 min | AC 738 | Air Canada
+
+Toronto | END"
+758.0	10.883333333333333	0.0	0	2026-01-05T17:55:00	2026-01-10T19:55:00	Toronto	Toronto	['San Francisco']	"2026-01-05 17:55:00 - 2026-01-10 19:55:00 | $758.0 | 10 hr 53 min
+
+Toronto | START
+
+[FLIGHT 1]: $649.0 | 5 hr 58 min | 0 stops | ONE_WAY
+[LEG 1]: 2026-01-05 17:55:00 - 2026-01-05 20:53:00 | YYZ-SFO | 5 hr 58 min | UA 2462 | United Airlines
+
+San Francisco | 4 days 15 hr 7 min
+
+[FLIGHT 2]: $109.0 | 4 hr 55 min | 0 stops | ONE_WAY
+[LEG 1]: 2026-01-10 12:00:00 - 2026-01-10 19:55:00 | SFO-YYZ | 4 hr 55 min | AC 740 | Air Canada
+
+Toronto | END"
+758.0	10.933333333333334	0.0	0	2026-01-05T17:55:00	2026-01-11T22:28:00	Toronto	Toronto	['San Francisco']	"2026-01-05 17:55:00 - 2026-01-11 22:28:00 | $758.0 | 10 hr 56 min
+
+Toronto | START
+
+[FLIGHT 1]: $649.0 | 5 hr 58 min | 0 stops | ONE_WAY
+[LEG 1]: 2026-01-05 17:55:00 - 2026-01-05 20:53:00 | YYZ-SFO | 5 hr 58 min | UA 2462 | United Airlines
+
+San Francisco | 5 days 17 hr 37 min
+
+[FLIGHT 2]: $109.0 | 4 hr 58 min | 0 stops | ONE_WAY
+[LEG 1]: 2026-01-11 14:30:00 - 2026-01-11 22:28:00 | SFO-YYZ | 4 hr 58 min | AC 742 | Air Canada
+
+Toronto | END"
+758.0	10.966666666666667	0.0	0	2026-01-04T06:30:00	2026-01-10T19:55:00	Toronto	Toronto	['San Francisco']	"2026-01-04 06:30:00 - 2026-01-10 19:55:00 | $758.0 | 10 hr 58 min
+
+Toronto | START
+
+[FLIGHT 1]: $649.0 | 6 hr 3 min | 0 stops | ONE_WAY
+[LEG 1]: 2026-01-04 06:30:00 - 2026-01-04 09:33:00 | YYZ-SFO | 6 hr 3 min | UA 565 | United Airlines
+
+San Francisco | 6 days 2 hr 27 min
+
+[FLIGHT 2]: $109.0 | 4 hr 55 min | 0 stops | ONE_WAY
+[LEG 1]: 2026-01-10 12:00:00 - 2026-01-10 19:55:00 | SFO-YYZ | 4 hr 55 min | AC 740 | Air Canada
+
+Toronto | END"
+758.0	10.966666666666667	0.0	0	2026-01-05T06:30:00	2026-01-10T19:55:00	Toronto	Toronto	['San Francisco']	"2026-01-05 06:30:00 - 2026-01-10 19:55:00 | $758.0 | 10 hr 58 min
+
+Toronto | START
+
+[FLIGHT 1]: $649.0 | 6 hr 3 min | 0 stops | ONE_WAY
+[LEG 1]: 2026-01-05 06:30:00 - 2026-01-05 09:33:00 | YYZ-SFO | 6 hr 3 min | UA 565 | United Airlines
+
+San Francisco | 5 days 2 hr 27 min
+
+[FLIGHT 2]: $109.0 | 4 hr 55 min | 0 stops | ONE_WAY
+[LEG 1]: 2026-01-10 12:00:00 - 2026-01-10 19:55:00 | SFO-YYZ | 4 hr 55 min | AC 740 | Air Canada
+
+Toronto | END"
+758.0	11.0	0.0	0	2026-01-04T06:30:00	2026-01-10T21:37:00	Toronto	Toronto	['San Francisco']	"2026-01-04 06:30:00 - 2026-01-10 21:37:00 | $758.0 | 11 hr
+
+Toronto | START
+
+[FLIGHT 1]: $0.0 | 6 hr 3 min | 0 stops | ROUND_TRIP_DEPARTING
+[LEG 1]: 2026-01-04 06:30:00 - 2026-01-04 09:33:00 | YYZ-SFO | 6 hr 3 min | UA 565 | United Airlines
+
+San Francisco | 6 days 4 hr 7 min
+
+[FLIGHT 1]: $758.0 | 4 hr 57 min | 0 stops | ROUND_TRIP_RETURNING
+[LEG 1]: 2026-01-10 13:40:00 - 2026-01-10 21:37:00 | SFO-YYZ | 4 hr 57 min | PD 672 | Porter Airlines
+
+Toronto | END"
+758.0	11.016666666666667	0.0	0	2026-01-04T06:30:00	2026-01-11T22:28:00	Toronto	Toronto	['San Francisco']	"2026-01-04 06:30:00 - 2026-01-11 22:28:00 | $758.0 | 11 hr 1 min
+
+Toronto | START
+
+[FLIGHT 1]: $649.0 | 6 hr 3 min | 0 stops | ONE_WAY
+[LEG 1]: 2026-01-04 06:30:00 - 2026-01-04 09:33:00 | YYZ-SFO | 6 hr 3 min | UA 565 | United Airlines
+
+San Francisco | 7 days 4 hr 57 min
+
+[FLIGHT 2]: $109.0 | 4 hr 58 min | 0 stops | ONE_WAY
+[LEG 1]: 2026-01-11 14:30:00 - 2026-01-11 22:28:00 | SFO-YYZ | 4 hr 58 min | AC 742 | Air Canada
+
+Toronto | END"
+758.0	11.016666666666667	0.0	0	2026-01-05T06:30:00	2026-01-11T22:28:00	Toronto	Toronto	['San Francisco']	"2026-01-05 06:30:00 - 2026-01-11 22:28:00 | $758.0 | 11 hr 1 min
+
+Toronto | START
+
+[FLIGHT 1]: $649.0 | 6 hr 3 min | 0 stops | ONE_WAY
+[LEG 1]: 2026-01-05 06:30:00 - 2026-01-05 09:33:00 | YYZ-SFO | 6 hr 3 min | UA 565 | United Airlines
+
+San Francisco | 6 days 4 hr 57 min
+
+[FLIGHT 2]: $109.0 | 4 hr 58 min | 0 stops | ONE_WAY
+[LEG 1]: 2026-01-11 14:30:00 - 2026-01-11 22:28:00 | SFO-YYZ | 4 hr 58 min | AC 742 | Air Canada
+
+Toronto | END"
+763.0	11.0	0.0	0	2026-01-04T06:30:00	2026-01-11T21:37:00	Toronto	Toronto	['San Francisco']	"2026-01-04 06:30:00 - 2026-01-11 21:37:00 | $763.0 | 11 hr
+
+Toronto | START
+
+[FLIGHT 1]: $0.0 | 6 hr 3 min | 0 stops | ROUND_TRIP_DEPARTING
+[LEG 1]: 2026-01-04 06:30:00 - 2026-01-04 09:33:00 | YYZ-SFO | 6 hr 3 min | UA 565 | United Airlines
+
+San Francisco | 7 days 4 hr 7 min
+
+[FLIGHT 1]: $763.0 | 4 hr 57 min | 0 stops | ROUND_TRIP_RETURNING
+[LEG 1]: 2026-01-11 13:40:00 - 2026-01-11 21:37:00 | SFO-YYZ | 4 hr 57 min | PD 672 | Porter Airlines
+
+Toronto | END"
+766.0	10.8	0.0	0	2026-01-04T10:45:00	2026-01-10T16:52:00	Toronto	Toronto	['San Francisco']	"2026-01-04 10:45:00 - 2026-01-10 16:52:00 | $766.0 | 10 hr 48 min
+
+Toronto | START
+
+[FLIGHT 1]: $0.0 | 5 hr 45 min | 0 stops | ROUND_TRIP_DEPARTING
+[LEG 1]: 2026-01-04 10:45:00 - 2026-01-04 13:30:00 | YYZ-SFO | 5 hr 45 min | AC 741 | Air Canada
+
+San Francisco | 5 days 19 hr 19 min
+
+[FLIGHT 1]: $766.0 | 5 hr 3 min | 0 stops | ROUND_TRIP_RETURNING
+[LEG 1]: 2026-01-10 08:49:00 - 2026-01-10 16:52:00 | SFO-YYZ | 5 hr 3 min | UA 608 | United Airlines
+
+Toronto | END"
+766.0	10.8	0.0	0	2026-01-04T10:45:00	2026-01-11T16:52:00	Toronto	Toronto	['San Francisco']	"2026-01-04 10:45:00 - 2026-01-11 16:52:00 | $766.0 | 10 hr 48 min
+
+Toronto | START
+
+[FLIGHT 1]: $0.0 | 5 hr 45 min | 0 stops | ROUND_TRIP_DEPARTING
+[LEG 1]: 2026-01-04 10:45:00 - 2026-01-04 13:30:00 | YYZ-SFO | 5 hr 45 min | AC 741 | Air Canada
+
+San Francisco | 6 days 19 hr 19 min
+
+[FLIGHT 1]: $766.0 | 5 hr 3 min | 0 stops | ROUND_TRIP_RETURNING
+[LEG 1]: 2026-01-11 08:49:00 - 2026-01-11 16:52:00 | SFO-YYZ | 5 hr 3 min | UA 608 | United Airlines
+
+Toronto | END"
+766.0	11.016666666666667	0.0	0	2026-01-04T06:30:00	2026-01-10T16:28:00	Toronto	Toronto	['San Francisco']	"2026-01-04 06:30:00 - 2026-01-10 16:28:00 | $766.0 | 11 hr 1 min
+
+Toronto | START
+
+[FLIGHT 1]: $0.0 | 6 hr 3 min | 0 stops | ROUND_TRIP_DEPARTING
+[LEG 1]: 2026-01-04 06:30:00 - 2026-01-04 09:33:00 | YYZ-SFO | 6 hr 3 min | UA 565 | United Airlines
+
+San Francisco | 5 days 22 hr 57 min
+
+[FLIGHT 1]: $766.0 | 4 hr 58 min | 0 stops | ROUND_TRIP_RETURNING
+[LEG 1]: 2026-01-10 08:30:00 - 2026-01-10 16:28:00 | SFO-YYZ | 4 hr 58 min | AC 738 | Air Canada
+
+Toronto | END"
+766.0	11.016666666666667	0.0	0	2026-01-04T06:30:00	2026-01-11T16:28:00	Toronto	Toronto	['San Francisco']	"2026-01-04 06:30:00 - 2026-01-11 16:28:00 | $766.0 | 11 hr 1 min
+
+Toronto | START
+
+[FLIGHT 1]: $0.0 | 6 hr 3 min | 0 stops | ROUND_TRIP_DEPARTING
+[LEG 1]: 2026-01-04 06:30:00 - 2026-01-04 09:33:00 | YYZ-SFO | 6 hr 3 min | UA 565 | United Airlines
+
+San Francisco | 6 days 22 hr 57 min
+
+[FLIGHT 1]: $766.0 | 4 hr 58 min | 0 stops | ROUND_TRIP_RETURNING
+[LEG 1]: 2026-01-11 08:30:00 - 2026-01-11 16:28:00 | SFO-YYZ | 4 hr 58 min | AC 738 | Air Canada
+
+Toronto | END"
+766.0	11.016666666666667	0.0	0	2026-01-05T06:30:00	2026-01-10T16:28:00	Toronto	Toronto	['San Francisco']	"2026-01-05 06:30:00 - 2026-01-10 16:28:00 | $766.0 | 11 hr 1 min
+
+Toronto | START
+
+[FLIGHT 1]: $0.0 | 6 hr 3 min | 0 stops | ROUND_TRIP_DEPARTING
+[LEG 1]: 2026-01-05 06:30:00 - 2026-01-05 09:33:00 | YYZ-SFO | 6 hr 3 min | UA 565 | United Airlines
+
+San Francisco | 4 days 22 hr 57 min
+
+[FLIGHT 1]: $766.0 | 4 hr 58 min | 0 stops | ROUND_TRIP_RETURNING
+[LEG 1]: 2026-01-10 08:30:00 - 2026-01-10 16:28:00 | SFO-YYZ | 4 hr 58 min | AC 738 | Air Canada
+
+Toronto | END"
+766.0	11.016666666666667	0.0	0	2026-01-05T06:30:00	2026-01-11T16:28:00	Toronto	Toronto	['San Francisco']	"2026-01-05 06:30:00 - 2026-01-11 16:28:00 | $766.0 | 11 hr 1 min
+
+Toronto | START
+
+[FLIGHT 1]: $0.0 | 6 hr 3 min | 0 stops | ROUND_TRIP_DEPARTING
+[LEG 1]: 2026-01-05 06:30:00 - 2026-01-05 09:33:00 | YYZ-SFO | 6 hr 3 min | UA 565 | United Airlines
+
+San Francisco | 5 days 22 hr 57 min
+
+[FLIGHT 1]: $766.0 | 4 hr 58 min | 0 stops | ROUND_TRIP_RETURNING
+[LEG 1]: 2026-01-11 08:30:00 - 2026-01-11 16:28:00 | SFO-YYZ | 4 hr 58 min | AC 738 | Air Canada
+
+Toronto | END"
+766.0	11.1	0.0	0	2026-01-05T06:30:00	2026-01-10T16:52:00	Toronto	Toronto	['San Francisco']	"2026-01-05 06:30:00 - 2026-01-10 16:52:00 | $766.0 | 11 hr 6 min
+
+Toronto | START
+
+[FLIGHT 1]: $0.0 | 6 hr 3 min | 0 stops | ROUND_TRIP_DEPARTING
+[LEG 1]: 2026-01-05 06:30:00 - 2026-01-05 09:33:00 | YYZ-SFO | 6 hr 3 min | UA 565 | United Airlines
+
+San Francisco | 4 days 23 hr 16 min
+
+[FLIGHT 1]: $766.0 | 5 hr 3 min | 0 stops | ROUND_TRIP_RETURNING
+[LEG 1]: 2026-01-10 08:49:00 - 2026-01-10 16:52:00 | SFO-YYZ | 5 hr 3 min | UA 608 | United Airlines
+
+Toronto | END"
+766.0	11.1	0.0	0	2026-01-05T06:30:00	2026-01-11T16:52:00	Toronto	Toronto	['San Francisco']	"2026-01-05 06:30:00 - 2026-01-11 16:52:00 | $766.0 | 11 hr 6 min
+
+Toronto | START
+
+[FLIGHT 1]: $0.0 | 6 hr 3 min | 0 stops | ROUND_TRIP_DEPARTING
+[LEG 1]: 2026-01-05 06:30:00 - 2026-01-05 09:33:00 | YYZ-SFO | 6 hr 3 min | UA 565 | United Airlines
+
+San Francisco | 5 days 23 hr 16 min
+
+[FLIGHT 1]: $766.0 | 5 hr 3 min | 0 stops | ROUND_TRIP_RETURNING
+[LEG 1]: 2026-01-11 08:49:00 - 2026-01-11 16:52:00 | SFO-YYZ | 5 hr 3 min | UA 608 | United Airlines
+
+Toronto | END"
+782.0	10.8	0.0	0	2026-01-04T12:40:00	2026-01-10T16:52:00	Toronto	Toronto	['San Francisco']	"2026-01-04 12:40:00 - 2026-01-10 16:52:00 | $782.0 | 10 hr 48 min
+
+Toronto | START
+
+[FLIGHT 1]: $638.0 | 5 hr 45 min | 0 stops | ONE_WAY
+[LEG 1]: 2026-01-04 12:40:00 - 2026-01-04 15:25:00 | YYZ-SFO | 5 hr 45 min | AC 743 | Air Canada
+
+San Francisco | 5 days 17 hr 24 min
+
+[FLIGHT 2]: $144.0 | 5 hr 3 min | 0 stops | ONE_WAY
+[LEG 1]: 2026-01-10 08:49:00 - 2026-01-10 16:52:00 | SFO-YYZ | 5 hr 3 min | UA 608 | United Airlines
+
+Toronto | END"
+782.0	10.8	0.0	0	2026-01-04T10:45:00	2026-01-10T16:52:00	Toronto	Toronto	['San Francisco']	"2026-01-04 10:45:00 - 2026-01-10 16:52:00 | $782.0 | 10 hr 48 min
+
+Toronto | START
+
+[FLIGHT 1]: $638.0 | 5 hr 45 min | 0 stops | ONE_WAY
+[LEG 1]: 2026-01-04 10:45:00 - 2026-01-04 13:30:00 | YYZ-SFO | 5 hr 45 min | AC 741 | Air Canada
+
+San Francisco | 5 days 19 hr 19 min
+
+[FLIGHT 2]: $144.0 | 5 hr 3 min | 0 stops | ONE_WAY
+[LEG 1]: 2026-01-10 08:49:00 - 2026-01-10 16:52:00 | SFO-YYZ | 5 hr 3 min | UA 608 | United Airlines
+
+Toronto | END"
+782.0	10.8	0.0	0	2026-01-04T12:40:00	2026-01-11T16:52:00	Toronto	Toronto	['San Francisco']	"2026-01-04 12:40:00 - 2026-01-11 16:52:00 | $782.0 | 10 hr 48 min
+
+Toronto | START
+
+[FLIGHT 1]: $638.0 | 5 hr 45 min | 0 stops | ONE_WAY
+[LEG 1]: 2026-01-04 12:40:00 - 2026-01-04 15:25:00 | YYZ-SFO | 5 hr 45 min | AC 743 | Air Canada
+
+San Francisco | 6 days 17 hr 24 min
+
+[FLIGHT 2]: $144.0 | 5 hr 3 min | 0 stops | ONE_WAY
+[LEG 1]: 2026-01-11 08:49:00 - 2026-01-11 16:52:00 | SFO-YYZ | 5 hr 3 min | UA 608 | United Airlines
+
+Toronto | END"
+782.0	10.8	0.0	0	2026-01-04T10:45:00	2026-01-11T16:52:00	Toronto	Toronto	['San Francisco']	"2026-01-04 10:45:00 - 2026-01-11 16:52:00 | $782.0 | 10 hr 48 min
+
+Toronto | START
+
+[FLIGHT 1]: $638.0 | 5 hr 45 min | 0 stops | ONE_WAY
+[LEG 1]: 2026-01-04 10:45:00 - 2026-01-04 13:30:00 | YYZ-SFO | 5 hr 45 min | AC 741 | Air Canada
+
+San Francisco | 6 days 19 hr 19 min
+
+[FLIGHT 2]: $144.0 | 5 hr 3 min | 0 stops | ONE_WAY
+[LEG 1]: 2026-01-11 08:49:00 - 2026-01-11 16:52:00 | SFO-YYZ | 5 hr 3 min | UA 608 | United Airlines
+
+Toronto | END"
+782.0	10.866666666666667	0.0	0	2026-01-04T18:50:00	2026-01-10T16:52:00	Toronto	Toronto	['San Francisco']	"2026-01-04 18:50:00 - 2026-01-10 16:52:00 | $782.0 | 10 hr 52 min
+
+Toronto | START
+
+[FLIGHT 1]: $638.0 | 5 hr 49 min | 0 stops | ONE_WAY
+[LEG 1]: 2026-01-04 18:50:00 - 2026-01-04 21:39:00 | YYZ-SFO | 5 hr 49 min | AC 745 | Air Canada
+
+San Francisco | 5 days 11 hr 10 min
+
+[FLIGHT 2]: $144.0 | 5 hr 3 min | 0 stops | ONE_WAY
+[LEG 1]: 2026-01-10 08:49:00 - 2026-01-10 16:52:00 | SFO-YYZ | 5 hr 3 min | UA 608 | United Airlines
+
+Toronto | END"
+782.0	10.866666666666667	0.0	0	2026-01-04T18:50:00	2026-01-11T16:52:00	Toronto	Toronto	['San Francisco']	"2026-01-04 18:50:00 - 2026-01-11 16:52:00 | $782.0 | 10 hr 52 min
+
+Toronto | START
+
+[FLIGHT 1]: $638.0 | 5 hr 49 min | 0 stops | ONE_WAY
+[LEG 1]: 2026-01-04 18:50:00 - 2026-01-04 21:39:00 | YYZ-SFO | 5 hr 49 min | AC 745 | Air Canada
+
+San Francisco | 6 days 11 hr 10 min
+
+[FLIGHT 2]: $144.0 | 5 hr 3 min | 0 stops | ONE_WAY
+[LEG 1]: 2026-01-11 08:49:00 - 2026-01-11 16:52:00 | SFO-YYZ | 5 hr 3 min | UA 608 | United Airlines
+
+Toronto | END"
+785.0	10.916666666666666	0.0	0	2026-01-04T17:55:00	2026-01-10T21:37:00	Toronto	Toronto	['San Francisco']	"2026-01-04 17:55:00 - 2026-01-10 21:37:00 | $785.0 | 10 hr 55 min
+
+Toronto | START
+
+[FLIGHT 1]: $709.0 | 5 hr 58 min | 0 stops | ONE_WAY
+[LEG 1]: 2026-01-04 17:55:00 - 2026-01-04 20:53:00 | YYZ-SFO | 5 hr 58 min | UA 2462 | United Airlines
+
+San Francisco | 5 days 16 hr 47 min
+
+[FLIGHT 2]: $76.0 | 4 hr 57 min | 0 stops | ONE_WAY
+[LEG 1]: 2026-01-10 13:40:00 - 2026-01-10 21:37:00 | SFO-YYZ | 4 hr 57 min | PD 672 | Porter Airlines
+
+Toronto | END"
+790.0	10.916666666666666	0.0	0	2026-01-04T17:55:00	2026-01-11T21:37:00	Toronto	Toronto	['San Francisco']	"2026-01-04 17:55:00 - 2026-01-11 21:37:00 | $790.0 | 10 hr 55 min
+
+Toronto | START
+
+[FLIGHT 1]: $709.0 | 5 hr 58 min | 0 stops | ONE_WAY
+[LEG 1]: 2026-01-04 17:55:00 - 2026-01-04 20:53:00 | YYZ-SFO | 5 hr 58 min | UA 2462 | United Airlines
+
+San Francisco | 6 days 16 hr 47 min
+
+[FLIGHT 2]: $81.0 | 4 hr 57 min | 0 stops | ONE_WAY
+[LEG 1]: 2026-01-11 13:40:00 - 2026-01-11 21:37:00 | SFO-YYZ | 4 hr 57 min | PD 672 | Porter Airlines
+
+Toronto | END"
+793.0	11.016666666666667	0.0	0	2026-01-05T17:55:00	2026-01-10T16:52:00	Toronto	Toronto	['San Francisco']	"2026-01-05 17:55:00 - 2026-01-10 16:52:00 | $793.0 | 11 hr 1 min
+
+Toronto | START
+
+[FLIGHT 1]: $649.0 | 5 hr 58 min | 0 stops | ONE_WAY
+[LEG 1]: 2026-01-05 17:55:00 - 2026-01-05 20:53:00 | YYZ-SFO | 5 hr 58 min | UA 2462 | United Airlines
+
+San Francisco | 4 days 11 hr 56 min
+
+[FLIGHT 2]: $144.0 | 5 hr 3 min | 0 stops | ONE_WAY
+[LEG 1]: 2026-01-10 08:49:00 - 2026-01-10 16:52:00 | SFO-YYZ | 5 hr 3 min | UA 608 | United Airlines
+
+Toronto | END"
+793.0	11.016666666666667	0.0	0	2026-01-05T17:55:00	2026-01-11T16:52:00	Toronto	Toronto	['San Francisco']	"2026-01-05 17:55:00 - 2026-01-11 16:52:00 | $793.0 | 11 hr 1 min
+
+Toronto | START
+
+[FLIGHT 1]: $649.0 | 5 hr 58 min | 0 stops | ONE_WAY
+[LEG 1]: 2026-01-05 17:55:00 - 2026-01-05 20:53:00 | YYZ-SFO | 5 hr 58 min | UA 2462 | United Airlines
+
+San Francisco | 5 days 11 hr 56 min
+
+[FLIGHT 2]: $144.0 | 5 hr 3 min | 0 stops | ONE_WAY
+[LEG 1]: 2026-01-11 08:49:00 - 2026-01-11 16:52:00 | SFO-YYZ | 5 hr 3 min | UA 608 | United Airlines
+
+Toronto | END"
+793.0	11.1	0.0	0	2026-01-04T06:30:00	2026-01-10T16:52:00	Toronto	Toronto	['San Francisco']	"2026-01-04 06:30:00 - 2026-01-10 16:52:00 | $793.0 | 11 hr 6 min
+
+Toronto | START
+
+[FLIGHT 1]: $649.0 | 6 hr 3 min | 0 stops | ONE_WAY
+[LEG 1]: 2026-01-04 06:30:00 - 2026-01-04 09:33:00 | YYZ-SFO | 6 hr 3 min | UA 565 | United Airlines
+
+San Francisco | 5 days 23 hr 16 min
+
+[FLIGHT 2]: $144.0 | 5 hr 3 min | 0 stops | ONE_WAY
+[LEG 1]: 2026-01-10 08:49:00 - 2026-01-10 16:52:00 | SFO-YYZ | 5 hr 3 min | UA 608 | United Airlines
+
+Toronto | END"
+793.0	11.1	0.0	0	2026-01-04T06:30:00	2026-01-11T16:52:00	Toronto	Toronto	['San Francisco']	"2026-01-04 06:30:00 - 2026-01-11 16:52:00 | $793.0 | 11 hr 6 min
+
+Toronto | START
+
+[FLIGHT 1]: $649.0 | 6 hr 3 min | 0 stops | ONE_WAY
+[LEG 1]: 2026-01-04 06:30:00 - 2026-01-04 09:33:00 | YYZ-SFO | 6 hr 3 min | UA 565 | United Airlines
+
+San Francisco | 6 days 23 hr 16 min
+
+[FLIGHT 2]: $144.0 | 5 hr 3 min | 0 stops | ONE_WAY
+[LEG 1]: 2026-01-11 08:49:00 - 2026-01-11 16:52:00 | SFO-YYZ | 5 hr 3 min | UA 608 | United Airlines
+
+Toronto | END"
+793.0	11.1	0.0	0	2026-01-05T06:30:00	2026-01-10T16:52:00	Toronto	Toronto	['San Francisco']	"2026-01-05 06:30:00 - 2026-01-10 16:52:00 | $793.0 | 11 hr 6 min
+
+Toronto | START
+
+[FLIGHT 1]: $649.0 | 6 hr 3 min | 0 stops | ONE_WAY
+[LEG 1]: 2026-01-05 06:30:00 - 2026-01-05 09:33:00 | YYZ-SFO | 6 hr 3 min | UA 565 | United Airlines
+
+San Francisco | 4 days 23 hr 16 min
+
+[FLIGHT 2]: $144.0 | 5 hr 3 min | 0 stops | ONE_WAY
+[LEG 1]: 2026-01-10 08:49:00 - 2026-01-10 16:52:00 | SFO-YYZ | 5 hr 3 min | UA 608 | United Airlines
+
+Toronto | END"
+793.0	11.1	0.0	0	2026-01-05T06:30:00	2026-01-11T16:52:00	Toronto	Toronto	['San Francisco']	"2026-01-05 06:30:00 - 2026-01-11 16:52:00 | $793.0 | 11 hr 6 min
+
+Toronto | START
+
+[FLIGHT 1]: $649.0 | 6 hr 3 min | 0 stops | ONE_WAY
+[LEG 1]: 2026-01-05 06:30:00 - 2026-01-05 09:33:00 | YYZ-SFO | 6 hr 3 min | UA 565 | United Airlines
+
+San Francisco | 5 days 23 hr 16 min
+
+[FLIGHT 2]: $144.0 | 5 hr 3 min | 0 stops | ONE_WAY
+[LEG 1]: 2026-01-11 08:49:00 - 2026-01-11 16:52:00 | SFO-YYZ | 5 hr 3 min | UA 608 | United Airlines
+
+Toronto | END"
+795.0	11.0	0.0	0	2026-01-05T06:30:00	2026-01-10T21:37:00	Toronto	Toronto	['San Francisco']	"2026-01-05 06:30:00 - 2026-01-10 21:37:00 | $795.0 | 11 hr
+
+Toronto | START
+
+[FLIGHT 1]: $0.0 | 6 hr 3 min | 0 stops | ROUND_TRIP_DEPARTING
+[LEG 1]: 2026-01-05 06:30:00 - 2026-01-05 09:33:00 | YYZ-SFO | 6 hr 3 min | UA 565 | United Airlines
+
+San Francisco | 5 days 4 hr 7 min
+
+[FLIGHT 1]: $795.0 | 4 hr 57 min | 0 stops | ROUND_TRIP_RETURNING
+[LEG 1]: 2026-01-10 13:40:00 - 2026-01-10 21:37:00 | SFO-YYZ | 4 hr 57 min | PD 672 | Porter Airlines
+
+Toronto | END"
+800.0	10.666666666666666	0.0	0	2026-01-04T10:45:00	2026-01-10T19:55:00	Toronto	Toronto	['San Francisco']	"2026-01-04 10:45:00 - 2026-01-10 19:55:00 | $800.0 | 10 hr 40 min
+
+Toronto | START
+
+[FLIGHT 1]: $0.0 | 5 hr 45 min | 0 stops | ROUND_TRIP_DEPARTING
+[LEG 1]: 2026-01-04 10:45:00 - 2026-01-04 13:30:00 | YYZ-SFO | 5 hr 45 min | AC 741 | Air Canada
+
+San Francisco | 5 days 22 hr 30 min
+
+[FLIGHT 1]: $800.0 | 4 hr 55 min | 0 stops | ROUND_TRIP_RETURNING
+[LEG 1]: 2026-01-10 12:00:00 - 2026-01-10 19:55:00 | SFO-YYZ | 4 hr 55 min | AC 740 | Air Canada
+
+Toronto | END"
+800.0	10.966666666666667	0.0	0	2026-01-05T06:30:00	2026-01-10T19:55:00	Toronto	Toronto	['San Francisco']	"2026-01-05 06:30:00 - 2026-01-10 19:55:00 | $800.0 | 10 hr 58 min
+
+Toronto | START
+
+[FLIGHT 1]: $0.0 | 6 hr 3 min | 0 stops | ROUND_TRIP_DEPARTING
+[LEG 1]: 2026-01-05 06:30:00 - 2026-01-05 09:33:00 | YYZ-SFO | 6 hr 3 min | UA 565 | United Airlines
+
+San Francisco | 5 days 2 hr 27 min
+
+[FLIGHT 1]: $800.0 | 4 hr 55 min | 0 stops | ROUND_TRIP_RETURNING
+[LEG 1]: 2026-01-10 12:00:00 - 2026-01-10 19:55:00 | SFO-YYZ | 4 hr 55 min | AC 740 | Air Canada
+
+Toronto | END"
+800.0	11.016666666666667	0.0	0	2026-01-05T06:30:00	2026-01-11T22:28:00	Toronto	Toronto	['San Francisco']	"2026-01-05 06:30:00 - 2026-01-11 22:28:00 | $800.0 | 11 hr 1 min
+
+Toronto | START
+
+[FLIGHT 1]: $0.0 | 6 hr 3 min | 0 stops | ROUND_TRIP_DEPARTING
+[LEG 1]: 2026-01-05 06:30:00 - 2026-01-05 09:33:00 | YYZ-SFO | 6 hr 3 min | UA 565 | United Airlines
+
+San Francisco | 6 days 4 hr 57 min
+
+[FLIGHT 1]: $800.0 | 4 hr 58 min | 0 stops | ROUND_TRIP_RETURNING
+[LEG 1]: 2026-01-11 14:30:00 - 2026-01-11 22:28:00 | SFO-YYZ | 4 hr 58 min | AC 742 | Air Canada
+
+Toronto | END"
+801.0	10.716666666666667	0.0	0	2026-01-04T10:45:00	2026-01-11T22:28:00	Toronto	Toronto	['San Francisco']	"2026-01-04 10:45:00 - 2026-01-11 22:28:00 | $801.0 | 10 hr 43 min
+
+Toronto | START
+
+[FLIGHT 1]: $0.0 | 5 hr 45 min | 0 stops | ROUND_TRIP_DEPARTING
+[LEG 1]: 2026-01-04 10:45:00 - 2026-01-04 13:30:00 | YYZ-SFO | 5 hr 45 min | AC 741 | Air Canada
+
+San Francisco | 7 days 1 hr
+
+[FLIGHT 1]: $801.0 | 4 hr 58 min | 0 stops | ROUND_TRIP_RETURNING
+[LEG 1]: 2026-01-11 14:30:00 - 2026-01-11 22:28:00 | SFO-YYZ | 4 hr 58 min | AC 742 | Air Canada
+
+Toronto | END"
+805.0	11.016666666666667	0.0	0	2026-01-04T06:30:00	2026-01-11T22:28:00	Toronto	Toronto	['San Francisco']	"2026-01-04 06:30:00 - 2026-01-11 22:28:00 | $805.0 | 11 hr 1 min
+
+Toronto | START
+
+[FLIGHT 1]: $0.0 | 6 hr 3 min | 0 stops | ROUND_TRIP_DEPARTING
+[LEG 1]: 2026-01-04 06:30:00 - 2026-01-04 09:33:00 | YYZ-SFO | 6 hr 3 min | UA 565 | United Airlines
+
+San Francisco | 7 days 4 hr 57 min
+
+[FLIGHT 1]: $805.0 | 4 hr 58 min | 0 stops | ROUND_TRIP_RETURNING
+[LEG 1]: 2026-01-11 14:30:00 - 2026-01-11 22:28:00 | SFO-YYZ | 4 hr 58 min | AC 742 | Air Canada
+
+Toronto | END"
+813.0	10.916666666666666	0.0	0	2026-01-05T17:55:00	2026-01-11T21:37:00	Toronto	Toronto	['San Francisco']	"2026-01-05 17:55:00 - 2026-01-11 21:37:00 | $813.0 | 10 hr 55 min
+
+Toronto | START
+
+[FLIGHT 1]: $0.0 | 5 hr 58 min | 0 stops | ROUND_TRIP_DEPARTING
+[LEG 1]: 2026-01-05 17:55:00 - 2026-01-05 20:53:00 | YYZ-SFO | 5 hr 58 min | UA 2462 | United Airlines
+
+San Francisco | 5 days 16 hr 47 min
+
+[FLIGHT 1]: $813.0 | 4 hr 57 min | 0 stops | ROUND_TRIP_RETURNING
+[LEG 1]: 2026-01-11 13:40:00 - 2026-01-11 21:37:00 | SFO-YYZ | 4 hr 57 min | PD 672 | Porter Airlines
+
+Toronto | END"
+815.0	11.0	0.0	0	2026-01-05T06:30:00	2026-01-11T21:37:00	Toronto	Toronto	['San Francisco']	"2026-01-05 06:30:00 - 2026-01-11 21:37:00 | $815.0 | 11 hr
+
+Toronto | START
+
+[FLIGHT 1]: $0.0 | 6 hr 3 min | 0 stops | ROUND_TRIP_DEPARTING
+[LEG 1]: 2026-01-05 06:30:00 - 2026-01-05 09:33:00 | YYZ-SFO | 6 hr 3 min | UA 565 | United Airlines
+
+San Francisco | 6 days 4 hr 7 min
+
+[FLIGHT 1]: $815.0 | 4 hr 57 min | 0 stops | ROUND_TRIP_RETURNING
+[LEG 1]: 2026-01-11 13:40:00 - 2026-01-11 21:37:00 | SFO-YYZ | 4 hr 57 min | PD 672 | Porter Airlines
+
+Toronto | END"
+817.0	10.933333333333334	0.0	0	2026-01-04T17:55:00	2026-01-10T16:28:00	Toronto	Toronto	['San Francisco']	"2026-01-04 17:55:00 - 2026-01-10 16:28:00 | $817.0 | 10 hr 56 min
+
+Toronto | START
+
+[FLIGHT 1]: $709.0 | 5 hr 58 min | 0 stops | ONE_WAY
+[LEG 1]: 2026-01-04 17:55:00 - 2026-01-04 20:53:00 | YYZ-SFO | 5 hr 58 min | UA 2462 | United Airlines
+
+San Francisco | 5 days 11 hr 37 min
+
+[FLIGHT 2]: $108.0 | 4 hr 58 min | 0 stops | ONE_WAY
+[LEG 1]: 2026-01-10 08:30:00 - 2026-01-10 16:28:00 | SFO-YYZ | 4 hr 58 min | AC 738 | Air Canada
+
+Toronto | END"
+817.0	10.933333333333334	0.0	0	2026-01-04T17:55:00	2026-01-11T16:28:00	Toronto	Toronto	['San Francisco']	"2026-01-04 17:55:00 - 2026-01-11 16:28:00 | $817.0 | 10 hr 56 min
+
+Toronto | START
+
+[FLIGHT 1]: $709.0 | 5 hr 58 min | 0 stops | ONE_WAY
+[LEG 1]: 2026-01-04 17:55:00 - 2026-01-04 20:53:00 | YYZ-SFO | 5 hr 58 min | UA 2462 | United Airlines
+
+San Francisco | 6 days 11 hr 37 min
+
+[FLIGHT 2]: $108.0 | 4 hr 58 min | 0 stops | ONE_WAY
+[LEG 1]: 2026-01-11 08:30:00 - 2026-01-11 16:28:00 | SFO-YYZ | 4 hr 58 min | AC 738 | Air Canada
+
+Toronto | END"
+818.0	10.883333333333333	0.0	0	2026-01-04T17:55:00	2026-01-10T19:55:00	Toronto	Toronto	['San Francisco']	"2026-01-04 17:55:00 - 2026-01-10 19:55:00 | $818.0 | 10 hr 53 min
+
+Toronto | START
+
+[FLIGHT 1]: $709.0 | 5 hr 58 min | 0 stops | ONE_WAY
+[LEG 1]: 2026-01-04 17:55:00 - 2026-01-04 20:53:00 | YYZ-SFO | 5 hr 58 min | UA 2462 | United Airlines
+
+San Francisco | 5 days 15 hr 7 min
+
+[FLIGHT 2]: $109.0 | 4 hr 55 min | 0 stops | ONE_WAY
+[LEG 1]: 2026-01-10 12:00:00 - 2026-01-10 19:55:00 | SFO-YYZ | 4 hr 55 min | AC 740 | Air Canada
+
+Toronto | END"
+818.0	10.933333333333334	0.0	0	2026-01-04T17:55:00	2026-01-11T22:28:00	Toronto	Toronto	['San Francisco']	"2026-01-04 17:55:00 - 2026-01-11 22:28:00 | $818.0 | 10 hr 56 min
+
+Toronto | START
+
+[FLIGHT 1]: $709.0 | 5 hr 58 min | 0 stops | ONE_WAY
+[LEG 1]: 2026-01-04 17:55:00 - 2026-01-04 20:53:00 | YYZ-SFO | 5 hr 58 min | UA 2462 | United Airlines
+
+San Francisco | 6 days 17 hr 37 min
+
+[FLIGHT 2]: $109.0 | 4 hr 58 min | 0 stops | ONE_WAY
+[LEG 1]: 2026-01-11 14:30:00 - 2026-01-11 22:28:00 | SFO-YYZ | 4 hr 58 min | AC 742 | Air Canada
+
+Toronto | END"
+825.0	10.933333333333334	0.0	0	2026-01-04T17:55:00	2026-01-10T16:28:00	Toronto	Toronto	['San Francisco']	"2026-01-04 17:55:00 - 2026-01-10 16:28:00 | $825.0 | 10 hr 56 min
+
+Toronto | START
+
+[FLIGHT 1]: $0.0 | 5 hr 58 min | 0 stops | ROUND_TRIP_DEPARTING
+[LEG 1]: 2026-01-04 17:55:00 - 2026-01-04 20:53:00 | YYZ-SFO | 5 hr 58 min | UA 2462 | United Airlines
+
+San Francisco | 5 days 11 hr 37 min
+
+[FLIGHT 1]: $825.0 | 4 hr 58 min | 0 stops | ROUND_TRIP_RETURNING
+[LEG 1]: 2026-01-10 08:30:00 - 2026-01-10 16:28:00 | SFO-YYZ | 4 hr 58 min | AC 738 | Air Canada
+
+Toronto | END"
+825.0	10.933333333333334	0.0	0	2026-01-04T17:55:00	2026-01-11T16:28:00	Toronto	Toronto	['San Francisco']	"2026-01-04 17:55:00 - 2026-01-11 16:28:00 | $825.0 | 10 hr 56 min
+
+Toronto | START
+
+[FLIGHT 1]: $0.0 | 5 hr 58 min | 0 stops | ROUND_TRIP_DEPARTING
+[LEG 1]: 2026-01-04 17:55:00 - 2026-01-04 20:53:00 | YYZ-SFO | 5 hr 58 min | UA 2462 | United Airlines
+
+San Francisco | 6 days 11 hr 37 min
+
+[FLIGHT 1]: $825.0 | 4 hr 58 min | 0 stops | ROUND_TRIP_RETURNING
+[LEG 1]: 2026-01-11 08:30:00 - 2026-01-11 16:28:00 | SFO-YYZ | 4 hr 58 min | AC 738 | Air Canada
+
+Toronto | END"
+825.0	11.016666666666667	0.0	0	2026-01-04T17:55:00	2026-01-10T16:52:00	Toronto	Toronto	['San Francisco']	"2026-01-04 17:55:00 - 2026-01-10 16:52:00 | $825.0 | 11 hr 1 min
+
+Toronto | START
+
+[FLIGHT 1]: $0.0 | 5 hr 58 min | 0 stops | ROUND_TRIP_DEPARTING
+[LEG 1]: 2026-01-04 17:55:00 - 2026-01-04 20:53:00 | YYZ-SFO | 5 hr 58 min | UA 2462 | United Airlines
+
+San Francisco | 5 days 11 hr 56 min
+
+[FLIGHT 1]: $825.0 | 5 hr 3 min | 0 stops | ROUND_TRIP_RETURNING
+[LEG 1]: 2026-01-10 08:49:00 - 2026-01-10 16:52:00 | SFO-YYZ | 5 hr 3 min | UA 608 | United Airlines
+
+Toronto | END"
+825.0	11.016666666666667	0.0	0	2026-01-04T17:55:00	2026-01-11T16:52:00	Toronto	Toronto	['San Francisco']	"2026-01-04 17:55:00 - 2026-01-11 16:52:00 | $825.0 | 11 hr 1 min
+
+Toronto | START
+
+[FLIGHT 1]: $0.0 | 5 hr 58 min | 0 stops | ROUND_TRIP_DEPARTING
+[LEG 1]: 2026-01-04 17:55:00 - 2026-01-04 20:53:00 | YYZ-SFO | 5 hr 58 min | UA 2462 | United Airlines
+
+San Francisco | 6 days 11 hr 56 min
+
+[FLIGHT 1]: $825.0 | 5 hr 3 min | 0 stops | ROUND_TRIP_RETURNING
+[LEG 1]: 2026-01-11 08:49:00 - 2026-01-11 16:52:00 | SFO-YYZ | 5 hr 3 min | UA 608 | United Airlines
+
+Toronto | END"
+833.0	10.933333333333334	0.0	0	2026-01-04T09:45:00	2026-01-10T16:52:00	Toronto	Toronto	['San Francisco']	"2026-01-04 09:45:00 - 2026-01-10 16:52:00 | $833.0 | 10 hr 56 min
+
+Toronto | START
+
+[FLIGHT 1]: $0.0 | 5 hr 53 min | 0 stops | ROUND_TRIP_DEPARTING
+[LEG 1]: 2026-01-04 09:45:00 - 2026-01-04 12:38:00 | YYZ-SFO | 5 hr 53 min | PD 671 | Porter Airlines
+
+San Francisco | 5 days 20 hr 11 min
+
+[FLIGHT 1]: $833.0 | 5 hr 3 min | 0 stops | ROUND_TRIP_RETURNING
+[LEG 1]: 2026-01-10 08:49:00 - 2026-01-10 16:52:00 | SFO-YYZ | 5 hr 3 min | UA 608 | United Airlines
+
+Toronto | END"
+833.0	10.933333333333334	0.0	0	2026-01-04T09:45:00	2026-01-11T16:52:00	Toronto	Toronto	['San Francisco']	"2026-01-04 09:45:00 - 2026-01-11 16:52:00 | $833.0 | 10 hr 56 min
+
+Toronto | START
+
+[FLIGHT 1]: $0.0 | 5 hr 53 min | 0 stops | ROUND_TRIP_DEPARTING
+[LEG 1]: 2026-01-04 09:45:00 - 2026-01-04 12:38:00 | YYZ-SFO | 5 hr 53 min | PD 671 | Porter Airlines
+
+San Francisco | 6 days 20 hr 11 min
+
+[FLIGHT 1]: $833.0 | 5 hr 3 min | 0 stops | ROUND_TRIP_RETURNING
+[LEG 1]: 2026-01-11 08:49:00 - 2026-01-11 16:52:00 | SFO-YYZ | 5 hr 3 min | UA 608 | United Airlines
+
+Toronto | END"
+853.0	11.016666666666667	0.0	0	2026-01-04T17:55:00	2026-01-10T16:52:00	Toronto	Toronto	['San Francisco']	"2026-01-04 17:55:00 - 2026-01-10 16:52:00 | $853.0 | 11 hr 1 min
+
+Toronto | START
+
+[FLIGHT 1]: $709.0 | 5 hr 58 min | 0 stops | ONE_WAY
+[LEG 1]: 2026-01-04 17:55:00 - 2026-01-04 20:53:00 | YYZ-SFO | 5 hr 58 min | UA 2462 | United Airlines
+
+San Francisco | 5 days 11 hr 56 min
+
+[FLIGHT 2]: $144.0 | 5 hr 3 min | 0 stops | ONE_WAY
+[LEG 1]: 2026-01-10 08:49:00 - 2026-01-10 16:52:00 | SFO-YYZ | 5 hr 3 min | UA 608 | United Airlines
+
+Toronto | END"
+853.0	11.016666666666667	0.0	0	2026-01-04T17:55:00	2026-01-11T16:52:00	Toronto	Toronto	['San Francisco']	"2026-01-04 17:55:00 - 2026-01-11 16:52:00 | $853.0 | 11 hr 1 min
+
+Toronto | START
+
+[FLIGHT 1]: $709.0 | 5 hr 58 min | 0 stops | ONE_WAY
+[LEG 1]: 2026-01-04 17:55:00 - 2026-01-04 20:53:00 | YYZ-SFO | 5 hr 58 min | UA 2462 | United Airlines
+
+San Francisco | 6 days 11 hr 56 min
+
+[FLIGHT 2]: $144.0 | 5 hr 3 min | 0 stops | ONE_WAY
+[LEG 1]: 2026-01-11 08:49:00 - 2026-01-11 16:52:00 | SFO-YYZ | 5 hr 3 min | UA 608 | United Airlines
+
+Toronto | END"
+859.0	10.916666666666666	0.0	0	2026-01-04T17:55:00	2026-01-10T21:37:00	Toronto	Toronto	['San Francisco']	"2026-01-04 17:55:00 - 2026-01-10 21:37:00 | $859.0 | 10 hr 55 min
+
+Toronto | START
+
+[FLIGHT 1]: $0.0 | 5 hr 58 min | 0 stops | ROUND_TRIP_DEPARTING
+[LEG 1]: 2026-01-04 17:55:00 - 2026-01-04 20:53:00 | YYZ-SFO | 5 hr 58 min | UA 2462 | United Airlines
+
+San Francisco | 5 days 16 hr 47 min
+
+[FLIGHT 1]: $859.0 | 4 hr 57 min | 0 stops | ROUND_TRIP_RETURNING
+[LEG 1]: 2026-01-10 13:40:00 - 2026-01-10 21:37:00 | SFO-YYZ | 4 hr 57 min | PD 672 | Porter Airlines
+
+Toronto | END"
+869.0	10.916666666666666	0.0	0	2026-01-04T17:55:00	2026-01-11T21:37:00	Toronto	Toronto	['San Francisco']	"2026-01-04 17:55:00 - 2026-01-11 21:37:00 | $869.0 | 10 hr 55 min
+
+Toronto | START
+
+[FLIGHT 1]: $0.0 | 5 hr 58 min | 0 stops | ROUND_TRIP_DEPARTING
+[LEG 1]: 2026-01-04 17:55:00 - 2026-01-04 20:53:00 | YYZ-SFO | 5 hr 58 min | UA 2462 | United Airlines
+
+San Francisco | 6 days 16 hr 47 min
+
+[FLIGHT 1]: $869.0 | 4 hr 57 min | 0 stops | ROUND_TRIP_RETURNING
+[LEG 1]: 2026-01-11 13:40:00 - 2026-01-11 21:37:00 | SFO-YYZ | 4 hr 57 min | PD 672 | Porter Airlines
+
+Toronto | END"
+875.0	10.883333333333333	0.0	0	2026-01-04T17:55:00	2026-01-10T19:55:00	Toronto	Toronto	['San Francisco']	"2026-01-04 17:55:00 - 2026-01-10 19:55:00 | $875.0 | 10 hr 53 min
+
+Toronto | START
+
+[FLIGHT 1]: $0.0 | 5 hr 58 min | 0 stops | ROUND_TRIP_DEPARTING
+[LEG 1]: 2026-01-04 17:55:00 - 2026-01-04 20:53:00 | YYZ-SFO | 5 hr 58 min | UA 2462 | United Airlines
+
+San Francisco | 5 days 15 hr 7 min
+
+[FLIGHT 1]: $875.0 | 4 hr 55 min | 0 stops | ROUND_TRIP_RETURNING
+[LEG 1]: 2026-01-10 12:00:00 - 2026-01-10 19:55:00 | SFO-YYZ | 4 hr 55 min | AC 740 | Air Canada
+
+Toronto | END"
+876.0	10.933333333333334	0.0	0	2026-01-04T17:55:00	2026-01-11T22:28:00	Toronto	Toronto	['San Francisco']	"2026-01-04 17:55:00 - 2026-01-11 22:28:00 | $876.0 | 10 hr 56 min
+
+Toronto | START
+
+[FLIGHT 1]: $0.0 | 5 hr 58 min | 0 stops | ROUND_TRIP_DEPARTING
+[LEG 1]: 2026-01-04 17:55:00 - 2026-01-04 20:53:00 | YYZ-SFO | 5 hr 58 min | UA 2462 | United Airlines
+
+San Francisco | 6 days 17 hr 37 min
+
+[FLIGHT 1]: $876.0 | 4 hr 58 min | 0 stops | ROUND_TRIP_RETURNING
+[LEG 1]: 2026-01-11 14:30:00 - 2026-01-11 22:28:00 | SFO-YYZ | 4 hr 58 min | AC 742 | Air Canada
+
+Toronto | END"

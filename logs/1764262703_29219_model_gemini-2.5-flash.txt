@@ -1,0 +1,38 @@
+<python>
+all_queries: list[CityRanges] = [
+  CityRanges(
+    city_range_list=[
+      CityRange(
+        airports=[Airport.LHR, Airport.LGW, Airport.STN, Airport.LTN, Airport.LCY],
+        departure_date_range=DateRange(
+          earliest=datetime.date(2025, 12, 13),
+          latest=datetime.date(2025, 12, 14), # Latest departure date is now Dec 14
+        ),
+        departure_flight_filter=DepartureFlightFilter(stops=MaxStops.NON_STOP),
+      ),
+      CityRange(
+        airports=[Airport.YTZ, Airport.YYZ],
+        # Recalculating min_stay_hours and max_stay_hours based on new departure date ranges:
+        # London departure: Dec 13-14
+        # Toronto departure: Dec 21-22
+        # Assuming ~7-8 hours flight from London to Toronto, and a ~5-hour time difference:
+        # Earliest arrival in Toronto: Dec 13 (if departing London Dec 13)
+        # Latest arrival in Toronto: Dec 15 (if departing London Dec 14 and crossing midnight due to flight/timezone)
+        # Min stay: earliest Toronto departure (Dec 21) - latest Toronto arrival (Dec 15) = 6 days = 144 hours
+        # Max stay: latest Toronto departure (Dec 22) - earliest Toronto arrival (Dec 13) = 9 days = 216 hours
+        min_stay_hours=144.0,
+        max_stay_hours=216.0,
+        departure_date_range=DateRange(
+          earliest=datetime.date(2025, 12, 21),
+          latest=datetime.date(2025, 12, 22), # Latest departure date is now Dec 22
+        ),
+        departure_flight_filter=DepartureFlightFilter(stops=MaxStops.NON_STOP),
+      ),
+      CityRange(
+        airports=[Airport.LHR, Airport.LGW, Airport.STN, Airport.LTN, Airport.LCY],
+        # Removed arrival_date_range as requested
+      ),
+    ]
+  ),
+]
+</python>

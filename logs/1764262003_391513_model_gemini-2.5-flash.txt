@@ -1,0 +1,7 @@
+<clarification>
+To help refine your search further, could you let me know:
+
+1.  **Are you looking for a one-way flight, or would you like to include a return date as well?** (If so, what's your preferred return date?)
+2.  **Do you have any preference for the time of day you depart (e.g., morning, afternoon, evening)?**
+3.  **Are you looking for economy, business, or first class tickets?**
+</clarification>

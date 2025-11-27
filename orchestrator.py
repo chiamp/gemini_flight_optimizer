@@ -31,6 +31,8 @@ class Orchestrator:
 
     self.top_n: int = 20
 
+    self.initial_prompt_used = False
+
     self.debug: bool = False
 
     self.initialize()
@@ -62,6 +64,7 @@ class Orchestrator:
       model_name=self.model_name,
       debug=self.debug,
     ).make()
+    self.initial_prompt_used = False
     print(f'[INFO] {self.model_name} model loaded. Chat history reset.')
 
   def get_multi_line_user_input_prompt(self) -> str:
@@ -88,6 +91,7 @@ class Orchestrator:
         user_input = input('[USER_INPUT]: ')
 
       if user_input == '/retry':
+        print('[INFO] Retrying prompt...')
         response = self.model.generate_response(user_prompt)
       else:
         print('[INFO] Returned to main menu.')
@@ -251,7 +255,14 @@ class Orchestrator:
           print(f'[INFO] Enter your flight query prompt to Gemini. Multi-line input is accepted. When you are done entering your prompt, submit it to Gemini by typing /submit in a new line.')
           print('Flight query:')
           user_prompt = self.get_multi_line_user_input_prompt()
-          response = self.generate_response(generate_flight_query_prompt(user_prompt))
+          # First prompt will use the 100k+ token prompt (from `generate_flight_query_prompt()`) as context
+          # Every subsequent prompt will be a follow-up (e.g. modifying the pre-existing query/prompts or writing a new query/prompt),
+          # but the original 100k+ token prompt does not need to be passed in again, since the model will have access to it in the chat history.
+          if not self.initial_prompt_used:
+            user_prompt = generate_flight_query_prompt(user_prompt)
+            self.initial_prompt_used = True
+
+          response = self.generate_response(user_prompt)
           if response is None:  # give up retrying and return to main menu
             continue
 
@@ -265,10 +276,9 @@ class Orchestrator:
             continue
 
           flight_itineraries: FlightItineraries = search_flight_itineraries(queries)
+          print(f'[INFO] Processing complete. Printing results:\n\n{flight_itineraries.top_n(self.top_n)}\n\n')
           flight_itineraries.save()
-          print(f'[INFO] Processing complete. Printing results:\n\n{flight_itineraries.top_n(self.top_n)}')
-          print(f'\n\n[INFO] Exiting program.')
-          return
+          print(f'[INFO] Returning to main menu. Chat history is still saved, so you can type /prompt and either enter a new query or modify the pre-existing query that was just used for flight searches.')
 
         case '/exit':
           print(f'[INFO] Exiting program.')
