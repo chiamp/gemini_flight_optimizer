@@ -1,0 +1,1 @@
+remove min/max time constraints spent in toronto, keep everything else the same

@@ -1,0 +1,42 @@
+<clarification>
+Could you please clarify "no min/max time in the city"? Does it mean that the earlier statement "5-7 days in toronto" is not a strict requirement, or does it refer to specific arrival/departure times within a day (e.g., "arrive before 5 PM")? I have assumed it refers to no specific time-of-day constraints, and will include the 5-7 days stay duration.
+</clarification>
+<python>
+all_queries: list[CityRanges] = [
+  CityRanges(
+    city_range_list=[
+      CityRange(
+        airports=[Airport.LHR, Airport.LGW, Airport.STN, Airport.LTN, Airport.LCY],
+        departure_date_range=DateRange(
+          earliest=datetime.date(2025, 11, 28),
+          latest=datetime.date(2025, 11, 30),
+        ),
+        departure_flight_filter=DepartureFlightFilter(
+          stops=MaxStops.ONE_STOP_OR_FEWER,
+          max_duration=10*60, # 10 hours
+        ),
+      ),
+      CityRange(
+        airports=[Airport.YYZ, Airport.YTZ],
+        min_stay_hours=5*24, # 5 days
+        max_stay_hours=7*24, # 7 days
+        departure_date_range=DateRange(
+          earliest=datetime.date(2025, 12, 3),
+          latest=datetime.date(2025, 12, 7),
+        ),
+        departure_flight_filter=DepartureFlightFilter(
+          stops=MaxStops.ONE_STOP_OR_FEWER,
+          max_duration=10*60, # 10 hours
+        ),
+      ),
+      CityRange(
+        airports=[Airport.LHR, Airport.LGW, Airport.STN, Airport.LTN, Airport.LCY],
+        arrival_date_range=DateRange(
+          earliest=datetime.date(2025, 12, 3),
+          latest=datetime.date(2025, 12, 7),
+        ),
+      ),
+    ]
+  ),
+]
+</python>

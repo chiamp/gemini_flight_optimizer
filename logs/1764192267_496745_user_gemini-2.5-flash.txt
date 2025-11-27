@@ -1,0 +1,1 @@
+remove the min/max time spent in toronto constraint

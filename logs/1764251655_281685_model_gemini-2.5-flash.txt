@@ -1,0 +1,7 @@
+<clarification>
+For the return flight from Toronto to London, should the maximum flight duration also be 10 hours, similar to the outbound flight?
+And when you say "return to London in a week", do you mean:
+1.  The total duration of the trip (from London departure to London arrival) should be approximately 7 days?
+2.  You want to depart from Toronto approximately 7 days after your departure from London?
+3.  You want to stay in Toronto for approximately 7 days?
+</clarification>

@@ -1,0 +1,3 @@
+<clarification>
+The prompt states "returning to London dec 17-18". Does this mean you wish to *depart from Toronto* between December 17th and 18th, or do you wish to *arrive back in London* between December 17th and 18th? Considering the flight duration and time difference from Toronto to London, these two interpretations would lead to different departure dates from Toronto.
+</clarification>

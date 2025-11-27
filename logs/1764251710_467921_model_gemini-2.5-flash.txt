@@ -1,0 +1,39 @@
+<python>
+all_queries: list[CityRanges] = [
+  CityRanges(
+    city_range_list=[
+      CityRange(
+        airports=[Airport.LHR, Airport.LGW, Airport.STN, Airport.LTN, Airport.LCY],
+        departure_date_range=DateRange(
+          earliest=datetime.date(2025, 11, 28),
+          latest=datetime.date(2025, 11, 30),
+        ),
+        departure_flight_filter=DepartureFlightFilter(
+          stops=MaxStops.ONE_STOP_OR_FEWER,
+          max_duration=600, # 10 hours
+        ),
+      ),
+      CityRange(
+        airports=[Airport.YTZ, Airport.YYZ],
+        min_stay_hours=5 * 24, # Minimum 5 days stay in Toronto (derived from "return in a week" with 1-day flight back to London)
+        max_stay_hours=7 * 24, # Maximum 7 days stay in Toronto (derived from "return in a week" with 1-day flight back to London)
+        departure_date_range=DateRange(
+          earliest=datetime.date(2025, 12, 3), # Earliest London departure (Nov 28) + 5 days (min stay assuming same day arrival in Toronto) = Dec 3
+          latest=datetime.date(2025, 12, 7),  # Latest London departure (Nov 30) + 7 days (max stay assuming same day arrival in Toronto) = Dec 7
+        ),
+        departure_flight_filter=DepartureFlightFilter(
+          stops=MaxStops.ONE_STOP_OR_FEWER,
+          max_duration=600, # 10 hours
+        ),
+      ),
+      CityRange(
+        airports=[Airport.LHR, Airport.LGW, Airport.STN, Airport.LTN, Airport.LCY],
+        arrival_date_range=DateRange(
+          earliest=datetime.date(2025, 12, 4), # Earliest Toronto departure (Dec 3) + 1 day (assumed flight duration with timezone shift) = Dec 4
+          latest=datetime.date(2025, 12, 8),  # Latest Toronto departure (Dec 7) + 1 day (assumed flight duration with timezone shift) = Dec 8
+        ),
+      ),
+    ]
+  ),
+]
+</python>
