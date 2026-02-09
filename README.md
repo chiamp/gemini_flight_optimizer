@@ -2,7 +2,7 @@
 
 This program is an interface that uses Gemini API to parse the user input prompt and convert it to flight queries, calls the Google Flights API on those queries and aggregates the results for you.
 
-See the example prompts in `example_prompts/` for inspiration.
+See the example prompts in [`example_prompts/`](https://github.com/chiamp/gemini_flight_optimizer/tree/main/example_prompts) for inspiration.
 
 
 ## Table of Contents
