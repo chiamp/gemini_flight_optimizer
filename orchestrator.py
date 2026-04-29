@@ -67,12 +67,15 @@ class Orchestrator:
     self.initial_prompt_used = False
     print(f'[INFO] {self.model_name} model loaded. Chat history reset.')
 
-  def get_multi_line_user_input_prompt(self) -> str:
+  def get_multi_line_user_input_prompt(self) -> str | None:
     user_prompt_lines: list[str] = []
     user_prompt_line = input('')
-    while user_prompt_line != '/submit':
+    while user_prompt_line not in ('/submit', '/cancel'):
       user_prompt_lines.append(user_prompt_line)
       user_prompt_line = input('')
+    if user_prompt_line == '/cancel':
+      print('[INFO] Query entry cancelled. Returning to main menu.')
+      return None
     return '\n'.join(user_prompt_lines)
 
   def generate_response(self, user_prompt: str) -> Response | None:
